@@ -140,6 +140,28 @@ def fmt(s):
     return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}" if s >= 3600 else f"{s // 60:02d}:{s % 60:02d}"
 
 
+GARBLE = re.compile(r"[\u1000-\u109F\u0250-\u02AF]|#\d{4,};|&#\d+;|�")
+LEAKED_TS = re.compile(r"^\s*\d+\s*\[\d{1,2}:\d{2}(?::\d{2})?\]\s*")
+
+
+def clean_segments(segs):
+    """Repair small artefacts; reject output that is visibly garbled so it gets retried."""
+    bad = 0
+    for s in segs:
+        for k in ("text", "translit", "en", "ar"):
+            v = s.get(k)
+            if not isinstance(v, str):
+                continue
+            v = re.sub(r"&?#6501[08];", "ﷺ", v)
+            v = LEAKED_TS.sub("", v)
+            if GARBLE.search(v):
+                bad += 1
+            s[k] = v
+    if bad:
+        raise ValueError(f"garbled output ({bad} bad fields)")
+    return segs
+
+
 def transcribe_chunk(vid, start, end, glossary):
     cache = os.path.join(CACHE, f"{vid}_{int(start)}.json")
     if os.path.exists(cache):
@@ -172,7 +194,7 @@ def _transcribe_chunk(vid, start, end, glossary):
     for attempt in range(2):
         resp, model = call("generateContent", body)
         try:
-            segs = json.loads(text_of(resp))["segments"]
+            segs = clean_segments(json.loads(text_of(resp))["segments"])
             break
         except Exception as e:  # malformed / truncated JSON (e.g. the model looped until MAX_TOKENS)
             fr = (resp.get("candidates") or [{}])[0].get("finishReason")
@@ -182,7 +204,7 @@ def _transcribe_chunk(vid, start, end, glossary):
             for alt in [m for m in MODELS[1:] if m not in EXHAUSTED]:
                 try:
                     resp, model = call("generateContent", body, model=alt)
-                    segs = json.loads(text_of(resp))["segments"]
+                    segs = clean_segments(json.loads(text_of(resp))["segments"])
                     log(f"  chunk {fmt(start)}-{fmt(end)}: recovered with {alt}")
                     break
                 except QuotaExhausted:
