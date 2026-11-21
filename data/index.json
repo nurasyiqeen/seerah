@@ -12,7 +12,9 @@
    "The Settlement of Jurhum and the Rebuilding of the Ka'bah",
    "The Call to Hajj and the Spread of Monotheism",
    "The Corruption of Tawhid and the Rise of Shirk"
-  ]
+  ],
+  "ready": true,
+  "synced": false
  },
  {
   "n": 2,
@@ -27,6 +29,746 @@
    "Conversion through the Prophecy of the Tawrah",
    "The Plot of Hudhayl and Honoring the Ka'bah",
    "The History of the Kiswah and the Return to Yemen"
-  ]
+  ],
+  "ready": true,
+  "synced": false
+ },
+ {
+  "n": 3,
+  "id": "Wh56zjoNpjI",
+  "title": "Christianity Comes to Najran",
+  "duration": 1907,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 4,
+  "id": "sk9dUp4JVcw",
+  "title": "\"In the Name of Allah, Lord of the boy\"",
+  "duration": 1862,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 5,
+  "id": "8ryn_Rm8l78",
+  "title": "\"Verily this House has a Lord Who will protect it!\"",
+  "duration": 2743,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 6,
+  "id": "qVPF-To4IK4",
+  "title": "Persian Rule of Yemen",
+  "duration": 2124,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 7,
+  "id": "hIKUDigcdfg",
+  "title": "Qusayy Ibn Kilaab Retakes Makkah",
+  "duration": 2046,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 8,
+  "id": "Enl9XvsFRIw",
+  "title": "A Ransom of 100 Camels",
+  "duration": 2078,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 9,
+  "id": "2zOMzYFsg7U",
+  "title": "The Birth of the Messenger ﷺ",
+  "duration": 2091,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 10,
+  "id": "mfdgUBMtyQs",
+  "title": "Childhood of the Messenger ﷺ",
+  "duration": 1991,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 11,
+  "id": "ui5g42yThtU",
+  "title": "Buhaira the Monk Meets Muhammad ﷺ",
+  "duration": 2223,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 12,
+  "id": "VxVNGgNg16U",
+  "title": "Harb Al-Fijar / Hilf Al-Fudool / Marriage to Khadijah",
+  "duration": 2436,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 13,
+  "id": "-lBuTvB-geE",
+  "title": "Rebuilding the Kabah",
+  "duration": 2597,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 14,
+  "id": "Zwe7i-krtpY",
+  "title": "The Descent of Revelation",
+  "duration": 2252,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 15,
+  "id": "XU-mUSW7MTs",
+  "title": "Early Stages of Dawah in Makkah",
+  "duration": 2502,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 16,
+  "id": "mrZGAbJ8iPk",
+  "title": "Efforts of Quraish to Stifle the Dawah",
+  "duration": 2338,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 17,
+  "id": "5wMDA6q1bj0",
+  "title": "The Plotting of Al-Waleed ibn Al-Mugheerah",
+  "duration": 2083,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 18,
+  "id": "1T6iQ5Tv_Ao",
+  "title": "Quraish Tries to Compromise",
+  "duration": 1940,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 19,
+  "id": "Pk9Js4BWWvU",
+  "title": "Conversion of Hamzah Ibn Abdul-Muttalib",
+  "duration": 2159,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 20,
+  "id": "Zd_sX4Mge_U",
+  "title": "Quraish Demands Miracles",
+  "duration": 3900,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 21,
+  "id": "4dXB83TGIuc",
+  "title": "Quraish Tortures the Early Muslims",
+  "duration": 2667,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 22,
+  "id": "FZMGP-u7X0g",
+  "title": "Hijrah to Abyssinia and the Conversion of Umar",
+  "duration": 3128,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 23,
+  "id": "HGIV5euQJ7Y",
+  "title": "Uqbah ibn Abi Mu'ayt Insults the Prophet",
+  "duration": 2028,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 24,
+  "id": "ZsRT_E_g-J0",
+  "title": "The Boycott",
+  "duration": 2221,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 25,
+  "id": "n1eHQsrXy7g",
+  "title": "The Messenger Goes to Taif",
+  "duration": 2034,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 26,
+  "id": "gIBE7UIuy6s",
+  "title": "Islam of the Jinn and Islam of Najashi",
+  "duration": 2391,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 27,
+  "id": "vJuMmLhjaRQ",
+  "title": "Israa and Mi'raj -- The Night Journey",
+  "duration": 2843,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 28,
+  "id": "V4j603Yh59o",
+  "title": "Presenting Islam to Different Tribes",
+  "duration": 1988,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 29,
+  "id": "PjxaSHisK-c",
+  "title": "The Ansar Pledge Loyalty / Quraish Plans Assassination",
+  "duration": 1743,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 30,
+  "id": "L82V65R12OY",
+  "title": "Hijrah - The Journey Begins",
+  "duration": 1951,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 31,
+  "id": "8YO6nmR8c5g",
+  "title": "On the Way to Madinah",
+  "duration": 1803,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 32,
+  "id": "hudY9nCnTNQ",
+  "title": "The Messenger Reaches Madinah",
+  "duration": 1871,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 33,
+  "id": "Xxvx3Uoi4eE",
+  "title": "The Amazing Story of Salman Al-Farisi",
+  "duration": 2392,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 34,
+  "id": "YkOBAFJX8IY",
+  "title": "Staying at the House of Abu Ayyub Al-Ansari",
+  "duration": 1448,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 35,
+  "id": "0o4pLzc4XC0",
+  "title": "Abdullah ibn Salam Accepts Islam",
+  "duration": 1427,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 36,
+  "id": "0lViNxJV76U",
+  "title": "Treaties of Madinah / Origin of the Adhan",
+  "duration": 1444,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 37,
+  "id": "FUbLUzKL4v0",
+  "title": "The Epidemic of Madinah",
+  "duration": 2138,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 38,
+  "id": "GY-of-DFmd4",
+  "title": "The Beginning of Jihad",
+  "duration": 2140,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 39,
+  "id": "k4H43HN2RC8",
+  "title": "Precursors to the Battle of Badr",
+  "duration": 2060,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 40,
+  "id": "9cy1UGSSK7Q",
+  "title": "Quraish Sets Out for War",
+  "duration": 2346,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 41,
+  "id": "fOIlCDZlpqM",
+  "title": "The Great Battle of Badr",
+  "duration": 3892,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 42,
+  "id": "QvbqCxGgWfQ",
+  "title": "The Aftermath of Badr and the Death of Abu Lahab",
+  "duration": 1533,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 43,
+  "id": "kffqQ0-s224",
+  "title": "The Prisoners of Badr",
+  "duration": 2014,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 44,
+  "id": "GQnmdPyq9lc",
+  "title": "Umayr ibn Wahb Accepts Islam",
+  "duration": 1557,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 45,
+  "id": "VOvm3OD6LhU",
+  "title": "The Expulsion of Banu Qaynuqaa",
+  "duration": 1453,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 46,
+  "id": "AwdXAW6cyRY",
+  "title": "Between Badr and Uhud",
+  "duration": 1458,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 47,
+  "id": "V_YXBfd1BbY",
+  "title": "The Battle of Uhud (Part 1)",
+  "duration": 2601,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 48,
+  "id": "gzAsjBLRahc",
+  "title": "The Battle of Uhud (Part 2)",
+  "duration": 2297,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 49,
+  "id": "7buGub9wK9o",
+  "title": "The Expedition of Hamraa Al-Asad",
+  "duration": 1724,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 50,
+  "id": "QgUaFyPpPGw",
+  "title": "Events After Uhud",
+  "duration": 1454,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 51,
+  "id": "v27f65g3BFs",
+  "title": "The Tragedies of Bir Ma’unah and Al-Rajee’",
+  "duration": 1987,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 52,
+  "id": "bCYLsqsRzJY",
+  "title": "The Expulsion of Banu An-Nadeer",
+  "duration": 1476,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 53,
+  "id": "atEWUCXFiUw",
+  "title": "Preparing for the Battle of Al-Khandaq",
+  "duration": 2233,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 54,
+  "id": "XKD3A-_zYTY",
+  "title": "The Battle of Al-Khandaq",
+  "duration": 3038,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 55,
+  "id": "IEnxtqa6CjY",
+  "title": "The Punishment of Bani Quraiżah",
+  "duration": 2860,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 56,
+  "id": "fZNFnZNp76s",
+  "title": "The Islam of Thumamah ibn Uthaal and the Famine of the Quraish",
+  "duration": 2228,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 57,
+  "id": "akYt3Vlszi4",
+  "title": "The Expeditions of Al-Ghabah, Dhul-Qassah, and Al-Ees",
+  "duration": 2199,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 58,
+  "id": "fHenS1cyYSA",
+  "title": "The Expedition of Bani Al-Mustaliq",
+  "duration": 2382,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 59,
+  "id": "v8Kmw56_AFM",
+  "title": "The Incident of the Slander",
+  "duration": 2203,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 60,
+  "id": "MiUwqaYNSrM",
+  "title": "The Messenger ﷺ Sets Out For Umrah",
+  "duration": 2734,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 61,
+  "id": "Um_JR9yTRw8",
+  "title": "The Treaty of Al-Hudaybiyyah",
+  "duration": 1971,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 62,
+  "id": "ZHKBGp1zrto",
+  "title": "The Hero Abu Baseer and the Army of Al-Ees",
+  "duration": 1731,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 63,
+  "id": "tu6uP90mxJ4",
+  "title": "The Messenger ﷺ Sets Out for Khaybar",
+  "duration": 1868,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 64,
+  "id": "RbC4SE4Z8Zs",
+  "title": "The Siege of Khaybar Begins",
+  "duration": 2370,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 65,
+  "id": "EaI9Lf6GXxU",
+  "title": "The Fortresses of Khaybar Start to Fall",
+  "duration": 1561,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 66,
+  "id": "saP5yMpk890",
+  "title": "Conclusion of the Siege of Khaybar",
+  "duration": 2610,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 67,
+  "id": "nkYfzld4OwI",
+  "title": "The Aftermath of Khaybar",
+  "duration": 1415,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 68,
+  "id": "xIk_EI22OK4",
+  "title": "Expeditions After Khaybar",
+  "duration": 1789,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 69,
+  "id": "9ON7ysLygCY",
+  "title": "Umrah Al-Qadha",
+  "duration": 1481,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 70,
+  "id": "vSj0I5Zchmw",
+  "title": "The Prophet ﷺ Invites Heraclius to Islam",
+  "duration": 2085,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 71,
+  "id": "UvoW_we-qeo",
+  "title": "The Messenger ﷺ Sends Letters to Kings and Rulers",
+  "duration": 2030,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 72,
+  "id": "BqGzDsHh_C8",
+  "title": "The Battle of Mu’tah",
+  "duration": 2179,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 73,
+  "id": "WEZkgNlWqmM",
+  "title": "The Expeditions of Dhat As-Salaasil and Al-Khabat",
+  "duration": 1470,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 74,
+  "id": "qWi93gMyA6E",
+  "title": "Quraish Breaches the Treaty of Hudaybiyyah",
+  "duration": 2859,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 75,
+  "id": "TMQGCK_ZOIA",
+  "title": "The Conquest of Makkah",
+  "duration": 3864,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 76,
+  "id": "O0FFyEAt8PE",
+  "title": "The Aftermath of the Conquest of Makkah",
+  "duration": 2443,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 77,
+  "id": "7WEtgsjvQYc",
+  "title": "The Battle of Hunayn",
+  "duration": 3234,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 78,
+  "id": "wUxsiwr96xI",
+  "title": "Distribution of the Spoils of Hunayn",
+  "duration": 2944,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 79,
+  "id": "6KUzTQiCjRw",
+  "title": "The Expedition of Tabuk",
+  "duration": 3193,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 80,
+  "id": "92v0ZT2eI54",
+  "title": "Exposure of the Hypocrites",
+  "duration": 2874,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 81,
+  "id": "oC3orsp3Tug",
+  "title": "The Emergence of Musaylimah Al-Kadhab",
+  "duration": 2661,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 82,
+  "id": "f6e3ijaeCKk",
+  "title": "The Delegation of Najran",
+  "duration": 2304,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 83,
+  "id": "jq9dZAxPHYo",
+  "title": "The Farewell Hajj",
+  "duration": 1536,
+  "overview": "",
+  "chapters": [],
+  "ready": false
+ },
+ {
+  "n": 84,
+  "id": "VYtJnIJIFiQ",
+  "title": "Conclusion - The Messenger Passes Away",
+  "duration": 2951,
+  "overview": "",
+  "chapters": [],
+  "ready": false
  }
 ]

@@ -58,6 +58,10 @@ header.top h1 small{display:block;font-weight:500;font-size:12px;color:var(--mut
 .progress{height:3px;border-radius:2px;background:var(--line);margin-top:8px;overflow:hidden}
 .progress i{display:block;height:100%;background:var(--accent)}
 .home-tabs{display:flex;gap:8px;margin:4px 0 12px}
+.ep.soon{background:transparent;border-style:dashed}
+.ep.soon .num{background:var(--line);color:var(--muted)}
+.ep.soon h3{color:var(--muted);font-weight:600;font-size:15px}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.02em;padding:1px 8px;border-radius:99px;background:var(--term-soft);color:var(--term)}
 .resume{display:grid;grid-template-columns:132px 1fr;gap:14px;align-items:center;margin-top:14px;padding:12px;border-radius:16px;background:var(--accent-soft);border:1px solid var(--accent);text-decoration:none;color:inherit}
 .resume-thumb{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--line)}
 .resume-thumb img{width:100%;height:100%;object-fit:cover;display:block}
@@ -187,6 +191,8 @@ document.body.classList.toggle('show-ts', prefs.times);
 document.documentElement.style.setProperty('--fs', prefs.fs + 'px');
 
 let INDEX = [], GLOSS = [], GLOSS_MAP = {};
+const isReady = e => e.ready !== false;
+const READY = () => INDEX.filter(isReady);
 const epCache = {};
 async function getJSON(u) { const r = await fetch(u); if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); }
 async function loadEp(n) { return epCache[n] ||= getJSON(`data/episodes/${String(n).padStart(3,'0')}.json`); }
@@ -216,17 +222,19 @@ function viewHome(tab='episodes') {
   body.innerHTML = `
     <input class="search" id="q" type="search" placeholder="Search titles, chapters and transcripts" autocomplete="off">
     ${continueCard(last)}
-    <div class="sec-head"><h2>All episodes</h2><span id="epcount">${INDEX.length} ready</span></div>
+    <div class="sec-head"><h2>All episodes</h2><span id="epcount"></span></div>
     <ul class="eplist" id="eps"></ul>`;
   const draw = (items, hits={}) => {
-    $('#epcount').textContent = items === INDEX ? `${INDEX.length} ready` : `${items.length} found`;
+    $('#epcount').textContent = items === INDEX ? `${READY().length} of ${INDEX.length} ready` : `${items.length} found`;
     $('#eps').innerHTML = items.map(e => {
+      if (!isReady(e)) return `<li><div class="ep soon"><span class="num">${e.n}</span>
+        <span><h3>${esc(e.title)}</h3><span class="meta"><span>${fmt(e.duration)}</span><span class="badge">Transcript coming soon</span></span></span></div></li>`;
       const p = prog[e.n] || 0, pct = Math.min(100, Math.round(p / e.duration * 100));
       return `<li><a class="ep ${pct>=95?'done':''}" href="#ep-${e.n}">
         <span class="num">${e.n}</span>
         <span><h3>${esc(e.title)}</h3><p>${esc(e.overview)}</p>
         ${hits[e.n] ? `<p style="margin-top:6px"><mark>${esc(hits[e.n])}</mark></p>` : ''}
-        <span class="meta"><span>${fmt(e.duration)}</span><span>${e.chapters.length} chapters</span>${pct?`<span>${pct>=95?'Finished':pct+'% watched'}</span>`:''}</span>
+        <span class="meta"><span>${fmt(e.duration)}</span><span>${e.chapters.length} chapters</span>${e.synced === false ? '<span class="badge">Timing being refined</span>' : ''}${pct?`<span>${pct>=95?'Finished':pct+'% watched'}</span>`:''}</span>
         ${pct && pct<95 ? `<div class="progress"><i style="width:${pct}%"></i></div>` : ''}</span></a></li>`;
     }).join('') || `<li class="empty">No matches</li>`;
   };
@@ -237,7 +245,7 @@ function viewHome(tab='episodes') {
 async function searchAll(q, draw) {
   if (!q) return draw(INDEX);
   const ql = q.toLowerCase(), hits = {}, out = [];
-  for (const e of INDEX) {
+  for (const e of READY()) {
     let hit = (e.title + ' ' + e.overview + ' ' + e.chapters.join(' ')).toLowerCase().includes(ql);
     if (!hit) {
       const ep = await loadEp(e.n).catch(()=>null);
@@ -291,9 +299,9 @@ function renderGlossary(el, list, series) {
 let player, ticker, EP, segEls = [], curSeg = -1, curChap = -1, userScrolled = false, scrollTimer;
 async function viewEpisode(n) {
   const meta = INDEX.find(e => e.n === n);
-  if (!meta) { location.hash = ''; return; }
+  if (!meta || !isReady(meta)) { location.hash = ''; return; }
   EP = await loadEp(n);
-  const i = INDEX.indexOf(meta), prev = INDEX[i-1], next = INDEX[i+1];
+  const R = READY(), i = R.indexOf(meta), prev = R[i-1], next = R[i+1];
   $('#app').innerHTML = `
     <header class="top">
       <a class="iconbtn" href="#" aria-label="All episodes">←</a>
