@@ -9,6 +9,15 @@
   ]
  },
  {
+  "translit": "Abhash",
+  "arabic": "أحباش",
+  "category": "tribe",
+  "meaning": "The Abyssinians or Ethiopians who were predicted to conquer Yemen.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "Abu Jahl",
   "arabic": "أَبُو جَهْل",
   "category": "person",
@@ -36,6 +45,15 @@
   ]
  },
  {
+  "translit": "al-Madinah al-Nabawiyyah",
+  "arabic": "الْمَدِينَة النَّبَوِيَّة",
+  "category": "place",
+  "meaning": "The Prophetic City; the name given to Yathrib after the migration of the Prophet ﷺ.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "Amr ibn Luhayy",
   "arabic": "عمرو بن لحي",
   "category": "person",
@@ -59,7 +77,8 @@
   "category": "term",
   "meaning": "Verses of the Quran (plural of ayah).",
   "episodes": [
-   1
+   1,
+   2
   ]
  },
  {
@@ -69,6 +88,15 @@
   "meaning": "The act of inviting people to Islam.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Firaun",
+  "arabic": "فرعون",
+  "category": "term",
+  "meaning": "The title used for the ancient rulers of Egypt (Pharaoh).",
+  "episodes": [
+   2
   ]
  },
  {
@@ -87,6 +115,33 @@
   "meaning": "The annual major pilgrimage to Makkah.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Hijaz",
+  "arabic": "حجاز",
+  "category": "place",
+  "meaning": "The western region of the Arabian Peninsula that includes Makkah and Madinah.",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "Hirah",
+  "arabic": "حيرة",
+  "category": "place",
+  "meaning": "An ancient city in south-central Iraq where Rabiah ibn Nasr sent his family.",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "Hudhayl",
+  "arabic": "هذيل",
+  "category": "tribe",
+  "meaning": "A tribe in the Hijaz region that attempted to trick Tibban As'ad into attacking the Ka'bah.",
+  "episodes": [
+   2
   ]
  },
  {
@@ -153,6 +208,15 @@
   ]
  },
  {
+  "translit": "Khaybar",
+  "arabic": "خيبر",
+  "category": "place",
+  "meaning": "An oasis north of Madinah that was a major Jewish settlement in pre-Islamic times.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "khuluq",
   "arabic": "خُلُق",
   "category": "term",
@@ -171,12 +235,48 @@
   ]
  },
  {
+  "translit": "Kisra",
+  "arabic": "كسرى",
+  "category": "term",
+  "meaning": "The title for the emperors of the Persian Empire (Chosroes).",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "Kiswah",
+  "arabic": "كسوة",
+  "category": "term",
+  "meaning": "The ceremonial cloth that covers the Ka'bah.",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "kuffar",
+  "arabic": "كفار",
+  "category": "term",
+  "meaning": "Disbelievers or those who reject the message of Islam.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "la ilaha illa Allah",
   "arabic": "لَا إِلَهَ إِلَّا اللَّه",
   "category": "phrase",
   "meaning": "There is no god but Allah; the testimony of faith.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Madinah",
+  "arabic": "مدينة",
+  "category": "place",
+  "meaning": "The city originally known as Yathrib, which became the center of the first Islamic state.",
+  "episodes": [
+   2
   ]
  },
  {
@@ -207,6 +307,15 @@
   ]
  },
  {
+  "translit": "mushrikin",
+  "arabic": "مشركين",
+  "category": "term",
+  "meaning": "Polytheists; those who associate partners with Allah.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "musta'rab",
   "arabic": "مستعرب",
   "category": "term",
@@ -225,12 +334,48 @@
   ]
  },
  {
+  "translit": "Najashi",
+  "arabic": "نجاشي",
+  "category": "term",
+  "meaning": "The title for the kings of Abyssinia (Ethiopia/Negus).",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "Najran",
+  "arabic": "نجران",
+  "category": "place",
+  "meaning": "A city on the border of Yemen and Saudi Arabia, historically known as a Christian center.",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "Qaysar",
+  "arabic": "قيصر",
+  "category": "term",
+  "meaning": "The title for the emperors of the Roman/Byzantine Empire (Caesar).",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "Quraysh",
   "arabic": "قُرَيْش",
   "category": "tribe",
   "meaning": "The leading tribe of Makkah to which the Prophet ﷺ belonged.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Rabiah ibn Nasr",
+  "arabic": "ربيعة بن نصر",
+  "category": "person",
+  "meaning": "An ancient King of Yemen whose dream predicted the end of Yemeni rule to the Ethiopians.",
+  "episodes": [
+   2
   ]
  },
  {
@@ -270,6 +415,15 @@
   ]
  },
  {
+  "translit": "Sham",
+  "arabic": "شام",
+  "category": "place",
+  "meaning": "The region of Greater Syria, including modern Syria, Jordan, Lebanon, and Palestine.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "shirk",
   "arabic": "شرك",
   "category": "term",
@@ -297,12 +451,48 @@
   ]
  },
  {
+  "translit": "tawaf",
+  "arabic": "طواف",
+  "category": "term",
+  "meaning": "The ritual of circumambulating the Ka'bah.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "tawhid",
   "arabic": "توحيد",
   "category": "term",
   "meaning": "The oneness and uniqueness of Allah.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Tawrah",
+  "arabic": "توراة",
+  "category": "term",
+  "meaning": "The Torah; the revelation given to the Prophet Musa (Moses) containing prophecies of the final Messenger.",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "Tibban As'ad",
+  "arabic": "تبان أسعد",
+  "category": "person",
+  "meaning": "A powerful Tubba (King) of Yemen who converted to Judaism and provided the first Kiswah.",
+  "episodes": [
+   2
+  ]
+ },
+ {
+  "translit": "Tubba",
+  "arabic": "تبع",
+  "category": "term",
+  "meaning": "The honorary title for the kings of the Himyarite Kingdom in Yemen.",
+  "episodes": [
+   2
   ]
  },
  {
@@ -315,12 +505,30 @@
   ]
  },
  {
+  "translit": "Yathrib",
+  "arabic": "يثرب",
+  "category": "place",
+  "meaning": "The ancient name of the city of Madinah.",
+  "episodes": [
+   2
+  ]
+ },
+ {
   "translit": "Yawm al-Qiyamah",
   "arabic": "يَوْم الْقِيَامَة",
   "category": "event",
   "meaning": "The Day of Resurrection.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Yemen",
+  "arabic": "اليمن",
+  "category": "place",
+  "meaning": "The country at the southern end of the Arabian Peninsula, home of the original Arabs.",
+  "episodes": [
+   2
   ]
  },
  {
