@@ -15,6 +15,9 @@ import time
 
 import requests
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import align  # noqa: E402
+
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:{method}"
 MODELS = ["gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash", "gemini-3.7-flash"]  # each has its own free daily quota; quality checks guard output
 TEXT_MODELS = MODELS + ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]  # for text-only summaries
@@ -424,6 +427,8 @@ def process(out_dir, ep_no, vid):
         "glossary": sorted(analysis["glossary"], key=lambda e: e["translit"].lower()),
         "segments": [{k: v for k, v in s.items() if k != "orig"} for s in segs],
     }
+    cov = align.retime_episode(ep)
+    log(f"  timing: " + (f"aligned to YouTube captions ({cov:.0%} anchored)" if cov is not None else "no captions file; using Gemini timestamps"))
     os.makedirs(os.path.dirname(path), exist_ok=True)
     json.dump(ep, open(path, "w"), ensure_ascii=False, indent=1)
     json.dump(merge_glossary(glossary, analysis["glossary"], ep_no), open(gpath, "w"), ensure_ascii=False, indent=1)
