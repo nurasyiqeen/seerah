@@ -79,7 +79,7 @@ header.top h1 small{display:block;font-weight:500;font-size:12px;color:var(--mut
 .nowbar .chap{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
 .nowbar .chap b{color:var(--ink);font-weight:600}
 .speed{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:4px 8px;font-size:12px;font-weight:700;cursor:pointer;font-variant-numeric:tabular-nums}
-.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-top:6px;overflow-x:auto;scrollbar-width:none}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-top:6px;overflow-x:auto;scrollbar-width:none;position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--stage-h,0px));z-index:4;background:var(--bg)}
 .tabs button{border:0;background:none;padding:10px 12px;font-weight:600;font-size:14px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
 .tabs button[aria-selected="true"]{color:var(--accent);border-color:var(--accent)}
 .panel{padding:12px 0 120px}
@@ -91,7 +91,7 @@ header.top h1 small{display:block;font-weight:500;font-size:12px;color:var(--mut
 
 /* transcript */
 .transcript{display:flex;flex-direction:column;gap:2px;font-size:var(--fs);line-height:1.65}
-.seg{display:grid;grid-template-columns:1fr;gap:8px;padding:6px 10px;border-radius:10px;cursor:pointer;scroll-margin:40vh}
+.seg{display:grid;grid-template-columns:1fr;gap:8px;padding:6px 10px;border-radius:10px;cursor:pointer}
 .seg .ts{display:none;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:.35em}
 body.show-ts .seg{grid-template-columns:46px 1fr}
 body.show-ts .seg .ts{display:block}
@@ -161,6 +161,7 @@ mark{background:var(--term-soft);color:inherit;border-radius:3px}
   .stage{top:12px;padding-top:4px}
   .panel{padding-bottom:40px}
   .side{max-height:calc(100vh - 24px);overflow:auto;position:sticky;top:12px}
+  .tabs{top:0}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
@@ -323,6 +324,8 @@ async function viewEpisode(n) {
   bindTheme();
   GLOSS_MAP = {}; [...GLOSS, ...EP.glossary].forEach(g => GLOSS_MAP[g.translit.toLowerCase()] = g);
   document.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => showTab(b.dataset.tab));
+  const stage = $('.stage');
+  new ResizeObserver(() => document.documentElement.style.setProperty('--stage-h', (matchMedia('(min-width:960px)').matches ? 0 : stage.offsetHeight) + 'px')).observe(stage);
   $('#speed').onclick = () => {
     const opts = [0.75, 1, 1.25, 1.5, 1.75, 2]; prefs.speed = opts[(opts.indexOf(prefs.speed)+1) % opts.length];
     savePrefs(); $('#speed').textContent = prefs.speed + '×'; player?.setPlaybackRate?.(prefs.speed);
@@ -384,6 +387,11 @@ function showTab(tab) {
   } else {
     renderGlossary(el, EP.glossary, false);
   }
+  // after switching tabs, show the new tab from its top (just under the pinned video + tabs)
+  if (!matchMedia('(min-width:960px)').matches) {
+    const covered = $('.tabs').getBoundingClientRect().bottom, top = el.getBoundingClientRect().top + scrollY - covered;
+    if (scrollY > top) scrollTo({ top });
+  }
   tick(true);
 }
 
@@ -436,8 +444,15 @@ function tick(force) {
   if (!segEls.length) return;
   if (i !== curSeg || force) {
     segEls[curSeg]?.classList.remove('now'); curSeg = i; segEls[i]?.classList.add('now');
-    if (prefs.follow && !userScrolled && segEls[i]) segEls[i].scrollIntoView({ block: 'center', behavior: force ? 'auto' : 'smooth' });
+    if (prefs.follow && !userScrolled && segEls[i]) scrollToSeg(segEls[i], force);
   }
+}
+// keep the live line about a third of the way down the area below the pinned video + tabs
+function scrollToSeg(el, instant) {
+  if (matchMedia('(min-width:960px)').matches) return el.scrollIntoView({ block: 'center', behavior: instant ? 'auto' : 'smooth' });
+  const tabs = $('.tabs'), covered = tabs ? tabs.getBoundingClientRect().bottom : 0;
+  const y = el.getBoundingClientRect().top + scrollY - covered - (innerHeight - covered) * 0.3;
+  scrollTo({ top: Math.max(0, y), behavior: instant ? 'auto' : 'smooth' });
 }
 // pause auto-scroll while the user reads elsewhere
 ['touchmove','wheel'].forEach(ev => addEventListener(ev, () => {
