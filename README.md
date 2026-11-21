@@ -9,3 +9,7 @@ Arabic names and terms (transliteration + Arabic script).
 - `pipeline/process.py` – generates the data with the Gemini API, which watches the public YouTube
   video directly. Usage: `python3 pipeline/process.py data 3:VIDEO_ID 4:VIDEO_ID`
   (needs a Gemini API key sent as the `x-goog-api-key` header).
+
+Qur'an text, transliteration and English translation in `pipeline/quran_data.json` come from the
+[quran-json](https://github.com/risan/quran-json) project (Uthmani text from QuranEnc, transliteration from
+Tanzil, Sahih International translation), licensed CC BY-SA 4.0.

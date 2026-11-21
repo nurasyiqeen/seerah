@@ -91,6 +91,7 @@ body.hide-ar .term .arw{display:none}
 .recite .ar{display:block;font-family:var(--ar-display);font-size:1.45em;line-height:1.9;text-align:right}
 .recite .tl{display:block;font-style:italic;color:var(--muted);font-size:.92em;margin-top:4px}
 .recite .en{display:block;margin-top:4px}
+.recite .ref{display:block;margin-top:6px;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--term)}
 mark{background:var(--term-soft);color:inherit;border-radius:3px}
 
 /* chapters */
@@ -305,7 +306,7 @@ function showTab(tab) {
       <div class="transcript" id="tr">${EP.segments.map((s, i) => {
         const ch = chStarts.has(i) ? `<div class="chap-mark">${esc(EP.chapters[chStarts.get(i)].title)}</div>` : '';
         const body = s.kind === 'arabic'
-          ? `<div class="recite"><span class="ar" lang="ar">${esc(s.ar)}</span><span class="tl">${esc(s.translit)}</span><span class="en">${esc(s.en)}</span></div>`
+          ? `<div class="recite">${s.ar ? `<span class="ar" lang="ar">${esc(s.ar)}</span>` : ''}<span class="tl">${esc(s.translit)}</span><span class="en">${esc(s.en)}</span>${s.ref ? `<span class="ref">${esc(s.ref)}</span>` : ''}</div>`
           : renderText(s.text);
         return `${ch}<div class="seg" data-i="${i}"><span class="ts">${fmt(s.t)}</span><span class="txt">${body}</span></div>`;
       }).join('')}</div>`;

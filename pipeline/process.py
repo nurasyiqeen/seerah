@@ -16,7 +16,9 @@ import time
 import requests
 
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:{method}"
-MODELS = ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-flash-latest", "gemini-3.7-flash"]
+MODELS = ["gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash", "gemini-3.7-flash"]  # each has its own free daily quota; quality checks guard output
+TEXT_MODELS = MODELS + ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]  # for text-only summaries
+MIN_WPM = 110
 CHUNK = 600  # seconds per transcription request
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache")
 os.makedirs(CACHE, exist_ok=True)
@@ -31,12 +33,22 @@ def log(*a):
     print(time.strftime("%H:%M:%S"), *a, flush=True)
 
 
-def call(method, body, model=None, timeout=600):
-    """POST with retries across models on overload / quota errors."""
-    models = [model] if model else MODELS
+class QuotaExhausted(Exception):
+    pass
+
+
+EXHAUSTED = set()  # models whose free daily quota is used up in this run
+
+
+def call(method, body, model=None, timeout=300, pool=None):
+    """POST with retries; skips models whose daily quota is exhausted."""
+    pool = [model] if model else (pool or MODELS)
     last = None
-    for attempt in range(8):
-        m = models[attempt % len(models)]
+    for attempt in range(20):
+        live = [m for m in pool if m not in EXHAUSTED]
+        if not live:
+            raise QuotaExhausted("daily free quota used up for: " + ", ".join(pool))
+        m = live[attempt % len(live)]
         try:
             r = requests.post(API.format(model=m, method=method), json=body, timeout=timeout)
         except requests.RequestException as e:
@@ -46,8 +58,12 @@ def call(method, body, model=None, timeout=600):
         if r.status_code == 200:
             return r.json(), m
         last = f"{r.status_code} {r.text[:300]}"
+        if r.status_code == 429 and "per day" in r.text:
+            log(f"  {m}: daily quota used up; switching model")
+            EXHAUSTED.add(m)
+            continue
         if r.status_code in (429, 500, 502, 503, 504):
-            log(f"  retry ({m}): {last[:120]}")
+            log(f"  retry ({m}): {last[:60]}")
             time.sleep(min(10 * (attempt + 1), 60))
             continue
         raise RuntimeError(last)
@@ -62,7 +78,7 @@ def video_part(vid, start=None, end=None):
 
 
 def duration_seconds(vid):
-    d, _ = call("countTokens", {"contents": [{"parts": [video_part(vid)]}]}, model=MODELS[0], timeout=120)
+    d, _ = call("countTokens", {"contents": [{"parts": [video_part(vid)]}]}, timeout=120)
     audio = next(x["tokenCount"] for x in d["promptTokensDetails"] if x["modality"] == "AUDIO")
     return audio / 32.0  # Gemini bills audio at 32 tokens/second
 
@@ -82,7 +98,10 @@ SEG_SCHEMA = {
                 "type": "object",
                 "properties": {
                     "t": {"type": "number", "description": "start time, seconds from the start of the FULL video"},
-                    "kind": {"type": "string", "enum": ["speech", "arabic"]},
+                    "kind": {"type": "string", "enum": ["speech", "arabic", "quran"]},
+                    "surah": {"type": "integer", "description": "for quran: surah number 1-114"},
+                    "ayah_from": {"type": "integer"},
+                    "ayah_to": {"type": "integer"},
                     "text": {"type": "string", "description": "for speech: the English sentence(s) with [[translit|arabic]] markup"},
                     "ar": {"type": "string", "description": "for arabic: the Arabic text with full tashkeel where known"},
                     "translit": {"type": "string", "description": "for arabic: transliteration"},
@@ -107,7 +126,9 @@ Output rules:
 2. kind "speech": English speech. Remove filler ("um", "uh") and false starts but keep every meaningful word.
    Wrap EVERY Arabic word or phrase (names of people, tribes, places, Islamic terms, short phrases like insha'Allah, honorific phrases) in markup [[transliteration|Arabic script]], e.g. [[Abu Talib|أبو طالب]], [[Quraysh|قريش]], [[tawakkul|توكل]], [[insha'Allah|إن شاء الله]].
    Use a clear, conventional English transliteration (no diacritic dots), and spell each name/term the same way every time. Honorifics after the Prophet's name: write [[ṣallallāhu ʿalayhi wa sallam|ﷺ]] as just ﷺ. Common words "Allah" and "Prophet" may stay plain.
-3. kind "arabic": when the speaker recites Arabic at length (Qur'an verses, hadith in Arabic, du'a, poetry, opening khutbah). Give "ar" (accurate Arabic with harakat; for Qur'an use the exact Uthmani wording and add the surah:ayah reference in "en"), "translit", and "en" (English meaning). If the speaker then translates it himself, transcribe his translation as a separate speech segment.
+3. kind "quran": when the speaker recites a Qur'an verse, do NOT write the verse text. Only identify it: "surah" (number), "ayah_from", "ayah_to". The exact text is filled in later from a verified Mushaf.
+   kind "arabic": other Arabic recited at length (hadith wording, du'a, poetry, opening khutbah). Do NOT write it in Arabic script: give only "translit" (transliteration) and "en" (English meaning). Leave "ar" empty.
+   If the speaker then translates or explains it himself, transcribe that as separate speech segments.
 4. Be extremely careful with Arabic names and terms: use your knowledge of the Seerah to identify the correct person/place even if the pronunciation is unclear.
 5. Preferred spellings already used in this series (keep these consistent):
 {g}
@@ -123,9 +144,19 @@ def transcribe_chunk(vid, start, end, glossary):
     cache = os.path.join(CACHE, f"{vid}_{int(start)}.json")
     if os.path.exists(cache):
         return json.load(open(cache)), {}
-    segs, usage = _transcribe_chunk(vid, start, end, glossary)
-    json.dump(segs, open(cache, "w"), ensure_ascii=False)
-    return segs, usage
+    # Completeness check: a full verbatim transcript runs ~140-170 words/min for this speaker.
+    best, best_wpm = None, -1
+    for attempt in range(4):
+        segs, usage = _transcribe_chunk(vid, start, end, glossary)
+        words = sum(len((s.get("text") or s.get("en") or "").split()) for s in segs)
+        wpm = words / max((end - start) / 60, 0.5)
+        if wpm > best_wpm:
+            best, best_wpm = segs, wpm
+        if wpm >= MIN_WPM:
+            break
+        log(f"  chunk {fmt(start)}: only {wpm:.0f} words/min, looks incomplete; retrying")
+    json.dump(best, open(cache, "w"), ensure_ascii=False)
+    return best, usage
 
 
 def _transcribe_chunk(vid, start, end, glossary):
@@ -135,19 +166,39 @@ def _transcribe_chunk(vid, start, end, glossary):
             "mediaResolution": "MEDIA_RESOLUTION_LOW",
             "responseMimeType": "application/json",
             "responseSchema": SEG_SCHEMA,
-            "temperature": 0.2,
             "maxOutputTokens": 32000,
         },
     }
-    for attempt in range(3):
+    for attempt in range(2):
         resp, model = call("generateContent", body)
         try:
             segs = json.loads(text_of(resp))["segments"]
             break
-        except Exception as e:  # malformed / truncated JSON
-            log(f"  chunk {fmt(start)} parse error ({e}); retrying")
+        except Exception as e:  # malformed / truncated JSON (e.g. the model looped until MAX_TOKENS)
+            fr = (resp.get("candidates") or [{}])[0].get("finishReason")
+            log(f"  chunk {fmt(start)}-{fmt(end)} unusable response (finish={fr}, {e!r:.60}); retrying")
     else:
-        raise RuntimeError(f"chunk {start} failed to parse")
+        if end - start <= 150:
+            for alt in [m for m in MODELS[1:] if m not in EXHAUSTED]:
+                try:
+                    resp, model = call("generateContent", body, model=alt)
+                    segs = json.loads(text_of(resp))["segments"]
+                    log(f"  chunk {fmt(start)}-{fmt(end)}: recovered with {alt}")
+                    break
+                except QuotaExhausted:
+                    raise
+                except Exception as e:
+                    log(f"  chunk {fmt(start)}-{fmt(end)}: {alt} also failed ({e!r:.60})")
+            else:
+                log(f"  chunk {fmt(start)}-{fmt(end)}: GAP - marking as unavailable")
+                return [{"t": float(start), "kind": "speech",
+                         "text": "[Transcript unavailable for this part. Please listen to the video.]", "gap": True}], {}
+        else:
+            mid = start + (end - start) / 2
+            log(f"  chunk {fmt(start)}-{fmt(end)}: splitting into two halves")
+            a, _ = _transcribe_chunk(vid, start, mid, glossary)
+            b, u = _transcribe_chunk(vid, mid, end, glossary)
+            return a + b, u
     # Timestamp sanity: if the model counted from the clip start instead of the video start, shift.
     ts = [s["t"] for s in segs if isinstance(s.get("t"), (int, float))]
     if start > 0 and ts and max(ts) <= (end - start) + 5 and min(ts) < start - 30:
@@ -245,12 +296,11 @@ TRANSCRIPT:
         "generationConfig": {
             "responseMimeType": "application/json",
             "responseSchema": ANALYSIS_SCHEMA,
-            "temperature": 0.3,
             "maxOutputTokens": 32000,
         },
     }
     for attempt in range(3):
-        resp, model = call("generateContent", body)
+        resp, model = call("generateContent", body, pool=TEXT_MODELS)
         try:
             out = json.loads(text_of(resp))
             log(f"  analysis via {model}: {len(out['chapters'])} chapters, {len(out['glossary'])} terms, "
@@ -296,6 +346,28 @@ def merge_glossary(series, terms, ep_no):
     return series
 
 
+QURAN = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "quran_data.json")))
+ARABIC_DIGITS = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
+
+
+def fill_quran(s):
+    """Replace a {kind: quran, surah, ayah_from, ayah_to} reference with verified text."""
+    if s.get("kind") != "quran":
+        return s
+    sur = QURAN.get(str(s.get("surah")))
+    a, b = s.get("ayah_from") or 0, s.get("ayah_to") or s.get("ayah_from") or 0
+    if not sur or not (1 <= a <= b <= len(sur["v"])) or b - a > 15:
+        return {"t": s["t"], "kind": "speech", "text": ""}  # unidentifiable: drop
+    vs = sur["v"][a - 1:b]
+    return {
+        "t": s["t"], "kind": "arabic",
+        "ar": " ".join(f"{v[0]} ﴿{str(a + i).translate(ARABIC_DIGITS)}﴾" for i, v in enumerate(vs)),
+        "translit": " ".join(v[1] for v in vs),
+        "en": " ".join(v[2] for v in vs),
+        "ref": f"Qur'an, {sur['name']} {s['surah']}:{a}" + (f"-{b}" if b > a else ""),
+    }
+
+
 # ---------------------------------------------------------------- driver
 def process(out_dir, ep_no, vid):
     path = os.path.join(out_dir, "episodes", f"{ep_no:03d}.json")
@@ -309,10 +381,10 @@ def process(out_dir, ep_no, vid):
     windows = [(s, min(s + CHUNK, dur)) for s in range(0, int(dur), CHUNK)]
     if len(windows) > 1 and windows[-1][1] - windows[-1][0] < 60:  # fold a tiny tail into the previous chunk
         windows[-2] = (windows[-2][0], windows[-1][1]); windows.pop()
-    with cf.ThreadPoolExecutor(3) as ex:
+    with cf.ThreadPoolExecutor(2) as ex:
         results = list(ex.map(lambda w: transcribe_chunk(vid, w[0], w[1], glossary), windows))
-    segs = [s for r, _ in results for s in r]
-    segs = [s for s in segs if (s.get("text") or s.get("ar"))]
+    segs = [fill_quran(s) for r, _ in results for s in r]
+    segs = [s for s in segs if (s.get("text") or s.get("ar") or s.get("translit"))]
     analysis = analyse(ep_no, segs, glossary)
     for c in analysis.get("corrections") or []:
         if 0 <= c["index"] < len(segs) and segs[c["index"]]["kind"] == "speech" and c["text"].strip():
@@ -351,5 +423,10 @@ if __name__ == "__main__":
     os.makedirs(out, exist_ok=True)
     for arg in sys.argv[2:]:
         n, vid = arg.split(":", 1)
-        process(out, int(n), vid)  # sequential so the series glossary grows episode by episode
-    build_index(out)
+        try:
+            process(out, int(n), vid)  # sequential so the series glossary grows episode by episode
+        except QuotaExhausted as e:
+            log(f"STOPPED: {e}. Finished chunks are cached; re-run tomorrow to continue.")
+            break
+    if os.path.isdir(os.path.join(out, "episodes")):
+        build_index(out)

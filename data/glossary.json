@@ -1,0 +1,335 @@
+[
+ {
+  "translit": "Abdul Muttalib",
+  "arabic": "عَبْد الْمُطَّلِب",
+  "category": "person",
+  "meaning": "The grandfather of the Prophet ﷺ and leader of Quraysh.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Abu Jahl",
+  "arabic": "أَبُو جَهْل",
+  "category": "person",
+  "meaning": "One of the fiercest opponents of Islam in Makkah.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Abu Talib",
+  "arabic": "أَبُو طَالِب",
+  "category": "person",
+  "meaning": "The Prophet's ﷺ uncle who protected him but died without accepting Islam.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "al-Hajar al-Aswad",
+  "arabic": "الحجر الأسود",
+  "category": "term",
+  "meaning": "The Black Stone set in the corner of the Ka'bah.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Amr ibn Luhayy",
+  "arabic": "عمرو بن لحي",
+  "category": "person",
+  "meaning": "The leader of Khuza'ah credited with introducing idol worship to Arabia.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "asbab al-nuzul",
+  "arabic": "أَسْبَاب النُّزُول",
+  "category": "term",
+  "meaning": "The historical circumstances and reasons for the revelation of Quranic verses.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "ayat",
+  "arabic": "آيَات",
+  "category": "term",
+  "meaning": "Verses of the Quran (plural of ayah).",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "dawah",
+  "arabic": "دَعْوَة",
+  "category": "term",
+  "meaning": "The act of inviting people to Islam.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Hajar",
+  "arabic": "هاجر",
+  "category": "person",
+  "meaning": "The wife of Ibrahim (AS) and mother of Ismail (AS).",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Hajj",
+  "arabic": "حج",
+  "category": "event",
+  "meaning": "The annual major pilgrimage to Makkah.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Ibrahim",
+  "arabic": "إبراهيم",
+  "category": "person",
+  "meaning": "The Prophet Abraham (AS), known as the Father of the Prophets.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Iman",
+  "arabic": "إيمان",
+  "category": "term",
+  "meaning": "Faith or belief in the heart.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Isaf",
+  "arabic": "إساف",
+  "category": "person",
+  "meaning": "A man turned to stone for immorality in the Ka'bah, later worshipped as an idol.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Ismail",
+  "arabic": "إسماعيل",
+  "category": "person",
+  "meaning": "The Prophet Ishmael (AS), son of Ibrahim (AS) and ancestor of the Prophet Muhammad ﷺ.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Jahiliyyah",
+  "arabic": "جاهلية",
+  "category": "term",
+  "meaning": "The pre-Islamic period of ignorance in Arabia.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Jurhum",
+  "arabic": "جرهم",
+  "category": "tribe",
+  "meaning": "The Yemeni tribe that was the first to settle in the valley of Makkah.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Ka'bah",
+  "arabic": "كعبة",
+  "category": "place",
+  "meaning": "The cubic House of Allah in Makkah toward which Muslims pray.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "khuluq",
+  "arabic": "خُلُق",
+  "category": "term",
+  "meaning": "Character, ethics, or moral disposition.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Khuza'ah",
+  "arabic": "خزاعة",
+  "category": "tribe",
+  "meaning": "The tribe that took control of Makkah from Jurhum and eventually introduced idols.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "la ilaha illa Allah",
+  "arabic": "لَا إِلَهَ إِلَّا اللَّه",
+  "category": "phrase",
+  "meaning": "There is no god but Allah; the testimony of faith.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Makkah",
+  "arabic": "مَكَّة",
+  "category": "place",
+  "meaning": "The holiest city in Islam where the Ka'bah is located.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Maqam Ibrahim",
+  "arabic": "مقام إبراهيم",
+  "category": "place",
+  "meaning": "The station of Ibrahim; the stone upon which Ibrahim (AS) stood while building the Ka'bah.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Marwah",
+  "arabic": "المروة",
+  "category": "place",
+  "meaning": "One of the two hills in Makkah associated with the Sa'i ritual.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "musta'rab",
+  "arabic": "مستعرب",
+  "category": "term",
+  "meaning": "Arabized Arabs; refers to the lineage of Ismail (AS) who adopted the Arabic language.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Na'ilah",
+  "arabic": "نائلة",
+  "category": "person",
+  "meaning": "A woman turned to stone for immorality in the Ka'bah, later worshipped as an idol.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Quraysh",
+  "arabic": "قُرَيْش",
+  "category": "tribe",
+  "meaning": "The leading tribe of Makkah to which the Prophet ﷺ belonged.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Rasulullah",
+  "arabic": "رسول الله",
+  "category": "phrase",
+  "meaning": "The Messenger of Allah; the primary title used for Prophet Muhammad ﷺ.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Safa",
+  "arabic": "الصفا",
+  "category": "place",
+  "meaning": "One of the two hills in Makkah between which Hajar ran to find water.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "sahabah",
+  "arabic": "صحابة",
+  "category": "person",
+  "meaning": "The companions of the Prophet Muhammad ﷺ.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Seerah",
+  "arabic": "سيرة",
+  "category": "term",
+  "meaning": "The prophetic biography; the life and mission of Prophet Muhammad ﷺ.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "shirk",
+  "arabic": "شرك",
+  "category": "term",
+  "meaning": "Associating partners with Allah; polytheism.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Subhanahu wa Ta'ala",
+  "arabic": "سبحانه وتعالى",
+  "category": "phrase",
+  "meaning": "Glorified and Exalted is He; a phrase used after mentioning Allah.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "talbiyah",
+  "arabic": "تلبية",
+  "category": "phrase",
+  "meaning": "The chant recited by pilgrims during Hajj.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "tawhid",
+  "arabic": "توحيد",
+  "category": "term",
+  "meaning": "The oneness and uniqueness of Allah.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Ummah",
+  "arabic": "أمة",
+  "category": "term",
+  "meaning": "The global community of Muslim believers.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Yawm al-Qiyamah",
+  "arabic": "يَوْم الْقِيَامَة",
+  "category": "event",
+  "meaning": "The Day of Resurrection.",
+  "episodes": [
+   1
+  ]
+ },
+ {
+  "translit": "Zamzam",
+  "arabic": "زمزم",
+  "category": "place",
+  "meaning": "The miraculous well in Makkah revealed by Jibril (AS) to Hajar (AS).",
+  "episodes": [
+   1
+  ]
+ }
+]
