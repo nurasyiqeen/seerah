@@ -15,6 +15,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import process as P  # noqa: E402
 import retime as R  # noqa: E402
+import review as RV  # noqa: E402
 
 DATA = os.path.join(ROOT, "data")
 EPS = os.path.join(DATA, "episodes")
@@ -91,6 +92,17 @@ def main(max_new):
     except P.QuotaExhausted as e:
         P.log(f"STOPPED for today: {e}")
     finally:
+        # 3. review flashcards for ready episodes that lack them (text-only; light models usually still have quota)
+        try:
+            for row in playlist():
+                p = ep_path(row["n"])
+                if os.path.exists(p):
+                    ep = json.load(open(p))
+                    if not ep.get("review") and not ep.get("needs_redo"):
+                        ep["review"] = RV.make_cards(ep)
+                        json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
+        except Exception as e:  # never let flashcards block the daily save
+            P.log(f"flashcards skipped: {e!r:.150}")
         idx = build_index()
         ready = sum(1 for e in idx if e["ready"])
         synced = sum(1 for e in idx if e.get("synced"))

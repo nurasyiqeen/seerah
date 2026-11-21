@@ -1177,5 +1177,47 @@
    "text": "So when the [[Tubba|تبّع]] came back to [[Yemen|اليمن]], he called on his people to accept Judaism."
   }
  ],
- "needs_redo": true
+ "needs_redo": true,
+ "review": [
+  {
+   "q": "Where did the Jewish communities that settled in [[Yathrib|يثرب]] and [[Khaybar|خيبر]] originally migrate from?",
+   "a": "They migrated from the region of [[Sham|شام]] (Greater Syria).",
+   "chapter": 0
+  },
+  {
+   "q": "What was the title used by the kings of [[Yemen|اليمن]], and which king predicted the invasion of the [[Abhash|أحباش]]?",
+   "a": "The title was [[Tubba|تبع]], and the invasion was predicted by King [[Rabiah ibn Nasr|ربيعة بن نصر]] based on a troubling dream.",
+   "chapter": 1
+  },
+  {
+   "q": "What lesson does the speaker draw from the people of [[Yathrib|يثرب]] feeding the army of [[Tibban As'ad|تبان أسعد]] during their conflict?",
+   "a": "It demonstrates the power of noble character, showing that Islamic values of generosity existed in the city even before the Prophet’s mission.",
+   "chapter": 2
+  },
+  {
+   "q": "Why did the Jewish scholars claim that [[Tibban As'ad|تبان أسعد]] would be unable to destroy the city of [[Yathrib|يثرب]]?",
+   "a": "They explained that the city was divinely protected as the future home of migration for a Prophet described in the [[Tawrah|توراة]].",
+   "chapter": 3
+  },
+  {
+   "q": "How did the tribe of [[Hudhayl|هذيل]] attempt to bring about the destruction of King [[Tibban As'ad|تبان أسعد]]?",
+   "a": "They tried to trick him into looting the Ka'bah by claiming it was filled with treasure, hoping Allah would punish him for violating the sanctuary.",
+   "chapter": 4
+  },
+  {
+   "q": "Why did the Jewish scholars advise the king to perform [[tawaf|طواف]] but refuse to participate in it themselves?",
+   "a": "They recognized the Ka'bah as the House of Allah but would not perform [[tawaf|طواف]] until the sanctuary was cleansed of idols.",
+   "chapter": 4
+  },
+  {
+   "q": "Who was the first person to cover the Ka'bah with a [[Kiswah|كسوة]], and what material was used?",
+   "a": "King [[Tibban As'ad|تبان أسعد]] was the first to provide a [[Kiswah|كسوة]], which he made using luxurious fabric from [[Yemen|اليمن]].",
+   "chapter": 5
+  },
+  {
+   "q": "How did Abdul Muttalib resolve the issue of the [[Kiswah|كسوة]] weight threatening the Ka'bah's structure?",
+   "a": "He oversaw the removal of the ancient layers of cloth and established the practice of replacing the cover annually.",
+   "chapter": 5
+  }
+ ]
 }

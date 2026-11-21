@@ -27,6 +27,7 @@
   --bg:#0e1513; --surface:#151e1b; --ink:#e3ebe8; --muted:#93a39d; --line:#26322e;
   --accent:#5cc2ad; --accent-soft:#17312b; --term:#e2b062; --term-soft:#2d2415; --now:#23301f; color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--ui);-webkit-tap-highlight-color:transparent;
   padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -160,12 +161,84 @@ mark{background:var(--term-soft);color:inherit;border-radius:3px}
 .follow{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:15;background:var(--accent);color:var(--surface);border:0;border-radius:99px;padding:10px 16px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.2);cursor:pointer}
 .empty{color:var(--muted);padding:30px 0;text-align:center}
 
+/* compact player + controls */
+.ctrls{display:flex;align-items:center;gap:6px;flex:none}
+.cbtn{border:1px solid var(--line);background:var(--surface);border-radius:8px;min-width:34px;height:32px;padding:0 6px;display:inline-grid;place-items:center;cursor:pointer;color:var(--ink);font-size:16px;line-height:1}
+.cbtn.play{background:var(--accent);color:var(--surface);border-color:var(--accent);min-width:40px}
+.mini-only{display:none}
+.stage.compact{display:grid;grid-template-columns:44% minmax(0,1fr);gap:12px;align-items:center}
+.stage.compact .nowbar{margin-top:0;flex-direction:column;align-items:stretch;gap:8px}
+.stage.compact .chap{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:12.5px;line-height:1.35}
+.stage.compact .ctrls{justify-content:space-between;flex-wrap:wrap;gap:4px}
+.stage.compact .mini-only{display:inline-grid}
+.stage.compact .video{border-radius:10px}
+.tabcount{display:inline-grid;place-items:center;min-width:18px;height:18px;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-size:11px;margin-left:2px;padding:0 5px}
+
+/* find bar */
+.findbar{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--stage-h,0px) + var(--tabs-h,0px) + 4px);z-index:3;box-shadow:0 4px 14px rgba(0,0,0,.08);display:flex;align-items:center;gap:6px;margin:0 0 10px;padding:6px;border:1px solid var(--accent);border-radius:12px;background:var(--surface)}
+.findbar input{flex:1;min-width:0;border:0;background:transparent;font:inherit;color:var(--ink);padding:6px 4px;outline:none}
+.findcount{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.seg mark{background:var(--term-soft);color:inherit;border-radius:3px;box-shadow:0 0 0 1px var(--term)}
+.seg.hit-cur mark{background:var(--term);color:var(--surface)}
+.iconbtn[aria-pressed="true"]#tFind{background:var(--accent-soft)}
+
+/* bookmarks */
+.seg.bm{box-shadow:inset 3px 0 0 var(--term);background:linear-gradient(90deg,var(--term-soft),transparent 60%)}
+.seg.bm.now{background:var(--now)}
+.seg{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.tip{font-size:13px;color:var(--muted);margin:0 0 8px;padding:0 10px}
+.sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:30}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:31;background:var(--surface);border-radius:18px 18px 0 0;padding:14px max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));max-width:640px;margin:0 auto;box-shadow:0 -10px 40px rgba(0,0,0,.25)}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sheet .eyebrow,.note-group .eyebrow{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--term);font-weight:700}
+.sheet-quote{font-size:16px;font-weight:500;line-height:1.5;margin:10px 0 12px;padding-left:12px;border-left:3px solid var(--term)}
+.sheet-label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+.sheet textarea{width:100%;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit;padding:10px 12px;resize:vertical}
+.sheet-actions{display:flex;gap:8px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.sheet-foot{font-size:12px;color:var(--muted);margin:10px 0 0}
+.iconbtn.primary{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.iconbtn.danger{color:#b3261e;border-color:currentColor}
+.linkbtn{border:0;background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;text-decoration:underline}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:99px;font-weight:600;font-size:14px;z-index:40}
+.note-group{margin-bottom:8px}
+.note-ep{margin:6px 0 10px;color:var(--muted);font-size:14px}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.note blockquote{margin:0;padding-left:12px;border-left:3px solid var(--term);font-size:15px;line-height:1.55}
+.note-text{margin:10px 0 0;font-size:14.5px;background:var(--term-soft);border-radius:10px;padding:8px 10px}
+.note-actions{display:flex;align-items:center;gap:8px;margin-top:10px}
+.jump{border:0;background:var(--accent-soft);color:var(--accent);border-radius:8px;padding:5px 10px;font-size:12.5px;font-weight:700;cursor:pointer;font-variant-numeric:tabular-nums}
+.empty-state{text-align:center;padding:40px 12px;color:var(--muted);max-width:420px;margin:0 auto}
+.empty-state h2{color:var(--ink);font-size:18px;margin:10px 0 6px}
+.es-icon{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--term-soft);color:var(--term)}
+
+/* review */
+.rv-top{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);font-weight:600;margin:6px 0}
+.rv-bar{height:4px;border-radius:2px;background:var(--line);overflow:hidden;margin-bottom:14px}
+.rv-bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.rv-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 18px;min-height:180px}
+.rv-card .eyebrow{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.rv-q{font-size:19px;line-height:1.45;font-weight:600;margin:8px 0 0;text-wrap:pretty}
+.rv-a{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.rv-a .eyebrow{color:var(--term)}
+.rv-a p{font-size:16.5px;line-height:1.55;margin:6px 0 12px}
+.rv-actions{display:flex;gap:10px;margin-top:14px}
+.rv-actions .iconbtn{flex:1;height:46px;font-size:15px}
+.rv-done{text-align:center;padding:16px 0}
+.rv-score{font-size:56px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1}
+.rv-score span{font-size:24px;color:var(--muted)}
+.rv-done h2{font-size:19px;margin:8px 0 14px}
+.rv-done p{color:var(--muted);margin:0 0 8px}
+.rv-missed{list-style:none;padding:0;margin:0 0 8px;text-align:left;display:flex;flex-direction:column;gap:8px}
+.rv-missed li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.rv-done .sheet-actions{justify-content:center}
+
 @media (min-width:960px){
   .player-layout{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px;align-items:start}
   .stage{top:12px;padding-top:4px}
   .panel{padding-bottom:40px}
   .side{max-height:calc(100vh - 24px);overflow:auto;position:sticky;top:12px}
   .tabs{top:0}
+  .findbar{top:calc(var(--tabs-h,0px) + 4px)}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
@@ -173,6 +246,8 @@ mark{background:var(--term-soft);color:inherit;border-radius:3px}
 <body>
 <div class="wrap" id="app"></div>
 <div class="pop" id="pop" hidden></div>
+<div class="sheet-bg" id="sheetbg" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
 <button class="follow" id="follow" hidden>↓ Back to live line</button>
 
 <script>
@@ -184,7 +259,7 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem('seerah:' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem('seerah:' + k, JSON.stringify(v)); } catch {} }
 };
-const prefs = Object.assign({ arabic: true, fs: 17, speed: 1, follow: true, times: false }, store.get('prefs', {}));
+const prefs = Object.assign({ arabic: true, fs: 17, speed: 1, follow: true, times: false, compact: false }, store.get('prefs', {}));
 const savePrefs = () => store.set('prefs', prefs);
 document.body.classList.toggle('hide-ar', !prefs.arabic);
 document.body.classList.toggle('show-ts', prefs.times);
@@ -200,9 +275,11 @@ async function loadEp(n) { return epCache[n] ||= getJSON(`data/episodes/${String
 // [[translit|arabic]] -> term span
 function renderText(t) {
   return esc(t).replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_, a, b) =>
-    `<span class="term" data-t="${a}">${a}<span class="arw"> (<bdi class="ar" lang="ar">${b}</bdi>)</span></span>`);
+    `<span class="term" data-t="${a}">${a}<span class="arw"> (<bdi class="ar" lang="ar">${b}</bdi>)</span></span>`)
+    .replace(/\[\[([^|\]]+)\]\]/g, (_, a) => `<span class="term" data-t="${a}">${a}</span>`);
 }
-const plain = t => String(t||'').replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$1 $2');
+const plain = t => String(t||'').replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$1 $2').replace(/\[\[([^|\]]+)\]\]/g, '$1');
+const segText = s => s.kind === 'arabic' ? [s.translit, s.en, s.ar].filter(Boolean).join(' ') : plain(s.text);
 
 /* ================= HOME ================= */
 function viewHome(tab='episodes') {
@@ -212,11 +289,13 @@ function viewHome(tab='episodes') {
     <div class="home-tabs chips">
       <button class="chip" aria-pressed="${tab==='episodes'}" data-go="">Episodes</button>
       <button class="chip" aria-pressed="${tab==='glossary'}" data-go="glossary">Series glossary</button>
+      <button class="chip" aria-pressed="${tab==='notes'}" data-go="notes">My notes${noteCount() ? ` · ${noteCount()}` : ''}</button>
     </div>
     <div id="home-body"></div>`;
   $('#app').onclick = e => { const b = e.target.closest('[data-go]'); if (b) location.hash = b.dataset.go; };
   bindTheme();
   if (tab === 'glossary') return renderGlossary($('#home-body'), GLOSS, true);
+  if (tab === 'notes') return renderNotes($('#home-body'));
   const last = store.get('last', null);
   const body = $('#home-body');
   body.innerHTML = `
@@ -309,18 +388,25 @@ async function viewEpisode(n) {
       ${themeBtn()}
     </header>
     <div class="player-layout">
-      <div class="stage">
+      <div class="stage ${prefs.compact ? 'compact' : ''}">
         <div class="video"><div id="yt"></div></div>
         <div class="nowbar">
           <span class="chap" id="nowchap"></span>
-          <button class="speed" id="speed" aria-label="Playback speed">${prefs.speed}×</button>
+          <div class="ctrls">
+            <button class="cbtn mini-only" id="back10" aria-label="Back 10 seconds">${ICON.back}</button>
+            <button class="cbtn mini-only play" id="playpause" aria-label="Play or pause">${ICON.play}</button>
+            <button class="cbtn mini-only" id="fwd10" aria-label="Forward 10 seconds">${ICON.fwd}</button>
+            <button class="speed" id="speed" aria-label="Playback speed">${prefs.speed}×</button>
+            <button class="cbtn" id="compact" aria-label="${prefs.compact ? 'Make video larger' : 'Make video smaller'}">${prefs.compact ? ICON.expand : ICON.shrink}</button>
+          </div>
         </div>
       </div>
       <div class="side">
         <div class="tabs" role="tablist">
           <button role="tab" data-tab="transcript" aria-selected="true">Transcript</button>
-          <button role="tab" data-tab="summary" aria-selected="false">Chapters &amp; summary</button>
+          <button role="tab" data-tab="summary" aria-selected="false">Summary</button>
           <button role="tab" data-tab="glossary" aria-selected="false">Glossary</button>
+          <button role="tab" data-tab="review" aria-selected="false">Review${EP.review?.length ? ` <span class="tabcount">${EP.review.length}</span>` : ''}</button>
         </div>
         <div class="panel" id="panel"></div>
         <div class="toolrow" style="padding-bottom:60px">
@@ -334,42 +420,67 @@ async function viewEpisode(n) {
   document.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => showTab(b.dataset.tab));
   const stage = $('.stage');
   new ResizeObserver(() => document.documentElement.style.setProperty('--stage-h', (matchMedia('(min-width:960px)').matches ? 0 : stage.offsetHeight) + 'px')).observe(stage);
+  new ResizeObserver(() => { const tb = $('.tabs'); if (tb) document.documentElement.style.setProperty('--tabs-h', tb.offsetHeight + 'px'); }).observe($('.tabs'));
+  $('#compact').onclick = () => {
+    prefs.compact = !prefs.compact; savePrefs();
+    stage.classList.toggle('compact', prefs.compact);
+    $('#compact').innerHTML = prefs.compact ? ICON.expand : ICON.shrink;
+    $('#compact').setAttribute('aria-label', prefs.compact ? 'Make video larger' : 'Make video smaller');
+    if (curSeg >= 0 && segEls[curSeg] && prefs.follow && !userScrolled) setTimeout(() => scrollToSeg(segEls[curSeg], true), 50);
+  };
+  $('#playpause').onclick = () => { if (!player?.getPlayerState) return; player.getPlayerState() === 1 ? player.pauseVideo() : player.playVideo(); };
+  $('#back10').onclick = () => player?.seekTo && player.seekTo(Math.max(0, player.getCurrentTime() - 10), true);
+  $('#fwd10').onclick = () => player?.seekTo && player.seekTo(player.getCurrentTime() + 10, true);
   $('#speed').onclick = () => {
     const opts = [0.75, 1, 1.25, 1.5, 1.75, 2]; prefs.speed = opts[(opts.indexOf(prefs.speed)+1) % opts.length];
     savePrefs(); $('#speed').textContent = prefs.speed + '×'; player?.setPlaybackRate?.(prefs.speed);
   };
   showTab('transcript');
-  const start = (store.get('progress', {})[n] || 0);
+  const jump = store.get('jump', null); store.set('jump', null);
+  const start = jump && jump.n === n ? jump.t + 3 : (store.get('progress', {})[n] || 0);
   makePlayer(EP.id, start > 10 && start < EP.duration - 20 ? start - 3 : 0);
 }
 
 function showTab(tab) {
   document.querySelectorAll('[data-tab]').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === tab));
   const el = $('#panel'); segEls = []; curSeg = -1; curChap = -1;
+  if (tab !== 'transcript') { $('#follow').hidden = true; userScrolled = false; }
   if (tab === 'transcript') {
     const chStarts = new Map(EP.chapters.map((c, i) => [EP.segments.findIndex(s => s.t >= c.t), i]));
     el.innerHTML = `
       <div class="toolrow">
-        <button class="iconbtn" id="tAr" aria-pressed="${prefs.arabic}">عربي Arabic script</button>
+        <button class="iconbtn" id="tAr" aria-pressed="${prefs.arabic}" aria-label="Show Arabic script"><span lang="ar" class="ar">عربي</span></button>
         <button class="iconbtn" id="tFollow" aria-pressed="${prefs.follow}">Auto-scroll</button>
         <button class="iconbtn" id="tTs" aria-pressed="${prefs.times}">Times</button>
         <span class="grow"></span>
+        <button class="iconbtn" id="tFind" aria-label="Search this episode">${ICON.search}</button>
         <button class="iconbtn" id="fsM" aria-label="Smaller text">A−</button>
         <button class="iconbtn" id="fsP" aria-label="Larger text">A+</button>
       </div>
+      <div class="findbar" id="findbar" hidden>
+        <input id="findq" type="search" placeholder="Find in this episode" autocomplete="off" enterkeyhint="search">
+        <span class="findcount" id="findcount"></span>
+        <button class="cbtn" id="findprev" aria-label="Previous match">${ICON.up}</button>
+        <button class="cbtn" id="findnext" aria-label="Next match">${ICON.down}</button>
+        <button class="cbtn" id="findclose" aria-label="Close search">×</button>
+      </div>
+      ${noteCount() ? '' : `<p class="tip">Tip: press and hold any line to bookmark it and add a note.</p>`}
       <div class="transcript" id="tr">${EP.segments.map((s, i) => {
         const ch = chStarts.has(i) ? `<div class="chap-mark">${esc(EP.chapters[chStarts.get(i)].title)}</div>` : '';
         const body = s.kind === 'arabic'
           ? `<div class="recite">${s.ar ? `<span class="ar" lang="ar">${esc(s.ar)}</span>` : ''}<span class="tl">${esc(s.translit)}</span><span class="en">${esc(s.en)}</span>${s.ref ? `<span class="ref">${esc(s.ref)}</span>` : ''}</div>`
           : renderText(s.text);
-        return `${ch}<div class="seg" data-i="${i}"><span class="ts">${fmt(s.t)}</span><span class="txt">${body}</span></div>`;
+        return `${ch}<div class="seg ${getNote(EP.n, i) ? 'bm' : ''}" data-i="${i}"><span class="ts">${fmt(s.t)}</span><span class="txt">${body}</span></div>`;
       }).join('')}</div>`;
     segEls = [...el.querySelectorAll('.seg')];
     $('#tr').onclick = e => {
+      if (suppressClick) { suppressClick = false; return; }
       const term = e.target.closest('.term');
       if (term) { showTerm(term.dataset.t); e.stopPropagation(); return; }
       const seg = e.target.closest('.seg'); if (seg) seek(EP.segments[+seg.dataset.i].t);
     };
+    bindLongPress($('#tr'));
+    bindFind();
     $('#tAr').onclick = () => { prefs.arabic = !prefs.arabic; savePrefs(); $('#tAr').setAttribute('aria-pressed', prefs.arabic); document.body.classList.toggle('hide-ar', !prefs.arabic); };
     $('#tTs').onclick = () => { prefs.times = !prefs.times; savePrefs(); $('#tTs').setAttribute('aria-pressed', prefs.times); document.body.classList.toggle('show-ts', prefs.times); };
     $('#tFollow').onclick = () => { prefs.follow = !prefs.follow; savePrefs(); $('#tFollow').setAttribute('aria-pressed', prefs.follow); userScrolled = false; tick(true); };
@@ -392,6 +503,8 @@ function showTab(tab) {
       </div>`;
     el.onclick = e => { const b = e.target.closest('.jump'); if (b) seek(+b.dataset.t); const t = e.target.closest('.term'); if (t) showTerm(t.dataset.t); };
     $('#cAll').onclick = () => { const ds = [...el.querySelectorAll('details.chapter')], open = !ds.every(d => d.open); ds.forEach(d => d.open = open); $('#cAll').textContent = open ? 'Collapse all' : 'Expand all'; };
+  } else if (tab === 'review') {
+    renderReview(el);
   } else {
     renderGlossary(el, EP.glossary, false);
   }
@@ -437,6 +550,8 @@ function makePlayer(id, start) {
 function tick(force) {
   if (!EP) return;
   const t = player?.getCurrentTime ? player.getCurrentTime() : 0;
+  const playing = player?.getPlayerState?.() === 1, pp = $('#playpause');
+  if (pp && pp.dataset.playing !== String(playing)) { pp.dataset.playing = playing; pp.innerHTML = playing ? ICON.pause : ICON.play; }
   // save progress
   if (t > 0 && player?.getPlayerState?.() === 1) {
     const p = store.get('progress', {}); if (Math.abs((p[EP.n]||0) - t) > 4) { p[EP.n] = t; store.set('progress', p); store.set('last', { n: EP.n, t }); }
@@ -458,7 +573,7 @@ function tick(force) {
 // keep the live line about a third of the way down the area below the pinned video + tabs
 function scrollToSeg(el, instant) {
   if (matchMedia('(min-width:960px)').matches) return el.scrollIntoView({ block: 'center', behavior: instant ? 'auto' : 'smooth' });
-  const tabs = $('.tabs'), covered = tabs ? tabs.getBoundingClientRect().bottom : 0;
+  const tabs = $('.tabs'), fb = $('#findbar'), covered = fb && !fb.hidden ? fb.getBoundingClientRect().bottom : tabs ? tabs.getBoundingClientRect().bottom : 0;
   const y = el.getBoundingClientRect().top + scrollY - covered - (innerHeight - covered) * 0.3;
   scrollTo({ top: Math.max(0, y), behavior: instant ? 'auto' : 'smooth' });
 }
@@ -468,6 +583,209 @@ function scrollToSeg(el, instant) {
   userScrolled = true; $('#follow').hidden = false;
 }, { passive: true }));
 $('#follow').onclick = () => { userScrolled = false; $('#follow').hidden = true; tick(true); };
+
+/* ================= icons ================= */
+const svg = d => `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICON = {
+  play: `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></svg>`,
+  pause: `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h3.5v16H7zM13.5 4H17v16h-3.5z" fill="currentColor"/></svg>`,
+  back: svg('<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><text x="12" y="15.5" font-size="7.5" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui" font-weight="700">10</text>'),
+  fwd: svg('<path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/><text x="12" y="15.5" font-size="7.5" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui" font-weight="700">10</text>'),
+  shrink: svg('<path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="M14 10l7-7"/><path d="M3 21l7-7"/>'),
+  expand: svg('<path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/>'),
+  search: svg('<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>'),
+  up: svg('<path d="M18 15l-6-6-6 6"/>'),
+  down: svg('<path d="M6 9l6 6 6-6"/>'),
+  bookmark: svg('<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>'),
+};
+
+/* ================= bookmarks & notes ================= */
+let suppressClick = false;
+const allNotes = () => store.get('notes', {});
+const noteCount = () => Object.keys(allNotes()).length;
+const getNote = (n, i) => allNotes()[`${n}:${i}`];
+function saveNote(n, i, data) { const a = allNotes(); if (data) a[`${n}:${i}`] = data; else delete a[`${n}:${i}`]; store.set('notes', a); }
+
+function bindLongPress(root) {
+  let timer = null, sx = 0, sy = 0;
+  const cancel = () => { clearTimeout(timer); timer = null; };
+  root.addEventListener('pointerdown', e => {
+    const seg = e.target.closest('.seg'); if (!seg || e.target.closest('.term')) return;
+    sx = e.clientX; sy = e.clientY; cancel();
+    timer = setTimeout(() => { timer = null; suppressClick = true; navigator.vibrate?.(15); openNoteSheet(+seg.dataset.i); }, 550);
+  });
+  root.addEventListener('pointermove', e => { if (timer && Math.hypot(e.clientX - sx, e.clientY - sy) > 10) cancel(); });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(ev => root.addEventListener(ev, cancel));
+  root.addEventListener('contextmenu', e => { if (e.target.closest('.seg')) e.preventDefault(); });
+}
+
+function openSheet(html) {
+  const sh = $('#sheet'), bg = $('#sheetbg');
+  sh.innerHTML = html; sh.hidden = false; bg.hidden = false;
+  bg.onclick = closeSheet;
+  return sh;
+}
+function closeSheet() { $('#sheet').hidden = true; $('#sheetbg').hidden = true; }
+
+function openNoteSheet(i) {
+  const s = EP.segments[i], existing = getNote(EP.n, i);
+  const excerpt = segText(s);
+  const sh = openSheet(`
+    <div class="sheet-head"><span class="eyebrow">${existing ? 'Bookmarked line' : 'Bookmark this line'} · ${fmt(s.t)}</span>
+      <button class="cbtn" id="shx" aria-label="Close">×</button></div>
+    <h2 id="sheet-title" class="sheet-quote">${esc(excerpt.length > 260 ? excerpt.slice(0, 260) + '…' : excerpt)}</h2>
+    <label for="notetext" class="sheet-label">Your note (optional)</label>
+    <textarea id="notetext" rows="3" placeholder="e.g. Look up this hadith, ask about this, key point for revision…">${esc(existing?.note || '')}</textarea>
+    <div class="sheet-actions">
+      ${existing ? `<button class="iconbtn danger" id="shdel">Remove bookmark</button>` : ''}
+      <span class="grow"></span>
+      <button class="iconbtn primary" id="shsave">${existing ? 'Save note' : 'Save bookmark'}</button>
+    </div>
+    <p class="sheet-foot">Bookmarks are saved on this phone, in this browser.</p>`);
+  $('#shx', sh).onclick = closeSheet;
+  $('#shsave', sh).onclick = () => {
+    saveNote(EP.n, i, { n: EP.n, i, t: s.t, text: excerpt.slice(0, 400), note: $('#notetext', sh).value.trim(), ep: EP.title, at: Date.now() });
+    segEls[i]?.classList.add('bm'); closeSheet(); toast('Bookmark saved');
+    document.querySelector('.tip')?.remove();
+  };
+  const del = $('#shdel', sh);
+  if (del) del.onclick = () => { saveNote(EP.n, i, null); segEls[i]?.classList.remove('bm'); closeSheet(); toast('Bookmark removed'); };
+}
+
+function renderNotes(el) {
+  const notes = Object.values(allNotes()).sort((a, b) => a.n - b.n || a.t - b.t);
+  if (!notes.length) {
+    el.innerHTML = `<div class="empty-state"><div class="es-icon">${ICON.bookmark}</div>
+      <h2>No bookmarks yet</h2>
+      <p>While watching an episode, press and hold any line of the transcript to bookmark it and add a note. Everything you save appears here, grouped by episode.</p></div>`;
+    return;
+  }
+  const groups = {};
+  notes.forEach(x => (groups[x.n] ||= []).push(x));
+  el.innerHTML = Object.entries(groups).map(([n, list]) => `
+    <section class="note-group">
+      <div class="sec-head"><h2>Episode ${n}</h2><span>${list.length} saved</span></div>
+      <p class="note-ep">${esc((INDEX.find(e => e.n === +n) || {}).title || list[0].ep || '')}</p>
+      ${list.map(x => `<article class="note">
+        <blockquote>${esc(x.text)}</blockquote>
+        ${x.note ? `<p class="note-text">${esc(x.note)}</p>` : ''}
+        <div class="note-actions">
+          <button class="jump" data-open="${x.n}:${x.i}:${x.t}">▶ Play from ${fmt(x.t)}</button>
+          <span class="grow"></span>
+          <button class="linkbtn" data-del="${x.n}:${x.i}">Delete</button>
+        </div></article>`).join('')}
+    </section>`).join('') + '<div style="height:60px"></div>';
+  el.onclick = e => {
+    const o = e.target.closest('[data-open]');
+    if (o) { const [n, , t] = o.dataset.open.split(':'); store.set('jump', { n: +n, t: +t }); location.hash = 'ep-' + n; return; }
+    const d = e.target.closest('[data-del]');
+    if (d) { const [n, i] = d.dataset.del.split(':'); saveNote(+n, +i, null); renderNotes(el); toast('Bookmark removed'); }
+  };
+}
+
+function toast(msg) {
+  let t = $('#toast');
+  if (!t) { t = document.createElement('div'); t.id = 'toast'; t.className = 'toast'; t.setAttribute('role', 'status'); document.body.append(t); }
+  t.textContent = msg; t.hidden = false; clearTimeout(t._h); t._h = setTimeout(() => t.hidden = true, 1800);
+}
+
+/* ================= find in episode ================= */
+function bindFind() {
+  const bar = $('#findbar'), q = $('#findq'), cnt = $('#findcount');
+  let hits = [], cur = -1, orig = new Map();
+  const clearMarks = () => { orig.forEach((html, el) => { el.innerHTML = html; el.parentElement.classList.remove('hit', 'hit-cur'); }); orig.clear(); };
+  const markIn = (el, re) => {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(nd => {
+      if (!re.test(nd.nodeValue)) return; re.lastIndex = 0;
+      const frag = document.createElement('span');
+      frag.innerHTML = esc(nd.nodeValue).replace(re, m => `<mark>${m}</mark>`); re.lastIndex = 0;
+      nd.replaceWith(...frag.childNodes);
+    });
+  };
+  const go = k => {
+    if (!hits.length) return;
+    segEls[hits[cur]]?.classList.remove('hit-cur');
+    cur = (k + hits.length) % hits.length;
+    const el = segEls[hits[cur]]; el.classList.add('hit-cur');
+    userScrolled = true; $('#follow').hidden = false;
+    scrollToSeg(el, true);
+    cnt.textContent = `${cur + 1} of ${hits.length}`;
+  };
+  const run = () => {
+    clearMarks(); hits = []; cur = -1;
+    const term = q.value.trim();
+    if (term.length < 2) { cnt.textContent = ''; return; }
+    const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+    EP.segments.forEach((s, i) => { if (re.test(segText(s))) hits.push(i); re.lastIndex = 0; });
+    hits.forEach(i => { const t = segEls[i].querySelector('.txt'); orig.set(t, t.innerHTML); markIn(t, re); segEls[i].classList.add('hit'); });
+    if (!hits.length) { cnt.textContent = 'No matches'; return; }
+    const now = Math.max(0, hits.findIndex(i => i >= curSeg));
+    go(now);
+  };
+  let tmr;
+  q.oninput = () => { clearTimeout(tmr); tmr = setTimeout(run, 200); };
+  q.onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); go(cur + (e.shiftKey ? -1 : 1)); } };
+  $('#findnext').onclick = () => go(cur + 1);
+  $('#findprev').onclick = () => go(cur - 1);
+  $('#findclose').onclick = () => { clearMarks(); q.value = ''; cnt.textContent = ''; bar.hidden = true; $('#tFind').setAttribute('aria-pressed', false); };
+  $('#tFind').onclick = () => {
+    const open = bar.hidden; bar.hidden = !open; $('#tFind').setAttribute('aria-pressed', open);
+    if (open) q.focus(); else $('#findclose').onclick();
+  };
+}
+
+/* ================= review flashcards ================= */
+function renderReview(el) {
+  const cards = EP.review || [];
+  if (!cards.length) {
+    el.innerHTML = `<div class="empty-state"><h2>Review cards are on the way</h2><p>Flashcards for this episode will appear here after the next daily update.</p></div>`;
+    return;
+  }
+  let order = cards.map((_, i) => i), pos = 0, shown = false, missed = [];
+  const best = store.get('review', {})[EP.n];
+  const draw = () => {
+    if (pos >= order.length) {
+      const known = order.length - missed.length;
+      const r = store.get('review', {}); r[EP.n] = { known, total: order.length, at: Date.now() }; store.set('review', r);
+      el.innerHTML = `<div class="rv-done">
+        <div class="rv-score">${known}<span>/${order.length}</span></div>
+        <h2>${known === order.length ? 'You knew every card. Masha’Allah!' : known >= order.length * 0.7 ? 'Well done' : 'Good start'}</h2>
+        ${missed.length ? `<p>Worth another look:</p><ul class="rv-missed">${missed.map(i => `<li>${renderText(cards[i].q)}<button class="jump" data-ch="${cards[i].chapter}">▶ Chapter ${cards[i].chapter + 1}</button></li>`).join('')}</ul>` : ''}
+        <div class="sheet-actions">
+          ${missed.length ? `<button class="iconbtn" id="rvMissed">Practise the ${missed.length} missed</button>` : ''}
+          <span class="grow"></span>
+          <button class="iconbtn primary" id="rvAgain">Start again</button>
+        </div></div>`;
+      $('#rvAgain', el).onclick = () => { order = cards.map((_, i) => i); pos = 0; missed = []; shown = false; draw(); };
+      const m = $('#rvMissed', el); if (m) m.onclick = () => { order = missed.slice(); pos = 0; missed = []; shown = false; draw(); };
+      return;
+    }
+    const c = cards[order[pos]], ch = EP.chapters[c.chapter];
+    el.innerHTML = `
+      <div class="rv-top"><span>Card ${pos + 1} of ${order.length}</span>${best && pos === 0 ? `<span>Last time: ${best.known}/${best.total}</span>` : ''}</div>
+      <div class="rv-bar"><i style="width:${pos / order.length * 100}%"></i></div>
+      <article class="rv-card ${shown ? 'flipped' : ''}">
+        <div class="eyebrow">Question</div>
+        <p class="rv-q">${renderText(c.q)}</p>
+        ${shown ? `<div class="rv-a"><div class="eyebrow">Answer</div><p>${renderText(c.a)}</p>
+          ${ch ? `<button class="jump" data-ch="${c.chapter}">▶ Chapter ${c.chapter + 1}: ${esc(ch.title)}</button>` : ''}</div>` : ''}
+      </article>
+      <div class="rv-actions">${shown
+        ? `<button class="iconbtn" id="rvNo">Review again</button><button class="iconbtn primary" id="rvYes">I knew it</button>`
+        : `<button class="iconbtn primary rv-show" id="rvShow">Show answer</button>`}</div>`;
+    if (shown) {
+      $('#rvYes', el).onclick = () => { pos++; shown = false; draw(); };
+      $('#rvNo', el).onclick = () => { missed.push(order[pos]); pos++; shown = false; draw(); };
+    } else $('#rvShow', el).onclick = () => { shown = true; draw(); };
+  };
+  el.onclick = e => {
+    const j = e.target.closest('[data-ch]'); if (j) { seek(EP.chapters[+j.dataset.ch].t); return; }
+    const t = e.target.closest('.term'); if (t) showTerm(t.dataset.t);
+  };
+  draw();
+}
 
 /* ================= theme ================= */
 function themeBtn() { return `<button class="iconbtn" id="theme" aria-label="Switch light or dark mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>`; }
@@ -482,10 +800,10 @@ function bindTheme() {
 /* ================= router ================= */
 async function route() {
   clearInterval(ticker); player?.destroy?.(); player = null; EP = null; segEls = [];
-  $('#pop').hidden = true; $('#follow').hidden = true; userScrolled = false; scrollTo(0, 0);
+  $('#pop').hidden = true; $('#sheet').hidden = true; $('#follow').hidden = true; userScrolled = false; scrollTo(0, 0);
   const h = location.hash.slice(1);
   const m = h.match(/^ep-(\d+)$/);
-  if (m) await viewEpisode(+m[1]); else viewHome(h === 'glossary' ? 'glossary' : 'episodes');
+  if (m) await viewEpisode(+m[1]); else viewHome(['glossary', 'notes'].includes(h) ? h : 'episodes');
 }
 (async () => {
   try {
