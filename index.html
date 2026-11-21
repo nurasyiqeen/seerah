@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seerah Companion</title>
+<meta name="theme-color" content="#123d36">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;600&family=Amiri:wght@400;700&display=swap">
+<style>
+/* Layout: sticky player on top, tabbed study panel below; single column on phones, two columns on wide screens */
+:root{
+  --bg:#f4f6f4; --surface:#ffffff; --ink:#18221f; --muted:#5d6b66; --line:#dfe5e2;
+  --accent:#145c50; --accent-soft:#e3efeb; --term:#8a5a14; --term-soft:#f6ecdc; --now:#fff6d9;
+  --ui:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ar:'Noto Naskh Arabic','Amiri','Geeza Pro','Traditional Arabic',serif;
+  --ar-display:'Amiri','Noto Naskh Arabic','Geeza Pro',serif;
+  --fs:17px; color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1513; --surface:#151e1b; --ink:#e3ebe8; --muted:#93a39d; --line:#26322e;
+  --accent:#5cc2ad; --accent-soft:#17312b; --term:#e2b062; --term-soft:#2d2415; --now:#23301f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1513; --surface:#151e1b; --ink:#e3ebe8; --muted:#93a39d; --line:#26322e;
+  --accent:#5cc2ad; --accent-soft:#17312b; --term:#e2b062; --term-soft:#2d2415; --now:#23301f; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--ui);-webkit-tap-highlight-color:transparent;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+button{font:inherit;color:inherit}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ar,[lang="ar"]{font-family:var(--ar);direction:rtl;unicode-bidi:isolate}
+
+/* ---------- header ---------- */
+header.top{display:flex;align-items:center;gap:12px;padding-block:14px}
+header.top h1{font-size:18px;font-weight:700;margin:0;letter-spacing:-.01em;flex:1;min-width:0}
+header.top h1 small{display:block;font-weight:500;font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.iconbtn{border:1px solid var(--line);background:var(--surface);border-radius:10px;height:38px;min-width:38px;padding:0 10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:600}
+.iconbtn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+
+/* ---------- home ---------- */
+.search{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;color:var(--ink)}
+.eplist{list-style:none;margin:14px 0 40px;padding:0;display:flex;flex-direction:column;gap:10px}
+.ep{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;text-decoration:none;color:inherit}
+.ep .num{font-variant-numeric:tabular-nums;font-weight:700;font-size:15px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.ep.done .num{background:var(--accent);color:var(--surface)}
+.ep h3{margin:0 0 4px;font-size:16px;line-height:1.3;text-wrap:balance}
+.ep p{margin:0;color:var(--muted);font-size:13.5px}
+.ep .meta{font-size:12px;color:var(--muted);margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
+.progress{height:3px;border-radius:2px;background:var(--line);margin-top:8px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent)}
+.home-tabs{display:flex;gap:8px;margin:4px 0 12px}
+
+/* ---------- player view ---------- */
+.player-layout{display:grid;gap:0}
+.stage{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-bottom:8px}
+.video{position:relative;aspect-ratio:16/9;max-width:100%;background:#000;border-radius:12px;overflow:hidden}
+.video iframe,.video #yt{position:absolute;inset:0;width:100%;height:100%;border:0}
+.nowbar{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:13px;min-width:0}
+.nowbar .chap{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.nowbar .chap b{color:var(--ink);font-weight:600}
+.speed{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:4px 8px;font-size:12px;font-weight:700;cursor:pointer;font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-top:6px;overflow-x:auto;scrollbar-width:none}
+.tabs button{border:0;background:none;padding:10px 12px;font-weight:600;font-size:14px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--accent);border-color:var(--accent)}
+.panel{padding:12px 0 120px}
+.ep-head h2{font-size:20px;line-height:1.25;margin:4px 0 6px;text-wrap:balance}
+.ep-head .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.ep-head p{color:var(--muted);margin:0 0 6px;max-width:65ch}
+.toolrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.toolrow .grow{flex:1}
+
+/* transcript */
+.transcript{display:flex;flex-direction:column;gap:2px;font-size:var(--fs);line-height:1.65}
+.seg{display:grid;grid-template-columns:46px 1fr;gap:8px;padding:6px 8px;border-radius:10px;cursor:pointer;scroll-margin:40vh}
+.seg .ts{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:.35em}
+.seg.now{background:var(--now)}
+.seg .txt{min-width:0;overflow-wrap:anywhere}
+.chap-mark{margin:18px 0 6px;padding:0 8px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.chap-mark:first-child{margin-top:4px}
+.term{color:var(--term);font-weight:600;border-bottom:1px dotted currentColor;cursor:help}
+.term .arw{font-weight:400;color:var(--muted)}
+.term .arw .ar{color:var(--term);font-size:1.05em}
+body.hide-ar .term .arw{display:none}
+.recite{background:var(--term-soft);border-radius:10px;padding:10px 12px;margin:2px 0}
+.recite .ar{display:block;font-family:var(--ar-display);font-size:1.45em;line-height:1.9;text-align:right}
+.recite .tl{display:block;font-style:italic;color:var(--muted);font-size:.92em;margin-top:4px}
+.recite .en{display:block;margin-top:4px}
+mark{background:var(--term-soft);color:inherit;border-radius:3px}
+
+/* chapters */
+.chapters{display:flex;flex-direction:column;gap:12px}
+.chapter{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.chapter.now{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.chapter header{display:flex;gap:10px;align-items:baseline}
+.chapter h3{margin:0;font-size:16px;line-height:1.3;flex:1;text-wrap:balance}
+.chapter .jump{border:0;background:var(--accent-soft);color:var(--accent);border-radius:8px;padding:3px 8px;font-size:12px;font-weight:700;cursor:pointer;font-variant-numeric:tabular-nums}
+.chapter p{margin:8px 0;max-width:65ch;font-size:15.5px;line-height:1.6}
+.chapter ul{margin:6px 0 0;padding-left:20px;color:var(--ink)}
+.chapter li{margin:3px 0;font-size:14.5px}
+.lessons{background:var(--accent-soft);border-radius:14px;padding:14px 16px}
+.lessons h3{margin:0 0 6px;font-size:15px;color:var(--accent)}
+.lessons ol{margin:0;padding-left:20px}
+.lessons li{margin:5px 0}
+
+/* glossary */
+.gloss{display:flex;flex-direction:column;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.gitem{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 14px;border-top:1px solid var(--line)}
+.gitem:first-child{border-top:0}
+.gitem .t{font-weight:700}
+.gitem .a{font-family:var(--ar-display);font-size:22px;line-height:1.2;grid-row:span 2;align-self:center}
+.gitem .m{color:var(--muted);font-size:14px}
+.gitem .cat{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--term);font-weight:700;margin-left:6px}
+.gitem .eps{grid-column:1/-1;font-size:12px;color:var(--muted)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:5px 11px;font-size:12.5px;font-weight:600;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+
+/* popover */
+.pop{padding-right:44px!important;position:fixed;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:0 10px 40px rgba(0,0,0,.25);max-width:560px;margin:0 auto}
+.pop .a{font-family:var(--ar-display);font-size:28px;float:right;line-height:1.1;margin-left:12px}
+.pop .t{font-weight:700;font-size:17px}
+.pop .m{margin-top:6px;color:var(--ink);clear:both}
+.pop .x{position:absolute;top:6px;right:8px;border:0;background:none;font-size:22px;color:var(--muted);cursor:pointer;display:none}
+.follow{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:15;background:var(--accent);color:var(--surface);border:0;border-radius:99px;padding:10px 16px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.2);cursor:pointer}
+.empty{color:var(--muted);padding:30px 0;text-align:center}
+
+@media (min-width:960px){
+  .player-layout{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px;align-items:start}
+  .stage{top:12px;padding-top:4px}
+  .panel{padding-bottom:40px}
+  .side{max-height:calc(100vh - 24px);overflow:auto;position:sticky;top:12px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<div class="pop" id="pop" hidden></div>
+<button class="follow" id="follow" hidden>↓ Back to live line</button>
+
+<script>
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = s => { s = Math.max(0, Math.floor(s)); const h = Math.floor(s/3600), m = Math.floor(s%3600/60), x = s%60;
+  return (h ? h + ':' + String(m).padStart(2,'0') : m) + ':' + String(x).padStart(2,'0'); };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('seerah:' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('seerah:' + k, JSON.stringify(v)); } catch {} }
+};
+const prefs = Object.assign({ arabic: true, fs: 17, speed: 1, follow: true }, store.get('prefs', {}));
+const savePrefs = () => store.set('prefs', prefs);
+document.body.classList.toggle('hide-ar', !prefs.arabic);
+document.documentElement.style.setProperty('--fs', prefs.fs + 'px');
+
+let INDEX = [], GLOSS = [], GLOSS_MAP = {};
+const epCache = {};
+async function getJSON(u) { const r = await fetch(u); if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); }
+async function loadEp(n) { return epCache[n] ||= getJSON(`data/episodes/${String(n).padStart(3,'0')}.json`); }
+
+// [[translit|arabic]] -> term span
+function renderText(t) {
+  return esc(t).replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_, a, b) =>
+    `<span class="term" data-t="${a}">${a}<span class="arw"> (<bdi class="ar" lang="ar">${b}</bdi>)</span></span>`);
+}
+const plain = t => String(t||'').replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$1 $2');
+
+/* ================= HOME ================= */
+function viewHome(tab='episodes') {
+  const prog = store.get('progress', {});
+  $('#app').innerHTML = `
+    <header class="top"><h1><small>Lecture series</small>Seerah of the Prophet ﷺ</h1>${themeBtn()}</header>
+    <div class="home-tabs chips">
+      <button class="chip" aria-pressed="${tab==='episodes'}" data-go="">Episodes</button>
+      <button class="chip" aria-pressed="${tab==='glossary'}" data-go="glossary">Series glossary</button>
+    </div>
+    <div id="home-body"></div>`;
+  $('#app').onclick = e => { const b = e.target.closest('[data-go]'); if (b) location.hash = b.dataset.go; };
+  bindTheme();
+  if (tab === 'glossary') return renderGlossary($('#home-body'), GLOSS, true);
+  const last = store.get('last', null);
+  const body = $('#home-body');
+  body.innerHTML = `
+    <input class="search" id="q" type="search" placeholder="Search titles, chapters and transcripts" autocomplete="off">
+    ${last && INDEX.find(e=>e.n===last.n) ? `<p style="margin:12px 0 0"><a href="#ep-${last.n}">▶ Continue episode ${last.n} at ${fmt(last.t)}</a></p>` : ''}
+    <ul class="eplist" id="eps"></ul>`;
+  const draw = (items, hits={}) => {
+    $('#eps').innerHTML = items.map(e => {
+      const p = prog[e.n] || 0, pct = Math.min(100, Math.round(p / e.duration * 100));
+      return `<li><a class="ep ${pct>=95?'done':''}" href="#ep-${e.n}">
+        <span class="num">${e.n}</span>
+        <span><h3>${esc(e.title)}</h3><p>${esc(e.overview)}</p>
+        ${hits[e.n] ? `<p style="margin-top:6px"><mark>${esc(hits[e.n])}</mark></p>` : ''}
+        <span class="meta"><span>${fmt(e.duration)}</span><span>${e.chapters.length} chapters</span>${pct?`<span>${pct>=95?'Finished':pct+'% watched'}</span>`:''}</span>
+        ${pct && pct<95 ? `<div class="progress"><i style="width:${pct}%"></i></div>` : ''}</span></a></li>`;
+    }).join('') || `<li class="empty">No matches</li>`;
+  };
+  draw(INDEX);
+  let timer;
+  $('#q').oninput = e => { clearTimeout(timer); timer = setTimeout(() => searchAll(e.target.value.trim(), draw), 250); };
+}
+async function searchAll(q, draw) {
+  if (!q) return draw(INDEX);
+  const ql = q.toLowerCase(), hits = {}, out = [];
+  for (const e of INDEX) {
+    let hit = (e.title + ' ' + e.overview + ' ' + e.chapters.join(' ')).toLowerCase().includes(ql);
+    if (!hit) {
+      const ep = await loadEp(e.n).catch(()=>null);
+      const s = ep && ep.segments.find(s => plain(s.text || (s.ar+' '+s.translit+' '+s.en)).toLowerCase().includes(ql));
+      if (s) { hit = true; hits[e.n] = `${fmt(s.t)} · ` + plain(s.text || s.en).slice(0, 140); }
+    }
+    if (hit) out.push(e);
+  }
+  draw(out, hits);
+}
+
+/* ================= GLOSSARY ================= */
+function renderGlossary(el, list, series) {
+  const cats = ['all', ...new Set(list.map(g => g.category))];
+  let cat = 'all', q = '';
+  el.innerHTML = `
+    <input class="search" id="gq" type="search" placeholder="Search names and terms (English or Arabic)" autocomplete="off">
+    <div class="chips" style="margin:10px 0">${cats.map(c=>`<button class="chip" data-cat="${c}" aria-pressed="${c==='all'}">${c==='all'?'All':c[0].toUpperCase()+c.slice(1)+'s'}</button>`).join('')}</div>
+    <div class="gloss" id="gl"></div><div style="height:60px"></div>`;
+  const draw = () => {
+    const ql = q.toLowerCase();
+    const rows = list.filter(g => (cat==='all'||g.category===cat) && (!q || (g.translit+' '+g.arabic+' '+g.meaning).toLowerCase().includes(ql)));
+    $('#gl', el).innerHTML = rows.map(g => `<div class="gitem">
+      <div class="t">${esc(g.translit)}<span class="cat">${esc(g.category)}</span></div>
+      <div class="a" lang="ar">${esc(g.arabic)}</div>
+      <div class="m">${esc(g.meaning)}</div>
+      ${series && g.episodes ? `<div class="eps">Episodes: ${g.episodes.map(n=>`<a href="#ep-${n}">${n}</a>`).join(', ')}</div>` : ''}
+    </div>`).join('') || `<div class="empty">No matches</div>`;
+  };
+  draw();
+  $('#gq', el).oninput = e => { q = e.target.value.trim(); draw(); };
+  el.querySelectorAll('[data-cat]').forEach(b => b.onclick = () => {
+    cat = b.dataset.cat; el.querySelectorAll('[data-cat]').forEach(x => x.setAttribute('aria-pressed', x===b)); draw(); });
+}
+
+/* ================= PLAYER ================= */
+let player, ticker, EP, segEls = [], curSeg = -1, curChap = -1, userScrolled = false, scrollTimer;
+async function viewEpisode(n) {
+  const meta = INDEX.find(e => e.n === n);
+  if (!meta) { location.hash = ''; return; }
+  EP = await loadEp(n);
+  const i = INDEX.indexOf(meta), prev = INDEX[i-1], next = INDEX[i+1];
+  $('#app').innerHTML = `
+    <header class="top">
+      <a class="iconbtn" href="#" aria-label="All episodes">←</a>
+      <h1><small>Episode ${n} of ${INDEX.length}</small>${esc(EP.title)}</h1>
+      ${themeBtn()}
+    </header>
+    <div class="player-layout">
+      <div class="stage">
+        <div class="video"><div id="yt"></div></div>
+        <div class="nowbar">
+          <span class="chap" id="nowchap"></span>
+          <button class="speed" id="speed" aria-label="Playback speed">${prefs.speed}×</button>
+        </div>
+      </div>
+      <div class="side">
+        <div class="tabs" role="tablist">
+          <button role="tab" data-tab="transcript" aria-selected="true">Transcript</button>
+          <button role="tab" data-tab="summary" aria-selected="false">Chapters &amp; summary</button>
+          <button role="tab" data-tab="glossary" aria-selected="false">Glossary</button>
+        </div>
+        <div class="panel" id="panel"></div>
+        <div class="toolrow" style="padding-bottom:60px">
+          ${prev ? `<a class="iconbtn" href="#ep-${prev.n}">← Ep ${prev.n}</a>` : ''}<span class="grow"></span>
+          ${next ? `<a class="iconbtn" href="#ep-${next.n}">Ep ${next.n} →</a>` : ''}
+        </div>
+      </div>
+    </div>`;
+  bindTheme();
+  GLOSS_MAP = {}; [...GLOSS, ...EP.glossary].forEach(g => GLOSS_MAP[g.translit.toLowerCase()] = g);
+  document.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => showTab(b.dataset.tab));
+  $('#speed').onclick = () => {
+    const opts = [0.75, 1, 1.25, 1.5, 1.75, 2]; prefs.speed = opts[(opts.indexOf(prefs.speed)+1) % opts.length];
+    savePrefs(); $('#speed').textContent = prefs.speed + '×'; player?.setPlaybackRate?.(prefs.speed);
+  };
+  showTab('transcript');
+  const start = (store.get('progress', {})[n] || 0);
+  makePlayer(EP.id, start > 10 && start < EP.duration - 20 ? start - 3 : 0);
+}
+
+function showTab(tab) {
+  document.querySelectorAll('[data-tab]').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === tab));
+  const el = $('#panel'); segEls = []; curSeg = -1; curChap = -1;
+  if (tab === 'transcript') {
+    const chStarts = new Map(EP.chapters.map((c, i) => [EP.segments.findIndex(s => s.t >= c.t), i]));
+    el.innerHTML = `
+      <div class="toolrow">
+        <button class="iconbtn" id="tAr" aria-pressed="${prefs.arabic}">عربي Arabic script</button>
+        <button class="iconbtn" id="tFollow" aria-pressed="${prefs.follow}">Auto-scroll</button>
+        <span class="grow"></span>
+        <button class="iconbtn" id="fsM" aria-label="Smaller text">A−</button>
+        <button class="iconbtn" id="fsP" aria-label="Larger text">A+</button>
+      </div>
+      <div class="transcript" id="tr">${EP.segments.map((s, i) => {
+        const ch = chStarts.has(i) ? `<div class="chap-mark">${esc(EP.chapters[chStarts.get(i)].title)}</div>` : '';
+        const body = s.kind === 'arabic'
+          ? `<div class="recite"><span class="ar" lang="ar">${esc(s.ar)}</span><span class="tl">${esc(s.translit)}</span><span class="en">${esc(s.en)}</span></div>`
+          : renderText(s.text);
+        return `${ch}<div class="seg" data-i="${i}"><span class="ts">${fmt(s.t)}</span><span class="txt">${body}</span></div>`;
+      }).join('')}</div>`;
+    segEls = [...el.querySelectorAll('.seg')];
+    $('#tr').onclick = e => {
+      const term = e.target.closest('.term');
+      if (term) { showTerm(term.dataset.t); e.stopPropagation(); return; }
+      const seg = e.target.closest('.seg'); if (seg) seek(EP.segments[+seg.dataset.i].t);
+    };
+    $('#tAr').onclick = () => { prefs.arabic = !prefs.arabic; savePrefs(); $('#tAr').setAttribute('aria-pressed', prefs.arabic); document.body.classList.toggle('hide-ar', !prefs.arabic); };
+    $('#tFollow').onclick = () => { prefs.follow = !prefs.follow; savePrefs(); $('#tFollow').setAttribute('aria-pressed', prefs.follow); userScrolled = false; tick(true); };
+    const fs = d => { prefs.fs = Math.min(24, Math.max(14, prefs.fs + d)); savePrefs(); document.documentElement.style.setProperty('--fs', prefs.fs + 'px'); };
+    $('#fsM').onclick = () => fs(-1); $('#fsP').onclick = () => fs(1);
+  } else if (tab === 'summary') {
+    el.innerHTML = `
+      <div class="ep-head"><div class="eyebrow">Overview</div><p style="color:var(--ink)">${esc(EP.overview)}</p></div>
+      <div class="chapters" style="margin-top:14px">${EP.chapters.map((c, i) => `
+        <article class="chapter" data-c="${i}">
+          <header><h3>${i+1}. ${esc(c.title)}</h3><button class="jump" data-t="${c.t}">▶ ${fmt(c.t)}</button></header>
+          <p>${renderText(c.summary)}</p>
+          <ul>${c.key_points.map(k => `<li>${renderText(k)}</li>`).join('')}</ul>
+        </article>`).join('')}
+        ${EP.lessons?.length ? `<div class="lessons"><h3>Lessons & reflections</h3><ol>${EP.lessons.map(l => `<li>${renderText(l)}</li>`).join('')}</ol></div>` : ''}
+      </div>`;
+    el.onclick = e => { const b = e.target.closest('.jump'); if (b) seek(+b.dataset.t); const t = e.target.closest('.term'); if (t) showTerm(t.dataset.t); };
+  } else {
+    renderGlossary(el, EP.glossary, false);
+  }
+  tick(true);
+}
+
+function showTerm(t) {
+  const g = GLOSS_MAP[t.toLowerCase()];
+  const pop = $('#pop');
+  pop.innerHTML = `<button class="x" style="display:block" aria-label="Close">×</button>
+    ${g ? `<div class="a" lang="ar">${esc(g.arabic)}</div><div class="t">${esc(g.translit)}</div><div class="m">${esc(g.meaning)}</div>`
+        : `<div class="t">${esc(t)}</div><div class="m" style="color:var(--muted)">No glossary entry yet.</div>`}`;
+  pop.hidden = false;
+  pop.querySelector('.x').onclick = () => pop.hidden = true;
+}
+document.addEventListener('click', e => { if (!e.target.closest('#pop') && !e.target.closest('.term')) $('#pop').hidden = true; });
+
+function seek(t) {
+  if (!player?.seekTo) return;
+  player.seekTo(t, true); player.playVideo?.();
+  userScrolled = false; $('#follow').hidden = true;
+  setTimeout(() => tick(true), 150);
+}
+
+function makePlayer(id, start) {
+  clearInterval(ticker);
+  const create = () => {
+    player = new YT.Player('yt', {
+      videoId: id,
+      playerVars: { start: Math.floor(start), playsinline: 1, rel: 0, modestbranding: 1, cc_load_policy: 0 },
+      events: { onReady: () => { player.setPlaybackRate(prefs.speed); tick(true); } }
+    });
+    ticker = setInterval(() => tick(false), 400);
+  };
+  if (window.YT?.Player) create(); else window.onYouTubeIframeAPIReady = create;
+}
+
+function tick(force) {
+  if (!EP) return;
+  const t = player?.getCurrentTime ? player.getCurrentTime() : 0;
+  // save progress
+  if (t > 0 && player?.getPlayerState?.() === 1) {
+    const p = store.get('progress', {}); if (Math.abs((p[EP.n]||0) - t) > 4) { p[EP.n] = t; store.set('progress', p); store.set('last', { n: EP.n, t }); }
+  }
+  // segment
+  let i = EP.segments.length - 1; while (i > 0 && EP.segments[i].t > t + 0.3) i--;
+  const ci = Math.max(0, EP.chapters.findLastIndex(c => c.t <= t + 0.3));
+  if (ci !== curChap || force) {
+    curChap = ci; const c = EP.chapters[ci];
+    $('#nowchap') && ($('#nowchap').innerHTML = c ? `Chapter ${ci+1}/${EP.chapters.length} · <b>${esc(c.title)}</b>` : '');
+    document.querySelectorAll('.chapter').forEach(el => el.classList.toggle('now', +el.dataset.c === ci));
+  }
+  if (!segEls.length) return;
+  if (i !== curSeg || force) {
+    segEls[curSeg]?.classList.remove('now'); curSeg = i; segEls[i]?.classList.add('now');
+    if (prefs.follow && !userScrolled && segEls[i]) segEls[i].scrollIntoView({ block: 'center', behavior: force ? 'auto' : 'smooth' });
+  }
+}
+// pause auto-scroll while the user reads elsewhere
+['touchmove','wheel'].forEach(ev => addEventListener(ev, () => {
+  if (!segEls.length || !prefs.follow) return;
+  userScrolled = true; $('#follow').hidden = false;
+}, { passive: true }));
+$('#follow').onclick = () => { userScrolled = false; $('#follow').hidden = true; tick(true); };
+
+/* ================= theme ================= */
+function themeBtn() { return `<button class="iconbtn" id="theme" aria-label="Toggle dark mode">◐</button>`; }
+function bindTheme() {
+  $('#theme').onclick = () => {
+    const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.dataset.theme = dark ? 'light' : 'dark'; store.set('theme', document.documentElement.dataset.theme);
+  };
+}
+{ const t = store.get('theme', null); if (t) document.documentElement.dataset.theme = t; }
+
+/* ================= router ================= */
+async function route() {
+  clearInterval(ticker); player?.destroy?.(); player = null; EP = null; segEls = [];
+  $('#pop').hidden = true; $('#follow').hidden = true; userScrolled = false; scrollTo(0, 0);
+  const h = location.hash.slice(1);
+  const m = h.match(/^ep-(\d+)$/);
+  if (m) await viewEpisode(+m[1]); else viewHome(h === 'glossary' ? 'glossary' : 'episodes');
+}
+(async () => {
+  try {
+    [INDEX, GLOSS] = await Promise.all([getJSON('data/index.json'), getJSON('data/glossary.json').catch(() => [])]);
+  } catch (e) {
+    $('#app').innerHTML = `<p class="empty">Could not load the episode list (${esc(e.message)}).</p>`; return;
+  }
+  addEventListener('hashchange', route); route();
+})();
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
