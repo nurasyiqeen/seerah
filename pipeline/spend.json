@@ -1,1 +1,7 @@
-{"active": true, "budget_usd": 6.20, "spent_usd": 0, "requests": 0, "note": "RM30 paid run approved by owner on 2026-11-22; set active=false after billing is unlinked"}
+{
+ "active": true,
+ "budget_usd": 6.2,
+ "spent_usd": 0.2233,
+ "requests": 2,
+ "note": "RM30 paid run approved by owner on 2026-11-22; set active=false after billing is unlinked"
+}
