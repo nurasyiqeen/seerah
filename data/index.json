@@ -36,11 +36,19 @@
  {
   "n": 3,
   "id": "Wh56zjoNpjI",
-  "title": "Christianity Comes to Najran",
+  "title": "The Fall of the Tubbas and the Miracle of Najran",
   "duration": 1907,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "overview": "This episode explores the internal collapse of the Himyarite Kingdom in Yemen, focusing on the tragic assassination of King Hassan by his brother Amr and the psychological toll of that betrayal. It then transitions to the history of religion in the Arabian Peninsula, detailing how Unitarian Christianity reached Najran through the miracles and missionary work of a pious man named Faymiyun.",
+  "chapters": [
+   "The Arrogance of King Hassan",
+   "The Assassination Plot",
+   "Amr's Guilt and the Wisdom of Dhu Ru'ayn",
+   "Civil War and the Rise of Dhu Nuwas",
+   "The Arrival of Christianity in Najran",
+   "The Religious Landscape of Pre-Islamic Arabia"
+  ],
+  "ready": true,
+  "synced": true
  },
  {
   "n": 4,
