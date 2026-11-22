@@ -19,6 +19,15 @@
   ]
  },
  {
+  "translit": "Abrahah",
+  "arabic": "أَبْرَهَة",
+  "category": "person",
+  "meaning": "The Abyssinian general and governor of Yemen who later attempted to destroy the Ka'bah.",
+  "episodes": [
+   4
+  ]
+ },
+ {
   "translit": "Abu Jahl",
   "arabic": "أَبُو جَهْل",
   "category": "person",
@@ -34,6 +43,15 @@
   "meaning": "The Prophet's ﷺ uncle who protected him but died without accepting Islam.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "ajr",
+  "arabic": "أَجْر",
+  "category": "term",
+  "meaning": "Reward, especially spiritual reward from Allah.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -55,13 +73,23 @@
   ]
  },
  {
+  "translit": "al-Muhyi",
+  "arabic": "المحيي",
+  "category": "term",
+  "meaning": "The Giver of Life; one of the 99 names of Allah.",
+  "episodes": [
+   4
+  ]
+ },
+ {
   "translit": "alayhis-salam",
   "arabic": "عليه السلام",
   "category": "phrase",
   "meaning": "Peace be upon him; honorific for prophets.",
   "episodes": [
    2,
-   3
+   3,
+   4
   ]
  },
  {
@@ -83,6 +111,24 @@
   ]
  },
  {
+  "translit": "Amanna bi-Rabbil-Alamin",
+  "arabic": "آمَنَّا بِرَبِّ الْعَالَمِينَ",
+  "category": "phrase",
+  "meaning": "We believe in the Lord of the worlds.",
+  "episodes": [
+   4
+  ]
+ },
+ {
+  "translit": "Amanna bi-Rabbil-Ghulam",
+  "arabic": "آمَنَّا بِرَبِّ الْغُلَامِ",
+  "category": "phrase",
+  "meaning": "We believe in the Lord of the boy.",
+  "episodes": [
+   4
+  ]
+ },
+ {
   "translit": "Amr",
   "arabic": "عمرو",
   "category": "person",
@@ -99,6 +145,15 @@
   "episodes": [
    1,
    2
+  ]
+ },
+ {
+  "translit": "Aryat",
+  "arabic": "أَرْيَاط",
+  "category": "person",
+  "meaning": "An Abyssinian general sent to conquer Yemen.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -130,6 +185,15 @@
   ]
  },
  {
+  "translit": "Bismillahi Rabbil-Ghulam",
+  "arabic": "بِسْمِ اللهِ رَبِّ الْغُلَامِ",
+  "category": "phrase",
+  "meaning": "In the name of Allah, the Lord of the boy.",
+  "episodes": [
+   4
+  ]
+ },
+ {
   "translit": "dawah",
   "arabic": "دَعْوَة",
   "category": "term",
@@ -137,7 +201,17 @@
   "episodes": [
    1,
    2,
-   3
+   3,
+   4
+  ]
+ },
+ {
+  "translit": "Daws Dhu Tha'laban",
+  "arabic": "دَوْس ذُو ثَعْلَبَان",
+  "category": "person",
+  "meaning": "The sole survivor of the massacre in the trench who sought help from Abyssinia.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -146,7 +220,8 @@
   "category": "person",
   "meaning": "A descendant of the Tubba family who killed Lakhni'ah and reclaimed the throne.",
   "episodes": [
-   3
+   3,
+   4
   ]
  },
  {
@@ -159,12 +234,31 @@
   ]
  },
  {
+  "translit": "din",
+  "arabic": "دِين",
+  "category": "term",
+  "meaning": "Religion, creed, or way of life.",
+  "episodes": [
+   4
+  ]
+ },
+ {
   "translit": "du'a",
   "arabic": "دُعَاء",
   "category": "term",
   "meaning": "Supplication or prayer to Allah.",
   "episodes": [
-   3
+   3,
+   4
+  ]
+ },
+ {
+  "translit": "dunya",
+  "arabic": "دُنْيَا",
+  "category": "term",
+  "meaning": "The worldly life.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -173,7 +267,8 @@
   "category": "person",
   "meaning": "The pious Christian slave whose miracle led to the conversion of the people of Najran.",
   "episodes": [
-   3
+   3,
+   4
   ]
  },
  {
@@ -183,6 +278,15 @@
   "meaning": "The title used for the ancient rulers of Egypt (Pharaoh).",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "Ghulam",
+  "arabic": "غُلَام",
+  "category": "term",
+  "meaning": "A young boy; specifically refers to the protagonist in the story of the People of the Trench.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -273,7 +377,17 @@
   "category": "term",
   "meaning": "Faith or belief in the heart.",
   "episodes": [
-   1
+   1,
+   4
+  ]
+ },
+ {
+  "translit": "Injil",
+  "arabic": "إنجيل",
+  "category": "term",
+  "meaning": "The Gospel revealed to Prophet Isa.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -282,7 +396,8 @@
   "category": "phrase",
   "meaning": "God willing.",
   "episodes": [
-   3
+   3,
+   4
   ]
  },
  {
@@ -291,7 +406,8 @@
   "category": "person",
   "meaning": "The Prophet Jesus, whose original message was Unitarianism.",
   "episodes": [
-   3
+   3,
+   4
   ]
  },
  {
@@ -337,7 +453,8 @@
   "meaning": "The cubic House of Allah in Makkah toward which Muslims pray.",
   "episodes": [
    1,
-   2
+   2,
+   4
   ]
  },
  {
@@ -384,7 +501,8 @@
   "category": "term",
   "meaning": "The ceremonial cloth that covers the Ka'bah.",
   "episodes": [
-   2
+   2,
+   4
   ]
  },
  {
@@ -440,7 +558,8 @@
   "meaning": "The holiest city in Islam where the Ka'bah is located.",
   "episodes": [
    1,
-   2
+   2,
+   4
   ]
  },
  {
@@ -522,7 +641,8 @@
   "category": "term",
   "meaning": "The title for the kings of Abyssinia (Ethiopia/Negus).",
   "episodes": [
-   2
+   2,
+   4
   ]
  },
  {
@@ -532,7 +652,8 @@
   "meaning": "A city on the border of Yemen and Saudi Arabia, historically known as a Christian center.",
   "episodes": [
    2,
-   3
+   3,
+   4
   ]
  },
  {
@@ -571,7 +692,17 @@
   "meaning": "An ancient King of Yemen whose dream predicted the end of Yemeni rule to the Ethiopians.",
   "episodes": [
    2,
-   3
+   3,
+   4
+  ]
+ },
+ {
+  "translit": "rahmah",
+  "arabic": "رَحْمَة",
+  "category": "term",
+  "meaning": "Mercy.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -628,7 +759,8 @@
   "meaning": "The region of Greater Syria, including modern Syria, Jordan, Lebanon, and Palestine.",
   "episodes": [
    2,
-   3
+   3,
+   4
   ]
  },
  {
@@ -650,6 +782,24 @@
    1,
    2,
    3
+  ]
+ },
+ {
+  "translit": "SubhanAllah",
+  "arabic": "سُبْحَانَ اللهِ",
+  "category": "phrase",
+  "meaning": "Glory be to Allah.",
+  "episodes": [
+   4
+  ]
+ },
+ {
+  "translit": "Suratul-Buruj",
+  "arabic": "سُورَة الْبُرُوج",
+  "category": "term",
+  "meaning": "The 85th chapter of the Qur'an, which discusses the People of the Trench.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -686,7 +836,8 @@
   "meaning": "The oneness and uniqueness of Allah.",
   "episodes": [
    1,
-   2
+   2,
+   4
   ]
  },
  {
@@ -706,7 +857,8 @@
   "meaning": "A powerful Tubba (King) of Yemen who converted to Judaism and provided the first Kiswah.",
   "episodes": [
    2,
-   3
+   3,
+   4
   ]
  },
  {
@@ -726,6 +878,15 @@
   "meaning": "The global community of Muslim believers.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "wa al-Mumit",
+  "arabic": "والمميت",
+  "category": "term",
+  "meaning": "And the Giver of Death; an attribute of Allah.",
+  "episodes": [
+   4
   ]
  },
  {
@@ -762,7 +923,8 @@
   "meaning": "The country at the southern end of the Arabian Peninsula, home of the original Arabs.",
   "episodes": [
    2,
-   3
+   3,
+   4
   ]
  },
  {
