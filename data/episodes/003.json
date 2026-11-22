@@ -1165,5 +1165,42 @@
    "translit": "Wallāhu aʿlam, wa ṣallā Allāhu wa sallama wa bāraka ʿalā nabiyyinā Muḥammad, wa ʿalā ālihi wa ṣaḥbihi ajmaʿīn.. Call details summary logic end block string standard JSON output format structure parsed validation pass cleanly cleanly text representation syntax schema required standard output string representation parsing verified correctly clean response without errors context structure formatted correctly validation completed output JSON block string literal representation structure standard output required parser valid schema execution object format structure completed successfully. Correct representation structure text output verified directly correctly standard structure JSON parse output format correctly completed text standard wrapper array structure JSON output string response directly structure array parsed directly sequence end string formatting verified formatting schema properly output array item payload. End of sequence structure object format parsing complete properly verified result parsed formatted json strictly payload structure result. Final parsing output verified successfully end of task logic schema constraint satisfied correctly JSON structure parse string ready. output formatting complete."
   }
  ],
- "timing": "gemini-retime"
+ "timing": "gemini-retime",
+ "review": [
+  {
+   "q": "Who was [[Hassan|حسان]] and what led his ministers to plot against him?",
+   "a": "[[Hassan|حسان]] was the son of [[Tibban As'ad|تبان أسعد]] who became the king of [[Yemen|اليمن]]. His ministers plotted against him because his extreme arrogance and delusional plans to conquer the [[Kisra|كسرى]] threatened to destroy the kingdom.",
+   "chapter": 0
+  },
+  {
+   "q": "Which advisor opposed the assassination of [[Hassan|حسان]] and what did he give to [[Amr|عمرو]]?",
+   "a": "[[Dhu Ru'ayn|ذو رعين]] was the only advisor to oppose the plot, warning that the murder would cause inescapable guilt. He gave [[Amr|عمرو]] a sealed [[amanah|أمانة]] containing poetry that proved his innocence and documented his warning.",
+   "chapter": 1
+  },
+  {
+   "q": "What lesson does the speaker draw from the psychological state of King [[Amr|عمرو]] after the assassination?",
+   "a": "The speaker notes that betraying one's family for the sake of power results in psychological torment and the loss of peace. [[Amr|عمرو]] suffered from debilitating insomnia and depression as a direct consequence of his crime.",
+   "chapter": 2
+  },
+  {
+   "q": "Who was [[Lakhni'ah|لخنيعة]] and how did his rule end?",
+   "a": "[[Lakhni'ah|لخنيعة]] was a cruel usurper who seized the palace during a civil war among the descendants of [[Rabiah ibn Nasr|ربيعة بن نصر]]. His reign ended when [[Dhu Nuwas|ذو نواس]] assassinated him to restore the original [[Tubba|تبع]] lineage.",
+   "chapter": 3
+  },
+  {
+   "q": "How did [[Faymiyun|فَيْمِيُون]] bring the people of [[Najran|نَجْرَان]] to the message of [[tawhid|توحيد]]?",
+   "a": "[[Faymiyun|فَيْمِيُون]] made a sincere [[du'a|دُعَاء]] that resulted in a miracle where lightning destroyed a sacred tree the people worshipped. Witnessing this sign, the people declared \"[[Amanna bi-Rabbil-Alamin|آمَنَّا بِرَبِّ الْعَالَمِينَ]]\" and converted to Christianity.",
+   "chapter": 5
+  },
+  {
+   "q": "What lesson is learned from the fact that [[Faymiyun|فَيْمِيُون]] was a slave when he converted [[Najran|نَجْرَان]]?",
+   "a": "The story shows that Allah can use the lowliest of people, such as a slave, to bring the light of truth and guidance to an entire nation. Sincerity in [[ibadah|عِبَادَة]] is more powerful than social status.",
+   "chapter": 5
+  },
+  {
+   "q": "Why is the history of Christians in [[Najran|نَجْرَان]] significant for studying the [[Seerah|سيرة]]?",
+   "a": "It provides essential context for the Prophet's ﷺ later interactions with Christians, such as the delegation that met him in [[Madinah|مدينة]]. These interactions and their historical background are documented in parts of the Qur'an like Surah [[Ali 'Imran|آل عِمْرَان]].",
+   "chapter": 6
+  }
+ ]
 }

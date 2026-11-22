@@ -1288,5 +1288,47 @@
    "text": "And Allah knows best, and may the peace, blessings, and grace of Allah be upon our Prophet Muhammad, and upon his family and all his companions."
   }
  ],
- "timing": "gemini-retime"
+ "timing": "gemini-retime",
+ "review": [
+  {
+   "q": "Who was the monk from [[Sham|شام]] whose miracles led the people of [[Najran|نجران]] to accept the true religion of [[Isa|عِيسَى]]?",
+   "a": "[[Faymiyun|فَيْمِيُون]] was a pious monk who prayed for a miracle that destroyed a worshipped tree, causing the city to convert to Christianity.",
+   "chapter": 0
+  },
+  {
+   "q": "Why did the young [[Ghulam|غُلَام]] begin meeting the Christian monk in secret?",
+   "a": "He encountered the monk while traveling to learn magic for King [[Dhu Nuwas|ذو نواس]] and became mesmerized by the monk's recitation of the [[Injil|إنجيل]].",
+   "chapter": 1
+  },
+  {
+   "q": "How did the boy seek a sign from Allah to determine whether the monk or the magician followed the truth?",
+   "a": "He used a stone to kill a terrifying beast blocking the road, praying for its death if the monk's path was more beloved to Allah.",
+   "chapter": 2
+  },
+  {
+   "q": "What names of Allah were demonstrated when the king's men failed to execute the boy by mountain or sea?",
+   "a": "These events emphasized that Allah is [[al-Muhyi|المحيي]] (The Giver of Life) [[wa al-Mumit|والمميت]] (and the Giver of Death).",
+   "chapter": 3
+  },
+  {
+   "q": "What specific phrase did King [[Dhu Nuwas|ذو نواس]] have to say to successfully execute the boy?",
+   "a": "The king was required to say, \"[[Bismillahi Rabbil-Ghulam|بِسْمِ اللهِ رَبِّ الْغُلَامِ]]\" (In the name of Allah, the Lord of the boy) before shooting his arrow.",
+   "chapter": 4
+  },
+  {
+   "q": "What was the result of the boy's public sacrifice during his execution?",
+   "a": "The entire city realized the king's lack of power and declared their [[iman|إيمان]] in the Lord of the boy.",
+   "chapter": 4
+  },
+  {
+   "q": "What miracle occurred during the massacre of the 20,000 believers to provide support to a hesitant mother?",
+   "a": "A nursing baby spoke by Allah's permission to encourage his mother to stay firm on the truth as they faced the fire.",
+   "chapter": 5
+  },
+  {
+   "q": "Who was the sole survivor of the trench massacre who escaped to seek help from the [[Najashi|نَجَاشِي]]?",
+   "a": "[[Daws Dhu Tha'laban|دَوْس ذُو ثَعْلَبَان]] escaped on horseback and eventually informed the Abyssinian king, leading to the conquest of [[Yemen|اليمن]].",
+   "chapter": 6
+  }
+ ]
 }

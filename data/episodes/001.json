@@ -1879,5 +1879,47 @@
    "translit": "Wa-Allāhu aʿlam, wa-ṣallallāhu wa-sallama wa-bāraka ʿalā nabiyyinā Muḥammadin wa-ʿalā ālihi wa-ṣaḥbihi ajmaʿīn."
   }
  ],
- "timing": "gemini-retime"
+ "timing": "gemini-retime",
+ "review": [
+  {
+   "q": "Why is it important that the [[Rasulullah|رسول الله]] was a human messenger rather than an angel?",
+   "a": "Following a human messenger provides a practical and achievable example for believers to emulate. It removes the excuse that his level of obedience is impossible for mankind.",
+   "chapter": 0
+  },
+  {
+   "q": "What is [[asbab al-nuzul|أَسْبَاب النُّزُول]] and why is it significant in studying the [[Seerah|سيرة]]?",
+   "a": "It refers to the science of the reasons for revelation. It provides the historical context, such as the death of [[Abu Talib|أَبُو طَالِب]], necessary to understand the depth and gravity of certain Quranic verses.",
+   "chapter": 1
+  },
+  {
+   "q": "Who were the [[Jurhum|جرهم]] and how did they become the first to settle [[Makkah|مَكَّة]]?",
+   "a": "They were a noble tribe from [[Yemen|اليمن]] who were traveling nearby. They were attracted to the area after the miracle of the [[Zamzam|زمزم]] well was revealed to [[Hajar|هاجر]] and [[Ismail|إسماعيل]].",
+   "chapter": 2
+  },
+  {
+   "q": "What is [[Maqam Ibrahim|مقام إبراهيم]] and what was its purpose during the construction of the [[Ka'bah|كعبة]]?",
+   "a": "It is the station where [[Ibrahim|إبراهيم]] stood to oversee the construction work. He used it to ensure that the building was being built straight.",
+   "chapter": 3
+  },
+  {
+   "q": "According to the speaker, why did [[al-Hajar al-Aswad|الحجر الأسود]] turn black?",
+   "a": "The stone was sent from Allah and was originally white in color. It turned black over time due to the sins of humanity.",
+   "chapter": 3
+  },
+  {
+   "q": "Who was [[Amr ibn Luhayy|عمرو بن لحي]] and what was his role in the era of [[Jahiliyyah|جاهلية]]?",
+   "a": "He was the leader of the [[Khuza'ah|خزاعة]] tribe who brought the first idol, [[Hubal|هبل]], from Syria to [[Makkah|مَكَّة]]. He is credited with introducing [[shirk|شرك]] and corrupting the pure monotheism established by [[Ibrahim|إبراهيم]].",
+   "chapter": 4
+  },
+  {
+   "q": "How was the [[talbiyah|تلبية]] prayer corrupted by the leaders of pre-Islamic [[Makkah|مَكَّة]]?",
+   "a": "The prayer was changed from pure [[tawhid|توحيد]] to include the mention of partners. They added a phrase claiming that Allah owned these partners and everything they possessed.",
+   "chapter": 4
+  },
+  {
+   "q": "What lesson does the speaker draw from the story of [[Isaf|إساف]] and [[Na'ilah|نائلة]]?",
+   "a": "The story illustrates the absurdity and moral decline of [[Jahiliyyah|جاهلية]], where people eventually worshipped the very stones that were meant to be a warning against immorality. It highlights the massive transformation later achieved by the [[Rasulullah|رسول الله]].",
+   "chapter": 5
+  }
+ ]
 }

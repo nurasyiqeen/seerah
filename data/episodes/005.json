@@ -2147,5 +2147,47 @@
    "translit": "Wa-Allahu a'lam. Wa sallallahu wa sallama wa baraka 'ala nabiyyina Muhammadin wa 'ala alihi wa sahbihi ajma'in."
   }
  ],
- "timing": "gemini-retime"
+ "timing": "gemini-retime",
+ "review": [
+  {
+   "q": "Why did [[Abrahah|أَبْرَهَة]] decide to march on [[Makkah|مَكَّة]] to destroy the [[Ka'bah|كعبة]]?",
+   "a": "He was infuriated after a member of [[Ahl al-Nasi'|أهل النسيء]] defiled his grand church, [[al-Qulays|قليس]], in protest of his plan to divert pilgrims there.",
+   "chapter": 2
+  },
+  {
+   "q": "Who was [[Abu Righal|أبو رغال]] and why is his grave symbolically stoned?",
+   "a": "He was a guide from the tribe of [[Thaqif|ثقيف]] who led the army to [[Makkah|مَكَّة]], and he is remembered as a traitor to the Arabs.",
+   "chapter": 3
+  },
+  {
+   "q": "How did [[Abrahah|أَبْرَهَة]] receive the title [[Abrahah al-Ashram|أَبْرَهَة الأشرم]]?",
+   "a": "He earned the nickname, which means \"the one with the cut nose,\" during a one-on-one duel with the commander [[Aryat|أَرْيَاط]].",
+   "chapter": 1
+  },
+  {
+   "q": "What reason did [[Abdul Muttalib|عَبْد الْمُطَّلِب]] give for only asking for his 200 camels?",
+   "a": "He famously stated [[Inna li-hadha al-bayti rabban yahmih|إِنَّ لِلْهَذَا الْبَيْتِ رَبًّا يَحْمِيهِ]], meaning that while he owned the camels, the House had its own Lord to protect it.",
+   "chapter": 4
+  },
+  {
+   "q": "What miracle involving the elephant [[Mahmud|محمود]] occurred during the attack?",
+   "a": "The elephant knelt and refused to move toward the [[Ka'bah|كعبة]], although he would move if turned in any other direction.",
+   "chapter": 5
+  },
+  {
+   "q": "Why did the [[Najashi|نجاشي]] initially send an army of 70,000 soldiers to [[Yemen|اليمن]]?",
+   "a": "The army was dispatched to avenge the massacre of 20,000 believers who were killed in trenches of fire by the king [[Dhu Nuwas|ذو نواس]].",
+   "chapter": 0
+  },
+  {
+   "q": "What were the [[ababil|أَبَابِيل]] and what was their role in the story?",
+   "a": "They were swarms of birds sent by Allah that dropped small stones on [[Abrahah|أَبْرَهَة]]'s army, causing the soldiers' flesh to disintegrate.",
+   "chapter": 5
+  },
+  {
+   "q": "What lesson is drawn from the timing of the destruction of the army in [[Am al-Fil|عام الفيل]]?",
+   "a": "It served as divine preparation of the land for the birth of [[Rasulullah|رسول الله]] and the coming of the final message of Islam.",
+   "chapter": 5
+  }
+ ]
 }

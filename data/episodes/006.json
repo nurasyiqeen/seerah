@@ -1520,5 +1520,47 @@
    "text": "We'll get into that next week, [[bi-idhnillah|بإذن الله]]. [[Wallahu a'lam|والله أعلم]]. [[Wa ṣallallāhu wa sallama wa bāraka ʿalā nabiyyinā Muḥammad wa ʿalā ālihi wa ṣaḥbihi ajmaʿīn|وصلى الله وسلم وبارك على نبينا محمد وعلى آله وصحبه أجمعين]]."
   }
  ],
- "timing": "gemini-retime"
+ "timing": "gemini-retime",
+ "review": [
+  {
+   "q": "Who ruled Yemen after the death of [[Abrahah|أفبْرهه]]?",
+   "a": "Control passed first to his son [[Yaksum|فكسوم]], and subsequently to another son, [[Masruq|مسروق]]. The native Yemenis lived as subordinates under the laws of the [[Ahabash|أباش]].",
+   "chapter": 0
+  },
+  {
+   "q": "Why did [[Sayf ibn Dhi Yazan|سف بن ذو فزن]] seek help from [[Kisra|كسرى]]?",
+   "a": "He wanted to reclaim Yemen for his people from the [[Ahabash|أباش]] occupation. After the [[Qaysar|فصر]] refused to help, he was advised by the king of Iraq to seek an alliance with the Persians.",
+   "chapter": 1
+  },
+  {
+   "q": "What were the notable features of the [[arsh|عرش]] and crown of [[Kisra|كسرى]]?",
+   "a": "The throne was jewel-encrusted and the crown weighed 90 kilograms. The crown was suspended from the ceiling by gold ropes so that it would not crush the Emperor.",
+   "chapter": 2
+  },
+  {
+   "q": "Why did [[Sayf ibn Dhi Yazan|سف بن ذو فزن]] claim that Yemen had 'mountains of gold'?",
+   "a": "This was a clever ruse to appeal to the greed of [[Kisra|كسرى]] and convince him to send an army. To prove the claim, Sayf threw away 10,000 silver dirhams as if they were worthless.",
+   "chapter": 3
+  },
+  {
+   "q": "How did General [[Wahriz|وهرز]] end Ethiopian rule in Yemen?",
+   "a": "He identified [[Masruq|مسروق]] by the red pearl on his forehead and shot an arrow that hit it, killing him instantly. This victory at the port of Aden led to the collapse of the [[Ahabash|أباش]] occupation.",
+   "chapter": 4
+  },
+  {
+   "q": "What lesson does the '[[uqdah|عقاء]] of [[Sayf ibn Dhi Yazan|سف بن ذو فزن]]' teach?",
+   "a": "It shows that seeking help from foreign powers can lead to a betrayal where the ally becomes the new occupier. The Persians kept control of Yemen for themselves instead of handing it to Sayf.",
+   "chapter": 4
+  },
+  {
+   "q": "What miraculous news did the Prophet ﷺ share with [[Badhan|باذان]]'s messengers?",
+   "a": "He informed them that Allah had killed [[Kisra|كسرى]] that very night. When news confirming the exact date and time reached Yemen 14 days later, [[Badhan|باذان]] accepted Islam.",
+   "chapter": 5
+  },
+  {
+   "q": "What lesson does the speaker draw regarding the heart and guidance?",
+   "a": "Guidance is a gift from Allah; some, like [[Badhan|باذان]], accept the truth after one sign, while others remain stubborn despite great miracles. This contrast is seen in the differing reactions of the Persians and the Quraysh.",
+   "chapter": 6
+  }
+ ]
 }

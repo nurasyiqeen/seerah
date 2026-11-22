@@ -1195,5 +1195,47 @@
    "translit": "Wallāhu aʿlam wa ṣallallāhu wa sallama wa bāraka ʿalā nabiyyinā Muḥammad wa ʿalā ālihi wa ṣaḥbihi ajmaʿīn Rule 2: wrap every Arabic word or phrase in markup standard transliteration|Arabic script name of person or tribe etc. Standard honorifics ﷺ can be just symbol. Common word Allah or Prophet can be plain. All clear! Let's output JSON."
   }
  ],
- "timing": "gemini-retime"
+ "timing": "gemini-retime",
+ "review": [
+  {
+   "q": "Who was the individual responsible for bringing idol worship to the Arabian Peninsula?",
+   "a": "[[Amr ibn Luhayy|عمرو بن لحي]] is identified as the person who reintroduced idolatry to the region.",
+   "chapter": 0
+  },
+  {
+   "q": "What were the honorary titles used for the rulers of ancient Yemen and Ethiopia?",
+   "a": "The ruler of [[Yemen|اليمن]] was known as the [[Tubba|تبع]], while the title for the ruler of Ethiopia was [[Najashi|نجاشي]].",
+   "chapter": 1
+  },
+  {
+   "q": "Why did [[Tibban As'ad|تبان أسعد]] decide to spare the people of [[Yathrib|يثرب]] during his siege?",
+   "a": "He was impressed by their unique character and hospitality, as they fought his army during the day but sent them food at night.",
+   "chapter": 2
+  },
+  {
+   "q": "What information did Jewish scholars provide to [[Tibban As'ad|تبان أسعد]] regarding the future of [[Yathrib|يثرب]]?",
+   "a": "They explained that the city was divinely protected because it was the destined place of migration for a future Prophet as mentioned in the [[Tawrah|توراة]].",
+   "chapter": 3
+  },
+  {
+   "q": "Why did the tribe of [[Hudhayl|هذيل]] encourage the Yemeni King to attack the [[Ka'bah|كعبة]]?",
+   "a": "They attempted to trick him into violating the sanctuary so that he would be destroyed by divine wrath.",
+   "chapter": 4
+  },
+  {
+   "q": "Who was the first person in history to cover the [[Ka'bah|كعبة]] with a [[kiswah|كسوة]]?",
+   "a": "[[Tibban As'ad|تبان أسعد]] was the first to provide the cover using luxurious Yemeni cloth after seeing himself do so in a dream.",
+   "chapter": 5
+  },
+  {
+   "q": "How was the truth of Judaism established over idolatry upon the King's return to [[Yemen|اليمن]]?",
+   "a": "A 'trial by fire' occurred where a sacred fire consumed the idolatrous soothsayers but left the Jewish scholars unharmed.",
+   "chapter": 5
+  },
+  {
+   "q": "What lesson does the speaker draw from the behavior of the people of [[Yathrib|يثرب]] toward their enemies?",
+   "a": "The speaker notes that generosity and high character can serve as a powerful form of [[dawah|دَعْوَة]].",
+   "chapter": 2
+  }
+ ]
 }
