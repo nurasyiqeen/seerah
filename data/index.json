@@ -107,11 +107,21 @@
  {
   "n": 7,
   "id": "hIKUDigcdfg",
-  "title": "Qusayy Ibn Kilaab Retakes Makkah",
-  "duration": 2046,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "title": "Qusayy ibn Kilab and the Rise of the Quraysh",
+  "duration": 2045,
+  "overview": "This lecture returns to the history of Makkah to explain how the descendants of Ismail reclaimed leadership of the city. It details the rise of Qusayy ibn Kilab, the establishment of the council hall Dar al-Nadwah, and the lineage leading to the Prophet's grandfather, Abdul Muttalib.",
+  "chapters": [
+   "Early Makkah and the Rule of Khuza'ah",
+   "The Rise of Qusayy ibn Kilab",
+   "Mediation and the Return of Quraysh Rule",
+   "Establishment of Dar al-Nadwah",
+   "Division of Honors among Qusayy's Sons",
+   "The Tradition of Serving the Hujjaj",
+   "The Sale of Dar al-Nadwah",
+   "The Lineage of the Prophet ﷺ and Abdul Muttalib"
+  ],
+  "ready": true,
+  "synced": true
  },
  {
   "n": 8,

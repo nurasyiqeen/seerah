@@ -5,6 +5,7 @@ recitation filter; short windows keep the timestamps accurate.
 
 Usage: python3 pipeline/retime.py data/episodes/001.json [...]
 """
+import hashlib
 import json
 import os
 import sys
@@ -34,13 +35,25 @@ def line_preview(s):
     return "(Arabic recitation) " + " ".join((s.get("translit") or "").split()[:8])
 
 
+LEGACY_OK = set()  # videos whose line list has not changed since their old (unsigned) cache was written
+
+
+def _legacy_ok(vid):
+    return vid in LEGACY_OK
+
+
 def retime_window(vid, w0, w1, items):
+    sig = hashlib.sha1("\n".join(f"{i}:{line_preview(s)}" for i, s in items).encode()).hexdigest()[:10]
     cache = os.path.join(P.CACHE, f"retime2_{vid}_{int(w0)}_{int(w1)}.json")
+    if os.path.exists(cache) and json.load(open(cache)).get("sig") not in (None, sig):
+        cache = os.path.join(P.CACHE, f"retime2_{vid}_{int(w0)}_{int(w1)}_{sig}.json")
+    elif os.path.exists(cache) and json.load(open(cache)).get("sig") is None and not _legacy_ok(vid):
+        cache = os.path.join(P.CACHE, f"retime2_{vid}_{int(w0)}_{int(w1)}_{sig}.json")
     if os.path.exists(cache):
         c = json.load(open(cache))
         return {int(k): v for k, v in c["res"].items()}, c["model"]
     res, model = _retime_window(vid, w0, w1, items)
-    json.dump({"res": res, "model": model}, open(cache, "w"))
+    json.dump({"res": res, "model": model, "sig": sig}, open(cache, "w"))
     return res, model
 
 
@@ -79,31 +92,29 @@ def windows(dur):
     return sorted(set(ws))
 
 
-def retime_episode(ep):
-    segs, dur, vid = ep["segments"], ep["duration"], ep["id"]
-    old = [s["t"] for s in segs]
-    est = {}  # line index -> list of (estimate, window id)
-    for wid, (w0, w1) in enumerate(windows(dur)):
-        items = [(i, s) for i, s in enumerate(segs) if w0 - MARGIN <= old[i] < w1 + MARGIN]
+def collect(vid, segs, wins, ref, est, first_wid):
+    """Ask Gemini, window by window, when each line starts; lines are picked by their position in `ref`."""
+    for k, (w0, w1) in enumerate(wins):
+        items = [(i, s) for i, s in enumerate(segs) if w0 - MARGIN <= ref[i] < w1 + MARGIN]
         if not items:
             continue
         res, model = retime_window(vid, w0, w1, items)
         for i, t in res.items():
             if 0 <= i < len(segs):
-                est.setdefault(i, []).append((t, wid))
+                est.setdefault(i, []).append((t, first_wid + k))
         P.log(f"  retime {P.fmt(w0)}-{P.fmt(w1)}: {len(res)}/{len(items)} lines via {model}")
-    # 1. a window that goes wrong is usually off for a whole run of lines. So an estimate is trusted
-    #    if it agrees with another window, or if its own window's answers for the NEARBY lines agree
-    #    with the other windows (local consistency).
+
+
+def combine(est, old, n):
+    """Turn per-window answers into one start time per line (see comments)."""
+    # 1. trust an answer if another window agrees with it, or if its own window's answers for the
+    #    nearby lines agree with other windows (a window that goes wrong is off for a whole run).
     def agrees(j, t, w):
         return any(abs(u - t) <= AGREE for u, v in est.get(j, []) if v != w)
-    own = {}
-    for i, ts in est.items():
-        for t, w in ts:
-            own[(i, w)] = t
+    own = {(i, w): t for i, ts in est.items() for t, w in ts}
     def local_score(i, w):
         return sum(1 for j in range(i - 4, i + 5) if j != i and (j, w) in own and agrees(j, own[(j, w)], w))
-    times = [None] * len(segs)
+    times = [None] * n
     for i, ts in est.items():
         pair = min(((abs(a - b), (a + b) / 2) for k, (a, wa) in enumerate(ts) for b, wb in ts[k + 1:] if wa != wb), default=None)
         if pair and pair[0] <= AGREE:
@@ -112,70 +123,96 @@ def retime_episode(ep):
         scored = sorted(((local_score(i, w), t) for t, w in ts), reverse=True)
         if scored and scored[0][0] >= 2 and (len(scored) == 1 or scored[0][0] > scored[1][0]):
             times[i] = scored[0][1]
-    est = {i: [t for t, w in ts] for i, ts in est.items()}
-    # keep anchors in order: drop any anchor that goes backwards
-    last = -1
-    for i, t in enumerate(times):
-        if t is not None and t < last - 0.5:
-            times[i] = None
-        elif t is not None:
-            last = t
-    anchors = [i for i, t in enumerate(times) if t is not None]
-    # tie-break: where the two answers disagreed, keep the one that fits smoothly between the
-    # trusted lines on either side (a window that went wrong is usually off by a whole block)
-    def interp(i):
+    plain = {i: [t for t, w in ts] for i, ts in est.items()}
+
+    def in_order():
+        last = -1
+        for i, t in enumerate(times):
+            if t is not None and t < last - 0.5:
+                times[i] = None
+            elif t is not None:
+                last = t
+        return [i for i, t in enumerate(times) if t is not None]
+
+    def interp(i, anchors):
         p = max((a for a in anchors if a < i), default=None)
-        n = min((a for a in anchors if a > i), default=None)
-        if p is not None and n is not None and old[n] > old[p]:
-            return times[p] + (old[i] - old[p]) * (times[n] - times[p]) / (old[n] - old[p])
+        q = min((a for a in anchors if a > i), default=None)
+        if p is not None and q is not None and old[q] > old[p]:
+            return times[p] + (old[i] - old[p]) * (times[q] - times[p]) / (old[q] - old[p])
         if p is not None:
             return times[p] + (old[i] - old[p])
-        if n is not None:
-            return times[n] - (old[n] - old[i])
+        if q is not None:
+            return max(0, times[q] - (old[q] - old[i]))
         return old[i]
-    # lines with only one (or conflicting) answer: accept an answer that falls in order between the
-    # confirmed lines on either side (going left to right, so accepted lines also bound the next ones)
+
+    anchors = in_order()
+    # 2. lines with a single or conflicting answer: accept an answer that falls in order between
+    #    the confirmed lines on either side
     strict = list(times)
-    for i in range(len(segs)):
-        ts = est.get(i) or []
+    for i in range(n):
+        ts = plain.get(i) or []
         if times[i] is not None or not ts:
             continue
         lo = max((times[j] for j in range(i) if times[j] is not None), default=-1)
-        hi = min((strict[j] for j in range(i + 1, len(segs)) if strict[j] is not None), default=float("inf"))
+        hi = min((strict[j] for j in range(i + 1, n) if strict[j] is not None), default=float("inf"))
         fits = [t for t in ts if lo + 0.5 < t < hi - 0.5]
         if fits:
-            guess = interp(i)
+            guess = interp(i, anchors)
             times[i] = min(fits, key=lambda t: abs(t - guess))
-    last = -1
-    for i, t in enumerate(times):
-        if t is not None and t < last - 0.5:
-            times[i] = None
-        elif t is not None:
-            last = t
-    anchors = [i for i, t in enumerate(times) if t is not None]
-    # fill the rest by interpolating along the original spacing between trusted anchors
-    for i in range(len(segs)):
-        if times[i] is not None:
-            continue
-        p = max((a for a in anchors if a < i), default=None)
-        n = min((a for a in anchors if a > i), default=None)
-        if p is not None and n is not None and old[n] > old[p]:
-            times[i] = times[p] + (old[i] - old[p]) * (times[n] - times[p]) / (old[n] - old[p])
-        elif p is not None:
-            times[i] = times[p] + (old[i] - old[p])
-        elif n is not None:
-            times[i] = max(0, times[n] - (old[n] - old[i]))
-        else:
-            times[i] = old[i]
-    for i in range(1, len(times)):
+    anchors = in_order()
+    # 3. interpolate the rest
+    for i in range(n):
+        if times[i] is None:
+            times[i] = interp(i, anchors)
+    for i in range(1, n):
         times[i] = max(times[i], times[i - 1])
+    return times, len(anchors)
+
+
+def words(s):
+    return len((s.get("text") or s.get("en") or s.get("translit") or "").split())
+
+
+def implausible(segs, times, dur):
+    """Spots where lines would have to be spoken impossibly fast, or are followed by a long silence."""
+    bad = []
+    for k in range(len(segs)):
+        nxt = times[k + 1] if k + 1 < len(segs) else dur
+        dt, w = nxt - times[k], words(segs[k])
+        if (w >= 8 and dt < w / 3.4 * 0.7) or dt > max(45, w / 2.5 * 2 + 15):
+            bad.append(k)
+    return bad
+
+
+def retime_episode(ep):
+    segs, dur, vid = ep["segments"], ep["duration"], ep["id"]
+    old = [s["t"] for s in segs]
+    est = {}
+    base = windows(dur)
+    collect(vid, segs, base, old, est, 0)
+    times, n_anchor = combine(est, old, len(segs))
+    # second opinion: re-check implausible spots with windows centred on them, choosing the lines
+    # by their improved positions (the first pass may not have shown them to the right window)
+    bad = implausible(segs, times, dur)
+    extra = []
+    for k in bad:
+        a = max(0, int((times[k] - 60) // 10 * 10) + 5)   # offset by 5 s so these never reuse a base window
+        b = min(dur, a + WINDOW)
+        if extra and a < extra[-1][1] - 60:
+            extra[-1] = (extra[-1][0], min(dur, max(extra[-1][1], b), extra[-1][0] + 240))
+        else:
+            extra.append((a, b))
+    if extra:
+        P.log(f"  second opinion for {len(bad)} implausible spots: {len(extra)} extra windows")
+        collect(vid, segs, extra, times, est, len(base))
+        times, n_anchor = combine(est, old, len(segs))
     for s, t in zip(segs, times):
         s["t"] = round(t, 1)
     for c in ep["chapters"][1:]:
         idx = min(range(len(old)), key=lambda k: abs(old[k] - c["t"]))
         c["t"] = segs[idx]["t"]
     ep["timing"] = "gemini-retime"
-    return len(anchors) / max(len(segs), 1)
+    return n_anchor / max(len(segs), 1)
 
 
 if __name__ == "__main__":
