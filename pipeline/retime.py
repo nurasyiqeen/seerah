@@ -89,7 +89,7 @@ def retime_episode(ep):
             continue
         res, model = retime_window(vid, w0, w1, items)
         for i, t in res.items():
-            if 0 <= i < len(segs) and abs(t - old[i]) <= 120:
+            if 0 <= i < len(segs):
                 est.setdefault(i, []).append((t, wid))
         P.log(f"  retime {P.fmt(w0)}-{P.fmt(w1)}: {len(res)}/{len(items)} lines via {model}")
     # 1. a window that goes wrong is usually off for a whole run of lines. So an estimate is trusted
@@ -133,15 +133,19 @@ def retime_episode(ep):
         if n is not None:
             return times[n] - (old[n] - old[i])
         return old[i]
-    soft = {}
-    for i, ts in est.items():
-        if times[i] is None and ts:
+    # lines with only one (or conflicting) answer: accept an answer that falls in order between the
+    # confirmed lines on either side (going left to right, so accepted lines also bound the next ones)
+    strict = list(times)
+    for i in range(len(segs)):
+        ts = est.get(i) or []
+        if times[i] is not None or not ts:
+            continue
+        lo = max((times[j] for j in range(i) if times[j] is not None), default=-1)
+        hi = min((strict[j] for j in range(i + 1, len(segs)) if strict[j] is not None), default=float("inf"))
+        fits = [t for t in ts if lo + 0.5 < t < hi - 0.5]
+        if fits:
             guess = interp(i)
-            pick = min(ts, key=lambda t: abs(t - guess))
-            if abs(pick - guess) <= 10:
-                soft[i] = pick
-    for i, t in soft.items():
-        times[i] = t
+            times[i] = min(fits, key=lambda t: abs(t - guess))
     last = -1
     for i, t in enumerate(times):
         if t is not None and t < last - 0.5:

@@ -16,6 +16,7 @@ sys.path.insert(0, HERE)
 import process as P  # noqa: E402
 import retime as R  # noqa: E402
 import review as RV  # noqa: E402
+import fillgaps as FG  # noqa: E402
 
 DATA = os.path.join(ROOT, "data")
 EPS = os.path.join(DATA, "episodes")
@@ -76,6 +77,8 @@ def main(max_new):
                 if ep.get("timing") != "gemini-retime" and not ep.get("needs_redo"):
                     P.log(f"ep {row['n']}: precise timing pass")
                     R.retime_episode(ep)
+                    if FG.fill_episode(ep) >= 8:
+                        FG.refresh_summary(ep)
                     json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
         # 2. new episodes, in order
         for row in playlist():
@@ -88,6 +91,8 @@ def main(max_new):
             ep = json.load(open(ep_path(row["n"])))
             P.log(f"ep {row['n']}: precise timing pass")
             R.retime_episode(ep)
+            if FG.fill_episode(ep) >= 8:
+                FG.refresh_summary(ep)
             json.dump(ep, open(ep_path(row["n"]), "w"), ensure_ascii=False, indent=1)
     except P.QuotaExhausted as e:
         P.log(f"STOPPED for today: {e}")
