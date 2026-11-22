@@ -56,6 +56,7 @@ PRICES = {
 DEFAULT_PRICE = (2.00, 12.00)  # unknown models: assume expensive
 SPEND_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "spend.json")
 SAFETY_MARGIN = 0.30  # stop this many USD before the budget
+CACHED_RATE = 0.25    # cached input tokens: assume 25% of the normal price (Google discounts them by 75-90%)
 
 
 def spend_state():
@@ -75,8 +76,9 @@ def record_spend(model, usage):
         return
     pin, pout = PRICES.get(model, DEFAULT_PRICE)
     tin = usage.get("promptTokenCount", 0)
+    cached = usage.get("cachedContentTokenCount", 0)  # Google bills cached input at a large discount
     tout = usage.get("candidatesTokenCount", 0) + usage.get("thoughtsTokenCount", 0)
-    cost = tin / 1e6 * pin + tout / 1e6 * pout
+    cost = (tin - cached) / 1e6 * pin + cached / 1e6 * pin * CACHED_RATE + tout / 1e6 * pout
     st["spent_usd"] = round(st.get("spent_usd", 0) + cost, 4)
     st["requests"] = st.get("requests", 0) + 1
     json.dump(st, open(SPEND_FILE, "w"), indent=1)
@@ -262,7 +264,7 @@ def _transcribe_chunk(vid, start, end, glossary):
             "mediaResolution": "MEDIA_RESOLUTION_LOW",
             "responseMimeType": "application/json",
             "responseSchema": SEG_SCHEMA,
-            "maxOutputTokens": 32000,
+            "maxOutputTokens": 20000,
         },
     }
     for attempt in range(2):

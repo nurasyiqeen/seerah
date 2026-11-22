@@ -1,7 +1,15 @@
 {
  "active": true,
- "budget_usd": 6.2,
- "spent_usd": 5.946,
- "requests": 142,
- "note": "RM30 paid run approved by owner on 2026-11-22; set active=false after billing is unlinked"
+ "budget_usd": 3.1,
+ "spent_usd": 0,
+ "requests": 0,
+ "note": "Phase 2 approved by owner 2026-11-22: use remaining RM30 budget, stop around RM25 on Google's meter. Google monthly spend cap MYR30 is the hard backstop.",
+ "history": [
+  {
+   "phase": 1,
+   "estimated_usd_pessimistic": 5.946,
+   "google_meter_myr": 10.96,
+   "note": "Google meter read by owner; lags ~10 min"
+  }
+ ]
 }
