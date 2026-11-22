@@ -35,7 +35,7 @@ def line_preview(s):
 
 
 def retime_window(vid, w0, w1, items):
-    cache = os.path.join(P.CACHE, f"retime_{vid}_{int(w0)}.json")
+    cache = os.path.join(P.CACHE, f"retime2_{vid}_{int(w0)}_{int(w1)}.json")
     if os.path.exists(cache):
         c = json.load(open(cache))
         return {int(k): v for k, v in c["res"].items()}, c["model"]
@@ -61,38 +61,84 @@ Lines:
     return {o["id"]: w0 + o["start"] for o in out if 0 <= o.get("start", -1) <= (w1 - w0) + 1}, model
 
 
+STEP = 90      # windows overlap by half, so (almost) every line is timed twice
+AGREE = 3.0    # two independent estimates must agree within this many seconds
+
+
+def windows(dur):
+    """Overlapping 3-minute windows, plus short extra windows so the first and last lines are also covered twice."""
+    ws = []
+    w0 = 0
+    while w0 < dur:
+        ws.append((w0, min(w0 + WINDOW, dur)))
+        if w0 + WINDOW >= dur:
+            break
+        w0 += STEP
+    ws.append((0, min(120, dur)))
+    ws.append((max(0, dur - 120), dur))
+    return sorted(set(ws))
+
+
 def retime_episode(ep):
     segs, dur, vid = ep["segments"], ep["duration"], ep["id"]
     old = [s["t"] for s in segs]
-    found = {}
-    w0 = 0
-    while w0 < dur:
-        w1 = min(w0 + WINDOW, dur)
+    est = {}  # line index -> list of estimates
+    for (w0, w1) in windows(dur):
         items = [(i, s) for i, s in enumerate(segs) if w0 - MARGIN <= old[i] < w1 + MARGIN]
-        if items:
-            res, model = retime_window(vid, w0, w1, items)
-            # outlier guard: a line's shift must agree with the window's typical shift
-            shifts = sorted(t - old[i] for i, t in res.items() if 0 <= i < len(segs))
-            med = shifts[len(shifts) // 2] if shifts else 0
-            res = {i: t for i, t in res.items() if 0 <= i < len(segs) and abs((t - old[i]) - med) <= 12}
-            for i, t in res.items():
-                if 0 <= i < len(segs) and abs(t - old[i]) <= 120:
-                    # prefer the window where the line sits furthest from the edges
-                    edge = min(t - w0, w1 - t)
-                    if i not in found or edge > found[i][1]:
-                        found[i] = (t, edge)
-            P.log(f"  retime {P.fmt(w0)}-{P.fmt(w1)}: {len(res)}/{len(items)} lines via {model}")
-        w0 = w1
-    times = [found[i][0] if i in found else None for i in range(len(segs))]
-    # drop anchors that break the order (keep the longest increasing run, greedy)
+        if not items:
+            continue
+        res, model = retime_window(vid, w0, w1, items)
+        for i, t in res.items():
+            if 0 <= i < len(segs) and abs(t - old[i]) <= 120:
+                est.setdefault(i, []).append(t)
+        P.log(f"  retime {P.fmt(w0)}-{P.fmt(w1)}: {len(res)}/{len(items)} lines via {model}")
+    times = [None] * len(segs)
+    for i, ts in est.items():
+        # anchor only where two estimates agree; a single or conflicting answer is not trusted
+        best = None
+        for a in range(len(ts)):
+            for b in range(a + 1, len(ts)):
+                if abs(ts[a] - ts[b]) <= AGREE and (best is None or abs(ts[a] - ts[b]) < best[0]):
+                    best = (abs(ts[a] - ts[b]), (ts[a] + ts[b]) / 2)
+        if best:
+            times[i] = best[1]
+    # keep anchors in order: drop any anchor that goes backwards
     last = -1
     for i, t in enumerate(times):
         if t is not None and t < last - 0.5:
             times[i] = None
         elif t is not None:
             last = t
-    # fill gaps by interpolating along the old timings
     anchors = [i for i, t in enumerate(times) if t is not None]
+    # tie-break: where the two answers disagreed, keep the one that fits smoothly between the
+    # trusted lines on either side (a window that went wrong is usually off by a whole block)
+    def interp(i):
+        p = max((a for a in anchors if a < i), default=None)
+        n = min((a for a in anchors if a > i), default=None)
+        if p is not None and n is not None and old[n] > old[p]:
+            return times[p] + (old[i] - old[p]) * (times[n] - times[p]) / (old[n] - old[p])
+        if p is not None:
+            return times[p] + (old[i] - old[p])
+        if n is not None:
+            return times[n] - (old[n] - old[i])
+        return old[i]
+    soft = {}
+    for i, ts in est.items():
+        if times[i] is None and ts:
+            guess = interp(i)
+            pick = min(ts, key=lambda t: abs(t - guess))
+            if abs(pick - guess) <= 10:
+                soft[i] = pick
+    for i, t in soft.items():
+        times[i] = t
+    last = -1
+    for i, t in enumerate(times):
+        if t is not None and t < last - 0.5:
+            times[i] = None
+        elif t is not None:
+            last = t
+    anchors = [i for i, t in enumerate(times) if t is not None]
+    # fill the rest by interpolating along the original spacing between trusted anchors
     for i in range(len(segs)):
         if times[i] is not None:
             continue

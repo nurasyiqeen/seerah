@@ -196,21 +196,39 @@ def fmt(s):
     return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}" if s >= 3600 else f"{s // 60:02d}:{s % 60:02d}"
 
 
-GARBLE = re.compile(r"[\u1000-\u109F\u0250-\u02AF]|#\d{4,};|&#\d+;|�")
-LEAKED_TS = re.compile(r"^\s*\d+\s*\[\d{1,2}:\d{2}(?::\d{2})?\]\s*")
+GARBLE = re.compile(r"[\u1000-\u109F\u0250-\u02AF]|#\d{4,};|&#\d+;|\ufffd")
+LEAKED_TS = re.compile(r"(?:^\s*\d+\s*)?\[\d{1,2}:\d{2}(?::\d{2})?\]\s*")   # "[05:00]" anywhere, "1 [00:13]" at start
+LOOP = re.compile(r"(.{2,30}?)\1{4,}")                                         # same fragment 5+ times in a row
+FILE_EXT = re.compile(r"\.(?:json|csv|txt|xml|docx?|pdf|zip|tar|gz|bz2|7z|rar)\b", re.I)
+EN_TAG = re.compile(r"\s*\.?\s*\ben:\s*", re.I)
+
+
+def clean_text(v):
+    v = re.sub(r"&?#6501[08];", "ﷺ", v)
+    v = LEAKED_TS.sub("", v)
+    return v.strip()
+
+
+def is_garbled(v):
+    return bool(GARBLE.search(v) or LOOP.search(v) or len(FILE_EXT.findall(v)) >= 2)
 
 
 def clean_segments(segs):
     """Repair small artefacts; reject output that is visibly garbled so it gets retried."""
     bad = 0
     for s in segs:
+        # a recitation whose transliteration swallowed the English ("... al-Quran.en: His character ...")
+        if s.get("kind") == "arabic" and isinstance(s.get("translit"), str) and EN_TAG.search(s["translit"]):
+            tl, en = EN_TAG.split(s["translit"], 1)
+            s["translit"] = tl.rstrip(" .")
+            if not s.get("en"):
+                s["en"] = en
         for k in ("text", "translit", "en", "ar"):
             v = s.get(k)
             if not isinstance(v, str):
                 continue
-            v = re.sub(r"&?#6501[08];", "ﷺ", v)
-            v = LEAKED_TS.sub("", v)
-            if GARBLE.search(v):
+            v = clean_text(v)
+            if is_garbled(v):
                 bad += 1
             s[k] = v
     if bad:
