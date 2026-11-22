@@ -71,11 +71,20 @@
  {
   "n": 5,
   "id": "8ryn_Rm8l78",
-  "title": "\"Verily this House has a Lord Who will protect it!\"",
+  "title": "The Year of the Elephant and the Birth of the Prophet ﷺ",
   "duration": 2743,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "overview": "This episode covers the transition of power in Yemen from the Himyarite kingdom to Abyssinian rule, culminating in the rise of Abrahah. It details his failed attempt to divert Arab pilgrimage to the church of al-Qulays and the miraculous divine defense of the Ka'bah during the Year of the Elephant, which coincided with the birth of the Prophet Muhammad ﷺ.",
+  "chapters": [
+   "The Abyssinian Conquest of Yemen",
+   "The Duel: Aryat vs. Abrahah",
+   "Abrahah’s Diplomacy with the Najashi",
+   "The Sacred Months and the Church of al-Qulays",
+   "The March of the Elephant",
+   "Abdul Muttalib and the Protection of the Ka'bah",
+   "Divine Intervention and the Birth of the Prophet ﷺ"
+  ],
+  "ready": true,
+  "synced": true
  },
  {
   "n": 6,
