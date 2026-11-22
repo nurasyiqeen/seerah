@@ -82,26 +82,37 @@ def windows(dur):
 def retime_episode(ep):
     segs, dur, vid = ep["segments"], ep["duration"], ep["id"]
     old = [s["t"] for s in segs]
-    est = {}  # line index -> list of estimates
-    for (w0, w1) in windows(dur):
+    est = {}  # line index -> list of (estimate, window id)
+    for wid, (w0, w1) in enumerate(windows(dur)):
         items = [(i, s) for i, s in enumerate(segs) if w0 - MARGIN <= old[i] < w1 + MARGIN]
         if not items:
             continue
         res, model = retime_window(vid, w0, w1, items)
         for i, t in res.items():
             if 0 <= i < len(segs) and abs(t - old[i]) <= 120:
-                est.setdefault(i, []).append(t)
+                est.setdefault(i, []).append((t, wid))
         P.log(f"  retime {P.fmt(w0)}-{P.fmt(w1)}: {len(res)}/{len(items)} lines via {model}")
+    # 1. a window that goes wrong is usually off for a whole run of lines. So an estimate is trusted
+    #    if it agrees with another window, or if its own window's answers for the NEARBY lines agree
+    #    with the other windows (local consistency).
+    def agrees(j, t, w):
+        return any(abs(u - t) <= AGREE for u, v in est.get(j, []) if v != w)
+    own = {}
+    for i, ts in est.items():
+        for t, w in ts:
+            own[(i, w)] = t
+    def local_score(i, w):
+        return sum(1 for j in range(i - 4, i + 5) if j != i and (j, w) in own and agrees(j, own[(j, w)], w))
     times = [None] * len(segs)
     for i, ts in est.items():
-        # anchor only where two estimates agree; a single or conflicting answer is not trusted
-        best = None
-        for a in range(len(ts)):
-            for b in range(a + 1, len(ts)):
-                if abs(ts[a] - ts[b]) <= AGREE and (best is None or abs(ts[a] - ts[b]) < best[0]):
-                    best = (abs(ts[a] - ts[b]), (ts[a] + ts[b]) / 2)
-        if best:
-            times[i] = best[1]
+        pair = min(((abs(a - b), (a + b) / 2) for k, (a, wa) in enumerate(ts) for b, wb in ts[k + 1:] if wa != wb), default=None)
+        if pair and pair[0] <= AGREE:
+            times[i] = pair[1]
+            continue
+        scored = sorted(((local_score(i, w), t) for t, w in ts), reverse=True)
+        if scored and scored[0][0] >= 2 and (len(scored) == 1 or scored[0][0] > scored[1][0]):
+            times[i] = scored[0][1]
+    est = {i: [t for t, w in ts] for i, ts in est.items()}
     # keep anchors in order: drop any anchor that goes backwards
     last = -1
     for i, t in enumerate(times):
