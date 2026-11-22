@@ -1,9 +1,9 @@
 {
- "active": true,
+ "active": false,
  "budget_usd": 1.231,
  "spent_usd": 1.231,
  "requests": 34,
- "note": "Phase 4 approved by owner 2026-11-22 (meter MYR22): finish episode 8 + flashcards only. | finished; budget closed until billing is unlinked",
+ "note": "Paid run finished 2026-11-22 (episodes 1-8). Billing unlinked by owner; key back on free tier. Free daily job resumes.",
  "history": [
   {
    "phase": 1,
@@ -20,6 +20,11 @@
    "phase": 3,
    "estimated_usd": 3.301,
    "google_meter_myr": 22
+  },
+  {
+   "phase": 4,
+   "estimated_usd": 1.231,
+   "note": "final; Google meter ~MYR25-26 expected"
   }
  ]
 }
