@@ -53,11 +53,20 @@
  {
   "n": 4,
   "id": "sk9dUp4JVcw",
-  "title": "\"In the Name of Allah, Lord of the boy\"",
+  "title": "The Boy and the King: The Martyrs of the Trench",
   "duration": 1862,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "overview": "This episode recounts the spread of Christianity in Yemen through the miraculous story of a young boy who chose faith over sorcery. It details the brutal martyrdom of twenty thousand believers in the 'trench of fire' and the subsequent conquest of Yemen by the Abyssinian army led by Abrahah.",
+  "chapters": [
+   "Christianity's Entry into Najran",
+   "The Boy, the Monk, and the Sorcerer",
+   "Miracles and the Proof of Truth",
+   "The Failed Executions",
+   "The Supreme Sacrifice of the Ghulam",
+   "The People of the Trench",
+   "The Abyssinian Conquest of Yemen"
+  ],
+  "ready": true,
+  "synced": true
  },
  {
   "n": 5,
