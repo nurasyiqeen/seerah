@@ -32,7 +32,8 @@
   "category": "person",
   "meaning": "A son of Qusayy and ancestor of the Prophet ﷺ",
   "episodes": [
-   7
+   7,
+   8
   ]
  },
  {
@@ -44,7 +45,17 @@
    1,
    2,
    5,
-   7
+   7,
+   8
+  ]
+ },
+ {
+  "translit": "Abdul Uzza",
+  "arabic": "عبد العزى",
+  "category": "person",
+  "meaning": "The real name of Abu Lahab.",
+  "episodes": [
+   8
   ]
  },
  {
@@ -53,7 +64,8 @@
   "category": "person",
   "meaning": "The father of the Prophet Muhammad ﷺ",
   "episodes": [
-   7
+   7,
+   8
   ]
  },
  {
@@ -95,6 +107,15 @@
   ]
  },
  {
+  "translit": "Abu Lahab",
+  "arabic": "أبو لهب",
+  "category": "person",
+  "meaning": "An uncle of the Prophet ﷺ who became a fierce enemy of Islam.",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "Abu Righal",
   "arabic": "أبو رغال",
   "category": "person",
@@ -109,7 +130,8 @@
   "category": "person",
   "meaning": "The Prophet's ﷺ uncle who protected him but died without accepting Islam.",
   "episodes": [
-   1
+   1,
+   8
   ]
  },
  {
@@ -141,6 +163,15 @@
   ]
  },
  {
+  "translit": "al-Abbas",
+  "arabic": "العباس",
+  "category": "person",
+  "meaning": "An uncle of the Prophet ﷺ who accepted Islam.",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "al-Ashhur al-Hurum",
   "arabic": "الأشهر الحرم",
   "category": "term",
@@ -159,6 +190,15 @@
   ]
  },
  {
+  "translit": "al-Ghurab al-A'sam",
+  "arabic": "الغُرَاب الْأَعْصَم",
+  "category": "other",
+  "meaning": "A black crow with a white feather, used as a sign for the well's location.",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "al-Hajar al-Aswad",
   "arabic": "الحجر الأسود",
   "category": "term",
@@ -168,12 +208,22 @@
   ]
  },
  {
+  "translit": "al-Harith",
+  "arabic": "الحارث",
+  "category": "person",
+  "meaning": "The eldest son of Abdul Muttalib.",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "al-Madinah al-Nabawiyyah",
   "arabic": "الْمَدِينَة النَّبَوِيَّة",
   "category": "place",
   "meaning": "The Prophetic City; the name given to Yathrib after the migration of the Prophet ﷺ.",
   "episodes": [
-   2
+   2,
+   8
   ]
  },
  {
@@ -213,6 +263,15 @@
   ]
  },
  {
+  "translit": "al-Sharifayn",
+  "arabic": "الشريفين",
+  "category": "term",
+  "meaning": "The noble (sanctuaries).",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "al-Ta'if",
   "arabic": "الطائف",
   "category": "place",
@@ -239,7 +298,8 @@
    2,
    3,
    4,
-   7
+   7,
+   8
   ]
  },
  {
@@ -288,6 +348,15 @@
   ]
  },
  {
+  "translit": "Aminah bint Wahb",
+  "arabic": "آمنة بنت وهب",
+  "category": "person",
+  "meaning": "The mother of the Prophet Muhammad ﷺ.",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "Amr",
   "arabic": "عمرو",
   "category": "person",
@@ -304,7 +373,8 @@
   "episodes": [
    1,
    2,
-   7
+   7,
+   8
   ]
  },
  {
@@ -360,7 +430,8 @@
   "category": "phrase",
   "meaning": "By the permission of Allah.",
   "episodes": [
-   3
+   3,
+   8
   ]
  },
  {
@@ -471,6 +542,15 @@
   ]
  },
  {
+  "translit": "diyah",
+  "arabic": "دية",
+  "category": "term",
+  "meaning": "Blood money paid as compensation for killing or wounding.",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "du'a",
   "arabic": "دُعَاء",
   "category": "term",
@@ -574,6 +654,24 @@
   ]
  },
  {
+  "translit": "Hamzah",
+  "arabic": "حمزة",
+  "category": "person",
+  "meaning": "A brave uncle of the Prophet ﷺ who accepted Islam.",
+  "episodes": [
+   8
+  ]
+ },
+ {
+  "translit": "Haramayn",
+  "arabic": "الحرمين",
+  "category": "place",
+  "meaning": "The two holy sanctuaries (Makkah and Madinah).",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "Hashim",
   "arabic": "هَاشِم",
   "category": "person",
@@ -651,7 +749,8 @@
   "category": "term",
   "meaning": "Pilgrims who perform Hajj",
   "episodes": [
-   7
+   7,
+   8
   ]
  },
  {
@@ -680,7 +779,8 @@
   "episodes": [
    1,
    2,
-   7
+   7,
+   8
   ]
  },
  {
@@ -719,7 +819,8 @@
   "episodes": [
    3,
    4,
-   7
+   7,
+   8
   ]
  },
  {
@@ -739,7 +840,8 @@
   "category": "person",
   "meaning": "A man turned to stone for immorality in the Ka'bah, later worshipped as an idol.",
   "episodes": [
-   1
+   1,
+   8
   ]
  },
  {
@@ -749,7 +851,8 @@
   "meaning": "The Prophet Ishmael (AS), son of Ibrahim (AS) and ancestor of the Prophet Muhammad ﷺ.",
   "episodes": [
    1,
-   7
+   7,
+   8
   ]
  },
  {
@@ -758,7 +861,8 @@
   "category": "term",
   "meaning": "The pre-Islamic period of ignorance in Arabia.",
   "episodes": [
-   1
+   1,
+   8
   ]
  },
  {
@@ -778,7 +882,8 @@
   "meaning": "The Yemeni tribe that was the first to settle in the valley of Makkah.",
   "episodes": [
    1,
-   7
+   7,
+   8
   ]
  },
  {
@@ -795,13 +900,23 @@
   ]
  },
  {
+  "translit": "Kahinah Bani Sa'd",
+  "arabic": "كاهنة بني سعد",
+  "category": "person",
+  "meaning": "A famous female fortune teller from the Banu Sa'd tribe.",
+  "episodes": [
+   8
+  ]
+ },
+ {
   "translit": "Khaybar",
   "arabic": "خيبر",
   "category": "place",
   "meaning": "An oasis north of Madinah that was a major Jewish settlement in pre-Islamic times.",
   "episodes": [
    2,
-   3
+   3,
+   8
   ]
  },
  {
@@ -838,7 +953,8 @@
   "meaning": "The tribe that took control of Makkah from Jurhum and eventually introduced idols.",
   "episodes": [
    1,
-   7
+   7,
+   8
   ]
  },
  {
@@ -870,6 +986,15 @@
   "meaning": "Disbelievers or those who reject the message of Islam.",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "kufr",
+  "arabic": "كفر",
+  "category": "term",
+  "meaning": "Disbelief.",
+  "episodes": [
+   8
   ]
  },
  {
@@ -938,7 +1063,8 @@
    1,
    2,
    4,
-   7
+   7,
+   8
   ]
  },
  {
@@ -1047,7 +1173,8 @@
   "category": "person",
   "meaning": "A woman turned to stone for immorality in the Ka'bah, later worshipped as an idol.",
   "episodes": [
-   1
+   1,
+   8
   ]
  },
  {
@@ -1120,7 +1247,8 @@
    1,
    2,
    3,
-   7
+   7,
+   8
   ]
  },
  {
@@ -1129,7 +1257,8 @@
   "category": "person",
   "meaning": "A key ancestor of the Prophet ﷺ who unified Quraysh and took back Makkah",
   "episodes": [
-   7
+   7,
+   8
   ]
  },
  {
@@ -1290,7 +1419,8 @@
   "category": "person",
   "meaning": "The given name of Abdul Muttalib",
   "episodes": [
-   7
+   7,
+   8
   ]
  },
  {
@@ -1313,7 +1443,8 @@
    1,
    2,
    3,
-   7
+   7,
+   8
   ]
  },
  {
@@ -1397,7 +1528,8 @@
    1,
    2,
    4,
-   7
+   7,
+   8
   ]
  },
  {
@@ -1539,7 +1671,8 @@
   "category": "place",
   "meaning": "The ancient name of the city of Madinah.",
   "episodes": [
-   2
+   2,
+   8
   ]
  },
  {
@@ -1571,7 +1704,8 @@
   "meaning": "The miraculous well in Makkah revealed by Jibril (AS) to Hajar (AS).",
   "episodes": [
    1,
-   7
+   7,
+   8
   ]
  }
 ]
