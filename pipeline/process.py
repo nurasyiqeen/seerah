@@ -21,6 +21,10 @@ import align  # noqa: E402
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:{method}"
 MODELS = ["gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash", "gemini-3.7-flash"]  # each has its own free daily quota; quality checks guard output
 TEXT_MODELS = MODELS + ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]  # for text-only summaries
+if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "spend.json")) and \
+        json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "spend.json"))).get("active"):
+    MODELS = ["gemini-3.5-flash"]  # paid: most accurate transcription model only
+    TEXT_MODELS = ["gemini-3-flash-preview", "gemini-3.5-flash"]  # paid: cheaper model for summaries/flashcards
 MIN_WPM = 110
 CHUNK = 600  # seconds per transcription request
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache")
@@ -40,6 +44,50 @@ class QuotaExhausted(Exception):
     pass
 
 
+# ---------------------------------------------------------------- spend cap (paid mode)
+# When pipeline/spend.json has "active": true, every request's cost is estimated from Google's own
+# token counts and the run stops before the budget is reached. Prices are USD per 1M tokens and
+# deliberately rounded UP; output includes "thinking" tokens, which Google bills as output.
+PRICES = {
+    "gemini-3.5-flash": (1.50, 9.00), "gemini-3.6-flash": (1.50, 9.00),
+    "gemini-3-flash-preview": (0.50, 4.00),
+    "gemini-3.5-flash-lite": (0.30, 2.50), "gemini-3.1-flash-lite": (0.30, 2.50),
+}
+DEFAULT_PRICE = (2.00, 12.00)  # unknown models: assume expensive
+SPEND_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "spend.json")
+SAFETY_MARGIN = 0.30  # stop this many USD before the budget
+
+
+def spend_state():
+    try:
+        return json.load(open(SPEND_FILE))
+    except (OSError, ValueError):
+        return {"active": False}
+
+
+def paid_mode():
+    return spend_state().get("active", False)
+
+
+def record_spend(model, usage):
+    st = spend_state()
+    if not st.get("active"):
+        return
+    pin, pout = PRICES.get(model, DEFAULT_PRICE)
+    tin = usage.get("promptTokenCount", 0)
+    tout = usage.get("candidatesTokenCount", 0) + usage.get("thoughtsTokenCount", 0)
+    cost = tin / 1e6 * pin + tout / 1e6 * pout
+    st["spent_usd"] = round(st.get("spent_usd", 0) + cost, 4)
+    st["requests"] = st.get("requests", 0) + 1
+    json.dump(st, open(SPEND_FILE, "w"), indent=1)
+
+
+def check_budget():
+    st = spend_state()
+    if st.get("active") and st.get("spent_usd", 0) >= st["budget_usd"] - SAFETY_MARGIN:
+        raise QuotaExhausted(f"paid budget reached: ${st.get('spent_usd', 0):.2f} of ${st['budget_usd']:.2f} spent")
+
+
 EXHAUSTED = set()  # models whose free daily quota is used up in this run
 
 
@@ -52,6 +100,8 @@ def call(method, body, model=None, timeout=300, pool=None):
         if not live:
             raise QuotaExhausted("daily free quota used up for: " + ", ".join(pool))
         m = live[attempt % len(live)]
+        if method == "generateContent":
+            check_budget()
         try:
             r = requests.post(API.format(model=m, method=method), json=body, timeout=timeout)
         except requests.RequestException as e:
@@ -59,7 +109,10 @@ def call(method, body, model=None, timeout=300, pool=None):
             time.sleep(5 * (attempt + 1))
             continue
         if r.status_code == 200:
-            return r.json(), m
+            data = r.json()
+            if method == "generateContent":
+                record_spend(m, data.get("usageMetadata", {}))
+            return data, m
         last = f"{r.status_code} {r.text[:300]}"
         if r.status_code == 429 and "per day" in r.text:
             log(f"  {m}: daily quota used up; switching model")
@@ -204,7 +257,7 @@ def _transcribe_chunk(vid, start, end, glossary):
             log(f"  chunk {fmt(start)}-{fmt(end)} unusable response (finish={fr}, {e!r:.60}); retrying")
     else:
         if end - start <= 150:
-            for alt in [m for m in MODELS[1:] if m not in EXHAUSTED]:
+            for alt in [m for m in (MODELS[1:] or ["gemini-3-flash-preview"]) if m not in EXHAUSTED]:
                 try:
                     resp, model = call("generateContent", body, model=alt)
                     segs = clean_segments(json.loads(text_of(resp))["segments"])
