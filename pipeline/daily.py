@@ -84,11 +84,11 @@ def main(max_new):
             if os.path.exists(ep_path(row["n"])):
                 continue
             P.process(DATA, row["n"], row["id"])
+            done_new += 1  # transcript saved; precise timing may finish on a later day
             ep = json.load(open(ep_path(row["n"])))
             P.log(f"ep {row['n']}: precise timing pass")
             R.retime_episode(ep)
             json.dump(ep, open(ep_path(row["n"]), "w"), ensure_ascii=False, indent=1)
-            done_new += 1
     except P.QuotaExhausted as e:
         P.log(f"STOPPED for today: {e}")
     finally:
