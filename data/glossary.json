@@ -60,7 +60,35 @@
   "category": "phrase",
   "meaning": "Peace be upon him; honorific for prophets.",
   "episodes": [
-   2
+   2,
+   3
+  ]
+ },
+ {
+  "translit": "Ali 'Imran",
+  "arabic": "آل عِمْرَان",
+  "category": "other",
+  "meaning": "The third chapter of the Qur'an, which discusses the delegation from Najran.",
+  "episodes": [
+   3
+  ]
+ },
+ {
+  "translit": "amanah",
+  "arabic": "أمانة",
+  "category": "term",
+  "meaning": "A trust or something given to someone to be kept safe.",
+  "episodes": [
+   3
+  ]
+ },
+ {
+  "translit": "Amr",
+  "arabic": "عمرو",
+  "category": "person",
+  "meaning": "The brother of Hassan who assassinated him and subsequently suffered from severe insomnia.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -93,13 +121,59 @@
   ]
  },
  {
+  "translit": "bi-idhnillah",
+  "arabic": "بإذن الله",
+  "category": "phrase",
+  "meaning": "By the permission of Allah.",
+  "episodes": [
+   3
+  ]
+ },
+ {
   "translit": "dawah",
   "arabic": "دَعْوَة",
   "category": "term",
   "meaning": "The act of inviting people to Islam.",
   "episodes": [
    1,
-   2
+   2,
+   3
+  ]
+ },
+ {
+  "translit": "Dhu Nuwas",
+  "arabic": "ذو نواس",
+  "category": "person",
+  "meaning": "A descendant of the Tubba family who killed Lakhni'ah and reclaimed the throne.",
+  "episodes": [
+   3
+  ]
+ },
+ {
+  "translit": "Dhu Ru'ayn",
+  "arabic": "ذو رعين",
+  "category": "person",
+  "meaning": "The only minister who opposed the assassination of King Hassan and saved himself through a letter of poetry.",
+  "episodes": [
+   3
+  ]
+ },
+ {
+  "translit": "du'a",
+  "arabic": "دُعَاء",
+  "category": "term",
+  "meaning": "Supplication or prayer to Allah.",
+  "episodes": [
+   3
+  ]
+ },
+ {
+  "translit": "Faymiyun",
+  "arabic": "فَيْمِيُون",
+  "category": "person",
+  "meaning": "The pious Christian slave whose miracle led to the conversion of the people of Najran.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -130,12 +204,30 @@
   ]
  },
  {
+  "translit": "Hassan",
+  "arabic": "حسان",
+  "category": "person",
+  "meaning": "The son of Tibban As'ad whose arrogance led his ministers to plot his assassination.",
+  "episodes": [
+   3
+  ]
+ },
+ {
   "translit": "Hijaz",
   "arabic": "حجاز",
   "category": "place",
   "meaning": "The western region of the Arabian Peninsula that includes Makkah and Madinah.",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "Himyar",
+  "arabic": "حمير",
+  "category": "tribe",
+  "meaning": "The major tribe/kingdom of Yemen (Ahl Yemen) during the pre-Islamic period.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -157,6 +249,15 @@
   ]
  },
  {
+  "translit": "ibadah",
+  "arabic": "عِبَادَة",
+  "category": "term",
+  "meaning": "Acts of worship.",
+  "episodes": [
+   3
+  ]
+ },
+ {
   "translit": "Ibrahim",
   "arabic": "إبراهيم",
   "category": "person",
@@ -173,6 +274,24 @@
   "meaning": "Faith or belief in the heart.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "insha'Allah",
+  "arabic": "إن شاء الله",
+  "category": "phrase",
+  "meaning": "God willing.",
+  "episodes": [
+   3
+  ]
+ },
+ {
+  "translit": "Isa",
+  "arabic": "عِيسَى",
+  "category": "person",
+  "meaning": "The Prophet Jesus, whose original message was Unitarianism.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -227,7 +346,8 @@
   "category": "place",
   "meaning": "An oasis north of Madinah that was a major Jewish settlement in pre-Islamic times.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -254,7 +374,8 @@
   "category": "term",
   "meaning": "The title for the emperors of the Persian Empire (Chosroes).",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -285,12 +406,31 @@
   ]
  },
  {
+  "translit": "Lakhni'ah",
+  "arabic": "لخنيعة",
+  "category": "person",
+  "meaning": "A usurper who temporarily took control of the Yemeni kingdom during a period of civil war.",
+  "episodes": [
+   3
+  ]
+ },
+ {
   "translit": "Madinah",
   "arabic": "مدينة",
   "category": "place",
   "meaning": "The city originally known as Yathrib, which became the center of the first Islamic state.",
   "episodes": [
-   2
+   2,
+   3
+  ]
+ },
+ {
+  "translit": "majlis",
+  "arabic": "مجلس",
+  "category": "term",
+  "meaning": "A gathering or assembly of people.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -345,7 +485,8 @@
   "category": "term",
   "meaning": "Polytheists; those who associate partners with Allah.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -355,6 +496,15 @@
   "meaning": "Arabized Arabs; refers to the lineage of Ismail (AS) who adopted the Arabic language.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Muwahhidin",
+  "arabic": "مُوَحِّدِين",
+  "category": "term",
+  "meaning": "Unitarians; those who believe in the oneness of God (tawhid).",
+  "episodes": [
+   3
   ]
  },
  {
@@ -381,7 +531,17 @@
   "category": "place",
   "meaning": "A city on the border of Yemen and Saudi Arabia, historically known as a Christian center.",
   "episodes": [
-   2
+   2,
+   3
+  ]
+ },
+ {
+  "translit": "qadar",
+  "arabic": "قَدَر",
+  "category": "term",
+  "meaning": "Divine decree or destiny.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -400,7 +560,8 @@
   "meaning": "The leading tribe of Makkah to which the Prophet ﷺ belonged.",
   "episodes": [
    1,
-   2
+   2,
+   3
   ]
  },
  {
@@ -409,7 +570,8 @@
   "category": "person",
   "meaning": "An ancient King of Yemen whose dream predicted the end of Yemeni rule to the Ethiopians.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -419,6 +581,15 @@
   "meaning": "The Messenger of Allah; the primary title used for Prophet Muhammad ﷺ.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Sadaqta",
+  "arabic": "صدقت",
+  "category": "phrase",
+  "meaning": "A phrase meaning 'You have spoken the truth'.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -446,7 +617,8 @@
   "meaning": "The prophetic biography; the life and mission of Prophet Muhammad ﷺ.",
   "episodes": [
    1,
-   2
+   2,
+   3
   ]
  },
  {
@@ -455,7 +627,8 @@
   "category": "place",
   "meaning": "The region of Greater Syria, including modern Syria, Jordan, Lebanon, and Palestine.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -475,7 +648,17 @@
   "meaning": "Glorified and Exalted is He; a phrase used after mentioning Allah.",
   "episodes": [
    1,
-   2
+   2,
+   3
+  ]
+ },
+ {
+  "translit": "tafsir",
+  "arabic": "تَفْسِير",
+  "category": "term",
+  "meaning": "Exegesis or interpretation of the Qur'an.",
+  "episodes": [
+   3
   ]
  },
  {
@@ -512,7 +695,8 @@
   "category": "term",
   "meaning": "The Torah; the revelation given to the Prophet Musa (Moses) containing prophecies of the final Messenger.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -521,7 +705,8 @@
   "category": "person",
   "meaning": "A powerful Tubba (King) of Yemen who converted to Judaism and provided the first Kiswah.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -530,7 +715,8 @@
   "category": "term",
   "meaning": "The honorary title for the kings of the Himyarite Kingdom in Yemen.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
@@ -575,7 +761,8 @@
   "category": "place",
   "meaning": "The country at the southern end of the Arabian Peninsula, home of the original Arabs.",
   "episodes": [
-   2
+   2,
+   3
   ]
  },
  {
