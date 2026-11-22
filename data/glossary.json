@@ -9,6 +9,33 @@
   ]
  },
  {
+  "translit": "abayah",
+  "arabic": "عَبَايَة",
+  "category": "term",
+  "meaning": "An outer garment worn by women",
+  "episodes": [
+   7
+  ]
+ },
+ {
+  "translit": "Abd al-Dar",
+  "arabic": "عَبْد الدَّار",
+  "category": "person",
+  "meaning": "The eldest son of Qusayy who inherited the key to the Ka'bah and Dar al-Nadwah",
+  "episodes": [
+   7
+  ]
+ },
+ {
+  "translit": "Abd Manaf",
+  "arabic": "عَبْد مَنَاف",
+  "category": "person",
+  "meaning": "A son of Qusayy and ancestor of the Prophet ﷺ",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "Abdul Muttalib",
   "arabic": "عَبْد الْمُطَّلِب",
   "category": "person",
@@ -16,7 +43,17 @@
   "episodes": [
    1,
    2,
-   5
+   5,
+   7
+  ]
+ },
+ {
+  "translit": "Abdullah ibn Abdul Muttalib",
+  "arabic": "عبد الله بن عَبْد الْمُطَّلِب",
+  "category": "person",
+  "meaning": "The father of the Prophet Muhammad ﷺ",
+  "episodes": [
+   7
   ]
  },
  {
@@ -158,6 +195,15 @@
   ]
  },
  {
+  "translit": "al-Muttalib",
+  "arabic": "الْمُطَّلِب",
+  "category": "person",
+  "meaning": "The uncle of Shaybah who brought him back to Makkah",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "al-Qulays",
   "arabic": "قليس",
   "category": "place",
@@ -192,7 +238,8 @@
   "episodes": [
    2,
    3,
-   4
+   4,
+   7
   ]
  },
  {
@@ -256,7 +303,8 @@
   "meaning": "The leader of Khuza'ah credited with introducing idol worship to Arabia.",
   "episodes": [
    1,
-   2
+   2,
+   7
   ]
  },
  {
@@ -331,6 +379,15 @@
   "meaning": "Deceivers or false messiahs.",
   "episodes": [
    6
+  ]
+ },
+ {
+  "translit": "Dar al-Nadwah",
+  "arabic": "دَار الندوة",
+  "category": "place",
+  "meaning": "The assembly hall established by Qusayy in Makkah",
+  "episodes": [
+   7
   ]
  },
  {
@@ -409,7 +466,8 @@
   "category": "term",
   "meaning": "Religion, creed, or way of life.",
   "episodes": [
-   4
+   4,
+   7
   ]
  },
  {
@@ -439,6 +497,24 @@
   "episodes": [
    3,
    4
+  ]
+ },
+ {
+  "translit": "fi sabilillah",
+  "arabic": "فِي سَبِيلِ اللهِ",
+  "category": "phrase",
+  "meaning": "In the path of Allah",
+  "episodes": [
+   7
+  ]
+ },
+ {
+  "translit": "Fihr",
+  "arabic": "فِهْر",
+  "category": "person",
+  "meaning": "A prominent ancestor of the Quraysh, often equated with the tribe's namesake",
+  "episodes": [
+   7
   ]
  },
  {
@@ -474,7 +550,8 @@
   "category": "person",
   "meaning": "The wife of Ibrahim (AS) and mother of Ismail (AS).",
   "episodes": [
-   1
+   1,
+   7
   ]
  },
  {
@@ -483,7 +560,26 @@
   "category": "event",
   "meaning": "The annual major pilgrimage to Makkah.",
   "episodes": [
-   1
+   1,
+   7
+  ]
+ },
+ {
+  "translit": "Hakim ibn Hizam",
+  "arabic": "حَكِيم بن حِزَام",
+  "category": "person",
+  "meaning": "A companion of the Prophet ﷺ who bought and later sold Dar al-Nadwah",
+  "episodes": [
+   7
+  ]
+ },
+ {
+  "translit": "Hashim",
+  "arabic": "هَاشِم",
+  "category": "person",
+  "meaning": "The great-grandfather of the Prophet ﷺ and founder of the Banu Hashim",
+  "episodes": [
+   7
   ]
  },
  {
@@ -502,6 +598,15 @@
   "meaning": "The western region of the Arabian Peninsula that includes Makkah and Madinah.",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "Hijrah",
+  "arabic": "هِجْرَة",
+  "category": "event",
+  "meaning": "The migration of the Prophet ﷺ from Makkah to Madinah",
+  "episodes": [
+   7
   ]
  },
  {
@@ -541,6 +646,24 @@
   ]
  },
  {
+  "translit": "hujjaj",
+  "arabic": "حجاج",
+  "category": "term",
+  "meaning": "Pilgrims who perform Hajj",
+  "episodes": [
+   7
+  ]
+ },
+ {
+  "translit": "Hulayl",
+  "arabic": "حليل",
+  "category": "person",
+  "meaning": "The last Khuza'ah leader of Makkah and father-in-law of Qusayy",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "ibadah",
   "arabic": "عِبَادَة",
   "category": "term",
@@ -556,7 +679,8 @@
   "meaning": "The Prophet Abraham (AS), known as the Father of the Prophets.",
   "episodes": [
    1,
-   2
+   2,
+   7
   ]
  },
  {
@@ -594,7 +718,8 @@
   "meaning": "God willing.",
   "episodes": [
    3,
-   4
+   4,
+   7
   ]
  },
  {
@@ -623,7 +748,8 @@
   "category": "person",
   "meaning": "The Prophet Ishmael (AS), son of Ibrahim (AS) and ancestor of the Prophet Muhammad ﷺ.",
   "episodes": [
-   1
+   1,
+   7
   ]
  },
  {
@@ -641,7 +767,8 @@
   "category": "place",
   "meaning": "The Arabian Peninsula.",
   "episodes": [
-   6
+   6,
+   7
   ]
  },
  {
@@ -650,7 +777,8 @@
   "category": "tribe",
   "meaning": "The Yemeni tribe that was the first to settle in the valley of Makkah.",
   "episodes": [
-   1
+   1,
+   7
   ]
  },
  {
@@ -662,7 +790,8 @@
    1,
    2,
    4,
-   5
+   5,
+   7
   ]
  },
  {
@@ -708,7 +837,8 @@
   "category": "tribe",
   "meaning": "The tribe that took control of Makkah from Jurhum and eventually introduced idols.",
   "episodes": [
-   1
+   1,
+   7
   ]
  },
  {
@@ -729,7 +859,8 @@
   "meaning": "The ceremonial cloth that covers the Ka'bah.",
   "episodes": [
    2,
-   4
+   4,
+   7
   ]
  },
  {
@@ -751,6 +882,15 @@
   ]
  },
  {
+  "translit": "laban",
+  "arabic": "لَبَن",
+  "category": "term",
+  "meaning": "Milk or a yogurt-based drink",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "Lakhni'ah",
   "arabic": "لخنيعة",
   "category": "person",
@@ -766,7 +906,8 @@
   "meaning": "The city originally known as Yathrib, which became the center of the first Islamic state.",
   "episodes": [
    2,
-   3
+   3,
+   7
   ]
  },
  {
@@ -796,7 +937,8 @@
   "episodes": [
    1,
    2,
-   4
+   4,
+   7
   ]
  },
  {
@@ -842,6 +984,15 @@
   "meaning": "The son of Abrahah and brother of Yaksum who was the last Ethiopian ruler of Yemen.",
   "episodes": [
    6
+  ]
+ },
+ {
+  "translit": "Mu'awiyah",
+  "arabic": "مُعَاوِيَة",
+  "category": "person",
+  "meaning": "The first Umayyad Khalifah",
+  "episodes": [
+   7
   ]
  },
  {
@@ -968,7 +1119,17 @@
   "episodes": [
    1,
    2,
-   3
+   3,
+   7
+  ]
+ },
+ {
+  "translit": "Qusayy ibn Kilab",
+  "arabic": "قُصَيّ بن كِلَاب",
+  "category": "person",
+  "meaning": "A key ancestor of the Prophet ﷺ who unified Quraysh and took back Makkah",
+  "episodes": [
+   7
   ]
  },
  {
@@ -981,6 +1142,15 @@
    3,
    4,
    6
+  ]
+ },
+ {
+  "translit": "radiyallahu 'anhu",
+  "arabic": "رَضِيَ اللهُ عَنْهُ",
+  "category": "phrase",
+  "meaning": "May Allah be pleased with him",
+  "episodes": [
+   7
   ]
  },
  {
@@ -1007,7 +1177,17 @@
   "category": "phrase",
   "meaning": "The Messenger of Allah; the primary title used for Prophet Muhammad ﷺ.",
   "episodes": [
-   1
+   1,
+   7
+  ]
+ },
+ {
+  "translit": "Sadaqah",
+  "arabic": "صَدَقَة",
+  "category": "term",
+  "meaning": "Voluntary charity",
+  "episodes": [
+   7
   ]
  },
  {
@@ -1056,6 +1236,15 @@
   ]
  },
  {
+  "translit": "sayyid",
+  "arabic": "سيد",
+  "category": "term",
+  "meaning": "A chief, master, or leader",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "Seerah",
   "arabic": "سيرة",
   "category": "term",
@@ -1096,13 +1285,23 @@
   ]
  },
  {
+  "translit": "Shaybah",
+  "arabic": "شَيْبَة",
+  "category": "person",
+  "meaning": "The given name of Abdul Muttalib",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "shirk",
   "arabic": "شرك",
   "category": "term",
   "meaning": "Associating partners with Allah; polytheism.",
   "episodes": [
    1,
-   2
+   2,
+   7
   ]
  },
  {
@@ -1113,7 +1312,8 @@
   "episodes": [
    1,
    2,
-   3
+   3,
+   7
   ]
  },
  {
@@ -1171,6 +1371,15 @@
   ]
  },
  {
+  "translit": "taqwa",
+  "arabic": "تَقْوَى",
+  "category": "term",
+  "meaning": "God-consciousness or piety",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "tawaf",
   "arabic": "طواف",
   "category": "term",
@@ -1187,7 +1396,8 @@
   "episodes": [
    1,
    2,
-   4
+   4,
+   7
   ]
  },
  {
@@ -1306,6 +1516,15 @@
   ]
  },
  {
+  "translit": "Ya'mur ibn 'Awf",
+  "arabic": "يَعْمُر بن عَوْف",
+  "category": "person",
+  "meaning": "The elder who mediated between Quraysh and Khuza'ah",
+  "episodes": [
+   7
+  ]
+ },
+ {
   "translit": "Yaksum",
   "arabic": "فكسوم",
   "category": "person",
@@ -1341,7 +1560,8 @@
    2,
    3,
    4,
-   5
+   5,
+   7
   ]
  },
  {
@@ -1350,7 +1570,8 @@
   "category": "place",
   "meaning": "The miraculous well in Makkah revealed by Jibril (AS) to Hajar (AS).",
   "episodes": [
-   1
+   1,
+   7
   ]
  }
 ]
