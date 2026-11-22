@@ -1,12 +1,22 @@
 [
  {
+  "translit": "ababil",
+  "arabic": "أَبَابِيل",
+  "category": "other",
+  "meaning": "The swarms of birds sent by Allah to destroy Abrahah's army.",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "Abdul Muttalib",
   "arabic": "عَبْد الْمُطَّلِب",
   "category": "person",
   "meaning": "The grandfather of the Prophet ﷺ and leader of Quraysh.",
   "episodes": [
    1,
-   2
+   2,
+   5
   ]
  },
  {
@@ -24,7 +34,17 @@
   "category": "person",
   "meaning": "The Abyssinian general and governor of Yemen who later attempted to destroy the Ka'bah.",
   "episodes": [
-   4
+   4,
+   5
+  ]
+ },
+ {
+  "translit": "Abrahah al-Ashram",
+  "arabic": "أَبْرَهَة الأشرم",
+  "category": "person",
+  "meaning": "Abrahah 'the one with the cut nose', a title he gained after a duel with Aryat.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -37,6 +57,15 @@
   ]
  },
  {
+  "translit": "Abu Righal",
+  "arabic": "أبو رغال",
+  "category": "person",
+  "meaning": "The man from Thaqif who guided Abrahah to Makkah.",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "Abu Talib",
   "arabic": "أَبُو طَالِب",
   "category": "person",
@@ -46,12 +75,39 @@
   ]
  },
  {
+  "translit": "Ahabash",
+  "arabic": "أحباش",
+  "category": "tribe",
+  "meaning": "The Abyssinians or Ethiopians who conquered Yemen.",
+  "episodes": [
+   5
+  ]
+ },
+ {
+  "translit": "Ahl al-Nasi'",
+  "arabic": "أهل النسيء",
+  "category": "tribe",
+  "meaning": "A group of Arabs responsible for delaying or switching the sacred months.",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "ajr",
   "arabic": "أَجْر",
   "category": "term",
   "meaning": "Reward, especially spiritual reward from Allah.",
   "episodes": [
    4
+  ]
+ },
+ {
+  "translit": "al-Ashhur al-Hurum",
+  "arabic": "الأشهر الحرم",
+  "category": "term",
+  "meaning": "The four sacred months in the Islamic/Arab calendar.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -82,6 +138,24 @@
   ]
  },
  {
+  "translit": "al-Qulays",
+  "arabic": "قليس",
+  "category": "place",
+  "meaning": "The grand church built by Abrahah in Sana'a, Yemen.",
+  "episodes": [
+   5
+  ]
+ },
+ {
+  "translit": "al-Ta'if",
+  "arabic": "الطائف",
+  "category": "place",
+  "meaning": "A city near Makkah inhabited by the tribe of Thaqif.",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "alayhis-salam",
   "arabic": "عليه السلام",
   "category": "phrase",
@@ -99,6 +173,15 @@
   "meaning": "The third chapter of the Qur'an, which discusses the delegation from Najran.",
   "episodes": [
    3
+  ]
+ },
+ {
+  "translit": "Am al-Fil",
+  "arabic": "عام الفيل",
+  "category": "event",
+  "meaning": "The Year of the Elephant, marking Abrahah's failed attack and the Prophet's ﷺ birth.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -153,7 +236,8 @@
   "category": "person",
   "meaning": "An Abyssinian general sent to conquer Yemen.",
   "episodes": [
-   4
+   4,
+   5
   ]
  },
  {
@@ -211,7 +295,35 @@
   "category": "person",
   "meaning": "The sole survivor of the massacre in the trench who sought help from Abyssinia.",
   "episodes": [
-   4
+   4,
+   5
+  ]
+ },
+ {
+  "translit": "Dhu al-Hijjah",
+  "arabic": "ذو الحجة",
+  "category": "term",
+  "meaning": "One of the four sacred months and the month of Hajj.",
+  "episodes": [
+   5
+  ]
+ },
+ {
+  "translit": "Dhu al-Qa'dah",
+  "arabic": "ذو القعدة",
+  "category": "term",
+  "meaning": "One of the four sacred months.",
+  "episodes": [
+   5
+  ]
+ },
+ {
+  "translit": "Dhu Nafar",
+  "arabic": "ذو نفر",
+  "category": "person",
+  "meaning": "An Arab nobleman who unsuccessfully tried to resist Abrahah's march to Makkah.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -221,7 +333,8 @@
   "meaning": "A descendant of the Tubba family who killed Lakhni'ah and reclaimed the throne.",
   "episodes": [
    3,
-   4
+   4,
+   5
   ]
  },
  {
@@ -290,6 +403,15 @@
   ]
  },
  {
+  "translit": "Habashah",
+  "arabic": "حباشة",
+  "category": "place",
+  "meaning": "Abyssinia (modern-day Ethiopia).",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "Hajar",
   "arabic": "هاجر",
   "category": "person",
@@ -323,6 +445,15 @@
   "meaning": "The western region of the Arabian Peninsula that includes Makkah and Madinah.",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "Hijri",
+  "arabic": "هِجْرِي",
+  "category": "term",
+  "meaning": "The Islamic lunar calendar system.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -391,6 +522,15 @@
   ]
  },
  {
+  "translit": "Inna li-hadha al-bayti rabban yahmih",
+  "arabic": "إِنَّ لِلْهَذَا الْبَيْتِ رَبًّا يَحْمِيهِ",
+  "category": "phrase",
+  "meaning": "A famous statement by Abdul Muttalib: 'Surely for this House there is a Lord that will protect it.'",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "insha'Allah",
   "arabic": "إن شاء الله",
   "category": "phrase",
@@ -407,7 +547,8 @@
   "meaning": "The Prophet Jesus, whose original message was Unitarianism.",
   "episodes": [
    3,
-   4
+   4,
+   5
   ]
  },
  {
@@ -454,7 +595,8 @@
   "episodes": [
    1,
    2,
-   4
+   4,
+   5
   ]
  },
  {
@@ -474,6 +616,15 @@
   "meaning": "Character, ethics, or moral disposition.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Khuth'am",
+  "arabic": "خثعم",
+  "category": "tribe",
+  "meaning": "The tribe of Nufayl al-Khuth'umi.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -543,6 +694,15 @@
   ]
  },
  {
+  "translit": "Mahmud",
+  "arabic": "محمود",
+  "category": "other",
+  "meaning": "The name of the lead elephant in Abrahah's army.",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "majlis",
   "arabic": "مجلس",
   "category": "term",
@@ -587,6 +747,15 @@
   "meaning": "A mosque; place of prostration.",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "Muharram",
+  "arabic": "محرم",
+  "category": "term",
+  "meaning": "The first month of the calendar and one of the sacred months.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -642,7 +811,8 @@
   "meaning": "The title for the kings of Abyssinia (Ethiopia/Negus).",
   "episodes": [
    2,
-   4
+   4,
+   5
   ]
  },
  {
@@ -654,6 +824,15 @@
    2,
    3,
    4
+  ]
+ },
+ {
+  "translit": "Nufayl al-Khuth'umi",
+  "arabic": "نُفَيْل الخُثْعَمِي",
+  "category": "person",
+  "meaning": "A tribal leader captured by Abrahah who later spoke to the elephant Mahmud.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -671,7 +850,8 @@
   "category": "term",
   "meaning": "The title for the emperors of the Roman/Byzantine Empire (Caesar).",
   "episodes": [
-   2
+   2,
+   5
   ]
  },
  {
@@ -706,6 +886,15 @@
   ]
  },
  {
+  "translit": "Rajab",
+  "arabic": "رجب",
+  "category": "term",
+  "meaning": "One of the four sacred months.",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "Rasulullah",
   "arabic": "رسول الله",
   "category": "phrase",
@@ -730,6 +919,15 @@
   "meaning": "One of the two hills in Makkah between which Hajar ran to find water.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Safar",
+  "arabic": "صفر",
+  "category": "term",
+  "meaning": "The second month of the Arab calendar.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -851,6 +1049,15 @@
   ]
  },
  {
+  "translit": "Thaqif",
+  "arabic": "ثقيف",
+  "category": "tribe",
+  "meaning": "The tribe residing in the city of Ta'if.",
+  "episodes": [
+   5
+  ]
+ },
+ {
   "translit": "Tibban As'ad",
   "arabic": "تبان أسعد",
   "category": "person",
@@ -858,7 +1065,8 @@
   "episodes": [
    2,
    3,
-   4
+   4,
+   5
   ]
  },
  {
@@ -868,7 +1076,8 @@
   "meaning": "The honorary title for the kings of the Himyarite Kingdom in Yemen.",
   "episodes": [
    2,
-   3
+   3,
+   5
   ]
  },
  {
@@ -878,6 +1087,15 @@
   "meaning": "The global community of Muslim believers.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Unays",
+  "arabic": "أنيس",
+  "category": "person",
+  "meaning": "The trainer in charge of Abrahah's lead elephant.",
+  "episodes": [
+   5
   ]
  },
  {
@@ -924,7 +1142,8 @@
   "episodes": [
    2,
    3,
-   4
+   4,
+   5
   ]
  },
  {

@@ -1,8 +1,8 @@
 {
  "active": true,
  "budget_usd": 3.1,
- "spent_usd": 0,
- "requests": 0,
+ "spent_usd": 0.5337,
+ "requests": 5,
  "note": "Phase 2 approved by owner 2026-11-22: use remaining RM30 budget, stop around RM25 on Google's meter. Google monthly spend cap MYR30 is the hard backstop.",
  "history": [
   {
