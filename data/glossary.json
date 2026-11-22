@@ -35,7 +35,8 @@
   "meaning": "The Abyssinian general and governor of Yemen who later attempted to destroy the Ka'bah.",
   "episodes": [
    4,
-   5
+   5,
+   6
   ]
  },
  {
@@ -80,7 +81,8 @@
   "category": "tribe",
   "meaning": "The Abyssinians or Ethiopians who conquered Yemen.",
   "episodes": [
-   5
+   5,
+   6
   ]
  },
  {
@@ -111,6 +113,15 @@
   ]
  },
  {
+  "translit": "al-Aswad al-Ansi",
+  "arabic": "الأسوء العنسف",
+  "category": "person",
+  "meaning": "A false prophet in Yemen who rebelled against Islamic rule.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "al-Hajar al-Aswad",
   "arabic": "الحجر الأسود",
   "category": "term",
@@ -138,6 +149,15 @@
   ]
  },
  {
+  "translit": "al-Murzuban",
+  "arabic": "المرزبان",
+  "category": "person",
+  "meaning": "The first Persian governor of Yemen.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "al-Qulays",
   "arabic": "قليس",
   "category": "place",
@@ -153,6 +173,15 @@
   "meaning": "A city near Makkah inhabited by the tribe of Thaqif.",
   "episodes": [
    5
+  ]
+ },
+ {
+  "translit": "al-Tabyujan",
+  "arabic": "الببان",
+  "category": "person",
+  "meaning": "The second Persian governor of Yemen.",
+  "episodes": [
+   6
   ]
  },
  {
@@ -231,6 +260,15 @@
   ]
  },
  {
+  "translit": "arsh",
+  "arabic": "عرش",
+  "category": "term",
+  "meaning": "Throne.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "Aryat",
   "arabic": "أَرْيَاط",
   "category": "person",
@@ -260,6 +298,15 @@
   ]
  },
  {
+  "translit": "Badhan",
+  "arabic": "باذان",
+  "category": "person",
+  "meaning": "The last Persian governor of Yemen who converted to Islam.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "bi-idhnillah",
   "arabic": "بإذن الله",
   "category": "phrase",
@@ -275,6 +322,15 @@
   "meaning": "In the name of Allah, the Lord of the boy.",
   "episodes": [
    4
+  ]
+ },
+ {
+  "translit": "Dajjals",
+  "arabic": "ءفالن",
+  "category": "term",
+  "meaning": "Deceivers or false messiahs.",
+  "episodes": [
+   6
   ]
  },
  {
@@ -334,7 +390,8 @@
   "episodes": [
    3,
    4,
-   5
+   5,
+   6
   ]
  },
  {
@@ -579,6 +636,15 @@
   ]
  },
  {
+  "translit": "Jazirat al-Arab",
+  "arabic": "بفرة العرب",
+  "category": "place",
+  "meaning": "The Arabian Peninsula.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "Jurhum",
   "arabic": "جرهم",
   "category": "tribe",
@@ -607,6 +673,15 @@
   "episodes": [
    2,
    3
+  ]
+ },
+ {
+  "translit": "khayrat",
+  "arabic": "أفراء",
+  "category": "term",
+  "meaning": "Good things, riches, or natural resources.",
+  "episodes": [
+   6
   ]
  },
  {
@@ -643,7 +718,8 @@
   "meaning": "The title for the emperors of the Persian Empire (Chosroes).",
   "episodes": [
    2,
-   3
+   3,
+   6
   ]
  },
  {
@@ -708,7 +784,8 @@
   "category": "term",
   "meaning": "A gathering or assembly of people.",
   "episodes": [
-   3
+   3,
+   6
   ]
  },
  {
@@ -720,6 +797,15 @@
    1,
    2,
    4
+  ]
+ },
+ {
+  "translit": "Malik al-Muluk",
+  "arabic": "ملوك الملوك",
+  "category": "term",
+  "meaning": "The Arabic translation of Shahanshah (King of Kings).",
+  "episodes": [
+   6
   ]
  },
  {
@@ -747,6 +833,15 @@
   "meaning": "A mosque; place of prostration.",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "Masruq",
+  "arabic": "مسروق",
+  "category": "person",
+  "meaning": "The son of Abrahah and brother of Yaksum who was the last Ethiopian ruler of Yemen.",
+  "episodes": [
+   6
   ]
  },
  {
@@ -812,7 +907,8 @@
   "episodes": [
    2,
    4,
-   5
+   5,
+   6
   ]
  },
  {
@@ -836,6 +932,15 @@
   ]
  },
  {
+  "translit": "Numan ibn al-Mundhir",
+  "arabic": "نعمان بن المنذر",
+  "category": "person",
+  "meaning": "The Arab king of Al-Hirah in Iraq under Persian suzerainty.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "qadar",
   "arabic": "قَدَر",
   "category": "term",
@@ -851,7 +956,8 @@
   "meaning": "The title for the emperors of the Roman/Byzantine Empire (Caesar).",
   "episodes": [
    2,
-   5
+   5,
+   6
   ]
  },
  {
@@ -873,7 +979,8 @@
   "episodes": [
    2,
    3,
-   4
+   4,
+   6
   ]
  },
  {
@@ -940,6 +1047,15 @@
   ]
  },
  {
+  "translit": "Sayf ibn Dhi Yazan",
+  "arabic": "سف بن ذو فزن",
+  "category": "person",
+  "meaning": "A Yemeni nobleman who sought Persian help to expel the Ethiopians from Yemen.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "Seerah",
   "arabic": "سيرة",
   "category": "term",
@@ -948,6 +1064,24 @@
    1,
    2,
    3
+  ]
+ },
+ {
+  "translit": "Shahanshah",
+  "arabic": "شاهنشاه",
+  "category": "term",
+  "meaning": "A Persian title meaning 'King of Kings'.",
+  "episodes": [
+   6
+  ]
+ },
+ {
+  "translit": "Shahr",
+  "arabic": "شهر",
+  "category": "person",
+  "meaning": "The son of Badhan who succeeded him as ruler of Yemen.",
+  "episodes": [
+   6
   ]
  },
  {
@@ -992,6 +1126,15 @@
   ]
  },
  {
+  "translit": "sujood",
+  "arabic": "سبوء",
+  "category": "term",
+  "meaning": "Prostration.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "Suratul-Buruj",
   "arabic": "سُورَة الْبُرُوج",
   "category": "term",
@@ -1007,6 +1150,15 @@
   "meaning": "Exegesis or interpretation of the Qur'an.",
   "episodes": [
    3
+  ]
+ },
+ {
+  "translit": "takabbur",
+  "arabic": "بكبر",
+  "category": "term",
+  "meaning": "Arrogance or pride.",
+  "episodes": [
+   6
   ]
  },
  {
@@ -1077,7 +1229,8 @@
   "episodes": [
    2,
    3,
-   5
+   5,
+   6
   ]
  },
  {
@@ -1099,6 +1252,24 @@
   ]
  },
  {
+  "translit": "uqdah",
+  "arabic": "عقاء",
+  "category": "term",
+  "meaning": "Knot, agreement, or a complex/problematic situation.",
+  "episodes": [
+   6
+  ]
+ },
+ {
+  "translit": "wa al-iyadhu billah",
+  "arabic": "والعفاذ بالله",
+  "category": "phrase",
+  "meaning": "And seek refuge with Allah (an expression of seeking protection from something evil).",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "wa al-Mumit",
   "arabic": "والمميت",
   "category": "term",
@@ -1108,12 +1279,39 @@
   ]
  },
  {
+  "translit": "Wahriz",
+  "arabic": "وهرز",
+  "category": "person",
+  "meaning": "The Persian general who led the force that conquered Yemen from the Ethiopians.",
+  "episodes": [
+   6
+  ]
+ },
+ {
+  "translit": "wahy",
+  "arabic": "واف",
+  "category": "term",
+  "meaning": "Divine revelation.",
+  "episodes": [
+   6
+  ]
+ },
+ {
   "translit": "Wallahi",
   "arabic": "والله",
   "category": "phrase",
   "meaning": "By Allah; an oath.",
   "episodes": [
    2
+  ]
+ },
+ {
+  "translit": "Yaksum",
+  "arabic": "فكسوم",
+  "category": "person",
+  "meaning": "The son of Abrahah who ruled Yemen after his father's death.",
+  "episodes": [
+   6
   ]
  },
  {
