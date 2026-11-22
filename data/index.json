@@ -126,11 +126,18 @@
  {
   "n": 8,
   "id": "Enl9XvsFRIw",
-  "title": "A Ransom of 100 Camels",
+  "title": "The Rediscovery of Zamzam and the Vow of Abdul Muttalib",
   "duration": 2078,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "overview": "This episode details the rediscovery of the lost well of Zamzam by Abdul Muttalib following a series of divine dreams and specific physical clues. It covers the dispute between Abdul Muttalib and Quraysh over custodianship, which was resolved by a miraculous emergence of water in the desert during their journey to an arbitrator. Finally, the lecture explains Abdul Muttalib's vow to sacrifice one of his sons, the selection of Abdullah through lots, and his eventual ransom with one hundred camels.",
+  "chapters": [
+   "The Dreams of Abdul Muttalib",
+   "Uncovering the Well of Zamzam",
+   "The Dispute over Ownership and the Desert Journey",
+   "Miracle in the Desert and Resolution of Custodianship",
+   "The Vow of Abdul Muttalib and the Ransom of Abdullah"
+  ],
+  "ready": true,
+  "synced": true
  },
  {
   "n": 9,

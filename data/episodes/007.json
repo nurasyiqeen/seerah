@@ -1781,5 +1781,47 @@
    "translit": "Wallahu a'lam, wa sallallahu wa sallama wa baraka 'ala nabiyyina Muhammadin wa 'ala alihi wa sahbihi ajma'in."
   }
  ],
- "timing": "gemini-retime"
+ "timing": "gemini-retime",
+ "review": [
+  {
+   "q": "Which leader was responsible for bringing idol worship back to the Arabs?",
+   "a": "[[Amr ibn Luhayy|عمرو بن لحي]] of the [[Khuza'ah|خزاعة]] tribe is noted for introducing idols to the people after they had followed the way of [[Ismail|إسماعيل]].",
+   "chapter": 0
+  },
+  {
+   "q": "Why did the tribe of [[Jurhum|جرهم]] bury the well of [[Zamzam|زمزم]] before leaving [[Makkah|مَكَّة]]?",
+   "a": "They buried the well to prevent the tribe of [[Khuza'ah|خزاعة]], who had forcibly ousted them, from benefiting from its water.",
+   "chapter": 0
+  },
+  {
+   "q": "Who mediated the conflict between [[Quraysh|قُرَيْش]] and [[Khuza'ah|خزاعة]], and what was the outcome?",
+   "a": "[[Ya'mur ibn 'Awf|يَعْمُر بن عَوْف]] mediated the dispute and ruled in favor of [[Qusayy ibn Kilab|قُصَيّ بن كِلَاب]], returning the leadership of the city to the descendants of [[Ismail|إسماعيل]].",
+   "chapter": 2
+  },
+  {
+   "q": "What was the purpose of the [[Dar al-Nadwah|دَار الندوة]] established by [[Qusayy ibn Kilab|قُصَيّ بن كِلَاب]]?",
+   "a": "It served as a council hall for tribal meetings, war declarations, and social events like weddings or coming-of-age ceremonies.",
+   "chapter": 3
+  },
+  {
+   "q": "How were the honors of the [[Ka'bah|كعبة]] divided between the sons of [[Qusayy ibn Kilab|قُصَيّ بن كِلَاب]] to settle their dispute?",
+   "a": "The descendants of [[Abd al-Dar|عَبْد الدَّار]] kept the [[Kiswah|كسوة]] (covering), while the descendants of [[Abd Manaf|عَبْد مَنَاف]] took responsibility for the Siqayah (provision of water).",
+   "chapter": 4
+  },
+  {
+   "q": "Why did the family of [[Abd Manaf|عَبْد مَنَاف]] have to import water from outside [[Makkah|مَكَّة]] for the [[hujjaj|حجاج]]?",
+   "a": "The well of [[Zamzam|زمزم]] was still buried and hidden at that time, so they brought water from elsewhere and often mixed it with [[laban|لَبَن]] or honey for the pilgrims.",
+   "chapter": 5
+  },
+  {
+   "q": "What lesson does the speaker draw from the sale of [[Dar al-Nadwah|دَار الندوة]] by a member of the line of [[Abd al-Dar|عَبْد الدَّار]]?",
+   "a": "The event warns against the dangers of alcohol, as the hall was lost for a single bottle of wine, and shows that true honor lies in [[taqwa|تَقْوَى]] rather than material legacy.",
+   "chapter": 6
+  },
+  {
+   "q": "How did the Prophet's grandfather, originally named [[Shaybah|شَيْبَة]], come to be called [[Abdul Muttalib|عَبْد الْمُطَّلِب]]?",
+   "a": "When his uncle [[al-Muttalib|الْمُطَّلِب]] brought him into the city, the people of [[Makkah|مَكَّة]] mistook the boy for his uncle's slave, and the name stayed with him.",
+   "chapter": 7
+  }
+ ]
 }
