@@ -1,9 +1,9 @@
 {
  "active": true,
- "budget_usd": 3.1,
- "spent_usd": 2.3592,
- "requests": 56,
- "note": "Phase 2 approved by owner 2026-11-22: use remaining RM30 budget, stop around RM25 on Google's meter. Google monthly spend cap MYR30 is the hard backstop.",
+ "budget_usd": 2.9441,
+ "spent_usd": 2.9441,
+ "requests": 78,
+ "note": "Phase 2 approved by owner 2026-11-22: use remaining RM30 budget, stop around RM25 on Google's meter. Google monthly spend cap MYR30 is the hard backstop. | +0.25 to refresh summaries after gap fills (~RM1) | paid run finished; budget closed until billing is unlinked",
  "history": [
   {
    "phase": 1,
