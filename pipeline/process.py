@@ -206,7 +206,7 @@ EN_TAG = re.compile(r"\s*\.?\s*\ben:\s*", re.I)
 
 
 def clean_text(v):
-    v = re.sub(r"&?#6501[08];", "ﷺ", v)
+    v = re.sub(r"&?#6501[08];", "ﷺ", v).replace("‰", "ﷺ")
     v = LEAKED_TS.sub("", v)
     return v.strip()
 

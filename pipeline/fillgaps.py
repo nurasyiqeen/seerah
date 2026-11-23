@@ -56,11 +56,12 @@ def fill_episode(ep):
             continue
         new = [P.fill_quran(s) for s in new if (s.get("text") or s.get("ar") or s.get("translit"))]
         # drop lines that repeat what is already there on either side of the gap
-        near = norm(segs[k].get("text") or segs[k].get("en")) | (norm(segs[k + 1].get("text") or segs[k + 1].get("en")) if k + 1 < len(segs) else set())
+        # drop lines that repeat what is already there within ~8 lines of the gap
+        nearby = [norm(x.get("text") or x.get("en")) for x in segs[max(0, k - 7):k + 9]]
         keep = []
         for s in new:
             ws = norm(s.get("text") or s.get("en"))
-            if ws and len(ws & near) / len(ws) > 0.6:
+            if ws and any(len(ws & b) / len(ws) > 0.6 for b in nearby if b):
                 continue
             s["t"] = round(min(max(s["t"], segs[k]["t"] + 0.5), (segs[k + 1]["t"] - 0.5) if k + 1 < len(segs) else ep["duration"]), 1)
             keep.append(s)
