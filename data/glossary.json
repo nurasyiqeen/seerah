@@ -33,7 +33,8 @@
   "meaning": "A son of Qusayy and ancestor of the Prophet ﷺ",
   "episodes": [
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -46,7 +47,8 @@
    2,
    5,
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -65,7 +67,8 @@
   "meaning": "The father of the Prophet Muhammad ﷺ",
   "episodes": [
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -85,7 +88,8 @@
   "episodes": [
    4,
    5,
-   6
+   6,
+   9
   ]
  },
  {
@@ -154,6 +158,15 @@
   ]
  },
  {
+  "translit": "Ahmad",
+  "arabic": "أَحْمَد",
+  "category": "person",
+  "meaning": "One of the names of Prophet Muhammad ﷺ mentioned in earlier scriptures.",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "ajr",
   "arabic": "أَجْر",
   "category": "term",
@@ -213,7 +226,8 @@
   "category": "person",
   "meaning": "The eldest son of Abdul Muttalib.",
   "episodes": [
-   8
+   8,
+   9
   ]
  },
  {
@@ -223,7 +237,8 @@
   "meaning": "The Prophetic City; the name given to Yathrib after the migration of the Prophet ﷺ.",
   "episodes": [
    2,
-   8
+   8,
+   9
   ]
  },
  {
@@ -317,7 +332,8 @@
   "category": "event",
   "meaning": "The Year of the Elephant, marking Abrahah's failed attack and the Prophet's ﷺ birth.",
   "episodes": [
-   5
+   5,
+   9
   ]
  },
  {
@@ -353,7 +369,8 @@
   "category": "person",
   "meaning": "The mother of the Prophet Muhammad ﷺ.",
   "episodes": [
-   8
+   8,
+   9
   ]
  },
  {
@@ -375,6 +392,15 @@
    2,
    7,
    8
+  ]
+ },
+ {
+  "translit": "Ana ibnudh-dhabihayn",
+  "arabic": "أنا ابن الذبيحين",
+  "category": "phrase",
+  "meaning": "Hadith statement: 'I am the son of the two who were sacrificed' (referring to Ismail and Abdullah).",
+  "episodes": [
+   9
   ]
  },
  {
@@ -425,13 +451,32 @@
   ]
  },
  {
+  "translit": "Banu Sa'd",
+  "arabic": "بني سعد",
+  "category": "tribe",
+  "meaning": "A Bedouin tribe known for their pure Arabic language, among whom Prophet Muhammad ﷺ was raised.",
+  "episodes": [
+   9
+  ]
+ },
+ {
+  "translit": "barakah",
+  "arabic": "بركة",
+  "category": "term",
+  "meaning": "Divine blessing, increase, and spiritual abundance.",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "bi-idhnillah",
   "arabic": "بإذن الله",
   "category": "phrase",
   "meaning": "By the permission of Allah.",
   "episodes": [
    3,
-   8
+   8,
+   9
   ]
  },
  {
@@ -441,6 +486,15 @@
   "meaning": "In the name of Allah, the Lord of the boy.",
   "episodes": [
    4
+  ]
+ },
+ {
+  "translit": "Busra",
+  "arabic": "بصرى",
+  "category": "place",
+  "meaning": "A historical city in southern Syria (Sham) seen in Aminah's vision during pregnancy.",
+  "episodes": [
+   9
   ]
  },
  {
@@ -607,6 +661,24 @@
   ]
  },
  {
+  "translit": "fitnah",
+  "arabic": "فتنة",
+  "category": "term",
+  "meaning": "Trial, tribulation, or temptation.",
+  "episodes": [
+   9
+  ]
+ },
+ {
+  "translit": "fusha",
+  "arabic": "فصحى",
+  "category": "term",
+  "meaning": "Classical, eloquent, grammatically correct Arabic language.",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "Ghulam",
   "arabic": "غُلَام",
   "category": "term",
@@ -641,7 +713,8 @@
   "meaning": "The annual major pilgrimage to Makkah.",
   "episodes": [
    1,
-   7
+   7,
+   9
   ]
  },
  {
@@ -651,6 +724,15 @@
   "meaning": "A companion of the Prophet ﷺ who bought and later sold Dar al-Nadwah",
   "episodes": [
    7
+  ]
+ },
+ {
+  "translit": "Halimah al-Sa'diyyah",
+  "arabic": "حليمة السعدية",
+  "category": "person",
+  "meaning": "The foster mother and wet nurse of Prophet Muhammad ﷺ from the tribe of Banu Sa'd.",
+  "episodes": [
+   9
   ]
  },
  {
@@ -677,7 +759,8 @@
   "category": "person",
   "meaning": "The great-grandfather of the Prophet ﷺ and founder of the Banu Hashim",
   "episodes": [
-   7
+   7,
+   9
   ]
  },
  {
@@ -687,6 +770,15 @@
   "meaning": "The son of Tibban As'ad whose arrogance led his ministers to plot his assassination.",
   "episodes": [
    3
+  ]
+ },
+ {
+  "translit": "Hassan ibn Thabit",
+  "arabic": "حَسَّان بن ثَابِت",
+  "category": "person",
+  "meaning": "An Ansar companion and famed poet of the Prophet ﷺ who witnessed the Jewish monk's declaration in Madinah as a child.",
+  "episodes": [
+   9
   ]
  },
  {
@@ -704,7 +796,8 @@
   "category": "event",
   "meaning": "The migration of the Prophet ﷺ from Makkah to Madinah",
   "episodes": [
-   7
+   7,
+   9
   ]
  },
  {
@@ -784,6 +877,15 @@
   ]
  },
  {
+  "translit": "ikhtilaf",
+  "arabic": "اختلاف",
+  "category": "term",
+  "meaning": "Scholarly disagreement or variation in opinions.",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "Iman",
   "arabic": "إيمان",
   "category": "term",
@@ -812,6 +914,15 @@
   ]
  },
  {
+  "translit": "inna li-ibni hadha la-sha'nan",
+  "arabic": "إِنَّ لِابْنِي هَذَا لَشَأْنًا",
+  "category": "phrase",
+  "meaning": "Statement by Abdul Muttalib: 'By Allah, surely this son of mine has a grand future/destiny.'",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "insha'Allah",
   "arabic": "إن شاء الله",
   "category": "phrase",
@@ -820,7 +931,8 @@
    3,
    4,
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -852,7 +964,8 @@
   "episodes": [
    1,
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -872,7 +985,17 @@
   "meaning": "The Arabian Peninsula.",
   "episodes": [
    6,
-   7
+   7,
+   9
+  ]
+ },
+ {
+  "translit": "jinn",
+  "arabic": "جن",
+  "category": "term",
+  "meaning": "Unseen creation made of smokeless fire possessing free will.",
+  "episodes": [
+   9
   ]
  },
  {
@@ -896,7 +1019,8 @@
    2,
    4,
    5,
-   7
+   7,
+   9
   ]
  },
  {
@@ -965,7 +1089,8 @@
   "episodes": [
    2,
    3,
-   6
+   6,
+   9
   ]
  },
  {
@@ -1032,7 +1157,8 @@
   "episodes": [
    2,
    3,
-   7
+   7,
+   9
   ]
  },
  {
@@ -1055,6 +1181,15 @@
   ]
  },
  {
+  "translit": "Majus",
+  "arabic": "مجوس",
+  "category": "term",
+  "meaning": "Zoroastrians / fire-worshippers of ancient Persia.",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "Makkah",
   "arabic": "مَكَّة",
   "category": "place",
@@ -1064,7 +1199,8 @@
    2,
    4,
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -1122,6 +1258,15 @@
   ]
  },
  {
+  "translit": "Muhammad",
+  "arabic": "مُحَمَّد",
+  "category": "person",
+  "meaning": "The praised one; the final Messenger of Allah ﷺ.",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "Muharram",
   "arabic": "محرم",
   "category": "term",
@@ -1136,7 +1281,8 @@
   "category": "person",
   "meaning": "The Prophet Moses.",
   "episodes": [
-   2
+   2,
+   9
   ]
  },
  {
@@ -1146,7 +1292,8 @@
   "meaning": "Polytheists; those who associate partners with Allah.",
   "episodes": [
    2,
-   3
+   3,
+   9
   ]
  },
  {
@@ -1175,6 +1322,15 @@
   "episodes": [
    1,
    8
+  ]
+ },
+ {
+  "translit": "Nabi",
+  "arabic": "نبي",
+  "category": "term",
+  "meaning": "A Prophet of God.",
+  "episodes": [
+   9
   ]
  },
  {
@@ -1219,6 +1375,15 @@
   ]
  },
  {
+  "translit": "Qad zahara al-yawm najmu Ahmad alladhi la yazharu illa bi-khurujih",
+  "arabic": "قد ظهر اليوم نجم أحمد الذي لا يظهر إلا بخروجه",
+  "category": "phrase",
+  "meaning": "Announcement by Jewish monk: 'Today the star of Ahmad has appeared, which only appears upon his emergence.'",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "qadar",
   "arabic": "قَدَر",
   "category": "term",
@@ -1248,7 +1413,8 @@
    2,
    3,
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -1258,7 +1424,17 @@
   "meaning": "A key ancestor of the Prophet ﷺ who unified Quraysh and took back Makkah",
   "episodes": [
    7,
-   8
+   8,
+   9
+  ]
+ },
+ {
+  "translit": "Rabi al-Awwal",
+  "arabic": "ربيع الأول",
+  "category": "term",
+  "meaning": "The third month of the Islamic lunar calendar, during which the Prophet ﷺ was born.",
+  "episodes": [
+   9
   ]
  },
  {
@@ -1307,7 +1483,8 @@
   "meaning": "The Messenger of Allah; the primary title used for Prophet Muhammad ﷺ.",
   "episodes": [
    1,
-   7
+   7,
+   9
   ]
  },
  {
@@ -1356,6 +1533,15 @@
   ]
  },
  {
+  "translit": "Sawah",
+  "arabic": "ساوة",
+  "category": "place",
+  "meaning": "A lake in ancient Persia that dried up miraculously upon the Prophet's ﷺ birth.",
+  "episodes": [
+   9
+  ]
+ },
+ {
   "translit": "Sayf ibn Dhi Yazan",
   "arabic": "سف بن ذو فزن",
   "category": "person",
@@ -1381,7 +1567,8 @@
   "episodes": [
    1,
    2,
-   3
+   3,
+   9
   ]
  },
  {
@@ -1410,7 +1597,8 @@
   "episodes": [
    2,
    3,
-   4
+   4,
+   9
   ]
  },
  {
@@ -1444,7 +1632,8 @@
    2,
    3,
    7,
-   8
+   8,
+   9
   ]
  },
  {
@@ -1539,7 +1728,8 @@
   "meaning": "The Torah; the revelation given to the Prophet Musa (Moses) containing prophecies of the final Messenger.",
   "episodes": [
    2,
-   3
+   3,
+   9
   ]
  },
  {
@@ -1573,6 +1763,24 @@
    3,
    5,
    6
+  ]
+ },
+ {
+  "translit": "U'idhuhu bi-Llahil-Wahid min sharri kulli hasid",
+  "arabic": "أُعِيذُهُ بِاللَّهِ الْوَاحِدِ مِنْ شَرِّ كُلِّ حَاسِدٍ",
+  "category": "phrase",
+  "meaning": "Du'a from Aminah's dream: 'I seek protection for him in Allah, the One, from the evil of every envious person.'",
+  "episodes": [
+   9
+  ]
+ },
+ {
+  "translit": "ulama",
+  "arabic": "علماء",
+  "category": "term",
+  "meaning": "Islamic scholars.",
+  "episodes": [
+   9
   ]
  },
  {
@@ -1644,7 +1852,8 @@
   "category": "phrase",
   "meaning": "By Allah; an oath.",
   "episodes": [
-   2
+   2,
+   9
   ]
  },
  {
@@ -1672,7 +1881,8 @@
   "meaning": "The ancient name of the city of Madinah.",
   "episodes": [
    2,
-   8
+   8,
+   9
   ]
  },
  {
@@ -1694,7 +1904,8 @@
    3,
    4,
    5,
-   7
+   7,
+   9
   ]
  },
  {
