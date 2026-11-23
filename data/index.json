@@ -142,11 +142,19 @@
  {
   "n": 9,
   "id": "2zOMzYFsg7U",
-  "title": "The Birth of the Messenger ﷺ",
-  "duration": 2091,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "title": "The Birth of the Prophet ﷺ and His Upbringing in the Desert",
+  "duration": 2090,
+  "overview": "This episode covers the marriage of the Prophet's ﷺ parents, Abdullah and Aminah, the passing of Abdullah prior to his son's birth, and the remarkable events surrounding the birth of Prophet Muhammad ﷺ in the Year of the Elephant. It detail signs of prophethood manifested across Arabia and Persia, the story behind his naming, and the Quraysh custom of sending infants to the desert. Finally, it highlights the immense blessings (barakah) experienced by Halimah al-Sa'diyyah upon fostering the young Prophet ﷺ.",
+  "chapters": [
+   "Lineage and Marriage of the Prophet's Parents",
+   "Dreams of Aminah and the Birth of Rasulullah ﷺ",
+   "Signs at Birth and Abdul Muttalib's Gratitude",
+   "The Naming of Muhammad ﷺ and Portents in Persia",
+   "The Quraysh Custom of Desert Upbringing",
+   "Halimah al-Sa'diyyah and the Barakah of Taking the Prophet ﷺ"
+  ],
+  "ready": true,
+  "synced": false
  },
  {
   "n": 10,
