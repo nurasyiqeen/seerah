@@ -17,6 +17,8 @@ import process as P  # noqa: E402
 import retime as R  # noqa: E402
 import review as RV  # noqa: E402
 import fillgaps as FG  # noqa: E402
+import align as AL  # noqa: E402
+import fetch_captions as FC  # noqa: E402
 
 DATA = os.path.join(ROOT, "data")
 EPS = os.path.join(DATA, "episodes")
@@ -52,6 +54,34 @@ def build_index():
     return out
 
 
+def precise_timing(ep):
+    """Best timing available: YouTube's word-level caption timing (free, exact) when the caption track
+    is complete; otherwise Gemini's double-checked timing pass (uses ~30 free requests)."""
+    try:
+        words = json.load(open(FC.fetch(ep["id"])))
+    except Exception as e:  # captions unavailable: fall back
+        P.log(f"  captions unavailable ({e!r:.80}); using Gemini timing")
+        words = []
+    wpm = len(words) / max(ep["duration"] / 60, 1)
+    if wpm >= 100:
+        old = [s["t"] for s in ep["segments"]]
+        new, cov = AL.align(ep["segments"], AL.load_captions(ep["id"]))
+        if cov >= 0.6:
+            for s, t in zip(ep["segments"], new):
+                s["t"] = t
+            for c in ep["chapters"][1:]:
+                idx = min(range(len(old)), key=lambda k: abs(old[k] - c["t"]))
+                c["t"] = ep["segments"][idx]["t"]
+            ep["timing"] = "gemini-retime"
+            ep["timing_source"] = f"youtube-captions ({cov:.0%} of lines)"
+            ep.pop("retime_regions", None)
+            P.log(f"  timing from YouTube captions: {cov:.0%} of lines anchored")
+            return
+        P.log(f"  captions matched only {cov:.0%} of lines; using Gemini timing")
+    R.retime_episode(ep)
+    ep["timing_source"] = "gemini"
+
+
 def split_and_queue(ep):
     """Split long lines (after a full timing pass) and queue cheap local re-checks for those stretches."""
     segs, out, regions = ep["segments"], [], []
@@ -68,6 +98,13 @@ def split_and_queue(ep):
         else:
             merged.append(r)
     ep["segments"] = out
+    if str(ep.get("timing_source", "")).startswith("youtube-captions"):
+        new, cov = AL.align(out, AL.load_captions(ep["id"]))  # each new piece gets its own caption anchor
+        for x, t in zip(out, new):
+            x["t"] = t
+        ep["timing_source"] = f"youtube-captions ({cov:.0%} of lines)"
+        ep.pop("retime_regions", None)
+        return
     times = [x["t"] for x in out]
     bad = set(R.implausible(out, times, ep["duration"]))
     keep = [[a, min(b, len(out) - 1)] for a, b in merged if any(a - 1 <= k <= b for k in bad)]
@@ -99,7 +136,7 @@ def main(max_new):
                 ep = json.load(open(p))
                 if ep.get("timing") != "gemini-retime" and not ep.get("needs_redo"):
                     P.log(f"ep {row['n']}: precise timing pass")
-                    R.retime_episode(ep)
+                    precise_timing(ep)
                     ep.pop("retime_regions", None)
                     if FG.fill_episode(ep) >= 8:
                         FG.refresh_summary(ep)
@@ -137,7 +174,7 @@ def main(max_new):
             done_new += 1  # transcript saved; precise timing may finish on a later day
             ep = json.load(open(ep_path(row["n"])))
             P.log(f"ep {row['n']}: precise timing pass")
-            R.retime_episode(ep)
+            precise_timing(ep)
             if FG.fill_episode(ep) >= 8:
                 FG.refresh_summary(ep)
             json.dump(ep, open(ep_path(row["n"]), "w"), ensure_ascii=False, indent=1)
