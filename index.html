@@ -269,7 +269,7 @@ let INDEX = [], GLOSS = [], GLOSS_MAP = {};
 const isReady = e => e.ready !== false;
 const READY = () => INDEX.filter(isReady);
 const epCache = {};
-async function getJSON(u) { const r = await fetch(u); if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); }
+async function getJSON(u) { const r = await fetch(u, { cache: 'no-cache' }); if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); }
 async function loadEp(n) { return epCache[n] ||= getJSON(`data/episodes/${String(n).padStart(3,'0')}.json`); }
 
 // [[translit|arabic]] -> term span
