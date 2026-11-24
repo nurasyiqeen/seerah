@@ -52,6 +52,26 @@ def build_index():
     return out
 
 
+def split_and_queue(ep):
+    """Split long lines (after a full timing pass) and queue cheap local re-checks for those stretches."""
+    segs, out, regions = ep["segments"], [], []
+    for k, s in enumerate(segs):
+        nxt_t = segs[k + 1]["t"] if k + 1 < len(segs) else ep["duration"]
+        pieces = P.split_long_lines([s, {"kind": "arabic", "t": nxt_t}], ep["duration"])[:-1]
+        if len(pieces) > 1:
+            regions.append([len(out), len(out) + len(pieces)])
+        out.extend(pieces)
+    merged = []
+    for r in regions:
+        if merged and r[0] <= merged[-1][1] + 1:
+            merged[-1][1] = max(merged[-1][1], r[1])
+        else:
+            merged.append(r)
+    ep["segments"] = out
+    if merged:
+        ep["retime_regions"] = [[a, min(b, len(out) - 1)] for a, b in merged]
+
+
 def main(max_new):
     os.makedirs(EPS, exist_ok=True)
     done_new = 0
@@ -98,6 +118,7 @@ def main(max_new):
                     ep.pop("retime_regions", None)
                     if FG.fill_episode(ep) >= 8:
                         FG.refresh_summary(ep)
+                    split_and_queue(ep)
                     json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
         # 2. new episodes, in order
         for row in playlist():
