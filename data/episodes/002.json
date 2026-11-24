@@ -1575,7 +1575,7 @@
    "translit": "Wallāhu aʿlam wa ṣallallāhu wa sallama wa bāraka ʿalā nabiyyinā Muḥammad wa ʿalā ālihi wa ṣaḥbihi ajmaʿīn Rule 2: wrap every Arabic word or phrase in markup standard transliteration|Arabic script name of person or tribe etc. Standard honorifics ﷺ can be just symbol. Common word Allah or Prophet can be plain. All clear! Let's output JSON."
   }
  ],
- "timing": "gemini-retime",
+ "timing": "needs-retime",
  "review": [
   {
    "q": "Who was the individual responsible for bringing idol worship to the Arabian Peninsula?",
@@ -1617,27 +1617,5 @@
    "a": "The speaker notes that generosity and high character can serve as a powerful form of [[dawah|دَعْوَة]].",
    "chapter": 2
   }
- ],
- "retime_regions": [
-  [
-   12,
-   66
-  ],
-  [
-   165,
-   169
-  ],
-  [
-   171,
-   174
-  ],
-  [
-   218,
-   236
-  ],
-  [
-   239,
-   244
-  ]
  ]
 }

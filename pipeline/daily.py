@@ -104,8 +104,12 @@ def main(max_new):
             P.log(f"ep {row['n']}: re-checking {len(regions)} split stretches")
             while regions:
                 i0, i1 = regions[0]
+                if i1 - i0 > 12:  # two 3-minute windows only cover ~12 lines well; do the rest next
+                    regions[0] = [i0 + 12, i1]
+                    i1 = i0 + 12
+                else:
+                    regions.pop(0)
                 R.retime_region(ep, i0, i1)
-                regions.pop(0)
                 ep["retime_regions"] = regions
                 json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
             ep.pop("retime_regions", None)
