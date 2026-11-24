@@ -92,6 +92,19 @@ def main(max_new):
                         os.replace(p + ".bak", p)
                     elif os.path.exists(p + ".bak"):
                         os.remove(p + ".bak")
+        # 1. precise timing for existing episodes
+        for row in playlist():
+            p = ep_path(row["n"])
+            if os.path.exists(p):
+                ep = json.load(open(p))
+                if ep.get("timing") != "gemini-retime" and not ep.get("needs_redo"):
+                    P.log(f"ep {row['n']}: precise timing pass")
+                    R.retime_episode(ep)
+                    ep.pop("retime_regions", None)
+                    if FG.fill_episode(ep) >= 8:
+                        FG.refresh_summary(ep)
+                    split_and_queue(ep)
+                    json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
         # 0b. cheap local re-checks queued for stretches whose lines were split (oldest episodes first)
         for row in playlist():
             p = ep_path(row["n"])
@@ -114,19 +127,6 @@ def main(max_new):
                 json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
             ep.pop("retime_regions", None)
             json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
-        # 1. precise timing for existing episodes
-        for row in playlist():
-            p = ep_path(row["n"])
-            if os.path.exists(p):
-                ep = json.load(open(p))
-                if ep.get("timing") != "gemini-retime" and not ep.get("needs_redo"):
-                    P.log(f"ep {row['n']}: precise timing pass")
-                    R.retime_episode(ep)
-                    ep.pop("retime_regions", None)
-                    if FG.fill_episode(ep) >= 8:
-                        FG.refresh_summary(ep)
-                    split_and_queue(ep)
-                    json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
         # 2. new episodes, in order
         for row in playlist():
             if done_new >= max_new:
