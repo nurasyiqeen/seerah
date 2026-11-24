@@ -215,6 +215,55 @@ def retime_episode(ep):
     return n_anchor / max(len(segs), 1)
 
 
+def retime_region(ep, i0, i1):
+    """Cheap local re-time of lines i0..i1 (inclusive): two overlapping windows around the stretch.
+    Lines outside the stretch keep their (already checked) times and act as fixed boundaries."""
+    segs, dur, vid = ep["segments"], ep["duration"], ep["id"]
+    cur = [s["t"] for s in segs]
+    lo = cur[i0 - 1] if i0 > 0 else 0.0
+    hi = cur[i1 + 1] if i1 + 1 < len(segs) else float(dur)
+    a = max(0, int(cur[i0]) - 30)
+    wins = [(a, min(dur, a + WINDOW)), (max(0, a - 60), min(dur, a - 60 + WINDOW))]
+    est = {}
+    for k, (w0, w1) in enumerate(sorted(set(wins))):
+        items = [(i, segs[i]) for i in range(max(0, i0 - 3), min(len(segs), i1 + 4)) if w0 - MARGIN <= cur[i] < w1 + MARGIN]
+        if items:
+            res, model = retime_window(vid, w0, w1, items)
+            for i, t in res.items():
+                if i0 <= i <= i1:
+                    est.setdefault(i, []).append(t)
+    new = {}
+    prev = lo
+    for i in range(i0, i1 + 1):
+        ts = sorted(est.get(i, []))
+        cand = None
+        if len(ts) >= 2 and ts[-1] - ts[0] <= AGREE:
+            cand = sum(ts) / len(ts)
+        else:
+            fits = [t for t in ts if prev + 0.5 < t < hi - 0.5]
+            if fits:
+                guess = cur[i]
+                cand = min(fits, key=lambda t: abs(t - guess))
+        if cand is not None and prev + 0.5 < cand < hi - 0.5:
+            new[i] = cand
+            prev = cand
+    # interpolate the lines without an answer between their neighbours
+    known = sorted(new)
+    for i in range(i0, i1 + 1):
+        if i in new:
+            continue
+        p = max([k for k in known if k < i], default=None)
+        q = min([k for k in known if k > i], default=None)
+        tp, ip = (new[p], p) if p is not None else (lo, i0 - 1)
+        tq, iq = (new[q], q) if q is not None else (hi, i1 + 1)
+        new[i] = tp + (tq - tp) * (i - ip) / max(iq - ip, 1)
+    for i in range(i0, i1 + 1):
+        segs[i]["t"] = round(new[i], 1)
+    for i in range(1, len(segs)):
+        segs[i]["t"] = max(segs[i]["t"], segs[i - 1]["t"])
+    return len([i for i in est if i in new])
+
+
 if __name__ == "__main__":
     for path in sys.argv[1:]:
         ep = json.load(open(path))

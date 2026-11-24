@@ -238,6 +238,55 @@ def clean_segments(segs):
     return segs
 
 
+MAX_LINE_WORDS = 32
+SENT_END = re.compile(r"(?:(?<=[.?!])|(?<=[.?!][\"\u201d']))\s+(?=[\"\u201c'A-Z\[])")
+
+
+def split_long_lines(segs, duration=None):
+    """Split speech lines longer than MAX_LINE_WORDS into sentence-sized pieces (commas as a fallback),
+    spreading the time to the next line over the pieces by word count. Short lines keep the highlight
+    close to the speaker and give the timing pass more anchors."""
+    out = []
+    for k, s in enumerate(segs):
+        text = s.get("text") or ""
+        n = len(text.split())
+        if s.get("kind") != "speech" or n <= MAX_LINE_WORDS:
+            out.append(s)
+            continue
+        sents = [x for x in SENT_END.split(text) if x.strip()]
+        parts = []
+        for sent in sents:
+            if len(sent.split()) > MAX_LINE_WORDS + 8:  # very long sentence: break at commas
+                bits, cur = re.split(r"(?<=,)\s+", sent), ""
+                for bit in bits:
+                    if cur and len((cur + " " + bit).split()) > MAX_LINE_WORDS:
+                        parts.append(cur); cur = bit
+                    else:
+                        cur = (cur + " " + bit).strip()
+                if cur:
+                    parts.append(cur)
+            else:
+                parts.append(sent)
+        groups, cur = [], ""
+        for p in parts:
+            if cur and len((cur + " " + p).split()) > MAX_LINE_WORDS:
+                groups.append(cur); cur = p
+            else:
+                cur = (cur + " " + p).strip()
+        if cur:
+            groups.append(cur)
+        if len(groups) < 2:
+            out.append(s)
+            continue
+        nxt = segs[k + 1]["t"] if k + 1 < len(segs) else (duration or s["t"] + n / 2.5)
+        span = min(max(nxt - s["t"], 1.0), n / 2.5 * 1.3)
+        done = 0
+        for g in groups:
+            out.append({**s, "text": g, "t": round(s["t"] + span * done / n, 1)})
+            done += len(g.split())
+    return out
+
+
 def transcribe_chunk(vid, start, end, glossary):
     cache = os.path.join(CACHE, f"{vid}_{int(start)}.json")
     if os.path.exists(cache):
@@ -483,6 +532,7 @@ def process(out_dir, ep_no, vid):
         results = list(ex.map(lambda w: transcribe_chunk(vid, w[0], w[1], glossary), windows))
     segs = [fill_quran(s) for r, _ in results for s in r]
     segs = [s for s in segs if (s.get("text") or s.get("ar") or s.get("translit"))]
+    segs = split_long_lines(segs, dur)
     analysis = analyse(ep_no, segs, glossary)
     for c in analysis.get("corrections") or []:
         if 0 <= c["index"] < len(segs) and segs[c["index"]]["kind"] == "speech" and c["text"].strip():

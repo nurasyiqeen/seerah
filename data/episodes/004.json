@@ -350,7 +350,12 @@
   {
    "t": 64.1,
    "kind": "speech",
-   "text": "So he went to Africa to call the people to [[tawhid|توحيد]], and while he was in Africa, a gang kidnapped him, and they sold him into slavery. And the person who bought him was a man from [[Najran|نجران]]."
+   "text": "So he went to Africa to call the people to [[tawhid|توحيد]], and while he was in Africa, a gang kidnapped him, and they sold him into slavery."
+  },
+  {
+   "t": 74.9,
+   "kind": "speech",
+   "text": "And the person who bought him was a man from [[Najran|نجران]]."
   },
   {
    "t": 79.3,
@@ -505,12 +510,22 @@
   {
    "t": 285.9,
    "kind": "speech",
-   "text": "...and you know, I don't know how much time I have left. I want to teach this witchcraft, I want to teach magic to someone so they can carry on my legacy after I pass away.'"
+   "text": "...and you know, I don't know how much time I have left."
+  },
+  {
+   "t": 290.1,
+   "kind": "speech",
+   "text": "I want to teach this witchcraft, I want to teach magic to someone so they can carry on my legacy after I pass away.'"
   },
   {
    "t": 298.4,
    "kind": "speech",
-   "text": "So [[Dhu Nuwas|ذو نواس]] understood this, and he thought that that would be something for his benefit as well. He thought, 'Okay, if my chief magician dies, I need someone who knows magic like he does so I can hold on to my kingdom and keep control the way I want to keep control.'"
+   "text": "So [[Dhu Nuwas|ذو نواس]] understood this, and he thought that that would be something for his benefit as well."
+  },
+  {
+   "t": 303.7,
+   "kind": "speech",
+   "text": "He thought, 'Okay, if my chief magician dies, I need someone who knows magic like he does so I can hold on to my kingdom and keep control the way I want to keep control.'"
   },
   {
    "t": 313.5,
@@ -625,7 +640,12 @@
   {
    "t": 452.1,
    "kind": "speech",
-   "text": "So he told the monk that this is what's happening. 'Now every day I'm coming to the magician's house and I'm late every day because I'm stopping on the way to speak with you...'"
+   "text": "So he told the monk that this is what's happening."
+  },
+  {
+   "t": 455.0,
+   "kind": "speech",
+   "text": "'Now every day I'm coming to the magician's house and I'm late every day because I'm stopping on the way to speak with you...'"
   },
   {
    "t": 462.1,
@@ -740,7 +760,12 @@
   {
    "t": 585.2,
    "kind": "speech",
-   "text": "The creature died. So this was his proof. This was the proof that the boy asked for, and from that point on, he knew that the religion of [[tawhid|توحيد]], the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]], that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] alone is worthy of worship..."
+   "text": "The creature died. So this was his proof."
+  },
+  {
+   "t": 587.8,
+   "kind": "speech",
+   "text": "This was the proof that the boy asked for, and from that point on, he knew that the religion of [[tawhid|توحيد]], the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]], that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] alone is worthy of worship..."
   },
   {
    "t": 600.0,
@@ -790,7 +815,12 @@
   {
    "t": 668.8,
    "kind": "speech",
-   "text": "And this became known. The people started talking about it, and the people came to know that this boy, people who go to him, he asks Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] for these needs, and Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] answers his [[du'a|دُعَاء]]."
+   "text": "And this became known."
+  },
+  {
+   "t": 670.2,
+   "kind": "speech",
+   "text": "The people started talking about it, and the people came to know that this boy, people who go to him, he asks Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] for these needs, and Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] answers his [[du'a|دُعَاء]]."
   },
   {
    "t": 683.5,
@@ -805,7 +835,12 @@
   {
    "t": 701.8,
    "kind": "speech",
-   "text": "So this man who worked in the court of the king, [[Dhu Nuwas|ذو نواس]], he went to the boy and he said that, \"I hear that you cure people from blindness. I hear that you cure people from blindness.\""
+   "text": "So this man who worked in the court of the king, [[Dhu Nuwas|ذو نواس]], he went to the boy and he said that, \"I hear that you cure people from blindness."
+  },
+  {
+   "t": 712.8,
+   "kind": "speech",
+   "text": "I hear that you cure people from blindness.\""
   },
   {
    "t": 715.6,
@@ -815,12 +850,22 @@
   {
    "t": 722.4,
    "kind": "speech",
-   "text": "And then he said, \"Okay, what do I need to do to be cured of my blindness?\" He said, \"You need to believe in Allah. Believe that it is Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] alone worthy of worship without any partner. Believe in Allah.\""
+   "text": "And then he said, \"Okay, what do I need to do to be cured of my blindness?\" He said, \"You need to believe in Allah."
+  },
+  {
+   "t": 729.6,
+   "kind": "speech",
+   "text": "Believe that it is Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] alone worthy of worship without any partner. Believe in Allah.\""
   },
   {
    "t": 735.1,
    "kind": "speech",
-   "text": "He said, \"Okay, I believe in Allah.\" Then the boy made [[du'a|دُعَاء]] to Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] to cure this man of his blindness. And Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] cured him, and the man could see again."
+   "text": "He said, \"Okay, I believe in Allah.\" Then the boy made [[du'a|دُعَاء]] to Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] to cure this man of his blindness."
+  },
+  {
+   "t": 743.2,
+   "kind": "speech",
+   "text": "And Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] cured him, and the man could see again."
   },
   {
    "t": 747.7,
@@ -845,7 +890,12 @@
   {
    "t": 782.1,
    "kind": "speech",
-   "text": "So he started to ask him questions about where did he get this new belief. And this man remained silent. He wouldn't tell the king. He wouldn't tell him anything. He didn't tell him about the boy."
+   "text": "So he started to ask him questions about where did he get this new belief. And this man remained silent. He wouldn't tell the king. He wouldn't tell him anything."
+  },
+  {
+   "t": 793.9,
+   "kind": "speech",
+   "text": "He didn't tell him about the boy."
   },
   {
    "t": 796.6,
@@ -870,7 +920,12 @@
   {
    "t": 833.8,
    "kind": "speech",
-   "text": "So then the king became very angry. He became so angry because this is the boy that he selected to go learn magic from the magician, and instead he learned [[tawhid|توحيد]], and Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] is granting him miracles through this belief."
+   "text": "So then the king became very angry."
+  },
+  {
+   "t": 836.3,
+   "kind": "speech",
+   "text": "He became so angry because this is the boy that he selected to go learn magic from the magician, and instead he learned [[tawhid|توحيد]], and Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] is granting him miracles through this belief."
   },
   {
    "t": 849.8,
@@ -890,32 +945,62 @@
   {
    "t": 874.8,
    "kind": "speech",
-   "text": "So the king ordered for that Christian monk to be brought in front of him. And he said to him, \"Renounce your religion right now. Renounce the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]. Renounce the religion of [[tawhid|توحيد]].\""
+   "text": "So the king ordered for that Christian monk to be brought in front of him. And he said to him, \"Renounce your religion right now. Renounce the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]."
+  },
+  {
+   "t": 888.3,
+   "kind": "speech",
+   "text": "Renounce the religion of [[tawhid|توحيد]].\""
   },
   {
    "t": 890.4,
    "kind": "speech",
-   "text": "And the monk refused. He said, \"I will not renounce it.\" So the king ordered for him to be executed by bringing a saw and cutting him in two pieces through his head. So he was cut into two pieces."
+   "text": "And the monk refused. He said, \"I will not renounce it.\""
+  },
+  {
+   "t": 894.9,
+   "kind": "speech",
+   "text": "So the king ordered for him to be executed by bringing a saw and cutting him in two pieces through his head. So he was cut into two pieces."
   },
   {
    "t": 906.7,
    "kind": "speech",
-   "text": "And this was witnessed by the boy and by the man who worked in the court of the king who was cured from his blindness. They both saw this happening. So this is how they killed the monk, the king killed the monk."
+   "text": "And this was witnessed by the boy and by the man who worked in the court of the king who was cured from his blindness. They both saw this happening."
+  },
+  {
+   "t": 918.8,
+   "kind": "speech",
+   "text": "So this is how they killed the monk, the king killed the monk."
   },
   {
    "t": 924.1,
    "kind": "speech",
-   "text": "Then he took that man who worked in his court, the man who was cured for blindness, and he said the same thing to him. The king said the same thing to him, \"Renounce this religion. Renounce your religion.\""
+   "text": "Then he took that man who worked in his court, the man who was cured for blindness, and he said the same thing to him."
+  },
+  {
+   "t": 932.9,
+   "kind": "speech",
+   "text": "The king said the same thing to him, \"Renounce this religion. Renounce your religion.\""
   },
   {
    "t": 937.9,
    "kind": "speech",
-   "text": "And the man refused. He said, \"I will not renounce it.\" So he ordered the same thing to be done to him. So he was sawed in half. His body was split into two pieces and he was executed in this manner."
+   "text": "And the man refused. He said, \"I will not renounce it.\" So he ordered the same thing to be done to him. So he was sawed in half."
+  },
+  {
+   "t": 947.2,
+   "kind": "speech",
+   "text": "His body was split into two pieces and he was executed in this manner."
   },
   {
    "t": 951.9,
    "kind": "speech",
-   "text": "So the boy witnessed both of these executions. He witnessed his teacher, the Christian monk, being executed, and he also witnessed this man of the royal court who was cured of blindness, he also witnessed him being executed."
+   "text": "So the boy witnessed both of these executions."
+  },
+  {
+   "t": 955.0,
+   "kind": "speech",
+   "text": "He witnessed his teacher, the Christian monk, being executed, and he also witnessed this man of the royal court who was cured of blindness, he also witnessed him being executed."
   },
   {
    "t": 966.6,
@@ -925,7 +1010,12 @@
   {
    "t": 973.8,
    "kind": "speech",
-   "text": "So he said to the young boy, \"Now you renounce your religion, or I'm going to kill you like I killed them.\" But the boy, he remained firm on his [[iman|إيمان]], and he refused to renounce the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]. He refused to renounce the religion of [[tawhid|توحيد]]."
+   "text": "So he said to the young boy, \"Now you renounce your religion, or I'm going to kill you like I killed them.\""
+  },
+  {
+   "t": 981.1,
+   "kind": "speech",
+   "text": "But the boy, he remained firm on his [[iman|إيمان]], and he refused to renounce the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]. He refused to renounce the religion of [[tawhid|توحيد]]."
   },
   {
    "t": 990.5,
@@ -935,12 +1025,22 @@
   {
    "t": 1004.1,
    "kind": "speech",
-   "text": "\"Take him on the top of a mountain. Take him on the top of a mountain and throw him down from that mountain. This is how we are going to execute this boy.\""
+   "text": "\"Take him on the top of a mountain. Take him on the top of a mountain and throw him down from that mountain."
+  },
+  {
+   "t": 1011.7,
+   "kind": "speech",
+   "text": "This is how we are going to execute this boy.\""
   },
   {
    "t": 1015.0,
    "kind": "speech",
-   "text": "So he sent his men with this boy to the top of the mountain. So they're at the top of the mountain, and they're about to throw him down, and then Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] causes a big earthquake to happen."
+   "text": "So he sent his men with this boy to the top of the mountain."
+  },
+  {
+   "t": 1017.9,
+   "kind": "speech",
+   "text": "So they're at the top of the mountain, and they're about to throw him down, and then Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] causes a big earthquake to happen."
   },
   {
    "t": 1023.8,
@@ -950,7 +1050,12 @@
   {
    "t": 1038.5,
    "kind": "speech",
-   "text": "So all of the king's men are dead, and the kid is safe, and he goes back to the king. And the king is surprised to see him. He said, \"What happened? What happened to all of the people? I sent them to go and throw you off the mountain. How are you back here? Where are they?\""
+   "text": "So all of the king's men are dead, and the kid is safe, and he goes back to the king. And the king is surprised to see him. He said, \"What happened?"
+  },
+  {
+   "t": 1048.2,
+   "kind": "speech",
+   "text": "What happened to all of the people? I sent them to go and throw you off the mountain. How are you back here? Where are they?\""
   },
   {
    "t": 1056.1,
@@ -960,22 +1065,62 @@
   {
    "t": 1060.9,
    "kind": "speech",
-   "text": "So the king was very angry now. He's very upset. He gathered another group of his men and he said, \"Go take him into the deep sea. Take him into the sea and throw him in the sea, drown him in the sea.\""
+   "text": "So the king was very angry now. He's very upset. He gathered another group of his men and he said, \"Go take him into the deep sea."
+  },
+  {
+   "t": 1070.0,
+   "kind": "speech",
+   "text": "Take him into the sea and throw him in the sea, drown him in the sea.\""
   },
   {
    "t": 1075.4,
    "kind": "speech",
-   "text": "So a group of the men, they took a boat, and they took the boy, and they went deep into the sea. Then Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] caused the waves to become very powerful and strong, and Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] caused those people who were in that boat to fall out of the boat, and they fell into the water and they all drowned except the boy. He survived. He survived."
+   "text": "So a group of the men, they took a boat, and they took the boy, and they went deep into the sea."
+  },
+  {
+   "t": 1083.1,
+   "kind": "speech",
+   "text": "Then Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] caused the waves to become very powerful and strong,"
+  },
+  {
+   "t": 1088.3,
+   "kind": "speech",
+   "text": "and Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] caused those people who were in that boat to fall out of the boat,"
+  },
+  {
+   "t": 1095.3,
+   "kind": "speech",
+   "text": "and they fell into the water and they all drowned except the boy. He survived. He survived."
   },
   {
    "t": 1101.2,
    "kind": "speech",
-   "text": "And he came back to the king again. Now the king is very shocked and surprised. Every time he's sending for this boy to be executed, he's coming back safe and sound, and his men are the ones who are dying instead of the boy dying."
+   "text": "And he came back to the king again. Now the king is very shocked and surprised."
+  },
+  {
+   "t": 1106.0,
+   "kind": "speech",
+   "text": "Every time he's sending for this boy to be executed, he's coming back safe and sound, and his men are the ones who are dying instead of the boy dying."
   },
   {
    "t": 1115.0,
    "kind": "speech",
-   "text": "So whatever way he tried to kill him, he was unable to kill him. And this shows us a lesson that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] is the one who gives life and the one who causes death. Even if the whole world wants to conspire to kill you, but Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] doesn't want you to die, you're not going to die. And even if the whole world conspires to keep you alive, if Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] has written that you're going to die, you're going to die."
+   "text": "So whatever way he tried to kill him, he was unable to kill him."
+  },
+  {
+   "t": 1118.7,
+   "kind": "speech",
+   "text": "And this shows us a lesson that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] is the one who gives life and the one who causes death."
+  },
+  {
+   "t": 1125.0,
+   "kind": "speech",
+   "text": "Even if the whole world wants to conspire to kill you, but Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] doesn't want you to die, you're not going to die."
+  },
+  {
+   "t": 1132.1,
+   "kind": "speech",
+   "text": "And even if the whole world conspires to keep you alive, if Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] has written that you're going to die, you're going to die."
   },
   {
    "t": 1139.5,
@@ -990,7 +1135,12 @@
   {
    "t": 1157.8,
    "kind": "speech",
-   "text": "So the boy actually gives the king a suggestion. He says, \"You want to kill me? You want to kill me? I will tell you the way, the only way that you can kill me. I will tell you the only way that you can possibly kill me.\""
+   "text": "So the boy actually gives the king a suggestion. He says, \"You want to kill me? You want to kill me?"
+  },
+  {
+   "t": 1164.7,
+   "kind": "speech",
+   "text": "I will tell you the way, the only way that you can kill me. I will tell you the only way that you can possibly kill me.\""
   },
   {
    "t": 1173.5,
@@ -1035,7 +1185,17 @@
   {
    "t": 1242.5,
    "kind": "speech",
-   "text": "Now think about this. Everyone is watching this, and these people who are witnessing this, they know about the attempts on this boy's life. They know that the king tried to kill him by throwing him off a mountain, they know that the king tried to kill him by throwing him into the ocean, they know that the king has tried multiple times to kill this boy, and he wasn't able to do it."
+   "text": "Now think about this. Everyone is watching this, and these people who are witnessing this, they know about the attempts on this boy's life."
+  },
+  {
+   "t": 1249.5,
+   "kind": "speech",
+   "text": "They know that the king tried to kill him by throwing him off a mountain, they know that the king tried to kill him by throwing him into the ocean,"
+  },
+  {
+   "t": 1258.2,
+   "kind": "speech",
+   "text": "they know that the king has tried multiple times to kill this boy, and he wasn't able to do it."
   },
   {
    "t": 1264.0,
@@ -1045,7 +1205,12 @@
   {
    "t": 1275.8,
    "kind": "speech",
-   "text": "The boy dies. But everybody witnessed that the king had no power to kill this boy on his own from the previous attempts, but once he said, 'In the name of Allah, the Lord of the boy,' then he was able to kill him."
+   "text": "The boy dies. But everybody witnessed that the king had no power to kill this boy on his own from the previous attempts, but once he said, 'In the name of Allah,"
+  },
+  {
+   "t": 1286.9,
+   "kind": "speech",
+   "text": "the Lord of the boy,' then he was able to kill him."
   },
   {
    "t": 1291.0,
@@ -1055,7 +1220,12 @@
   {
    "t": 1300.7,
    "kind": "speech",
-   "text": "It is Allah alone, the Lord of this boy, who is able to do all things. The only way that he was able to kill that boy was by getting the permission of Allah, the Lord of that boy, to do it."
+   "text": "It is Allah alone, the Lord of this boy, who is able to do all things."
+  },
+  {
+   "t": 1305.2,
+   "kind": "speech",
+   "text": "The only way that he was able to kill that boy was by getting the permission of Allah, the Lord of that boy, to do it."
   },
   {
    "t": 1312.5,
@@ -1065,7 +1235,12 @@
   {
    "t": 1321.7,
    "kind": "speech",
-   "text": "'We believe in the Lord of the boy. We believe in the Lord of the boy.' And all of them accepted Christianity, they became Christians. They accepted the [[din|دِين]] of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]."
+   "text": "'We believe in the Lord of the boy. We believe in the Lord of the boy.' And all of them accepted Christianity, they became Christians."
+  },
+  {
+   "t": 1331.5,
+   "kind": "speech",
+   "text": "They accepted the [[din|دِين]] of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]."
   },
   {
    "t": 1334.7,
@@ -1075,7 +1250,12 @@
   {
    "t": 1345.7,
    "kind": "speech",
-   "text": "But by killing him, it actually had the opposite effect. The people saw the way that he died, and they all accepted the religion of this boy. So the king's plan backfired on him."
+   "text": "But by killing him, it actually had the opposite effect. The people saw the way that he died, and they all accepted the religion of this boy."
+  },
+  {
+   "t": 1355.5,
+   "kind": "speech",
+   "text": "So the king's plan backfired on him."
   },
   {
    "t": 1358.1,
@@ -1090,12 +1270,27 @@
   {
    "t": 1378.0,
    "kind": "speech",
-   "text": "Look at the sacrifice this boy gave. He sacrificed his own life. He is the one who told the king how to kill him. He is the one who gave the king instructions on how to kill him. And the reason why he did this was because he was ready to give his life in the way of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]."
+   "text": "Look at the sacrifice this boy gave. He sacrificed his own life. He is the one who told the king how to kill him."
+  },
+  {
+   "t": 1385.3,
+   "kind": "speech",
+   "text": "He is the one who gave the king instructions on how to kill him."
+  },
+  {
+   "t": 1389.5,
+   "kind": "speech",
+   "text": "And the reason why he did this was because he was ready to give his life in the way of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]."
   },
   {
    "t": 1397.1,
    "kind": "speech",
-   "text": "He was ready to lose his life in this [[dunya|دُنْيَا]] for the pleasure of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] so that so many people would be guided, and he would get the [[ajr|أَجْر]], he would get the reward for those people being guided to Islam, to the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]."
+   "text": "He was ready to lose his life in this [[dunya|دُنْيَا]] for the pleasure of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] so that so many people would be guided,"
+  },
+  {
+   "t": 1405.6,
+   "kind": "speech",
+   "text": "and he would get the [[ajr|أَجْر]], he would get the reward for those people being guided to Islam, to the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]]."
   },
   {
    "t": 1413.4,
@@ -1130,7 +1325,12 @@
   {
    "t": 1479.3,
    "kind": "speech",
-   "text": "So they would go up to the people and say, 'Do you renounce your religion?' And they would say, 'No, we do not renounce our religion. We believe in Allah,' and they would be pushed into the fire. And this kept happening to all of them."
+   "text": "So they would go up to the people and say, 'Do you renounce your religion?' And they would say, 'No, we do not renounce our religion."
+  },
+  {
+   "t": 1486.4,
+   "kind": "speech",
+   "text": "We believe in Allah,' and they would be pushed into the fire. And this kept happening to all of them."
   },
   {
    "t": 1491.9,
@@ -1140,7 +1340,17 @@
   {
    "t": 1503.1,
    "kind": "speech",
-   "text": "And she had [[rahmah|رَحْمَة]], she had some feeling of mercy for that baby. So when it came her turn to be pushed into that trench, and she was asked, 'Do you renounce your religion?', she hesitated a little bit, because she didn't want to go into that fire with her baby. So she hesitated a little bit."
+   "text": "And she had [[rahmah|رَحْمَة]], she had some feeling of mercy for that baby."
+  },
+  {
+   "t": 1507.4,
+   "kind": "speech",
+   "text": "So when it came her turn to be pushed into that trench, and she was asked, 'Do you renounce your religion?', she hesitated a little bit, because she didn't want to go into that fire with her baby."
+  },
+  {
+   "t": 1519.8,
+   "kind": "speech",
+   "text": "So she hesitated a little bit."
   },
   {
    "t": 1521.8,
@@ -1160,7 +1370,12 @@
   {
    "t": 1555.5,
    "kind": "speech",
-   "text": "So this was the evil deed that he committed. For these people accepting the truth, [[Dhu Nuwas|ذو نواس]] killed them and slaughtered them in the most brutal way by burning them alive. And this story is mentioned in [[Suratul-Buruj|سُورَة الْبُرُوج]]."
+   "text": "So this was the evil deed that he committed. For these people accepting the truth, [[Dhu Nuwas|ذو نواس]] killed them and slaughtered them in the most brutal way by burning them alive."
+  },
+  {
+   "t": 1572.1,
+   "kind": "speech",
+   "text": "And this story is mentioned in [[Suratul-Buruj|سُورَة الْبُرُوج]]."
   },
   {
    "t": 1589.2,
@@ -1195,7 +1410,12 @@
   {
    "t": 1646.5,
    "kind": "speech",
-   "text": "He was a Christian who witnessed what happened with the boy, and he accepted Christianity. But they were not able to push him into the trench of fire. He jumped on a horse and he escaped. He jumped on a horse and he escaped. And he's the only one who escaped."
+   "text": "He was a Christian who witnessed what happened with the boy, and he accepted Christianity. But they were not able to push him into the trench of fire."
+  },
+  {
+   "t": 1655.4,
+   "kind": "speech",
+   "text": "He jumped on a horse and he escaped. He jumped on a horse and he escaped. And he's the only one who escaped."
   },
   {
    "t": 1662.8,
@@ -1215,12 +1435,22 @@
   {
    "t": 1687.8,
    "kind": "speech",
-   "text": "So when the Emperor of [[Sham|شَام]] heard about this, he sent a letter to the [[Najashi|نَجَاشِي]] of Abyssinia, the king of what is now known as Ethiopia. And that was a Christian kingdom."
+   "text": "So when the Emperor of [[Sham|شَام]] heard about this, he sent a letter to the [[Najashi|نَجَاشِي]] of Abyssinia, the king of what is now known as Ethiopia."
+  },
+  {
+   "t": 1701.8,
+   "kind": "speech",
+   "text": "And that was a Christian kingdom."
   },
   {
    "t": 1706.7,
    "kind": "speech",
-   "text": "And what do you think the king of Abyssinia, who was a Christian, how do you think he felt when he knew that [[Dhu Nuwas|ذو نواس]] killed 20,000 Christians? Of course, he became very angry."
+   "text": "And what do you think the king of Abyssinia, who was a Christian, how do you think he felt when he knew that [[Dhu Nuwas|ذو نواس]] killed 20,000 Christians?"
+  },
+  {
+   "t": 1717.1,
+   "kind": "speech",
+   "text": "Of course, he became very angry."
   },
   {
    "t": 1719.3,
@@ -1240,12 +1470,27 @@
   {
    "t": 1752.8,
    "kind": "speech",
-   "text": "So this army from Abyssinia was sent to [[Yemen|الْيَمَن]], and they were able to take control from [[Dhu Nuwas|ذو نواس]]. And [[Dhu Nuwas|ذو نواس]] tried to flee, he tried to escape. But while he was trying to escape, he drowned and he died in that way."
+   "text": "So this army from Abyssinia was sent to [[Yemen|الْيَمَن]], and they were able to take control from [[Dhu Nuwas|ذو نواس]]. And [[Dhu Nuwas|ذو نواس]] tried to flee, he tried to escape."
+  },
+  {
+   "t": 1764.8,
+   "kind": "speech",
+   "text": "But while he was trying to escape, he drowned and he died in that way."
   },
   {
    "t": 1770.6,
    "kind": "speech",
-   "text": "And Abyssinia took control of [[Yemen|الْيَمَن]]. If you remember from the first or second lesson, we said that [[Rabiah ibn Nasr|رَبِيعَة بن نَصْر]], he had a dream, he had a dream that the Abyssinians would take control of [[Yemen|الْيَمَن]]. Do you remember that? That the Abyssinians would take control of [[Yemen|الْيَمَن]]."
+   "text": "And Abyssinia took control of [[Yemen|الْيَمَن]]."
+  },
+  {
+   "t": 1773.2,
+   "kind": "speech",
+   "text": "If you remember from the first or second lesson, we said that [[Rabiah ibn Nasr|رَبِيعَة بن نَصْر]], he had a dream, he had a dream that the Abyssinians would take control of [[Yemen|الْيَمَن]]."
+  },
+  {
+   "t": 1787.7,
+   "kind": "speech",
+   "text": "Do you remember that? That the Abyssinians would take control of [[Yemen|الْيَمَن]]."
   },
   {
    "t": 1793.0,
@@ -1255,7 +1500,12 @@
   {
    "t": 1798.8,
    "kind": "speech",
-   "text": "what was done to those Christians, and they exiled [[Dhu Nuwas|ذو نواس]]. They wanted to catch him, he tried to escape, but he was killed, he died while he was trying to flee. And the Abyssinian Christian kingdom took control of [[Yemen|اليمن]]"
+   "text": "what was done to those Christians, and they exiled [[Dhu Nuwas|ذو نواس]]."
+  },
+  {
+   "t": 1804.2,
+   "kind": "speech",
+   "text": "They wanted to catch him, he tried to escape, but he was killed, he died while he was trying to flee. And the Abyssinian Christian kingdom took control of [[Yemen|اليمن]]"
   },
   {
    "t": 1817.8,
@@ -1330,5 +1580,75 @@
    "a": "[[Daws Dhu Tha'laban|دَوْس ذُو ثَعْلَبَان]] escaped on horseback and eventually informed the Abyssinian king, leading to the conquest of [[Yemen|اليمن]].",
    "chapter": 6
   }
+ ],
+ "retime_regions": [
+  [
+   6,
+   8
+  ],
+  [
+   38,
+   42
+  ],
+  [
+   64,
+   66
+  ],
+  [
+   88,
+   90
+  ],
+  [
+   99,
+   101
+  ],
+  [
+   103,
+   110
+  ],
+  [
+   114,
+   116
+  ],
+  [
+   120,
+   122
+  ],
+  [
+   125,
+   161
+  ],
+  [
+   163,
+   165
+  ],
+  [
+   173,
+   188
+  ],
+  [
+   190,
+   195
+  ],
+  [
+   201,
+   207
+  ],
+  [
+   210,
+   212
+  ],
+  [
+   218,
+   220
+  ],
+  [
+   223,
+   227
+  ],
+  [
+   230,
+   238
+  ]
  ]
 }

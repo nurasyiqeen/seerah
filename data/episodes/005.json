@@ -538,12 +538,22 @@
   {
    "t": 44.5,
    "kind": "speech",
-   "text": "The king of [[Yemen|اليمن]] whose name was [[Dhu Nuwas|ذو نواس]] and he was the son of the [[Tubba|تبع]], [[Tibban As'ad|تبان أسعد]], he was an evil man, even though his father was a good man. [[Tibban As'ad|تبان أسعد]] was a good man, but his youngest son [[Dhu Nuwas|ذو نواس]], he was an evil man."
+   "text": "The king of [[Yemen|اليمن]] whose name was [[Dhu Nuwas|ذو نواس]] and he was the son of the [[Tubba|تبع]], [[Tibban As'ad|تبان أسعد]], he was an evil man, even though his father was a good man."
+  },
+  {
+   "t": 57.3,
+   "kind": "speech",
+   "text": "[[Tibban As'ad|تبان أسعد]] was a good man, but his youngest son [[Dhu Nuwas|ذو نواس]], he was an evil man."
   },
   {
    "t": 64.5,
    "kind": "speech",
-   "text": "And he decided to kill those people who believed in Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] by digging big trenches and lighting those trenches on fire, and those people who wouldn't renounce their belief in Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], they were thrown in that fire."
+   "text": "And he decided to kill those people who believed in Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] by digging big trenches and lighting those trenches on fire,"
+  },
+  {
+   "t": 75.8,
+   "kind": "speech",
+   "text": "and those people who wouldn't renounce their belief in Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], they were thrown in that fire."
   },
   {
    "t": 84.8,
@@ -578,7 +588,12 @@
   {
    "t": 145.7,
    "kind": "speech",
-   "text": "And if he is informed of what [[Dhu Nuwas|ذو نواس]] did to the Christians who believed in the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]], if he is informed of what happened to them and how they were brutally killed by being thrown into ditches of fire, he will definitely do something about it."
+   "text": "And if he is informed of what [[Dhu Nuwas|ذو نواس]] did to the Christians who believed in the religion of [[Isa|عِيسَى]] [[alayhis-salam|عليه السلام]],"
+  },
+  {
+   "t": 153.8,
+   "kind": "speech",
+   "text": "if he is informed of what happened to them and how they were brutally killed by being thrown into ditches of fire, he will definitely do something about it."
   },
   {
    "t": 164.0,
@@ -598,7 +613,12 @@
   {
    "t": 187.9,
    "kind": "speech",
-   "text": "\"...and you go to Ethiopia, you go to [[Habashah|حباشة]], and talk to the [[Najashi|نجاشي]]. I'll send a letter with you as well, and I will explain to him what you explain to me and he will help you out with this, because the [[Najashi|نجاشي]] of [[Habashah|حباشة]], he was also a Christian.\""
+   "text": "\"...and you go to Ethiopia, you go to [[Habashah|حباشة]], and talk to the [[Najashi|نجاشي]]."
+  },
+  {
+   "t": 192.8,
+   "kind": "speech",
+   "text": "I'll send a letter with you as well, and I will explain to him what you explain to me and he will help you out with this, because the [[Najashi|نجاشي]] of [[Habashah|حباشة]], he was also a Christian.\""
   },
   {
    "t": 205.8,
@@ -623,12 +643,22 @@
   {
    "t": 253.6,
    "kind": "speech",
-   "text": "So the [[Najashi|نجاشي]] of [[Habashah|حباشة]], he sent a big army under the control or under the authority of a man named [[Aryat|أَرْيَاط]]. His name was [[Aryat|أَرْيَاط]]. He was the commander of the army that [[Najashi|نجاشي]] sent."
+   "text": "So the [[Najashi|نجاشي]] of [[Habashah|حباشة]], he sent a big army under the control or under the authority of a man named [[Aryat|أَرْيَاط]]. His name was [[Aryat|أَرْيَاط]]."
+  },
+  {
+   "t": 265.5,
+   "kind": "speech",
+   "text": "He was the commander of the army that [[Najashi|نجاشي]] sent."
   },
   {
    "t": 270.1,
    "kind": "speech",
-   "text": "And one of the high-ranking officers in that army as well was a man named [[Abrahah|أَبْرَهَة]]. So [[Aryat|أَرْيَاط]] was the commander of the army and [[Abrahah|أَبْرَهَة]] was also a high-ranking officer in that army."
+   "text": "And one of the high-ranking officers in that army as well was a man named [[Abrahah|أَبْرَهَة]]."
+  },
+  {
+   "t": 278.4,
+   "kind": "speech",
+   "text": "So [[Aryat|أَرْيَاط]] was the commander of the army and [[Abrahah|أَبْرَهَة]] was also a high-ranking officer in that army."
   },
   {
    "t": 307.7,
@@ -648,7 +678,12 @@
   {
    "t": 321.0,
    "kind": "speech",
-   "text": "So of course, the [[Najashi|نجاشي]]'s army was victorious under the command of [[Aryat|أَرْيَاط]]. They were victorious and they won the battle and they were able to take control of [[Yemen|اليمن]]. And that is how [[Yemen|اليمن]] came under control of [[Habashah|حباشة]]."
+   "text": "So of course, the [[Najashi|نجاشي]]'s army was victorious under the command of [[Aryat|أَرْيَاط]]. They were victorious and they won the battle and they were able to take control of [[Yemen|اليمن]]."
+  },
+  {
+   "t": 333.8,
+   "kind": "speech",
+   "text": "And that is how [[Yemen|اليمن]] came under control of [[Habashah|حباشة]]."
   },
   {
    "t": 338.0,
@@ -663,17 +698,42 @@
   {
    "t": 348.9,
    "kind": "speech",
-   "text": "So he went to the sea and he tried to board a boat to go into the sea. But they were chasing him. The army of the [[Najashi|نجاشي]] were chasing him. They wanted to capture him and they wanted to kill him for what he did to those people, for what he did to those Christians."
+   "text": "So he went to the sea and he tried to board a boat to go into the sea. But they were chasing him. The army of the [[Najashi|نجاشي]] were chasing him."
+  },
+  {
+   "t": 352.1,
+   "kind": "speech",
+   "text": "They wanted to capture him and they wanted to kill him for what he did to those people, for what he did to those Christians."
   },
   {
    "t": 354.6,
    "kind": "speech",
-   "text": "So they were chasing him and they wanted to catch him and they wanted to execute him. And when [[Dhu Nuwas|ذو نواس]], he was in the sea, when he saw that they were almost about to capture him and he knew that being captured would be inevitable, he knew he had no chance to escape..."
+   "text": "So they were chasing him and they wanted to catch him and they wanted to execute him."
+  },
+  {
+   "t": 362.6,
+   "kind": "speech",
+   "text": "And when [[Dhu Nuwas|ذو نواس]], he was in the sea, when he saw that they were almost about to capture him and he knew that being captured would be inevitable, he knew he had no chance to escape..."
   },
   {
    "t": 380.4,
    "kind": "speech",
-   "text": "...he actually committed suicide. He jumped into the sea and he drowned himself, because these people felt it was a very dishonorable thing to be captured by the enemy, and they would rather die, even if that means committing suicide, they would rather kill themselves than be captured from the enemy. So this is how [[Dhu Nuwas|ذو نواس]] died. He committed suicide by drowning himself into the sea."
+   "text": "...he actually committed suicide."
+  },
+  {
+   "t": 381.8,
+   "kind": "speech",
+   "text": "He jumped into the sea and he drowned himself, because these people felt it was a very dishonorable thing to be captured by the enemy, and they would rather die,"
+  },
+  {
+   "t": 392.6,
+   "kind": "speech",
+   "text": "even if that means committing suicide, they would rather kill themselves than be captured from the enemy. So this is how [[Dhu Nuwas|ذو نواس]] died."
+  },
+  {
+   "t": 401.7,
+   "kind": "speech",
+   "text": "He committed suicide by drowning himself into the sea."
   },
   {
    "t": 404.9,
@@ -683,7 +743,17 @@
   {
    "t": 419.1,
    "kind": "speech",
-   "text": "And [[Aryat|أَرْيَاط]] becomes the commander. He's the commander of the military, so he becomes the de facto ruler of [[Yemen|اليمن]]. You know, when a military coup happens, it's the commander of the military who becomes the ruler of the state. So this is exactly what happened in this situation. [[Aryat|أَرْيَاط]], who was the commander of the [[Habashah|أحباش]] military, he became the head of state in [[Yemen|اليمن]]."
+   "text": "And [[Aryat|أَرْيَاط]] becomes the commander. He's the commander of the military, so he becomes the de facto ruler of [[Yemen|اليمن]]."
+  },
+  {
+   "t": 427.4,
+   "kind": "speech",
+   "text": "You know, when a military coup happens, it's the commander of the military who becomes the ruler of the state. So this is exactly what happened in this situation."
+  },
+  {
+   "t": 439.4,
+   "kind": "speech",
+   "text": "[[Aryat|أَرْيَاط]], who was the commander of the [[Habashah|أحباش]] military, he became the head of state in [[Yemen|اليمن]]."
   },
   {
    "t": 446.5,
@@ -693,17 +763,32 @@
   {
    "t": 460.1,
    "kind": "speech",
-   "text": "Like we said, it was an army of 70,000 people. So those 70,000 people now, they're there, they're settled in [[Yemen|اليمن]] as well. So he's doing [[zulm|ظلم]] on the actual Arabs of [[Yemen|اليمن]] and he's doing [[zulm|ظلم]] on his own people as well. He is an oppressive ruler who doesn't deal with anyone with justice."
+   "text": "Like we said, it was an army of 70,000 people. So those 70,000 people now, they're there, they're settled in [[Yemen|اليمن]] as well."
+  },
+  {
+   "t": 468.1,
+   "kind": "speech",
+   "text": "So he's doing [[zulm|ظلم]] on the actual Arabs of [[Yemen|اليمن]] and he's doing [[zulm|ظلم]] on his own people as well. He is an oppressive ruler who doesn't deal with anyone with justice."
   },
   {
    "t": 479.2,
    "kind": "speech",
-   "text": "So [[Abrahah|أَبْرَهَة]], [[Abrahah|أَبْرَهَة]] is noticing this, that this man now he became powerful, he has rule over the people and he's abusing his power. He's treating the Yemenis bad and he's even treating us bad, his own people. His own army, he's treating us with oppression and injustice."
+   "text": "So [[Abrahah|أَبْرَهَة]], [[Abrahah|أَبْرَهَة]] is noticing this, that this man now he became powerful, he has rule over the people and he's abusing his power."
+  },
+  {
+   "t": 488.2,
+   "kind": "speech",
+   "text": "He's treating the Yemenis bad and he's even treating us bad, his own people. His own army, he's treating us with oppression and injustice."
   },
   {
    "t": 497.3,
    "kind": "speech",
-   "text": "So [[Abrahah|أَبْرَهَة]] was able to get a few members of the military to defect to his side, and he wanted to stage a military coup against [[Aryat|أَرْيَاط]]. And he was able to get a lot of support, a good amount of support from the military, because he was also a pretty high-ranking officer in that military."
+   "text": "So [[Abrahah|أَبْرَهَة]] was able to get a few members of the military to defect to his side, and he wanted to stage a military coup against [[Aryat|أَرْيَاط]]."
+  },
+  {
+   "t": 508.1,
+   "kind": "speech",
+   "text": "And he was able to get a lot of support, a good amount of support from the military, because he was also a pretty high-ranking officer in that military."
   },
   {
    "t": 519.8,
@@ -713,7 +798,12 @@
   {
    "t": 531.5,
    "kind": "speech",
-   "text": "So it was one part of the [[Habashah|أحباش]] army against the other part of the [[Habashah|أحباش]] army. And the Yemenis, the locals, they had nothing to do with this. It was one group of [[Habashah|أحباش]] against another group of [[Habashah|أحباش]]."
+   "text": "So it was one part of the [[Habashah|أحباش]] army against the other part of the [[Habashah|أحباش]] army. And the Yemenis, the locals, they had nothing to do with this."
+  },
+  {
+   "t": 540.9,
+   "kind": "speech",
+   "text": "It was one group of [[Habashah|أحباش]] against another group of [[Habashah|أحباش]]."
   },
   {
    "t": 544.4,
@@ -723,7 +813,12 @@
   {
    "t": 554.0,
    "kind": "speech",
-   "text": "But before they started the battle, [[Abrahah|أَبْرَهَة]] requested to have a face-to-face meeting with [[Aryat|أَرْيَاط]]. Perhaps they could discuss this in a civilized way and perhaps they could come to some type of a solution without actually having to fight."
+   "text": "But before they started the battle, [[Abrahah|أَبْرَهَة]] requested to have a face-to-face meeting with [[Aryat|أَرْيَاط]]."
+  },
+  {
+   "t": 561.8,
+   "kind": "speech",
+   "text": "Perhaps they could discuss this in a civilized way and perhaps they could come to some type of a solution without actually having to fight."
   },
   {
    "t": 575.6,
@@ -918,7 +1013,12 @@
   {
    "t": 776.5,
    "kind": "speech",
-   "text": "He is overstepping his bounds, and he is trying to go over my authority, because I am the one who put [[Aryat|أَرْيَاط]] in charge. So what right did he have to to organize some of the members of the army against him and try to fight him, and eventually he actually killed him"
+   "text": "He is overstepping his bounds, and he is trying to go over my authority, because I am the one who put [[Aryat|أَرْيَاط]] in charge."
+  },
+  {
+   "t": 783.7,
+   "kind": "speech",
+   "text": "So what right did he have to to organize some of the members of the army against him and try to fight him, and eventually he actually killed him"
   },
   {
    "t": 792.5,
@@ -953,12 +1053,22 @@
   {
    "t": 839.6,
    "kind": "speech",
-   "text": "So because [[Najashi|نجاشي]] was so mad, he said, 'I will myself go and step on the earth of [[Yemen|اليمن]], I will step on the dirt of [[Yemen|اليمن]] with my own two feet, and I will take the hair of [[Abrahah|أَبْرَهَة]] to humiliate him.'"
+   "text": "So because [[Najashi|نجاشي]] was so mad, he said, 'I will myself go and step on the earth of [[Yemen|اليمن]], I will step on the dirt of [[Yemen|اليمن]] with my own two feet,"
+  },
+  {
+   "t": 849.9,
+   "kind": "speech",
+   "text": "and I will take the hair of [[Abrahah|أَبْرَهَة]] to humiliate him.'"
   },
   {
    "t": 853.4,
    "kind": "speech",
-   "text": "So he organized his army. He sent 70,000 people of his army to [[Yemen|اليمن]], but he still had a huge army at his disposal back there in [[Habashah|أحباش]]. So he prepared his army to go into [[Yemen|اليمن]]."
+   "text": "So he organized his army. He sent 70,000 people of his army to [[Yemen|اليمن]], but he still had a huge army at his disposal back there in [[Habashah|أحباش]]."
+  },
+  {
+   "t": 862.8,
+   "kind": "speech",
+   "text": "So he prepared his army to go into [[Yemen|اليمن]]."
   },
   {
    "t": 865.8,
@@ -968,12 +1078,22 @@
   {
    "t": 870.3,
    "kind": "speech",
-   "text": "the news came to [[Abrahah|أَبْرَهَة]] that yes, [[Najashi|نجاشي]] is coming, and he's really mad, and this is what he's planning to do to you. He made an oath that he would not return to [[Habashah|أحباش]] until he with his own two feet stepped on the earth of [[Yemen|اليمن]] and got your hair."
+   "text": "the news came to [[Abrahah|أَبْرَهَة]] that yes, [[Najashi|نجاشي]] is coming, and he's really mad, and this is what he's planning to do to you."
+  },
+  {
+   "t": 877.3,
+   "kind": "speech",
+   "text": "He made an oath that he would not return to [[Habashah|أحباش]] until he with his own two feet stepped on the earth of [[Yemen|اليمن]] and got your hair."
   },
   {
    "t": 885.5,
    "kind": "speech",
-   "text": "So now [[Abrahah|أَبْرَهَة]] is very scared, he panicked. He said, 'Oh, what am I going to do? There's no way that I will be able to withstand the forces of the [[Najashi|نجاشي]] himself.'"
+   "text": "So now [[Abrahah|أَبْرَهَة]] is very scared, he panicked. He said, 'Oh, what am I going to do?"
+  },
+  {
+   "t": 891.1,
+   "kind": "speech",
+   "text": "There's no way that I will be able to withstand the forces of the [[Najashi|نجاشي]] himself.'"
   },
   {
    "t": 896.4,
@@ -988,12 +1108,22 @@
   {
    "t": 905.0,
    "kind": "speech",
-   "text": "Then he sent a messenger to go and meet the [[Najashi|نجاشي]] before he entered [[Yemen|اليمن]]. He said, 'Take my hair that I just shaved, and take this sample of the earth of [[Yemen|اليمن]] and go to [[Najashi|نجاشي]] before he enters [[Yemen|اليمن]]."
+   "text": "Then he sent a messenger to go and meet the [[Najashi|نجاشي]] before he entered [[Yemen|اليمن]]."
+  },
+  {
+   "t": 910.4,
+   "kind": "speech",
+   "text": "He said, 'Take my hair that I just shaved, and take this sample of the earth of [[Yemen|اليمن]] and go to [[Najashi|نجاشي]] before he enters [[Yemen|اليمن]]."
   },
   {
    "t": 919.7,
    "kind": "speech",
-   "text": "And give him my message. My message is that, ya [[Najashi|نجاشي]], I have the utmost loyalty and respect for you, and I am still your follower and I am your servant. But the only reason why I did this to [[Aryat|أَرْيَاط]] is because he was doing [[zulm|ظلم]], he was doing oppression on your own people, on your army."
+   "text": "And give him my message. My message is that, ya [[Najashi|نجاشي]], I have the utmost loyalty and respect for you, and I am still your follower and I am your servant."
+  },
+  {
+   "t": 929.1,
+   "kind": "speech",
+   "text": "But the only reason why I did this to [[Aryat|أَرْيَاط]] is because he was doing [[zulm|ظلم]], he was doing oppression on your own people, on your army."
   },
   {
    "t": 937.2,
@@ -1008,7 +1138,22 @@
   {
    "t": 955.1,
    "kind": "speech",
-   "text": "he accepted it. And then he continued on in the message saying, 'Look, I have sent my hair to you and I have sent some sample of the earth of [[Yemen|اليمن]], so you don't have to even break your oath. You have my hair and you have the dirt of [[Yemen|اليمن]], just put your feet on it, step on it, and you will have fulfilled your oath. So you don't have to even come if you accept this.'"
+   "text": "he accepted it."
+  },
+  {
+   "t": 955.9,
+   "kind": "speech",
+   "text": "And then he continued on in the message saying, 'Look, I have sent my hair to you and I have sent some sample of the earth of [[Yemen|اليمن]], so you don't have to even break your oath."
+  },
+  {
+   "t": 965.6,
+   "kind": "speech",
+   "text": "You have my hair and you have the dirt of [[Yemen|اليمن]], just put your feet on it, step on it, and you will have fulfilled your oath."
+  },
+  {
+   "t": 972.6,
+   "kind": "speech",
+   "text": "So you don't have to even come if you accept this.'"
   },
   {
    "t": 975.5,
@@ -1018,12 +1163,22 @@
   {
    "t": 980.3,
    "kind": "speech",
-   "text": "he seems to still be loyal to me. And you know, if I go into [[Yemen|اليمن]] and we fight, then there will be a lot of bloodshed, a lot of innocent people are going to die."
+   "text": "he seems to still be loyal to me."
+  },
+  {
+   "t": 982.2,
+   "kind": "speech",
+   "text": "And you know, if I go into [[Yemen|اليمن]] and we fight, then there will be a lot of bloodshed, a lot of innocent people are going to die."
   },
   {
    "t": 988.8,
    "kind": "speech",
-   "text": "There's really no need to do this. He seems to still have much loyalty towards me, and I don't think he is going to betray me, so okay, let him lead [[Yemen|اليمن]]. Let him stay in charge of [[Yemen|اليمن]].' And the [[Najashi|نجاشي]], he went back."
+   "text": "There's really no need to do this. He seems to still have much loyalty towards me, and I don't think he is going to betray me, so okay, let him lead [[Yemen|اليمن]]."
+  },
+  {
+   "t": 1003.3,
+   "kind": "speech",
+   "text": "Let him stay in charge of [[Yemen|اليمن]].' And the [[Najashi|نجاشي]], he went back."
   },
   {
    "t": 1009.2,
@@ -1138,12 +1293,22 @@
   {
    "t": 1199.7,
    "kind": "speech",
-   "text": "They used to do all of these things. So they still kept their respect for the [[Ka'bah|كعبة]] even though they were [[mushrikin|مشركين]]. They associated partners and idols with Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]."
+   "text": "They used to do all of these things. So they still kept their respect for the [[Ka'bah|كعبة]] even though they were [[mushrikin|مشركين]]."
+  },
+  {
+   "t": 1206.4,
+   "kind": "speech",
+   "text": "They associated partners and idols with Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]."
   },
   {
    "t": 1209.7,
    "kind": "speech",
-   "text": "So [[Ahl al-Nasi'|أهل النسيء]] were a group of Arabs who had the utmost respect for the [[Ka'bah|كعبة]], and they were well respected amongst the Arabs as well. The Arabs gave them a very high position, these people."
+   "text": "So [[Ahl al-Nasi'|أهل النسيء]] were a group of Arabs who had the utmost respect for the [[Ka'bah|كعبة]], and they were well respected amongst the Arabs as well."
+  },
+  {
+   "t": 1219.8,
+   "kind": "speech",
+   "text": "The Arabs gave them a very high position, these people."
   },
   {
    "t": 1223.6,
@@ -1158,7 +1323,12 @@
   {
    "t": 1244.3,
    "kind": "speech",
-   "text": "And those months are [[Rajab|رجب]], [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], and [[Muharram|محرم]]. These are called [[al-Ashhur al-Hurum|الأشهر الحرم]]. And Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] made these four months holy and sacred the day that He created the heavens and the earth."
+   "text": "And those months are [[Rajab|رجب]], [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], and [[Muharram|محرم]]. These are called [[al-Ashhur al-Hurum|الأشهر الحرم]]."
+  },
+  {
+   "t": 1254.2,
+   "kind": "speech",
+   "text": "And Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] made these four months holy and sacred the day that He created the heavens and the earth."
   },
   {
    "t": 1271.4,
@@ -1173,17 +1343,32 @@
   {
    "t": 1315.4,
    "kind": "speech",
-   "text": "Defense is okay. If somebody aggressed upon you, and somebody started a war against you, you have the right to fight back and defend yourself. But during those four months it's not allowed to start the fighting."
+   "text": "Defense is okay. If somebody aggressed upon you, and somebody started a war against you, you have the right to fight back and defend yourself."
+  },
+  {
+   "t": 1318.4,
+   "kind": "speech",
+   "text": "But during those four months it's not allowed to start the fighting."
   },
   {
    "t": 1319.9,
    "kind": "speech",
-   "text": "So the Arabs, as you know, as you probably know from the last few weeks that we have been talking about their history, they were a people who always were involved in some type of fighting. Some type of war was always going on. This is the way that they lived their lives."
+   "text": "So the Arabs, as you know, as you probably know from the last few weeks that we have been talking about their history, they were a people who always were involved in some type of fighting."
+  },
+  {
+   "t": 1323.0,
+   "kind": "speech",
+   "text": "Some type of war was always going on. This is the way that they lived their lives."
   },
   {
    "t": 1324.5,
    "kind": "speech",
-   "text": "So these four months, [[al-Ashhur al-Hurum|الأشهر الحرم]], [[Rajab|رجب]], [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], and [[Muharram|محرم]]. [[Rajab|رجب]] is separate. [[Rajab|رجب]] is on its own. But the other three, [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], and [[Muharram|محرم]], they all come consecutively, in a row."
+   "text": "So these four months, [[al-Ashhur al-Hurum|الأشهر الحرم]], [[Rajab|رجب]], [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], and [[Muharram|محرم]]. [[Rajab|رجب]] is separate. [[Rajab|رجب]] is on its own."
+  },
+  {
+   "t": 1333.4,
+   "kind": "speech",
+   "text": "But the other three, [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], and [[Muharram|محرم]], they all come consecutively, in a row."
   },
   {
    "t": 1340.5,
@@ -1203,7 +1388,12 @@
   {
    "t": 1368.3,
    "kind": "speech",
-   "text": "So instead of [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], [[Muharram|محرم]], if the [[Ahl al-Nasi'|أهل النسيء]], if this group of Arabs, if they agree in certain years, they can switch [[Muharram|محرم]] and [[Safar|صفر]]. So it will be [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], two months no fighting, but if they really needed to fight after that, then okay, no [[Muharram|محرم]], it will be [[Safar|صفر]] first, and then after that [[Muharram|محرم]] will come."
+   "text": "So instead of [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], [[Muharram|محرم]], if the [[Ahl al-Nasi'|أهل النسيء]], if this group of Arabs, if they agree in certain years, they can switch [[Muharram|محرم]] and [[Safar|صفر]]."
+  },
+  {
+   "t": 1377.5,
+   "kind": "speech",
+   "text": "So it will be [[Dhu al-Qa'dah|ذو القعدة]], [[Dhu al-Hijjah|ذو الحجة]], two months no fighting, but if they really needed to fight after that, then okay, no [[Muharram|محرم]], it will be [[Safar|صفر]] first, and then after that [[Muharram|محرم]] will come."
   },
   {
    "t": 1388.8,
@@ -1213,17 +1403,42 @@
   {
    "t": 1399.2,
    "kind": "speech",
-   "text": "So the people that were given the authority by the Arabs to do this, they became known as [[Ahl al-Nasi'|أهل النسيء]]. And if they decided to switch [[Muharram|محرم]] and [[Safar|صفر]], they would do that."
+   "text": "So the people that were given the authority by the Arabs to do this, they became known as [[Ahl al-Nasi'|أهل النسيء]]."
+  },
+  {
+   "t": 1410.1,
+   "kind": "speech",
+   "text": "And if they decided to switch [[Muharram|محرم]] and [[Safar|صفر]], they would do that."
   },
   {
    "t": 1426.3,
    "kind": "speech",
-   "text": "So these people, Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] says about them: 'Surely [[nasi'|نسيء]] is an addition to disbelief.' They're already [[kuffar|كفار]], they're not even Muslims. But doing this, playing this game of [[nasi'|نسيء]], of delaying, delaying [[Muharram|محرم]] until after [[Safar|صفر]] and switching the places, this is an addition to their [[kufr|كفر]]. They're already [[kuffar|كفار]], and on top of that, they're also doing [[nasi'|نسيء]], they're also playing around with the months."
+   "text": "So these people, Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] says about them: 'Surely [[nasi'|نسيء]] is an addition to disbelief.' They're already [[kuffar|كفار]], they're not even Muslims."
+  },
+  {
+   "t": 1435.7,
+   "kind": "speech",
+   "text": "But doing this, playing this game of [[nasi'|نسيء]], of delaying, delaying [[Muharram|محرم]] until after [[Safar|صفر]] and switching the places, this is an addition to their [[kufr|كفر]]."
+  },
+  {
+   "t": 1445.5,
+   "kind": "speech",
+   "text": "They're already [[kuffar|كفار]], and on top of that, they're also doing [[nasi'|نسيء]], they're also playing around with the months."
   },
   {
    "t": 1452.7,
    "kind": "speech",
-   "text": "So this group of Arabs, they were known as [[Ahl al-Nasi'|أهل النسيء]], and they used to play this game. They were the ones who the Arabs used to go to to get that permission to play around with the months like this, and they became known as [[Ahl al-Nasi'|أهل النسيء]]. And they were known as the people who had the greatest respect for the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], they had respect for the [[Ka'bah|كعبة]]."
+   "text": "So this group of Arabs, they were known as [[Ahl al-Nasi'|أهل النسيء]], and they used to play this game."
+  },
+  {
+   "t": 1457.3,
+   "kind": "speech",
+   "text": "They were the ones who the Arabs used to go to to get that permission to play around with the months like this, and they became known as [[Ahl al-Nasi'|أهل النسيء]]."
+  },
+  {
+   "t": 1464.8,
+   "kind": "speech",
+   "text": "And they were known as the people who had the greatest respect for the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], they had respect for the [[Ka'bah|كعبة]]."
   },
   {
    "t": 1471.4,
@@ -1238,7 +1453,17 @@
   {
    "t": 1493.0,
    "kind": "speech",
-   "text": "'So you have to come and you have to make pilgrimage to [[al-Qulays|قليس]].' So when they received this order, they were like, 'What is this [[al-Qulays|قليس]]? He thinks we're going to come and we're going to make pilgrimage to [[al-Qulays|قليس]], to this church that he built? He thinks that that can take the place of the [[Ka'bah|كعبة]]?' They got very angry, they got offended. How dare he thinks that we're going to do something like this."
+   "text": "'So you have to come and you have to make pilgrimage to [[al-Qulays|قليس]].' So when they received this order, they were like, 'What is this [[al-Qulays|قليس]]?"
+  },
+  {
+   "t": 1500.1,
+   "kind": "speech",
+   "text": "He thinks we're going to come and we're going to make pilgrimage to [[al-Qulays|قليس]], to this church that he built? He thinks that that can take the place of the [[Ka'bah|كعبة]]?'"
+  },
+  {
+   "t": 1508.6,
+   "kind": "speech",
+   "text": "They got very angry, they got offended. How dare he thinks that we're going to do something like this."
   },
   {
    "t": 1513.8,
@@ -1248,7 +1473,12 @@
   {
    "t": 1523.5,
    "kind": "speech",
-   "text": "and he entered it, and he used the bathroom. He defecated in there, right in the open there. And then he took that defecation of his, and he rubbed it all over the walls and, you know, the sides of the church and everything. He basically defiled the whole place,"
+   "text": "and he entered it, and he used the bathroom. He defecated in there, right in the open there."
+  },
+  {
+   "t": 1530.2,
+   "kind": "speech",
+   "text": "And then he took that defecation of his, and he rubbed it all over the walls and, you know, the sides of the church and everything. He basically defiled the whole place,"
   },
   {
    "t": 1542.0,
@@ -1258,22 +1488,42 @@
   {
    "t": 1549.7,
    "kind": "speech",
-   "text": "So when [[Abrahah|أَبْرَهَة]] came to know about it, and he came and he saw it, he saw what actually happened to this place that he built and how it had been defiled, he asked angrily, 'Who did this?' And then it was said, 'It was someone from [[Ahl al-Nasi'|أهل النسيء]].'"
+   "text": "So when [[Abrahah|أَبْرَهَة]] came to know about it, and he came and he saw it, he saw what actually happened to this place that he built and how it had been defiled, he asked angrily, 'Who did this?'"
+  },
+  {
+   "t": 1562.8,
+   "kind": "speech",
+   "text": "And then it was said, 'It was someone from [[Ahl al-Nasi'|أهل النسيء]].'"
   },
   {
    "t": 1566.9,
    "kind": "speech",
-   "text": "And then he said, 'Who are they? Who are [[Ahl al-Nasi'|أهل النسيء]]?' And then it was replied to him, 'They are a group of the Arabs who have a great veneration and respect for the [[Ka'bah|كعبة]] in [[Makkah|مَكَّة]].'"
+   "text": "And then he said, 'Who are they? Who are [[Ahl al-Nasi'|أهل النسيء]]?'"
+  },
+  {
+   "t": 1570.3,
+   "kind": "speech",
+   "text": "And then it was replied to him, 'They are a group of the Arabs who have a great veneration and respect for the [[Ka'bah|كعبة]] in [[Makkah|مَكَّة]].'"
   },
   {
    "t": 1577.8,
    "kind": "speech",
-   "text": "Then [[Abrahah|أَبْرَهَة]] asked, 'What is the [[Ka'bah|كعبة]]? What are you talking about?' He said, 'It is the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] in [[Makkah|مَكَّة]] that the Arabs, they make pilgrimage to it every year.'"
+   "text": "Then [[Abrahah|أَبْرَهَة]] asked, 'What is the [[Ka'bah|كعبة]]? What are you talking about?'"
+  },
+  {
+   "t": 1581.3,
+   "kind": "speech",
+   "text": "He said, 'It is the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] in [[Makkah|مَكَّة]] that the Arabs, they make pilgrimage to it every year.'"
   },
   {
    "t": 1588.2,
    "kind": "speech",
-   "text": "So when [[Abrahah|أَبْرَهَة]] heard this, he knew that the Arabs who have such great respect for the [[Ka'bah|كعبة]] in [[Makkah|مَكَّة]], they would never accept his command, they would never follow his order to make pilgrimage to [[al-Qulays|قليس]] unless the [[Ka'bah|كعبة]] was destroyed."
+   "text": "So when [[Abrahah|أَبْرَهَة]] heard this, he knew that the Arabs who have such great respect for the [[Ka'bah|كعبة]] in [[Makkah|مَكَّة]], they would never accept his command,"
+  },
+  {
+   "t": 1599.7,
+   "kind": "speech",
+   "text": "they would never follow his order to make pilgrimage to [[al-Qulays|قليس]] unless the [[Ka'bah|كعبة]] was destroyed."
   },
   {
    "t": 1606.7,
@@ -1283,7 +1533,12 @@
   {
    "t": 1614.3,
    "kind": "speech",
-   "text": "So from that point he decided that he would destroy the [[Ka'bah|كعبة]]. He decided to destroy the [[Ka'bah|كعبة]]. So he gathered an army with the intention to go to [[Makkah|مَكَّة]] and to destroy the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], to destroy the [[Ka'bah|كعبة]]."
+   "text": "So from that point he decided that he would destroy the [[Ka'bah|كعبة]]. He decided to destroy the [[Ka'bah|كعبة]]."
+  },
+  {
+   "t": 1620.8,
+   "kind": "speech",
+   "text": "So he gathered an army with the intention to go to [[Makkah|مَكَّة]] and to destroy the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], to destroy the [[Ka'bah|كعبة]]."
   },
   {
    "t": 1630.6,
@@ -1293,27 +1548,57 @@
   {
    "t": 1645.1,
    "kind": "speech",
-   "text": "And when he left [[Yemen|اليمن]], [[Abrahah|أَبْرَهَة]] kept his son in charge. He kept his son in charge of [[Yemen|اليمن]] while he left to go to [[Makkah|مَكَّة]]. So he organized a big army, he took this elephant [[Mahmud|محمود]], and they were on their way to [[Makkah|مَكَّة]]."
+   "text": "And when he left [[Yemen|اليمن]], [[Abrahah|أَبْرَهَة]] kept his son in charge. He kept his son in charge of [[Yemen|اليمن]] while he left to go to [[Makkah|مَكَّة]]."
+  },
+  {
+   "t": 1654.4,
+   "kind": "speech",
+   "text": "So he organized a big army, he took this elephant [[Mahmud|محمود]], and they were on their way to [[Makkah|مَكَّة]]."
   },
   {
    "t": 1661.2,
    "kind": "speech",
-   "text": "Now of course, the Arabs, they are aware of what [[Abrahah|أَبْرَهَة]] is trying to do. It's not a secret. They know that he's coming from [[Yemen|اليمن]] on the way to [[Makkah|مَكَّة]] to destroy the [[Ka'bah|كعبة]]. And the Arabs, they were not going to let him do this without a fight. They were not going to just say, 'Okay, go ahead and do it.' No."
+   "text": "Now of course, the Arabs, they are aware of what [[Abrahah|أَبْرَهَة]] is trying to do. It's not a secret."
+  },
+  {
+   "t": 1666.6,
+   "kind": "speech",
+   "text": "They know that he's coming from [[Yemen|اليمن]] on the way to [[Makkah|مَكَّة]] to destroy the [[Ka'bah|كعبة]]. And the Arabs, they were not going to let him do this without a fight."
+  },
+  {
+   "t": 1675.3,
+   "kind": "speech",
+   "text": "They were not going to just say, 'Okay, go ahead and do it.' No."
   },
   {
    "t": 1679.3,
    "kind": "speech",
-   "text": "They were going to put their utmost resistance against him and try their best to stop him from doing this. But as we know, [[Abrahah|أَبْرَهَة]] commanded a very strong army. His army was not a small army, it was a big and powerful army."
+   "text": "They were going to put their utmost resistance against him and try their best to stop him from doing this. But as we know, [[Abrahah|أَبْرَهَة]] commanded a very strong army."
+  },
+  {
+   "t": 1690.1,
+   "kind": "speech",
+   "text": "His army was not a small army, it was a big and powerful army."
   },
   {
    "t": 1695.2,
    "kind": "speech",
-   "text": "So on his way, he's going from [[Yemen|اليمن]] on the way to [[Makkah|مَكَّة]], there was a man, a great man from the Arabs, he was a very well-respected man, his name was [[Dhu Nafar|ذو نفر]]. And [[Dhu Nafar|ذو نفر]],"
+   "text": "So on his way, he's going from [[Yemen|اليمن]] on the way to [[Makkah|مَكَّة]], there was a man, a great man from the Arabs, he was a very well-respected man, his name was [[Dhu Nafar|ذو نفر]]."
+  },
+  {
+   "t": 1708.7,
+   "kind": "speech",
+   "text": "And [[Dhu Nafar|ذو نفر]],"
   },
   {
    "t": 1710.2,
    "kind": "speech",
-   "text": "he had a small army of Arabs, and they said that, 'Okay, whatever happens, we know that his army is much bigger than ours, but we can't just let him go unimpeded. We have to try, we have to do something.'"
+   "text": "he had a small army of Arabs, and they said that, 'Okay, whatever happens, we know that his army is much bigger than ours, but we can't just let him go unimpeded."
+  },
+  {
+   "t": 1720.3,
+   "kind": "speech",
+   "text": "We have to try, we have to do something.'"
   },
   {
    "t": 1723.2,
@@ -1323,22 +1608,42 @@
   {
    "t": 1733.0,
    "kind": "speech",
-   "text": "They fought. And [[Abrahah|أَبْرَهَة]]'s army was easily able to overcome the army of [[Dhu Nafar|ذو نفر]]. So they took [[Dhu Nafar|ذو نفر]] as a prisoner. They didn't kill him, but they took him as a prisoner and they made him accompany them on the way to [[Makkah|مَكَّة]]. So he was a prisoner now with them."
+   "text": "They fought. And [[Abrahah|أَبْرَهَة]]'s army was easily able to overcome the army of [[Dhu Nafar|ذو نفر]]. So they took [[Dhu Nafar|ذو نفر]] as a prisoner."
+  },
+  {
+   "t": 1742.6,
+   "kind": "speech",
+   "text": "They didn't kill him, but they took him as a prisoner and they made him accompany them on the way to [[Makkah|مَكَّة]]. So he was a prisoner now with them."
   },
   {
    "t": 1754.1,
    "kind": "speech",
-   "text": "So they continue to go on the path, and [[Dhu Nafar|ذو نفر]] is with them as well as a prisoner. Now another group of Arabs also stops them and tries to fight them on the way."
+   "text": "So they continue to go on the path, and [[Dhu Nafar|ذو نفر]] is with them as well as a prisoner."
+  },
+  {
+   "t": 1763.4,
+   "kind": "speech",
+   "text": "Now another group of Arabs also stops them and tries to fight them on the way."
   },
   {
    "t": 1770.9,
    "kind": "speech",
-   "text": "And the leader of this group, he was a man named [[Nufayl al-Khuth'umi|نُفَيْل الخُثْعَمِي]], and he had a group of people from his tribe, from the tribe of [[Khuth'am|خَثْعَم]], who tried to stop [[Abrahah|أَبْرَهَة]] from continuing on his way to [[Makkah|مَكَّة]]."
+   "text": "And the leader of this group, he was a man named [[Nufayl al-Khuth'umi|نُفَيْل الخُثْعَمِي]], and he had a group of people from his tribe, from the tribe of [[Khuth'am|خَثْعَم]],"
+  },
+  {
+   "t": 1781.7,
+   "kind": "speech",
+   "text": "who tried to stop [[Abrahah|أَبْرَهَة]] from continuing on his way to [[Makkah|مَكَّة]]."
   },
   {
    "t": 1786.2,
    "kind": "speech",
-   "text": "But again, [[Abrahah|أَبْرَهَة]]'s army was able to overcome them as well, and they took [[Nufayl al-Khuth'umi|نُفَيْل الخُثْعَمِي]] as a prisoner as well. So now they have [[Dhu Nafar|ذو نفر]] and they have [[Nufayl al-Khuth'umi|نُفَيْل]]."
+   "text": "But again, [[Abrahah|أَبْرَهَة]]'s army was able to overcome them as well, and they took [[Nufayl al-Khuth'umi|نُفَيْل الخُثْعَمِي]] as a prisoner as well."
+  },
+  {
+   "t": 1795.5,
+   "kind": "speech",
+   "text": "So now they have [[Dhu Nafar|ذو نفر]] and they have [[Nufayl al-Khuth'umi|نُفَيْل]]."
   },
   {
    "t": 1800.6,
@@ -1488,7 +1793,12 @@
   {
    "t": 1929.1,
    "kind": "speech",
-   "text": "because of this man's betrayal and his treachery that he helped the enemies of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] try to come and destroy the house of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]. So it became a place where the Arabs would come and stone."
+   "text": "because of this man's betrayal and his treachery that he helped the enemies of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] try to come and destroy the house of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]."
+  },
+  {
+   "t": 1938.5,
+   "kind": "speech",
+   "text": "So it became a place where the Arabs would come and stone."
   },
   {
    "t": 1942.0,
@@ -1553,7 +1863,12 @@
   {
    "t": 2008.7,
    "kind": "speech",
-   "text": "I mean nobody even would think of coming towards his place in authority. [[Abdul Muttalib|عبد المطلب]] was without question the leader of [[Makkah|Makkah]] and everyone of [[Makkah|Makkah]], they respected him as their leader."
+   "text": "I mean nobody even would think of coming towards his place in authority."
+  },
+  {
+   "t": 2013.7,
+   "kind": "speech",
+   "text": "[[Abdul Muttalib|عبد المطلب]] was without question the leader of [[Makkah|Makkah]] and everyone of [[Makkah|Makkah]], they respected him as their leader."
   },
   {
    "t": 2021.5,
@@ -1613,7 +1928,12 @@
   {
    "t": 2070.3,
    "kind": "speech",
-   "text": "he says, 'You know, I really want to meet [[Abrahah|Abrahah]]. Do you have any suggestions for me? You have been accompanying this army and these people, you know, for a long time now."
+   "text": "he says, 'You know, I really want to meet [[Abrahah|Abrahah]]. Do you have any suggestions for me?"
+  },
+  {
+   "t": 2075.3,
+   "kind": "speech",
+   "text": "You have been accompanying this army and these people, you know, for a long time now."
   },
   {
    "t": 2080.1,
@@ -1733,7 +2053,12 @@
   {
    "t": 2190.1,
    "kind": "speech",
-   "text": "So when [[Abdul Muttalib|عبد المطلب]] came to meet [[Abrahah|Abrahah]], [[Abrahah|Abrahah]] was sitting on a throne, on a portable throne that they used to carry with them on their travels. So [[Abrahah|Abrahah]] is sitting up on that throne."
+   "text": "So when [[Abdul Muttalib|عبد المطلب]] came to meet [[Abrahah|Abrahah]], [[Abrahah|Abrahah]] was sitting on a throne, on a portable throne that they used to carry with them on their travels."
+  },
+  {
+   "t": 2199.1,
+   "kind": "speech",
+   "text": "So [[Abrahah|Abrahah]] is sitting up on that throne."
   },
   {
    "t": 2201.6,
@@ -1748,7 +2073,12 @@
   {
    "t": 2213.4,
    "kind": "speech",
-   "text": "you will automatically have reverence and respect for this man. Some people you just see them and you automatically feel a respect for them. So [[Abdul Muttalib|عبد المطلب]] was one of these type of people."
+   "text": "you will automatically have reverence and respect for this man. Some people you just see them and you automatically feel a respect for them."
+  },
+  {
+   "t": 2220.1,
+   "kind": "speech",
+   "text": "So [[Abdul Muttalib|عبد المطلب]] was one of these type of people."
   },
   {
    "t": 2223.1,
@@ -1773,7 +2103,12 @@
   {
    "t": 2238.8,
    "kind": "speech",
-   "text": "[[Abrahah|Abrahah]] actually got off of his throne and he sat down on the floor with [[Abdul Muttalib|عبد المطلب]]. He didn't tell [[Abdul Muttalib|عبد المطلب]] to sit down while he stayed on his throne. Out of respect, he actually sat down himself and sat with [[Abdul Muttalib|عبد المطلب]] on the floor."
+   "text": "[[Abrahah|Abrahah]] actually got off of his throne and he sat down on the floor with [[Abdul Muttalib|عبد المطلب]]."
+  },
+  {
+   "t": 2244.3,
+   "kind": "speech",
+   "text": "He didn't tell [[Abdul Muttalib|عبد المطلب]] to sit down while he stayed on his throne. Out of respect, he actually sat down himself and sat with [[Abdul Muttalib|عبد المطلب]] on the floor."
   },
   {
    "t": 2254.0,
@@ -1793,7 +2128,12 @@
   {
    "t": 2267.2,
    "kind": "speech",
-   "text": "and your army, they confiscated all of those camels, and included in those camels were 200 of my camels. So I just came here to ask you to please give us our camels back, that's it.'"
+   "text": "and your army, they confiscated all of those camels, and included in those camels were 200 of my camels."
+  },
+  {
+   "t": 2272.9,
+   "kind": "speech",
+   "text": "So I just came here to ask you to please give us our camels back, that's it.'"
   },
   {
    "t": 2278.0,
@@ -1808,7 +2148,12 @@
   {
    "t": 2287.1,
    "kind": "speech",
-   "text": "He said, 'You know, when you came into this room, I had respect for you by seeing you, but now you ask me this type of a question? You know I came here to destroy the house that you guys go to to worship Allah."
+   "text": "He said, 'You know, when you came into this room, I had respect for you by seeing you, but now you ask me this type of a question?"
+  },
+  {
+   "t": 2295.1,
+   "kind": "speech",
+   "text": "You know I came here to destroy the house that you guys go to to worship Allah."
   },
   {
    "t": 2300.0,
@@ -1833,7 +2178,12 @@
   {
    "t": 2308.9,
    "kind": "speech",
-   "text": "'You know, these camels, they are my camels and my people's camels, this is our responsibility, we are the owners and we have to take care of these things. So that's why I am asking you for this. As for the house that you want to destroy,"
+   "text": "'You know, these camels, they are my camels and my people's camels, this is our responsibility, we are the owners and we have to take care of these things."
+  },
+  {
+   "t": 2315.8,
+   "kind": "speech",
+   "text": "So that's why I am asking you for this. As for the house that you want to destroy,"
   },
   {
    "t": 2320.1,
@@ -1894,7 +2244,12 @@
   {
    "t": 2368.9,
    "kind": "speech",
-   "text": "I will destroy the [[Ka'bah|كعبة]] and then I will leave, and you guys can go back to your life, okay? So while I'm here and while we're destroying the [[Ka'bah|كعبة]], I advise you and all the people of [[Makkah|Makkah]], just leave the city, leave [[Makkah|Makkah]] for now, let us do what we want to do,"
+   "text": "I will destroy the [[Ka'bah|كعبة]] and then I will leave, and you guys can go back to your life, okay?"
+  },
+  {
+   "t": 2373.6,
+   "kind": "speech",
+   "text": "So while I'm here and while we're destroying the [[Ka'bah|كعبة]], I advise you and all the people of [[Makkah|Makkah]], just leave the city, leave [[Makkah|Makkah]] for now, let us do what we want to do,"
   },
   {
    "t": 2381.9,
@@ -1974,12 +2329,22 @@
   {
    "t": 2490.2,
    "kind": "speech",
-   "text": "And when the trainer, when [[Unays|أُنَيْس]], turns him in another direction towards [[Yemen|الْيَمَن]] or towards the right or towards the left, he walks. He walks in every direction. But when you face him towards the [[Ka'bah|كَعْبَة]], he doesn't walk, he just stands still."
+   "text": "And when the trainer, when [[Unays|أُنَيْس]], turns him in another direction towards [[Yemen|الْيَمَن]] or towards the right or towards the left, he walks. He walks in every direction."
+  },
+  {
+   "t": 2500.6,
+   "kind": "speech",
+   "text": "But when you face him towards the [[Ka'bah|كَعْبَة]], he doesn't walk, he just stands still."
   },
   {
    "t": 2506.2,
    "kind": "speech",
-   "text": "So they start to get confused, 'Okay, what are we going to do now?' Their whole reason why they got this elephant is so that it would start in the destruction of the [[Ka'bah|كَعْبَة]]."
+   "text": "So they start to get confused, 'Okay, what are we going to do now?'"
+  },
+  {
+   "t": 2509.9,
+   "kind": "speech",
+   "text": "Their whole reason why they got this elephant is so that it would start in the destruction of the [[Ka'bah|كَعْبَة]]."
   },
   {
    "t": 2515.2,
@@ -2024,7 +2389,12 @@
   {
    "t": 2587.2,
    "kind": "speech",
-   "text": "So he tries to make a run for it, he tries to escape. But while he is trying to escape, he gets hit by a stone as well, and he is destroyed as well."
+   "text": "So he tries to make a run for it, he tries to escape."
+  },
+  {
+   "t": 2591.3,
+   "kind": "speech",
+   "text": "But while he is trying to escape, he gets hit by a stone as well, and he is destroyed as well."
   },
   {
    "t": 2598.0,
@@ -2059,7 +2429,12 @@
   {
    "t": 2650.5,
    "kind": "speech",
-   "text": "Like for example, in the Gregorian calendar this year we're in 2016, in the [[Hijri|هِجْرِي]] calendar it's 1438. But in those days, no, they didn't use to have a numerical year like that."
+   "text": "Like for example, in the Gregorian calendar this year we're in 2016, in the [[Hijri|هِجْرِي]] calendar it's 1438."
+  },
+  {
+   "t": 2656.6,
+   "kind": "speech",
+   "text": "But in those days, no, they didn't use to have a numerical year like that."
   },
   {
    "t": 2661.6,
@@ -2074,12 +2449,22 @@
   {
    "t": 2672.4,
    "kind": "speech",
-   "text": "[[Am al-Fil|عَام الْفِيل]], so they would say, 'Oh yeah, this incident happened in [[Am al-Fil|عَام الْفِيل]]. This incident happened two years before [[Am al-Fil|عَام الْفِيل]]. This incident happened three years after [[Am al-Fil|عَام الْفِيل]].'"
+   "text": "[[Am al-Fil|عَام الْفِيل]], so they would say, 'Oh yeah, this incident happened in [[Am al-Fil|عَام الْفِيل]]. This incident happened two years before [[Am al-Fil|عَام الْفِيل]]."
+  },
+  {
+   "t": 2680.9,
+   "kind": "speech",
+   "text": "This incident happened three years after [[Am al-Fil|عَام الْفِيل]].'"
   },
   {
    "t": 2683.9,
    "kind": "speech",
-   "text": "So any big incident that would happen, they would condition their calendar around those incidents. So [[Am al-Fil|عَام الْفِيل]], the incident of the elephant, it was a huge incident in the history of the Arabs."
+   "text": "So any big incident that would happen, they would condition their calendar around those incidents."
+  },
+  {
+   "t": 2688.3,
+   "kind": "speech",
+   "text": "So [[Am al-Fil|عَام الْفِيل]], the incident of the elephant, it was a huge incident in the history of the Arabs."
   },
   {
    "t": 2694.2,
@@ -2094,7 +2479,12 @@
   {
    "t": 2713.2,
    "kind": "speech",
-   "text": "The year that [[Abrahah|أَبْرَهَة]] tried to come and destroy the [[Ka'bah|كَعْبَة]], the year that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] destroyed [[Abrahah|أَبْرَهَة]] and his army, the year that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] protected His house, this is the year that the greatest man that ever walked on the face of this earth was born."
+   "text": "The year that [[Abrahah|أَبْرَهَة]] tried to come and destroy the [[Ka'bah|كَعْبَة]], the year that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] destroyed [[Abrahah|أَبْرَهَة]] and his army,"
+  },
+  {
+   "t": 2720.6,
+   "kind": "speech",
+   "text": "the year that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] protected His house, this is the year that the greatest man that ever walked on the face of this earth was born."
   },
   {
    "t": 2729.8,
@@ -2149,5 +2539,127 @@
    "a": "It served as divine preparation of the land for the birth of [[Rasulullah|رسول الله]] and the coming of the final message of Islam.",
    "chapter": 5
   }
+ ],
+ "retime_regions": [
+  [
+   6,
+   10
+  ],
+  [
+   16,
+   18
+  ],
+  [
+   21,
+   23
+  ],
+  [
+   27,
+   31
+  ],
+  [
+   34,
+   36
+  ],
+  [
+   38,
+   63
+  ],
+  [
+   101,
+   103
+  ],
+  [
+   109,
+   118
+  ],
+  [
+   120,
+   124
+  ],
+  [
+   126,
+   135
+  ],
+  [
+   157,
+   161
+  ],
+  [
+   163,
+   165
+  ],
+  [
+   167,
+   173
+  ],
+  [
+   176,
+   187
+  ],
+  [
+   189,
+   228
+  ],
+  [
+   257,
+   259
+  ],
+  [
+   271,
+   273
+  ],
+  [
+   284,
+   286
+  ],
+  [
+   309,
+   311
+  ],
+  [
+   313,
+   315
+  ],
+  [
+   319,
+   321
+  ],
+  [
+   324,
+   326
+  ],
+  [
+   328,
+   330
+  ],
+  [
+   334,
+   336
+  ],
+  [
+   347,
+   349
+  ],
+  [
+   364,
+   368
+  ],
+  [
+   376,
+   378
+  ],
+  [
+   384,
+   386
+  ],
+  [
+   388,
+   392
+  ],
+  [
+   394,
+   396
+  ]
  ]
 }

@@ -819,7 +819,12 @@
   {
    "t": 396.1,
    "kind": "speech",
-   "text": "So they knew about this story. They knew that [[Zamzam|زمزم]] existed, and they knew the story of [[Zamzam|زمزم]], and they knew the story of why the well of [[Zamzam|زمزم]] was buried by their forefathers."
+   "text": "So they knew about this story."
+  },
+  {
+   "t": 397.8,
+   "kind": "speech",
+   "text": "They knew that [[Zamzam|زمزم]] existed, and they knew the story of [[Zamzam|زمزم]], and they knew the story of why the well of [[Zamzam|زمزم]] was buried by their forefathers."
   },
   {
    "t": 406.0,
@@ -829,7 +834,12 @@
   {
    "t": 412.6,
    "kind": "speech",
-   "text": "They knew it was there somewhere in [[Makkah|مَكَّة]], but you think they're going to go digging around all of [[Makkah|مَكَّة]] looking for that well of [[Zamzam|زمزم]]? No, of course they can't do that."
+   "text": "They knew it was there somewhere in [[Makkah|مَكَّة]], but you think they're going to go digging around all of [[Makkah|مَكَّة]] looking for that well of [[Zamzam|زمزم]]?"
+  },
+  {
+   "t": 420.2,
+   "kind": "speech",
+   "text": "No, of course they can't do that."
   },
   {
    "t": 422.2,
@@ -839,7 +849,12 @@
   {
    "t": 429.9,
    "kind": "speech",
-   "text": "So he thought, \"Okay, maybe I have a chance. Maybe I can actually narrow it down, and I can finally find the well of [[Zamzam|زمزم]] again.\" And what a great honor that would be!"
+   "text": "So he thought, \"Okay, maybe I have a chance. Maybe I can actually narrow it down, and I can finally find the well of [[Zamzam|زمزم]] again.\""
+  },
+  {
+   "t": 435.3,
+   "kind": "speech",
+   "text": "And what a great honor that would be!"
   },
   {
    "t": 437.0,
@@ -909,7 +924,12 @@
   {
    "t": 522.1,
    "kind": "speech",
-   "text": "he took these two stones of [[Isaf|إساف]] and [[Na'ilah|نائلة]] and put them in front of the [[Ka'bah|كعبة]]. So people would go there and they would actually offer sacrifices there, and they would worship those stones."
+   "text": "he took these two stones of [[Isaf|إساف]] and [[Na'ilah|نائلة]] and put them in front of the [[Ka'bah|كعبة]]."
+  },
+  {
+   "t": 527.4,
+   "kind": "speech",
+   "text": "So people would go there and they would actually offer sacrifices there, and they would worship those stones."
   },
   {
    "t": 533.0,
@@ -934,12 +954,22 @@
   {
    "t": 559.0,
    "kind": "speech",
-   "text": "So they started sacrificing the cow, they started cutting it, slaughtering it. So they cut the neck, and the blood started pouring out of the neck. So the blood was all over the ground there."
+   "text": "So they started sacrificing the cow, they started cutting it, slaughtering it. So they cut the neck, and the blood started pouring out of the neck."
+  },
+  {
+   "t": 567.0,
+   "kind": "speech",
+   "text": "So the blood was all over the ground there."
   },
   {
    "t": 569.8,
    "kind": "speech",
-   "text": "But the cow, it was a bit strong, so it was able to get loose even though it was bleeding and it was hurt. It was able to get loose, and it jumped up and it started running with blood dripping all from it."
+   "text": "But the cow, it was a bit strong, so it was able to get loose even though it was bleeding and it was hurt."
+  },
+  {
+   "t": 576.1,
+   "kind": "speech",
+   "text": "It was able to get loose, and it jumped up and it started running with blood dripping all from it."
   },
   {
    "t": 581.4,
@@ -964,7 +994,12 @@
   {
    "t": 608.5,
    "kind": "speech",
-   "text": "So he saw the blood come out in the first place, and then the cow ran, and they completed the slaughter, and they cut open the stomach, and the intestines fell out. So he said, \"This is the first clue.\""
+   "text": "So he saw the blood come out in the first place, and then the cow ran, and they completed the slaughter, and they cut open the stomach, and the intestines fell out."
+  },
+  {
+   "t": 617.8,
+   "kind": "speech",
+   "text": "So he said, \"This is the first clue.\""
   },
   {
    "t": 620.1,
@@ -974,7 +1009,12 @@
   {
    "t": 623.2,
    "kind": "speech",
-   "text": "It is between the intestines and the blood. So he saw the location where the blood started to come out, and he saw the location where the intestines came out. So he said, \"Okay, that narrows it down somewhat. It's between this place and this place.\""
+   "text": "It is between the intestines and the blood. So he saw the location where the blood started to come out, and he saw the location where the intestines came out."
+  },
+  {
+   "t": 632.0,
+   "kind": "speech",
+   "text": "So he said, \"Okay, that narrows it down somewhat. It's between this place and this place.\""
   },
   {
    "t": 636.7,
@@ -999,12 +1039,22 @@
   {
    "t": 666.0,
    "kind": "speech",
-   "text": "Where the crow with the whiteness in its wing is pecking, and where the ant colony is. So he looked around, and he found an ant colony in that area. He did find an ant colony."
+   "text": "Where the crow with the whiteness in its wing is pecking, and where the ant colony is. So he looked around, and he found an ant colony in that area."
+  },
+  {
+   "t": 675.9,
+   "kind": "speech",
+   "text": "He did find an ant colony."
   },
   {
    "t": 677.9,
    "kind": "speech",
-   "text": "But of course, the ant colony, it wasn't very small either. It was a pretty big ant colony, and it wasn't enough for him to actually start digging. It narrowed it down much more, yes, but still not enough for him to start digging."
+   "text": "But of course, the ant colony, it wasn't very small either. It was a pretty big ant colony, and it wasn't enough for him to actually start digging."
+  },
+  {
+   "t": 687.7,
+   "kind": "speech",
+   "text": "It narrowed it down much more, yes, but still not enough for him to start digging."
   },
   {
    "t": 693.3,
@@ -1019,7 +1069,12 @@
   {
    "t": 711.7,
    "kind": "speech",
-   "text": "So he said, \"This is it. This is as narrow as it can get. The crow is in one location, and it is actually pecking there. That is where I need to dig. That's where I'm going to find the well of [[Zamzam|زمزم]].\""
+   "text": "So he said, \"This is it. This is as narrow as it can get. The crow is in one location, and it is actually pecking there."
+  },
+  {
+   "t": 719.0,
+   "kind": "speech",
+   "text": "That is where I need to dig. That's where I'm going to find the well of [[Zamzam|زمزم]].\""
   },
   {
    "t": 723.8,
@@ -1029,32 +1084,62 @@
   {
    "t": 730.6,
    "kind": "speech",
-   "text": "And remember, this is all a big public place right in front of the [[Ka'bah|كعة]]. So it's not like he can do it secretly without anybody seeing. Everybody can see exactly what he's doing, going and digging near the [[Ka'bah|كعة]]."
+   "text": "And remember, this is all a big public place right in front of the [[Ka'bah|كعة]]. So it's not like he can do it secretly without anybody seeing."
+  },
+  {
+   "t": 739.5,
+   "kind": "speech",
+   "text": "Everybody can see exactly what he's doing, going and digging near the [[Ka'bah|كعة]]."
   },
   {
    "t": 743.8,
    "kind": "speech",
-   "text": "So when the [[Quraysh|قُرَيْش]], the other members of the [[Quraysh|قُرَيْش]], they saw [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] here at the [[Ka'bah|كعة]] digging, they were surprised. \"What are you doing? How can you dig here at the [[Ka'bah|كعة]]? This is not appropriate.\" They wanted to stop him."
+   "text": "So when the [[Quraysh|قُرَيْش]], the other members of the [[Quraysh|قُرَيْش]], they saw [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] here at the [[Ka'bah|كعة]] digging, they were surprised. \"What are you doing?"
+  },
+  {
+   "t": 751.9,
+   "kind": "speech",
+   "text": "How can you dig here at the [[Ka'bah|كعة]]? This is not appropriate.\" They wanted to stop him."
   },
   {
    "t": 757.0,
    "kind": "speech",
-   "text": "They wanted to stop him. So he said to his son—[[Abdul Muttalib|عَبْد الْمُطَٜلِب]] said to [[al-Harith|الْحَارِث]], his son—you know, \"Go to them and distract them so that they don't stop my work. Go and argue with them so that I can continue digging. Don't let them stop me.\""
+   "text": "They wanted to stop him. So he said to his son—[[Abdul Muttalib|عَبْد الْمُطَٜلِب]] said to [[al-Harith|الْحَارِث]], his son—you know, \"Go to them and distract them so that they don't stop my work."
+  },
+  {
+   "t": 768.7,
+   "kind": "speech",
+   "text": "Go and argue with them so that I can continue digging. Don't let them stop me.\""
   },
   {
    "t": 774.5,
    "kind": "speech",
-   "text": "So [[al-Harith|الْحَارِث]], he went to distract them. And they started arguing with [[al-Harith|الْحَارِث]], and it was going back and forth while [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] was busy digging, because he knew this is the exact location."
+   "text": "So [[al-Harith|الْحَارِث]], he went to distract them."
+  },
+  {
+   "t": 776.7,
+   "kind": "speech",
+   "text": "And they started arguing with [[al-Harith|الْحَارِث]], and it was going back and forth while [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] was busy digging, because he knew this is the exact location."
   },
   {
    "t": 785.6,
    "kind": "speech",
-   "text": "When he dug for a while, finally, he hit a stone. He hit a stone, and it wasn't just any stone. It was the type of stone that the people would put around the wells."
+   "text": "When he dug for a while, finally, he hit a stone. He hit a stone, and it wasn't just any stone."
+  },
+  {
+   "t": 792.8,
+   "kind": "speech",
+   "text": "It was the type of stone that the people would put around the wells."
   },
   {
    "t": 797.6,
    "kind": "speech",
-   "text": "You know, when people would dig a well, to mark off that location, they would put stones around it. So as he was digging, he finally hit stone. And the stone was that type of stone that is used to go around a well, so he knew that he was near."
+   "text": "You know, when people would dig a well, to mark off that location, they would put stones around it. So as he was digging, he finally hit stone."
+  },
+  {
+   "t": 805.1,
+   "kind": "speech",
+   "text": "And the stone was that type of stone that is used to go around a well, so he knew that he was near."
   },
   {
    "t": 811.2,
@@ -1074,7 +1159,12 @@
   {
    "t": 837.6,
    "kind": "speech",
-   "text": "So they went to him, and they asked him, \"What happened? What are you looking for? What did you find?\" He said, \"I'm looking for [[Zamzam|زمزم]], and it's here.\" And he kept digging, and now they were quiet, because they knew, \"Okay, this is really something. He's not just doing this for no reason.\""
+   "text": "So they went to him, and they asked him, \"What happened? What are you looking for? What did you find?\" He said, \"I'm looking for [[Zamzam|زمزم]], and it's here.\""
+  },
+  {
+   "t": 846.5,
+   "kind": "speech",
+   "text": "And he kept digging, and now they were quiet, because they knew, \"Okay, this is really something. He's not just doing this for no reason.\""
   },
   {
    "t": 854.2,
@@ -1094,7 +1184,12 @@
   {
    "t": 877.0,
    "kind": "speech",
-   "text": "And then he said, \"What do you mean, you're my partners? I found it. And this is the responsibility of my family to provide water for the [[hujjaj|حجاج]]. You have no part in this."
+   "text": "And then he said, \"What do you mean, you're my partners? I found it. And this is the responsibility of my family to provide water for the [[hujjaj|حجاج]]."
+  },
+  {
+   "t": 885.2,
+   "kind": "speech",
+   "text": "You have no part in this."
   },
   {
    "t": 887.0,
@@ -1104,7 +1199,12 @@
   {
    "t": 895.0,
    "kind": "speech",
-   "text": "And then they said to him, \"How can you say this is not happening? This is [[Zamzam|زمزم]], you know? This is from the time of [[Ismail|إسماعيل]] [[alayhis-salam|عليه السلام]]. This is the biggest honor that we can have. How can you take this away from us?"
+   "text": "And then they said to him, \"How can you say this is not happening? This is [[Zamzam|زمزم]], you know? This is from the time of [[Ismail|إسماعيل]] [[alayhis-salam|عليه السلام]]."
+  },
+  {
+   "t": 906.8,
+   "kind": "speech",
+   "text": "This is the biggest honor that we can have. How can you take this away from us?"
   },
   {
    "t": 914.0,
@@ -1144,17 +1244,32 @@
   {
    "t": 961.3,
    "kind": "speech",
-   "text": "So they said, \"We will go to her. We will go all the way to [[Madinah|مدينة]], and we will ask her what we should do about this argument that we're having. Does [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] get to have it all for himself and his family, or should the whole [[Quraysh|قُرَيْش]] share with this honor of the well of [[Zamzam|زمزم]]?\""
+   "text": "So they said, \"We will go to her. We will go all the way to [[Madinah|مدينة]], and we will ask her what we should do about this argument that we're having."
+  },
+  {
+   "t": 966.1,
+   "kind": "speech",
+   "text": "Does [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] get to have it all for himself and his family, or should the whole [[Quraysh|قُرَيْش]] share with this honor of the well of [[Zamzam|زمزم]]?\""
   },
   {
    "t": 970.4,
    "kind": "speech",
-   "text": "They let him continue. And he continued until he actually found the water, and the water came forward. So the [[Zamzam|زمزم]] well was rediscovered by [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] after so many centuries, and the water came out."
+   "text": "They let him continue. And he continued until he actually found the water, and the water came forward."
+  },
+  {
+   "t": 972.9,
+   "kind": "speech",
+   "text": "So the [[Zamzam|زمزم]] well was rediscovered by [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] after so many centuries, and the water came out."
   },
   {
    "t": 975.6,
    "kind": "speech",
-   "text": "So they agreed. So they went from [[Makkah|مَكَٜة]] to [[Madinah|مدينة]] to consult with [[Kahinah Bani Sa'd|كاهنة بني سعد]], to consult with the fortune teller of [[Banu Sa'd|بنو سعد]]. But when they arrived in [[Madinah|مدينة]], she wasn't there."
+   "text": "So they agreed. So they went from [[Makkah|مَكَٜة]] to [[Madinah|مدينة]] to consult with [[Kahinah Bani Sa'd|كاهنة بني سعد]], to consult with the fortune teller of [[Banu Sa'd|بنو سعد]]."
+  },
+  {
+   "t": 982.0,
+   "kind": "speech",
+   "text": "But when they arrived in [[Madinah|مدينة]], she wasn't there."
   },
   {
    "t": 984.0,
@@ -1164,12 +1279,22 @@
   {
    "t": 987.9,
    "kind": "speech",
-   "text": "She was actually on a trip herself. She had traveled to [[Khaybar|خيبر]]. She wasn't in [[Madinah|مدينة]], she had traveled to [[Khaybar|خيبر]]. So they said, \"Okay, we will follow her. We will go to [[Khaybar|خيبر]] as well and we'll meet her there.\""
+   "text": "She was actually on a trip herself. She had traveled to [[Khaybar|خيبر]]. She wasn't in [[Madinah|مدينة]], she had traveled to [[Khaybar|خيبر]]. So they said, \"Okay, we will follow her."
+  },
+  {
+   "t": 990.1,
+   "kind": "speech",
+   "text": "We will go to [[Khaybar|خيبر]] as well and we'll meet her there.\""
   },
   {
    "t": 991.0,
    "kind": "speech",
-   "text": "And they said to [[Abdul Muttalib|عَبْد الْمُطَٜلِب]], \"We are going to share it with you. We are your partners in this.\" And then he said, \"What do you mean, 'You're my partners'? I found it. And this is the responsibility of my family to provide water for the [[hujjaj|حجاج]]. You have no part in this.\""
+   "text": "And they said to [[Abdul Muttalib|عَبْد الْمُطَٜلِب]], \"We are going to share it with you. We are your partners in this.\" And then he said, \"What do you mean, 'You're my partners'?"
+  },
+  {
+   "t": 996.1,
+   "kind": "speech",
+   "text": "I found it. And this is the responsibility of my family to provide water for the [[hujjaj|حجاج]]. You have no part in this.\""
   },
   {
    "t": 999.8,
@@ -1184,17 +1309,32 @@
   {
    "t": 1009.5,
    "kind": "speech",
-   "text": "As for the other people of the [[Quraysh|قُرَيْش]], they had some water left, but it was very little. It was not much. But [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] and his people, they had nothing. It was gone."
+   "text": "As for the other people of the [[Quraysh|قُرَيْش]], they had some water left, but it was very little. It was not much. But [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] and his people, they had nothing."
+  },
+  {
+   "t": 1010.5,
+   "kind": "speech",
+   "text": "It was gone."
   },
   {
    "t": 1010.6,
    "kind": "speech",
-   "text": "And then they said to him, \"How can you say this is not happening? This is [[Zamzam|زمزم]], you know, this is from the time of [[Ismail|إسماعيل]] [[alayhis-salam|عليه السلام]]. This is the biggest honor that we can have. How can you take this away from us?"
+   "text": "And then they said to him, \"How can you say this is not happening? This is [[Zamzam|زمزم]], you know, this is from the time of [[Ismail|إسماعيل]] [[alayhis-salam|عليه السلام]]."
+  },
+  {
+   "t": 1017.3,
+   "kind": "speech",
+   "text": "This is the biggest honor that we can have. How can you take this away from us?"
   },
   {
    "t": 1021.4,
    "kind": "speech",
-   "text": "So [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] and his camp, they asked those other members of the [[Quraysh|قُرَيْش]] to give them some of their water, and they said, \"No, we can't give you any water, because we want to live. You know, if we give you our water—we hardly have any for ourselves—so if we share it with you, we're all going to die. So no, we can't share it with you.\""
+   "text": "So [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] and his camp, they asked those other members of the [[Quraysh|قُرَيْش]] to give them some of their water, and they said, \"No, we can't give you any water, because we want to live."
+  },
+  {
+   "t": 1023.1,
+   "kind": "speech",
+   "text": "You know, if we give you our water—we hardly have any for ourselves—so if we share it with you, we're all going to die. So no, we can't share it with you.\""
   },
   {
    "t": 1024.6,
@@ -1204,7 +1344,12 @@
   {
    "t": 1035.1,
    "kind": "speech",
-   "text": "So they were almost going to fight. And you know how we spoke many times about how the Arabs over honor, they used to fight and they were ready to die for honor."
+   "text": "So they were almost going to fight."
+  },
+  {
+   "t": 1036.2,
+   "kind": "speech",
+   "text": "And you know how we spoke many times about how the Arabs over honor, they used to fight and they were ready to die for honor."
   },
   {
    "t": 1040.4,
@@ -1229,17 +1374,37 @@
   {
    "t": 1057.5,
    "kind": "speech",
-   "text": "So [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] said, \"Look, it looks like there's no solution to this. It looks like we're all going to die here in the middle of this desert. Without water, there's no way that we can survive. So to keep some of our honor intact, what we should do is we should all start digging our own graves right now."
+   "text": "So [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] said, \"Look, it looks like there's no solution to this. It looks like we're all going to die here in the middle of this desert."
+  },
+  {
+   "t": 1060.7,
+   "kind": "speech",
+   "text": "Without water, there's no way that we can survive. So to keep some of our honor intact, what we should do is we should all start digging our own graves right now."
   },
   {
    "t": 1064.2,
    "kind": "speech",
-   "text": "And there was a very famous fortune teller in [[Yathrib|يَثْرِب]]. In [[Yathrib|يَثْرِب]]—now it is known as [[al-Madinah al-Nabawiyyah|الْمَدِينَة النَٜبَوِيَٜة]], but at that time it was known as [[Yathrib|يَثْرِب]]—and there was a very famous fortune teller there. She was known as [[Kahinah Bani Sa'd|كاهنة بني سعد]], the fortune teller of [[Banu Sa'd|بنو سعد]]."
+   "text": "And there was a very famous fortune teller in [[Yathrib|يَثْرِب]]."
+  },
+  {
+   "t": 1066.6,
+   "kind": "speech",
+   "text": "In [[Yathrib|يَثْرِب]]—now it is known as [[al-Madinah al-Nabawiyyah|الْمَدِينَة النَٜبَوِيَٜة]], but at that time it was known as [[Yathrib|يَثْرِب]]—and there was a very famous fortune teller there."
+  },
+  {
+   "t": 1072.9,
+   "kind": "speech",
+   "text": "She was known as [[Kahinah Bani Sa'd|كاهنة بني سعد]], the fortune teller of [[Banu Sa'd|بنو سعد]]."
   },
   {
    "t": 1076.8,
    "kind": "speech",
-   "text": "We will all dig our own graves, and when one of us dies, the other ones will bury him, so that at the end, at least most of our bodies, we will be buried, and only the last one who lives, he will remain unburied. That's better than all of these bodies just lying around unburied."
+   "text": "We will all dig our own graves, and when one of us dies, the other ones will bury him, so that at the end, at least most of our bodies,"
+  },
+  {
+   "t": 1085.0,
+   "kind": "speech",
+   "text": "we will be buried, and only the last one who lives, he will remain unburied. That's better than all of these bodies just lying around unburied."
   },
   {
    "t": 1092.2,
@@ -1249,12 +1414,22 @@
   {
    "t": 1102.0,
    "kind": "speech",
-   "text": "So they said to him, \"Yes, [[Abdul Muttalib|عَبْد الْمُطَٜلِب]], this is a good decision you have made. Let's do it.\" So they dug their own graves, each one of them from [[Abdul Muttalib|عَبْد الْمُطَٜلِب]]'s camp, not from the other members of the [[Quraysh|قُرَيْش]], because they still had some water left."
+   "text": "So they said to him, \"Yes, [[Abdul Muttalib|عَبْد الْمُطَٜلِب]], this is a good decision you have made. Let's do it.\""
+  },
+  {
+   "t": 1107.1,
+   "kind": "speech",
+   "text": "So they dug their own graves, each one of them from [[Abdul Muttalib|عَبْد الْمُطَٜلِب]]'s camp, not from the other members of the [[Quraysh|قُرَيْش]], because they still had some water left."
   },
   {
    "t": 1114.7,
    "kind": "speech",
-   "text": "But the other members of the [[Quraysh|قُرَيْش]] were watching. They were just looking, \"What are they doing?\" So they saw them digging their own graves, and they were like, \"What? What's going on here?\""
+   "text": "But the other members of the [[Quraysh|قُرَيْش]] were watching. They were just looking, \"What are they doing?\" So they saw them digging their own graves, and they were like, \"What?"
+  },
+  {
+   "t": 1121.0,
+   "kind": "speech",
+   "text": "What's going on here?\""
   },
   {
    "t": 1121.8,
@@ -1264,7 +1439,17 @@
   {
    "t": 1129.0,
    "kind": "speech",
-   "text": "After waiting for some time, [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] says, \"You know, this is not good. We're just sitting here waiting to die. This is not an honorable thing to do, just sitting here and not even trying to find a way to survive. We have to at least try to do something. Let's just get up and look around."
+   "text": "After waiting for some time, [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] says, \"You know, this is not good. We're just sitting here waiting to die."
+  },
+  {
+   "t": 1135.5,
+   "kind": "speech",
+   "text": "This is not an honorable thing to do, just sitting here and not even trying to find a way to survive. We have to at least try to do something."
+  },
+  {
+   "t": 1144.3,
+   "kind": "speech",
+   "text": "Let's just get up and look around."
   },
   {
    "t": 1146.4,
@@ -1279,12 +1464,27 @@
   {
    "t": 1157.4,
    "kind": "speech",
-   "text": "So [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] gets up, and he gets his camel up as well. So when the camel of [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] gets up, and the camel hits its foot on the ground, some water starts to come right where the foot of the camel of [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] steps. Some water comes out of the ground."
+   "text": "So [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] gets up, and he gets his camel up as well."
+  },
+  {
+   "t": 1162.3,
+   "kind": "speech",
+   "text": "So when the camel of [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] gets up, and the camel hits its foot on the ground, some water starts to come right where the foot of the camel of [[Abdul Muttalib|عَبْد الْمُطَٜلِب]] steps."
+  },
+  {
+   "t": 1174.9,
+   "kind": "speech",
+   "text": "Some water comes out of the ground."
   },
   {
    "t": 1177.3,
    "kind": "speech",
-   "text": "So [[Abdul Muttalib|عَبْد الْمُطَّلِب]] sees this, and his camp sees this, and they start to drink. And [[alhamdulillah|الْحَمْدُ لِلَّهِ]], they're able to drink enough for their needs, and the water is still coming. They have taken care of their thirst, and the water is still coming out."
+   "text": "So [[Abdul Muttalib|عَبْد الْمُطَّلِب]] sees this, and his camp sees this, and they start to drink."
+  },
+  {
+   "t": 1181.5,
+   "kind": "speech",
+   "text": "And [[alhamdulillah|الْحَمْدُ لِلَّهِ]], they're able to drink enough for their needs, and the water is still coming. They have taken care of their thirst, and the water is still coming out."
   },
   {
    "t": 1189.5,
@@ -1325,7 +1525,12 @@
   {
    "t": 1249.5,
    "kind": "speech",
-   "text": "They said to him, \"We swear by Allah, the One who provided you with water here in the middle of this desert, He is the same One who provided you with [[Zamzam|زمزم]]. [[Zamzam|زمزم]] is yours. [[Zamzam|زمزم]] is yours. We're not going to try to fight with you over it anymore.\""
+   "text": "They said to him, \"We swear by Allah, the One who provided you with water here in the middle of this desert, He is the same One who provided you with [[Zamzam|زمزم]]."
+  },
+  {
+   "t": 1260.1,
+   "kind": "speech",
+   "text": "[[Zamzam|زمزم]] is yours. [[Zamzam|زمزم]] is yours. We're not going to try to fight with you over it anymore.\""
   },
   {
    "t": 1266.0,
@@ -1335,7 +1540,12 @@
   {
    "t": 1273.9,
    "kind": "speech",
-   "text": "So the problem was solved. They didn't even have to go to meet the fortune teller that they were going to meet. It was agreed upon that [[Abdul Muttalib|عَبْد الْمُطَّلِب]] was the caretaker of [[Zamzam|زمزم]] and he had all rights to the well of [[Zamzam|زمزم]]."
+   "text": "So the problem was solved. They didn't even have to go to meet the fortune teller that they were going to meet."
+  },
+  {
+   "t": 1281.2,
+   "kind": "speech",
+   "text": "It was agreed upon that [[Abdul Muttalib|عَبْد الْمُطَّلِب]] was the caretaker of [[Zamzam|زمزم]] and he had all rights to the well of [[Zamzam|زمزم]]."
   },
   {
    "t": 1288.8,
@@ -1345,7 +1555,12 @@
   {
    "t": 1292.2,
    "kind": "speech",
-   "text": "Now when [[Abdul Muttalib|عَبْد الْمُطَّلِب]], when this whole thing was happening, and when he was first digging that well of [[Zamzam|زمزم]] and the [[Quraysh|قُرَيْش]] tried to stop him, and he sent his son [[al-Harith|الحارث]] to distract them and to stop them from coming, to prevent him from digging,"
+   "text": "Now when [[Abdul Muttalib|عَبْد الْمُطَّلِب]], when this whole thing was happening, and when he was first digging that well of [[Zamzam|زمزم]] and the [[Quraysh|قُرَيْش]] tried to stop him,"
+  },
+  {
+   "t": 1301.4,
+   "kind": "speech",
+   "text": "and he sent his son [[al-Harith|الحارث]] to distract them and to stop them from coming, to prevent him from digging,"
   },
   {
    "t": 1308.0,
@@ -1360,7 +1575,12 @@
   {
    "t": 1324.5,
    "kind": "speech",
-   "text": "So he felt at this time, \"You know, I only have one son who's defending me, one son who is taking care of me, one son who will fight with me. This is a weakness.\""
+   "text": "So he felt at this time, \"You know, I only have one son who's defending me, one son who is taking care of me, one son who will fight with me."
+  },
+  {
+   "t": 1334.9,
+   "kind": "speech",
+   "text": "This is a weakness.\""
   },
   {
    "t": 1336.2,
@@ -1390,7 +1610,12 @@
   {
    "t": 1379.8,
    "kind": "speech",
-   "text": "\"Look, I have ten sons. I have so much power that I can even sacrifice and kill and slaughter one of these sons, and it wouldn't take away from my honor and my respect at all.\""
+   "text": "\"Look, I have ten sons."
+  },
+  {
+   "t": 1381.3,
+   "kind": "speech",
+   "text": "I have so much power that I can even sacrifice and kill and slaughter one of these sons, and it wouldn't take away from my honor and my respect at all.\""
   },
   {
    "t": 1390.9,
@@ -1425,7 +1650,12 @@
   {
    "t": 1437.8,
    "kind": "speech",
-   "text": "And then there was [[Abu Talib|أَبُو طَالِب]] and [[Abu Lahab|أبو لهب]]. [[Abu Talib|أَبُو طَالِب]], his real name was [[Abd Manaf|عَبْد مَنَاف]]. And [[Abu Lahab|أبو لهب]], his real name was [[Abdul Uzza|عبد العزى]]. But they became known by their [[kunyah|كنية]], [[Abu Talib|أَبُو طَالِب]] and [[Abu Lahab|أبو لهب]]."
+   "text": "And then there was [[Abu Talib|أَبُو طَالِب]] and [[Abu Lahab|أبو لهب]]. [[Abu Talib|أَبُو طَالِب]], his real name was [[Abd Manaf|عَبْد مَنَاف]]. And [[Abu Lahab|أبو لهب]], his real name was [[Abdul Uzza|عبد العزى]]."
+  },
+  {
+   "t": 1450.7,
+   "kind": "speech",
+   "text": "But they became known by their [[kunyah|كنية]], [[Abu Talib|أَبُو طَالِب]] and [[Abu Lahab|أبو لهب]]."
   },
   {
    "t": 1456.3,
@@ -1435,7 +1665,12 @@
   {
    "t": 1469.2,
    "kind": "speech",
-   "text": "So these were the only four uncles of the Prophet ﷺ, the four sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]] who actually lived to see the message of the Prophet ﷺ. Two of them believed, and two of them did not believe."
+   "text": "So these were the only four uncles of the Prophet ﷺ, the four sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]] who actually lived to see the message of the Prophet ﷺ."
+  },
+  {
+   "t": 1480.3,
+   "kind": "speech",
+   "text": "Two of them believed, and two of them did not believe."
   },
   {
    "t": 1484.5,
@@ -1445,7 +1680,12 @@
   {
    "t": 1496.2,
    "kind": "speech",
-   "text": "The other six sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]], they did not live to see the message of the Prophet ﷺ. And those other six sons were [[al-Harith|الحارث]], as we mentioned, who was the first and oldest son, [[al-Zubayr|الزبير]], [[Hajl|حجل]], [[al-Muqawwim|المقوم]], [[Dirar|ضرار]], and the youngest son, [[Abdullah ibn Abdul Muttalib|عبد الله]],"
+   "text": "The other six sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]], they did not live to see the message of the Prophet ﷺ."
+  },
+  {
+   "t": 1504.6,
+   "kind": "speech",
+   "text": "And those other six sons were [[al-Harith|الحارث]], as we mentioned, who was the first and oldest son, [[al-Zubayr|الزبير]], [[Hajl|حجل]], [[al-Muqawwim|المقوم]], [[Dirar|ضرار]], and the youngest son, [[Abdullah ibn Abdul Muttalib|عبد الله]],"
   },
   {
    "t": 1517.2,
@@ -1455,7 +1695,12 @@
   {
    "t": 1528.6,
    "kind": "speech",
-   "text": "So these were the sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]], ten sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]]. The youngest one was the father of [[Rasulullah|رسول الله]] ﷺ, [[Abdullah ibn Abdul Muttalib|عبد الله بن عَبْد الْمُطَّلِب]]."
+   "text": "So these were the sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]], ten sons of [[Abdul Muttalib|عَبْد الْمُطَّلِب]]."
+  },
+  {
+   "t": 1533.3,
+   "kind": "speech",
+   "text": "The youngest one was the father of [[Rasulullah|رسول الله]] ﷺ, [[Abdullah ibn Abdul Muttalib|عبد الله بن عَبْد الْمُطَّلِب]]."
   },
   {
    "t": 1539.0,
@@ -1485,7 +1730,12 @@
   {
    "t": 1579.3,
    "kind": "speech",
-   "text": "Look at the situation how it was, the house of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] and a fortune teller is sitting right there. [[alhamdulillah|الْحَمْدُ لِلَّهِ]] that we have [[tawhid|توحيد]] and that the [[Haramayn|الحرمين]] [[al-Sharifayn|الشريفين]], [[alhamdulillah|الْحَمْدُ لِلَّهِ]], are places of [[tawhid|توحيد]]."
+   "text": "Look at the situation how it was, the house of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] and a fortune teller is sitting right there."
+  },
+  {
+   "t": 1585.6,
+   "kind": "speech",
+   "text": "[[alhamdulillah|الْحَمْدُ لِلَّهِ]] that we have [[tawhid|توحيد]] and that the [[Haramayn|الحرمين]] [[al-Sharifayn|الشريفين]], [[alhamdulillah|الْحَمْدُ لِلَّهِ]], are places of [[tawhid|توحيد]]."
   },
   {
    "t": 1590.2,
@@ -1495,12 +1745,22 @@
   {
    "t": 1594.2,
    "kind": "speech",
-   "text": "So [[Abdul Muttalib|عَبْد الْمُطَّلِب]], he went to this fortune teller of the [[Ka'bah|كعبة]] and he gave him arrows. And this was one of the ways that the Arabs of [[Jahiliyyah|جاهلية]], how they used to make decisions to do things."
+   "text": "So [[Abdul Muttalib|عَبْد الْمُطَّلِب]], he went to this fortune teller of the [[Ka'bah|كعبة]] and he gave him arrows."
+  },
+  {
+   "t": 1601.1,
+   "kind": "speech",
+   "text": "And this was one of the ways that the Arabs of [[Jahiliyyah|جاهلية]], how they used to make decisions to do things."
   },
   {
    "t": 1609.2,
    "kind": "speech",
-   "text": "If they didn't know what type of decision to make, they would write the names on arrows, and then they would throw those arrows, and then they would pick one of the arrows that they had thrown. This was their way of making decisions."
+   "text": "If they didn't know what type of decision to make, they would write the names on arrows, and then they would throw those arrows, and then they would pick one of the arrows that they had thrown."
+  },
+  {
+   "t": 1623.3,
+   "kind": "speech",
+   "text": "This was their way of making decisions."
   },
   {
    "t": 1626.0,
@@ -1520,7 +1780,12 @@
   {
    "t": 1657.3,
    "kind": "speech",
-   "text": "So the fortune teller, he starts doing it. He throws the arrows, and while he is throwing it, [[Abdul Muttalib|عَبْد الْمُطَّلِب]] is making [[du'a|دُعَاء]] that, \"May it be any of my sons except [[Abdullah ibn Abdul Muttalib|عبد الله]].\""
+   "text": "So the fortune teller, he starts doing it."
+  },
+  {
+   "t": 1659.8,
+   "kind": "speech",
+   "text": "He throws the arrows, and while he is throwing it, [[Abdul Muttalib|عَبْد الْمُطَّلِب]] is making [[du'a|دُعَاء]] that, \"May it be any of my sons except [[Abdullah ibn Abdul Muttalib|عبد الله]].\""
   },
   {
    "t": 1669.1,
@@ -1530,7 +1795,12 @@
   {
    "t": 1677.3,
    "kind": "speech",
-   "text": "But when the fortune teller threw those arrows and picked up one of them and opened it, guess whose name was on it? It was [[Abdullah ibn Abdul Muttalib|عبد الله بن عَبْد الْمُطَّلِب]]."
+   "text": "But when the fortune teller threw those arrows and picked up one of them and opened it, guess whose name was on it?"
+  },
+  {
+   "t": 1684.5,
+   "kind": "speech",
+   "text": "It was [[Abdullah ibn Abdul Muttalib|عبد الله بن عَبْد الْمُطَّلِب]]."
   },
   {
    "t": 1687.6,
@@ -1545,7 +1815,12 @@
   {
    "t": 1711.3,
    "kind": "speech",
-   "text": "And the leaders of the [[Quraysh|قُرَيْش]], they come and they say to him, \"Don't do it, O [[Abdul Muttalib|عَبْد الْمُطَّلِب]]. Don't slaughter your son. Don't sacrifice your son.\" He said, \"No, I made a vow that I would do it, and I am a man of honor.\""
+   "text": "And the leaders of the [[Quraysh|قُرَيْش]], they come and they say to him, \"Don't do it, O [[Abdul Muttalib|عَبْد الْمُطَّلِب]]. Don't slaughter your son. Don't sacrifice your son.\""
+  },
+  {
+   "t": 1719.5,
+   "kind": "speech",
+   "text": "He said, \"No, I made a vow that I would do it, and I am a man of honor.\""
   },
   {
    "t": 1725.1,
@@ -1555,7 +1830,12 @@
   {
    "t": 1728.3,
    "kind": "speech",
-   "text": "They said, \"No no no, you can't do it.\" They wanted to stop him from doing it. He said, \"No, I must do it.\" He was very firm in his resolve to slaughter his son to fulfill his vow."
+   "text": "They said, \"No no no, you can't do it.\" They wanted to stop him from doing it. He said, \"No, I must do it.\""
+  },
+  {
+   "t": 1734.3,
+   "kind": "speech",
+   "text": "He was very firm in his resolve to slaughter his son to fulfill his vow."
   },
   {
    "t": 1738.1,
@@ -1565,7 +1845,12 @@
   {
    "t": 1745.9,
    "kind": "speech",
-   "text": "\"If you do this today, this will become a [[sunnah|سنة]] of the Arabs. Any one of the Arabs who has ten sons, they will go and they will kill one of their sons, they will slaughter one of their sons.\""
+   "text": "\"If you do this today, this will become a [[sunnah|سنة]] of the Arabs."
+  },
+  {
+   "t": 1749.0,
+   "kind": "speech",
+   "text": "Any one of the Arabs who has ten sons, they will go and they will kill one of their sons, they will slaughter one of their sons.\""
   },
   {
    "t": 1755.3,
@@ -1580,12 +1865,22 @@
   {
    "t": 1769.5,
    "kind": "speech",
-   "text": "So this argument went back and forth for some time when finally they agreed. They said, \"Okay, we will take a decision from...\" from guess who? [[Kahinah Bani Sa'd|كاهنة]] [[Banu Sa'd|بنو سعد]], from the fortune teller of [[Banu Sa'd|بنو سعد]]."
+   "text": "So this argument went back and forth for some time when finally they agreed. They said, \"Okay, we will take a decision from...\" from guess who?"
+  },
+  {
+   "t": 1778.9,
+   "kind": "speech",
+   "text": "[[Kahinah Bani Sa'd|كاهنة]] [[Banu Sa'd|بنو سعد]], from the fortune teller of [[Banu Sa'd|بنو سعد]]."
   },
   {
    "t": 1784.0,
    "kind": "speech",
-   "text": "The same fortune teller in [[Yathrib|يثرب]] who they wanted to go to originally when they had the argument about who would get to control [[Zamzam|زمزم]]. So they agreed that, \"Okay, we will go to this [[Kahinah Bani Sa'd|كاهنة]], we'll go to this fortune teller of [[Banu Sa'd|بنو سعد]], and we will accept...\""
+   "text": "The same fortune teller in [[Yathrib|يثرب]] who they wanted to go to originally when they had the argument about who would get to control [[Zamzam|زمزم]]."
+  },
+  {
+   "t": 1791.6,
+   "kind": "speech",
+   "text": "So they agreed that, \"Okay, we will go to this [[Kahinah Bani Sa'd|كاهنة]], we'll go to this fortune teller of [[Banu Sa'd|بنو سعد]], and we will accept...\""
   },
   {
    "t": 1799.9,
@@ -1605,7 +1900,12 @@
   {
    "t": 1831.7,
    "kind": "speech",
-   "text": "\"What is the [[diyah|دية]]? What is the blood money for someone who is killed? If somebody is killed and the family of that person who is killed wants the blood money, how much is the blood money that you give?\""
+   "text": "\"What is the [[diyah|دية]]? What is the blood money for someone who is killed?"
+  },
+  {
+   "t": 1836.3,
+   "kind": "speech",
+   "text": "If somebody is killed and the family of that person who is killed wants the blood money, how much is the blood money that you give?\""
   },
   {
    "t": 1844.8,
@@ -1615,17 +1915,42 @@
   {
    "t": 1852.4,
    "kind": "speech",
-   "text": "\"So you have to do the arrow-throwing again.\" This is what she's telling them. She said, \"On one arrow, put the name of [[Abdullah ibn Abdul Muttalib|عبد الله]], and on another arrow, put the [[diyah|دية]] of 10 camels. And throw those two arrows, and then pick up one of the arrows. If it is the arrow of the 10 camels, then sacrifice 10 camels and [[Abdullah ibn Abdul Muttalib|عبد الله]] is safe."
+   "text": "\"So you have to do the arrow-throwing again.\" This is what she's telling them."
+  },
+  {
+   "t": 1857.2,
+   "kind": "speech",
+   "text": "She said, \"On one arrow, put the name of [[Abdullah ibn Abdul Muttalib|عبد الله]], and on another arrow, put the [[diyah|دية]] of 10 camels."
+  },
+  {
+   "t": 1865.5,
+   "kind": "speech",
+   "text": "And throw those two arrows, and then pick up one of the arrows."
+  },
+  {
+   "t": 1870.0,
+   "kind": "speech",
+   "text": "If it is the arrow of the 10 camels, then sacrifice 10 camels and [[Abdullah ibn Abdul Muttalib|عبد الله]] is safe."
   },
   {
    "t": 1877.3,
    "kind": "speech",
-   "text": "But if you get the name of [[Abdullah ibn Abdul Muttalib|عبد الله]], then you have to repeat this process again. Throw the two arrows again, and if you pick up [[Abdullah ibn Abdul Muttalib|عبد الله]] again, then each time you have to add 10 camels to the previous time."
+   "text": "But if you get the name of [[Abdullah ibn Abdul Muttalib|عبد الله]], then you have to repeat this process again."
+  },
+  {
+   "t": 1883.1,
+   "kind": "speech",
+   "text": "Throw the two arrows again, and if you pick up [[Abdullah ibn Abdul Muttalib|عبد الله]] again, then each time you have to add 10 camels to the previous time."
   },
   {
    "t": 1891.4,
    "kind": "speech",
-   "text": "So the first time if you pick up [[Abdullah ibn Abdul Muttalib|عبد الله]], then you have to do it again, and you have 10 camels on your account. If the second time you pick [[Abdullah ibn Abdul Muttalib|عبد الله]] again, you add 10 more camels to that account so it becomes 20."
+   "text": "So the first time if you pick up [[Abdullah ibn Abdul Muttalib|عبد الله]], then you have to do it again, and you have 10 camels on your account."
+  },
+  {
+   "t": 1898.4,
+   "kind": "speech",
+   "text": "If the second time you pick [[Abdullah ibn Abdul Muttalib|عبد الله]] again, you add 10 more camels to that account so it becomes 20."
   },
   {
    "t": 1904.4,
@@ -1635,17 +1960,32 @@
   {
    "t": 1916.3,
    "kind": "speech",
-   "text": "So they agreed to do this. So they take two arrows: one with the name of [[Abdullah ibn Abdul Muttalib|عبد الله]] and the other with 10 camels. So they throw the two arrows and they select one. The first time, [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name is selected. So that means 10 camels is there on the account."
+   "text": "So they agreed to do this. So they take two arrows: one with the name of [[Abdullah ibn Abdul Muttalib|عبد الله]] and the other with 10 camels."
+  },
+  {
+   "t": 1922.8,
+   "kind": "speech",
+   "text": "So they throw the two arrows and they select one. The first time, [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name is selected. So that means 10 camels is there on the account."
   },
   {
    "t": 1930.2,
    "kind": "speech",
-   "text": "They do it again, [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name is selected again. So now 20 camels on the account. They do it again, [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name comes up again, 30 camels on the account. It keeps going and going and going 10 times."
+   "text": "They do it again, [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name is selected again. So now 20 camels on the account."
+  },
+  {
+   "t": 1936.0,
+   "kind": "speech",
+   "text": "They do it again, [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name comes up again, 30 camels on the account. It keeps going and going and going 10 times."
   },
   {
    "t": 1943.8,
    "kind": "speech",
-   "text": "So there are 100 camels on the account. And then finally, they do it for the 10th time and the camels come up. So there's a total of 100 camels now, and finally [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name didn't come on the 10th try, now it is the arrow with the camels."
+   "text": "So there are 100 camels on the account. And then finally, they do it for the 10th time and the camels come up."
+  },
+  {
+   "t": 1953.7,
+   "kind": "speech",
+   "text": "So there's a total of 100 camels now, and finally [[Abdullah ibn Abdul Muttalib|عبد الله]]'s name didn't come on the 10th try, now it is the arrow with the camels."
   },
   {
    "t": 1966.5,
@@ -1655,7 +1995,12 @@
   {
    "t": 1977.7,
    "kind": "speech",
-   "text": "But [[Abdul Muttalib|عَبْد الْمُطَّلِب]], after having it nine times go on his son, and then just the last time it went on the camels, he still wasn't sure about this. He said, \"No, I want to try it again just to make sure.\""
+   "text": "But [[Abdul Muttalib|عَبْد الْمُطَّلِب]], after having it nine times go on his son, and then just the last time it went on the camels, he still wasn't sure about this."
+  },
+  {
+   "t": 1987.0,
+   "kind": "speech",
+   "text": "He said, \"No, I want to try it again just to make sure.\""
   },
   {
    "t": 1991.1,
@@ -1680,7 +2025,12 @@
   {
    "t": 2024.2,
    "kind": "speech",
-   "text": "And who are those two? They are his great-great-grandfather [[Ismail|إسماعيل]] [[alayhis-salam|عليه السلام]], who was almost going to be sacrificed by [[Ibrahim|إبراهيم]] [[alayhis-salam|عليه السلام]], and his own father [[Abdullah ibn Abdul Muttalib|عبد الله بن عَبْد الْمُطَّلِب]], who was almost going to be slaughtered as well."
+   "text": "And who are those two?"
+  },
+  {
+   "t": 2025.8,
+   "kind": "speech",
+   "text": "They are his great-great-grandfather [[Ismail|إسماعيل]] [[alayhis-salam|عليه السلام]], who was almost going to be sacrificed by [[Ibrahim|إبراهيم]] [[alayhis-salam|عليه السلام]], and his own father [[Abdullah ibn Abdul Muttalib|عبد الله بن عَبْد الْمُطَّلِب]], who was almost going to be slaughtered as well."
   },
   {
    "t": 2038.2,
@@ -1695,7 +2045,12 @@
   {
    "t": 2050.9,
    "kind": "speech",
-   "text": "And eventually he would marry the mother of [[Rasulullah|رسول الله]] ﷺ, [[Aminah bint Wahb|آمنة بنت وهب]], and [[Rasulullah|رسول الله]] ﷺ would be born from that marriage. And [[insha'Allah|إن شاء الله]], we'll talk more about that next week [[bi-idhnillah|بإذن الله]]."
+   "text": "And eventually he would marry the mother of [[Rasulullah|رسول الله]] ﷺ, [[Aminah bint Wahb|آمنة بنت وهب]], and [[Rasulullah|رسول الله]] ﷺ would be born from that marriage."
+  },
+  {
+   "t": 2058.7,
+   "kind": "speech",
+   "text": "And [[insha'Allah|إن شاء الله]], we'll talk more about that next week [[bi-idhnillah|بإذن الله]]."
   },
   {
    "t": 2062.6,
@@ -1745,5 +2100,99 @@
    "a": "He was ransomed after casting lots against ten camels at a time until one hundred camels were selected to be slaughtered as [[diyah|دية]].",
    "chapter": 4
   }
+ ],
+ "retime_regions": [
+  [
+   66,
+   74
+  ],
+  [
+   87,
+   89
+  ],
+  [
+   93,
+   97
+  ],
+  [
+   101,
+   106
+  ],
+  [
+   110,
+   114
+  ],
+  [
+   116,
+   131
+  ],
+  [
+   134,
+   136
+  ],
+  [
+   139,
+   144
+  ],
+  [
+   151,
+   162
+  ],
+  [
+   164,
+   173
+  ],
+  [
+   177,
+   193
+  ],
+  [
+   195,
+   200
+  ],
+  [
+   207,
+   215
+  ],
+  [
+   217,
+   219
+  ],
+  [
+   224,
+   226
+  ],
+  [
+   232,
+   243
+  ],
+  [
+   248,
+   255
+  ],
+  [
+   258,
+   263
+  ],
+  [
+   265,
+   273
+  ],
+  [
+   275,
+   279
+  ],
+  [
+   282,
+   303
+  ],
+  [
+   307,
+   309
+  ],
+  [
+   311,
+   313
+  ]
  ]
 }

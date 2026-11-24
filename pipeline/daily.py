@@ -69,6 +69,24 @@ def main(max_new):
                         os.replace(p + ".bak", p)
                     elif os.path.exists(p + ".bak"):
                         os.remove(p + ".bak")
+        # 0b. cheap local re-checks queued for stretches whose lines were split (oldest episodes first)
+        for row in playlist():
+            p = ep_path(row["n"])
+            if not os.path.exists(p):
+                continue
+            ep = json.load(open(p))
+            regions = ep.get("retime_regions") or []
+            if not regions or ep.get("timing") != "gemini-retime":
+                continue  # an episode still waiting for its full timing pass gets that instead
+            P.log(f"ep {row['n']}: re-checking {len(regions)} split stretches")
+            while regions:
+                i0, i1 = regions[0]
+                R.retime_region(ep, i0, i1)
+                regions.pop(0)
+                ep["retime_regions"] = regions
+                json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
+            ep.pop("retime_regions", None)
+            json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
         # 1. precise timing for existing episodes
         for row in playlist():
             p = ep_path(row["n"])
@@ -77,6 +95,7 @@ def main(max_new):
                 if ep.get("timing") != "gemini-retime" and not ep.get("needs_redo"):
                     P.log(f"ep {row['n']}: precise timing pass")
                     R.retime_episode(ep)
+                    ep.pop("retime_regions", None)
                     if FG.fill_episode(ep) >= 8:
                         FG.refresh_summary(ep)
                     json.dump(ep, open(p, "w"), ensure_ascii=False, indent=1)
