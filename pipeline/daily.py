@@ -68,8 +68,11 @@ def split_and_queue(ep):
         else:
             merged.append(r)
     ep["segments"] = out
-    if merged:
-        ep["retime_regions"] = [[a, min(b, len(out) - 1)] for a, b in merged]
+    times = [x["t"] for x in out]
+    bad = set(R.implausible(out, times, ep["duration"]))
+    keep = [[a, min(b, len(out) - 1)] for a, b in merged if any(a - 1 <= k <= b for k in bad)]
+    if keep:  # only stretches whose spacing looks wrong are worth a re-check
+        ep["retime_regions"] = keep
 
 
 def main(max_new):
