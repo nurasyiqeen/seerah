@@ -116,7 +116,7 @@ def call(method, body, model=None, timeout=300, pool=None):
                 record_spend(m, data.get("usageMetadata", {}))
             return data, m
         last = f"{r.status_code} {r.text[:300]}"
-        if r.status_code == 429 and "per day" in r.text:
+        if r.status_code == 429 and re.search(r"per ?day|PerDay|daily", r.text, re.I):
             log(f"  {m}: daily quota used up; switching model")
             EXHAUSTED.add(m)
             continue
@@ -125,6 +125,10 @@ def call(method, body, model=None, timeout=300, pool=None):
             time.sleep(min(10 * (attempt + 1), 60))
             continue
         raise RuntimeError(last)
+    if last and last.startswith("429"):
+        # still refused after many waits: treat as out of quota for today rather than crashing the run
+        EXHAUSTED.update(pool)
+        raise QuotaExhausted(f"quota/rate limit persisted for {', '.join(pool)}")
     raise RuntimeError(f"gave up: {last}")
 
 

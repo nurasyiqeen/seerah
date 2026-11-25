@@ -159,11 +159,19 @@
  {
   "n": 10,
   "id": "mfdgUBMtyQs",
-  "title": "Childhood of the Messenger ﷺ",
+  "title": "Barakah in Banu Sa'd, Shaqq al-Sadr, and Early Childhood",
   "duration": 1991,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "overview": "This episode covers the Prophet Muhammad's ﷺ upbringing in the desert with Halimah al-Sa'diyyah, highlighting the extraordinary barakah that accompanied his presence and his acquisition of pure Arabic eloquence. It details the miraculous event of the splitting of his chest (Shaqq al-Sadr) by two angels, leading to his return to Makkah. The lecture also discusses the passing of his mother Aminah and grandfather Abdul Muttalib, examining the divine wisdom behind his early life as an orphan experiencing poverty.",
+  "chapters": [
+   "Miracles of Barakah in Banu Sa'd",
+   "Nursing Period and Eloquence of Speech",
+   "The Splitting of the Chest (Shaqq al-Sadr)",
+   "Living with Aminah and the Reality of Honor in Makkah",
+   "Under the Care of Abdul Muttalib",
+   "The Passing of Abdul Muttalib and Custody of Abu Talib"
+  ],
+  "ready": true,
+  "synced": false
  },
  {
   "n": 11,
