@@ -735,12 +735,12 @@
    "translit": "Uʿīdhuhu bi-Llāhi l-Wāḥid min sharri kulli ḥāsid"
   },
   {
-   "t": 373.5,
+   "t": 373.4,
    "kind": "speech",
    "text": "I seek the protection of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] for this boy."
   },
   {
-   "t": 380.2,
+   "t": 380.6,
    "kind": "speech",
    "text": "I seek the protection of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], the One, for this boy, from the evil of every jealous person."
   },
@@ -750,72 +750,72 @@
    "text": "So even though the [[Quraysh|قُرَيْش]], they were [[mushrikin|مشركين]], they used to worship idols and they used to associate partners with Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], in her dream,"
   },
   {
-   "t": 400.4,
+   "t": 400.0,
    "kind": "speech",
    "text": "she is seeking refuge in Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] alone for this boy."
   },
   {
-   "t": 404.8,
+   "t": 405.6,
    "kind": "speech",
    "text": "So these were some of the dreams that she saw near the time that [[Rasulullah|رسول الله]] ﷺ was born."
   },
   {
-   "t": 410.8,
+   "t": 413.4,
    "kind": "speech",
    "text": "And then on the twelfth of [[Rabi al-Awwal|ربيع الأول]], in the Year of the Elephant, [[Am al-Fil|عام الفيل]],"
   },
   {
-   "t": 462.6,
+   "t": 423.9,
    "kind": "speech",
    "text": "and the [[Am al-Fil|عام الفيل]], we spoke about that before, that was the year that the incident happened where [[Abrahah|أَبْرَهَة]] came from [[Yemen|اليمن]] to destroy the [[Ka'bah|كعبة]],"
   },
   {
-   "t": 473.1,
+   "t": 435.6,
    "kind": "speech",
    "text": "and how Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] destroyed [[Abrahah|أَبْرَهَة]] and his army, and He protected His house, He protected the [[Ka'bah|كعبة]]."
   },
   {
-   "t": 481.3,
+   "t": 444.0,
    "kind": "speech",
    "text": "So that was the year where [[Rasulullah|رسول الله]] ﷺ was born. On the twelfth of [[Rabi al-Awwal|ربيع الأول]], according to the most authentic opinion."
   },
   {
-   "t": 491.2,
+   "t": 454.7,
    "kind": "speech",
    "text": "And there is some [[ikhtilaf|اختلاف]] on the date of his birth,"
   },
   {
-   "t": 495.7,
+   "t": 458.7,
    "kind": "speech",
    "text": "not all of the [[ulama|علماء]] are agreed that he was born on the twelfth of [[Rabi al-Awwal|ربيع الأول]], but perhaps it is the strongest opinion that he was born on Monday, the twelfth of [[Rabi al-Awwal|ربيع الأول]]."
   },
   {
-   "t": 504.6,
+   "t": 464.3,
    "kind": "speech",
    "text": "Surely he was born on a Monday, but there is some [[ikhtilaf|اختلاف]] about the date, was it the twelfth of [[Rabi al-Awwal|ربيع الأول]] or another date."
   },
   {
-   "t": 505.2,
+   "t": 472.5,
    "kind": "speech",
    "text": "But the most authentic opinion [[insha'Allah|إن شاء الله]] is that it was the twelfth of [[Rabi al-Awwal|ربيع الأول]]."
   },
   {
-   "t": 505.4,
+   "t": 478.6,
    "kind": "speech",
    "text": "So on Monday, the twelfth of [[Rabi al-Awwal|ربيع الأول]], in [[Am al-Fil|عام الفيل]], the Year of the Elephant, the year that Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] destroyed [[Abrahah|أَبْرَهَة]] and his army,"
   },
   {
-   "t": 508.2,
+   "t": 489.0,
    "kind": "speech",
    "text": "the greatest man who ever walked on the earth was born. And this happened fifty days after the incident of [[Abrahah|أَبْرَهَة]] and his army."
   },
   {
-   "t": 508.9,
+   "t": 501.0,
    "kind": "speech",
    "text": "Fifty days after Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]] destroyed [[Abrahah|أَبْرَهَة]] and his army, the Prophet ﷺ was born."
   },
   {
-   "t": 509.4,
+   "t": 510.1,
    "kind": "speech",
    "text": "So this was one of the great events in the history of mankind, the birth of the greatest creation of Allah, [[Rasulullah|رسول الله]] ﷺ."
   },
@@ -1833,11 +1833,5 @@
   }
  ],
  "timing": "gemini-retime",
- "timing_source": "gemini",
- "retime_regions": [
-  [
-   36,
-   52
-  ]
- ]
+ "timing_source": "gemini"
 }
