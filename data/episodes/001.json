@@ -577,32 +577,32 @@
    "text": "Just reading about his life, it just increases you in love for him. Nobody can read the [[Seerah|سيرة]] of the Prophet ﷺ and not increase in their love and respect for him."
   },
   {
-   "t": 164.1,
+   "t": 164.2,
    "kind": "speech",
    "text": "And this even goes for people who are not Muslims."
   },
   {
-   "t": 167.4,
+   "t": 167.6,
    "kind": "speech",
    "text": "Any non-Muslim who reads about the life of the Prophet ﷺ, [[Wallahi|والله]] they will not be able to read it except with an increase of respect and honor for him that they hold in their hearts."
   },
   {
-   "t": 179.5,
+   "t": 180.6,
    "kind": "speech",
    "text": "And this is something that is easily visible. Even the non-Muslims who study about the life of the Prophet Muhammad ﷺ, they have nothing but praise for him and respect for him."
   },
   {
-   "t": 190.6,
+   "t": 191.4,
    "kind": "speech",
    "text": "So this is one of the great benefits of studying the [[Seerah|سيرة]] of the Prophet ﷺ, is that it increases our love for him."
   },
   {
-   "t": 203.1,
+   "t": 200.5,
    "kind": "speech",
    "text": "And loving the Prophet ﷺ is part of our [[Iman|إيمان]]."
   },
   {
-   "t": 227.8,
+   "t": 227.4,
    "kind": "arabic",
    "ar": "",
    "translit": "La yu'minu ahadukum hatta akuna ahabba ilayhi min walidihi wa waladihi wa-nnasi ajmainen Meaning: None of you will have true, complete faith until he loves me more than he loves his father, his child, and all of mankind."
@@ -1758,17 +1758,17 @@
    "text": "And then he also said to the people: \"If you are ever leaving [[Makkah|مكة]], if you ever have to go on a trip outside of [[Makkah|مكة]], you must take a stone with you from [[Makkah|مكة]].\""
   },
   {
-   "t": 1908.8,
+   "t": 1909.0,
    "kind": "speech",
    "text": "\"You must take a stone with you from [[Makkah|مكة]], so that while you're outside of [[Makkah|مكة]], you worship that stone; you pray to that stone."
   },
   {
-   "t": 1917.0,
+   "t": 1918.8,
    "kind": "speech",
    "text": "And when you are in [[Makkah|مكة]], you worship the idols that we have here in [[Makkah|مكة]].\""
   },
   {
-   "t": 1922.2,
+   "t": 1922.7,
    "kind": "speech",
    "text": "\"But when you're out of [[Makkah|مكة]], you must take a stone with you and worship those stones.\" So this is how [[shirk|شرك]] was introduced into the Arabian Peninsula."
   },
@@ -1803,17 +1803,17 @@
    "text": "They said, \"Okay, look, everyone is going for [[Hajj|حج]]. Every year, people go and make this pilgrimage, so we will go for [[Hajj|حج]] as well.\""
   },
   {
-   "t": 1991.0,
+   "t": 1991.3,
    "kind": "speech",
    "text": "\"And when we're in [[Hajj|حج]], you know, there's so many people there, we can do whatever we want to do and nobody will know what's going on."
   },
   {
-   "t": 1992.5,
+   "t": 1997.6,
    "kind": "speech",
    "text": "We can do it without anyone finding out.\""
   },
   {
-   "t": 1993.0,
+   "t": 1998.3,
    "kind": "speech",
    "text": "So after this, the people, they started to lose their sense of [[tawhid|توحيد]]."
   },
@@ -1828,17 +1828,17 @@
    "text": "And they started worshipping these stones and calling upon idols besides Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]], and the society deteriorated."
   },
   {
-   "t": 2005.2,
+   "t": 2005.5,
    "kind": "speech",
    "text": "And they did an act of immorality and indecency right there at the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]."
   },
   {
-   "t": 2007.8,
+   "t": 2011.0,
    "kind": "speech",
    "text": "They committed their [[fāḥishah|فاحشة]], they committed their immorality right there at the House of Allah [[Subhanahu wa Ta'ala|سبحانه وتعالى]]."
   },
   {
-   "t": 2010.2,
+   "t": 2014.1,
    "kind": "speech",
    "text": "And before, when [[Jurhum|جرهم]] was still in control of [[Makkah|مكة]], there was a situation that happened."
   },
@@ -2056,24 +2056,6 @@
    "a": "The story illustrates the absurdity and moral decline of [[Jahiliyyah|جاهلية]], where people eventually worshipped the very stones that were meant to be a warning against immorality. It highlights the massive transformation later achieved by the [[Rasulullah|رسول الله]].",
    "chapter": 5
   }
- ],
- "retime_regions": [
-  [
-   13,
-   18
-  ],
-  [
-   247,
-   249
-  ],
-  [
-   256,
-   258
-  ],
-  [
-   261,
-   263
-  ]
  ],
  "timing_source": "gemini"
 }
