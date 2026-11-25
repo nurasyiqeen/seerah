@@ -550,8 +550,7 @@ def process(out_dir, ep_no, vid):
         "glossary": sorted(analysis["glossary"], key=lambda e: e["translit"].lower()),
         "segments": [{k: v for k, v in s.items() if k != "orig"} for s in segs],
     }
-    cov = align.retime_episode(ep)
-    log(f"  timing: " + (f"aligned to YouTube captions ({cov:.0%} anchored)" if cov is not None else "no captions file; using Gemini timestamps"))
+    # precise timing (YouTube captions when complete, else Gemini) is done by daily.precise_timing
     os.makedirs(os.path.dirname(path), exist_ok=True)
     json.dump(ep, open(path, "w"), ensure_ascii=False, indent=1)
     json.dump(merge_glossary(glossary, analysis["glossary"], ep_no), open(gpath, "w"), ensure_ascii=False, indent=1)
