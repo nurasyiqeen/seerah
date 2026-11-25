@@ -48,7 +48,8 @@
    5,
    7,
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -68,7 +69,8 @@
   "episodes": [
    7,
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -99,6 +101,15 @@
   "meaning": "Abrahah 'the one with the cut nose', a title he gained after a duel with Aryat.",
   "episodes": [
    5
+  ]
+ },
+ {
+  "translit": "Abu Bakr",
+  "arabic": "أَبُو بَكْر",
+  "category": "person",
+  "meaning": "Close companion of the Prophet Muhammad ﷺ and first Caliph of Islam.",
+  "episodes": [
+   10
   ]
  },
  {
@@ -135,7 +146,8 @@
   "meaning": "The Prophet's ﷺ uncle who protected him but died without accepting Islam.",
   "episodes": [
    1,
-   8
+   8,
+   10
   ]
  },
  {
@@ -227,7 +239,8 @@
   "meaning": "The eldest son of Abdul Muttalib.",
   "episodes": [
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -370,7 +383,8 @@
   "meaning": "The mother of the Prophet Muhammad ﷺ.",
   "episodes": [
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -456,7 +470,8 @@
   "category": "tribe",
   "meaning": "A Bedouin tribe known for their pure Arabic language, among whom Prophet Muhammad ﷺ was raised.",
   "episodes": [
-   9
+   9,
+   10
   ]
  },
  {
@@ -465,7 +480,8 @@
   "category": "term",
   "meaning": "Divine blessing, increase, and spiritual abundance.",
   "episodes": [
-   9
+   9,
+   10
   ]
  },
  {
@@ -611,7 +627,8 @@
   "meaning": "Supplication or prayer to Allah.",
   "episodes": [
    3,
-   4
+   4,
+   10
   ]
  },
  {
@@ -670,12 +687,22 @@
   ]
  },
  {
+  "translit": "fuqara",
+  "arabic": "فُقَرَاء",
+  "category": "term",
+  "meaning": "The poor or needy people.",
+  "episodes": [
+   10
+  ]
+ },
+ {
   "translit": "fusha",
   "arabic": "فصحى",
   "category": "term",
   "meaning": "Classical, eloquent, grammatically correct Arabic language.",
   "episodes": [
-   9
+   9,
+   10
   ]
  },
  {
@@ -714,7 +741,8 @@
   "episodes": [
    1,
    7,
-   9
+   9,
+   10
   ]
  },
  {
@@ -732,7 +760,8 @@
   "category": "person",
   "meaning": "The foster mother and wet nurse of Prophet Muhammad ﷺ from the tribe of Banu Sa'd.",
   "episodes": [
-   9
+   9,
+   10
   ]
  },
  {
@@ -810,6 +839,15 @@
   ]
  },
  {
+  "translit": "hikmah",
+  "arabic": "حكمة",
+  "category": "term",
+  "meaning": "Wisdom.",
+  "episodes": [
+   10
+  ]
+ },
+ {
   "translit": "Himyar",
   "arabic": "حمير",
   "category": "tribe",
@@ -843,7 +881,8 @@
   "meaning": "Pilgrims who perform Hajj",
   "episodes": [
    7,
-   8
+   8,
+   10
   ]
  },
  {
@@ -932,7 +971,8 @@
    4,
    7,
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -995,7 +1035,8 @@
   "category": "term",
   "meaning": "Unseen creation made of smokeless fire possessing free will.",
   "episodes": [
-   9
+   9,
+   10
   ]
  },
  {
@@ -1020,7 +1061,8 @@
    4,
    5,
    7,
-   9
+   9,
+   10
   ]
  },
  {
@@ -1200,7 +1242,8 @@
    4,
    7,
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -1228,6 +1271,15 @@
   "meaning": "One of the two hills in Makkah associated with the Sa'i ritual.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "masakin",
+  "arabic": "مَسَاكِين",
+  "category": "term",
+  "meaning": "The destitute and needy.",
+  "episodes": [
+   10
   ]
  },
  {
@@ -1263,7 +1315,8 @@
   "category": "person",
   "meaning": "The praised one; the final Messenger of Allah ﷺ.",
   "episodes": [
-   9
+   9,
+   10
   ]
  },
  {
@@ -1414,7 +1467,8 @@
    3,
    7,
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -1450,12 +1504,22 @@
   ]
  },
  {
+  "translit": "radiyallahu 'anha",
+  "arabic": "رَضِيَ اللهُ عَنْهَا",
+  "category": "phrase",
+  "meaning": "May Allah be pleased with her (honorific for female companion).",
+  "episodes": [
+   10
+  ]
+ },
+ {
   "translit": "radiyallahu 'anhu",
   "arabic": "رَضِيَ اللهُ عَنْهُ",
   "category": "phrase",
   "meaning": "May Allah be pleased with him",
   "episodes": [
-   7
+   7,
+   10
   ]
  },
  {
@@ -1484,7 +1548,8 @@
   "episodes": [
    1,
    7,
-   9
+   9,
+   10
   ]
  },
  {
@@ -1529,7 +1594,8 @@
   "category": "person",
   "meaning": "The companions of the Prophet Muhammad ﷺ.",
   "episodes": [
-   1
+   1,
+   10
   ]
  },
  {
@@ -1602,6 +1668,24 @@
   ]
  },
  {
+  "translit": "Shaqq al-Sadr",
+  "arabic": "شق الصدر",
+  "category": "event",
+  "meaning": "The miraculous event of the splitting and cleansing of the Prophet's ﷺ chest by angels.",
+  "episodes": [
+   10
+  ]
+ },
+ {
+  "translit": "shayatin",
+  "arabic": "شياطين",
+  "category": "term",
+  "meaning": "Devils / plural of Shaytan.",
+  "episodes": [
+   10
+  ]
+ },
+ {
   "translit": "Shaybah",
   "arabic": "شَيْبَة",
   "category": "person",
@@ -1609,6 +1693,15 @@
   "episodes": [
    7,
    8
+  ]
+ },
+ {
+  "translit": "Shaytan",
+  "arabic": "شيطان",
+  "category": "term",
+  "meaning": "Satan / Devil.",
+  "episodes": [
+   10
   ]
  },
  {
@@ -1633,7 +1726,8 @@
    3,
    7,
    8,
-   9
+   9,
+   10
   ]
  },
  {
@@ -1789,7 +1883,8 @@
   "category": "term",
   "meaning": "The global community of Muslim believers.",
   "episodes": [
-   1
+   1,
+   10
   ]
  },
  {
@@ -1853,7 +1948,17 @@
   "meaning": "By Allah; an oath.",
   "episodes": [
    2,
-   9
+   9,
+   10
+  ]
+ },
+ {
+  "translit": "Wallahu a'lam",
+  "arabic": "وَاللهُ أَعْلَم",
+  "category": "phrase",
+  "meaning": "And Allah knows best.",
+  "episodes": [
+   10
   ]
  },
  {
@@ -1883,6 +1988,15 @@
    2,
    8,
    9
+  ]
+ },
+ {
+  "translit": "yatim",
+  "arabic": "يَتِيم",
+  "category": "term",
+  "meaning": "Orphan.",
+  "episodes": [
+   10
   ]
  },
  {
@@ -1916,7 +2030,8 @@
   "episodes": [
    1,
    7,
-   8
+   8,
+   10
   ]
  }
 ]
