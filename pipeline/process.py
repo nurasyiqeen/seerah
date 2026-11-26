@@ -125,6 +125,9 @@ def call(method, body, model=None, timeout=300, pool=None):
             time.sleep(min(10 * (attempt + 1), 60))
             continue
         raise RuntimeError(last)
+    if last and last[:3] in ("500", "502", "503", "504"):
+        # Google kept saying "overloaded" for many minutes: stop cleanly; cached work resumes next run
+        raise QuotaExhausted(f"Gemini busy for a long time ({last[:3]}); stopping until the next run")
     if last and last.startswith("429"):
         # still refused after many waits: treat as out of quota for today rather than crashing the run
         EXHAUSTED.update(pool)
