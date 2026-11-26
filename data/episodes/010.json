@@ -705,17 +705,17 @@
    "text": "And then [[Aminah bint Wahb|آمنة]] said, \"He is my son. I want to keep him close to me.\""
   },
   {
-   "t": 712.3,
+   "t": 713.0,
    "kind": "speech",
    "text": "And then [[Halimah al-Sa'diyyah|حليمة]] said to [[Aminah bint Wahb|آمنة]], \"You know, he is like my son, too."
   },
   {
-   "t": 715.5,
+   "t": 716.8,
    "kind": "speech",
    "text": "You know, I gave him from my milk, and I took care of him for these two years."
   },
   {
-   "t": 718.8,
+   "t": 719.9,
    "kind": "speech",
    "text": "Let me keep him for a little longer.\""
   },
@@ -1536,11 +1536,5 @@
    "chapter": 5
   }
  ],
- "timing_source": "gemini",
- "retime_regions": [
-  [
-   80,
-   82
-  ]
- ]
+ "timing_source": "gemini"
 }
