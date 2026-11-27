@@ -176,11 +176,19 @@
  {
   "n": 11,
   "id": "ui5g42yThtU",
-  "title": "Buhaira the Monk Meets Muhammad ﷺ",
+  "title": "The Journey to Sham, Buhayra the Monk, and Divine Protection",
   "duration": 2223,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "overview": "This episode covers the young life of the Prophet Muhammad ﷺ under the care of his uncle Abu Talib, including his early trade journey toward Sham at age twelve. During this trip, the Christian monk Buhayra recognized the signs of prophethood on the young boy and warned Abu Talib to return him safely to Makkah. The lecture also highlights how Allah protected Muhammad ﷺ throughout his youth from worldly immorality, exposure, and bad manners.",
+  "chapters": [
+   "Under the Care of Abu Talib",
+   "The Trade Journey to Sham",
+   "Meeting Buhayra the Monk",
+   "Recognition of Prophethood and Return to Makkah",
+   "Tending Sheep and Protection from Immorality",
+   "Protection of Modesty and Noble Character"
+  ],
+  "ready": true,
+  "synced": true
  },
  {
   "n": 12,
