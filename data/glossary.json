@@ -49,7 +49,8 @@
    7,
    8,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -70,7 +71,8 @@
    7,
    8,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -147,7 +149,8 @@
   "episodes": [
    1,
    8,
-   10
+   10,
+   11
   ]
  },
  {
@@ -188,12 +191,22 @@
   ]
  },
  {
+  "translit": "akhlaq",
+  "arabic": "أَخْلَاق",
+  "category": "term",
+  "meaning": "Manners, character, and moral virtues.",
+  "episodes": [
+   11
+  ]
+ },
+ {
   "translit": "al-Abbas",
   "arabic": "العباس",
   "category": "person",
   "meaning": "An uncle of the Prophet ﷺ who accepted Islam.",
   "episodes": [
-   8
+   8,
+   11
   ]
  },
  {
@@ -241,6 +254,15 @@
    8,
    9,
    10
+  ]
+ },
+ {
+  "translit": "al-Lat",
+  "arabic": "اللات",
+  "category": "other",
+  "meaning": "Major idol worshipped by pagan Arabs in pre-Islamic Arabia.",
+  "episodes": [
+   11
   ]
  },
  {
@@ -318,6 +340,15 @@
   ]
  },
  {
+  "translit": "al-Uzza",
+  "arabic": "العزى",
+  "category": "other",
+  "meaning": "Major idol worshipped by pagan Arabs in pre-Islamic Arabia.",
+  "episodes": [
+   11
+  ]
+ },
+ {
   "translit": "alayhis-salam",
   "arabic": "عليه السلام",
   "category": "phrase",
@@ -384,7 +415,8 @@
   "episodes": [
    8,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -465,6 +497,15 @@
   ]
  },
  {
+  "translit": "Bani Isra'il",
+  "arabic": "بني إسرائيل",
+  "category": "tribe",
+  "meaning": "The Children of Israel.",
+  "episodes": [
+   11
+  ]
+ },
+ {
   "translit": "Banu Sa'd",
   "arabic": "بني سعد",
   "category": "tribe",
@@ -496,12 +537,30 @@
   ]
  },
  {
+  "translit": "Bismillah",
+  "arabic": "بسم الله",
+  "category": "phrase",
+  "meaning": "'In the name of Allah', spoken before eating or starting an action.",
+  "episodes": [
+   11
+  ]
+ },
+ {
   "translit": "Bismillahi Rabbil-Ghulam",
   "arabic": "بِسْمِ اللهِ رَبِّ الْغُلَامِ",
   "category": "phrase",
   "meaning": "In the name of Allah, the Lord of the boy.",
   "episodes": [
    4
+  ]
+ },
+ {
+  "translit": "Buhayra",
+  "arabic": "بحيرى",
+  "category": "person",
+  "meaning": "The Christian monk who recognized the signs of prophethood in young Muhammad ﷺ.",
+  "episodes": [
+   11
   ]
  },
  {
@@ -637,7 +696,8 @@
   "category": "term",
   "meaning": "The worldly life.",
   "episodes": [
-   4
+   4,
+   11
   ]
  },
  {
@@ -761,7 +821,8 @@
   "meaning": "The foster mother and wet nurse of Prophet Muhammad ﷺ from the tribe of Banu Sa'd.",
   "episodes": [
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -882,7 +943,8 @@
   "episodes": [
    7,
    8,
-   10
+   10,
+   11
   ]
  },
  {
@@ -972,7 +1034,8 @@
    7,
    8,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1006,6 +1069,15 @@
    7,
    8,
    9
+  ]
+ },
+ {
+  "translit": "izar",
+  "arabic": "إِزَار",
+  "category": "term",
+  "meaning": "Lower garment or waistcloth worn around the waist.",
+  "episodes": [
+   11
   ]
  },
  {
@@ -1062,7 +1134,8 @@
    5,
    7,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1072,6 +1145,15 @@
   "meaning": "A famous female fortune teller from the Banu Sa'd tribe.",
   "episodes": [
    8
+  ]
+ },
+ {
+  "translit": "Khatam al-Nubuwwah",
+  "arabic": "خاتم النبوة",
+  "category": "term",
+  "meaning": "The Seal of Prophethood; a distinctive physical mark on the Prophet's ﷺ back.",
+  "episodes": [
+   11
   ]
  },
  {
@@ -1243,7 +1325,8 @@
    7,
    8,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1316,7 +1399,8 @@
   "meaning": "The praised one; the final Messenger of Allah ﷺ.",
   "episodes": [
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1468,7 +1552,8 @@
    7,
    8,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1523,6 +1608,15 @@
   ]
  },
  {
+  "translit": "rahbaniyyah",
+  "arabic": "رَهْبَانِيَّة",
+  "category": "term",
+  "meaning": "Monasticism or strict ascetic detachment from worldly life.",
+  "episodes": [
+   11
+  ]
+ },
+ {
   "translit": "rahmah",
   "arabic": "رَحْمَة",
   "category": "term",
@@ -1549,7 +1643,8 @@
    1,
    7,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1664,7 +1759,8 @@
    2,
    3,
    4,
-   9
+   9,
+   11
   ]
  },
  {
@@ -1712,7 +1808,8 @@
   "episodes": [
    1,
    2,
-   7
+   7,
+   11
   ]
  },
  {
@@ -1727,7 +1824,8 @@
    7,
    8,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1736,7 +1834,8 @@
   "category": "phrase",
   "meaning": "Glory be to Allah.",
   "episodes": [
-   4
+   4,
+   11
   ]
  },
  {
@@ -1799,7 +1898,8 @@
   "category": "term",
   "meaning": "The ritual of circumambulating the Ka'bah.",
   "episodes": [
-   2
+   2,
+   11
   ]
  },
  {
@@ -1823,7 +1923,8 @@
   "episodes": [
    2,
    3,
-   9
+   9,
+   11
   ]
  },
  {
@@ -1949,7 +2050,8 @@
   "episodes": [
    2,
    9,
-   10
+   10,
+   11
   ]
  },
  {
@@ -1958,7 +2060,8 @@
   "category": "phrase",
   "meaning": "And Allah knows best.",
   "episodes": [
-   10
+   10,
+   11
   ]
  },
  {
@@ -1968,6 +2071,15 @@
   "meaning": "The elder who mediated between Quraysh and Khuza'ah",
   "episodes": [
    7
+  ]
+ },
+ {
+  "translit": "Ya'qub",
+  "arabic": "يعقوب",
+  "category": "person",
+  "meaning": "Prophet Jacob, ancestor of the Israelites.",
+  "episodes": [
+   11
   ]
  },
  {
@@ -2019,7 +2131,8 @@
    4,
    5,
    7,
-   9
+   9,
+   11
   ]
  },
  {
