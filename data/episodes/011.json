@@ -1695,5 +1695,42 @@
   }
  ],
  "timing": "gemini-retime",
- "timing_source": "gemini"
+ "timing_source": "gemini",
+ "review": [
+  {
+   "q": "Who took twelve-year-old [[Muhammad|محمد]] on his first trade journey to [[Sham|شام]]?",
+   "a": "His paternal uncle [[Abu Talib|أَبُو طَالِب]] agreed to take him along after his tearful request.",
+   "chapter": 1
+  },
+  {
+   "q": "What unusual phenomenon did [[Buhayra|بحيرى]] notice observing the trade caravan from his monastery?",
+   "a": "He noticed a unique cloud hovering above and shielding the caravan from the harsh sun.",
+   "chapter": 2
+  },
+  {
+   "q": "What physical evidence did [[Buhayra|بحيرى]] inspect to confirm [[Muhammad|محمد]]'s prophethood?",
+   "a": "He looked for and confirmed the physical mark of [[Khatam al-Nubuwwah|خاتم النبوة]] between his shoulders.",
+   "chapter": 3
+  },
+  {
+   "q": "Why did [[Buhayra|بحيرى]] strongly advise [[Abu Talib|أَبُو طَالِب]] to return quickly to [[Makkah|مَكَّة]]?",
+   "a": "He warned that hostile groups in [[Sham|شام]] might harm the boy out of envy.",
+   "chapter": 3
+  },
+  {
+   "q": "What common occupation did [[Muhammad|محمد]] share with all prophets before him during his youth?",
+   "a": "He spent part of his youth tending sheep to assist his uncle financially.",
+   "chapter": 4
+  },
+  {
+   "q": "How did Allah protect [[Muhammad|محمد]] from witnessing nighttime wedding frivolities in his youth?",
+   "a": "He caused a deep sleep to overcome him until morning on two separate occasions.",
+   "chapter": 4
+  },
+  {
+   "q": "What happened when [[al-Abbas|الْعَبَّاس]] suggested placing an [[izar|إِزَار]] on the shoulder to carry heavy stones?",
+   "a": "[[Muhammad|محمد]] fainted before he could expose his waistcloth, preserving his modesty.",
+   "chapter": 5
+  }
+ ]
 }
