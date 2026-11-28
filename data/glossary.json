@@ -1,5 +1,14 @@
 [
  {
+  "translit": "A'ishah",
+  "arabic": "عائشة",
+  "category": "person",
+  "meaning": "The daughter of Abu Bakr and beloved wife of Prophet Muhammad ⌨.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "ababil",
   "arabic": "أَبَابِيل",
   "category": "other",
@@ -56,6 +65,15 @@
   ]
  },
  {
+  "translit": "Abdul Malik ibn Marwan",
+  "arabic": "عبد الملك بن مروان",
+  "category": "person",
+  "meaning": "The Umayyad Khalifah who initially sought to rebuild the Ka'bah to Ibn Zubayr's design before accepting Imam Malik's counsel.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Abdul Muttalib",
   "arabic": "عَبْد الْمُطَّلِب",
   "category": "person",
@@ -81,6 +99,15 @@
   ]
  },
  {
+  "translit": "Abdullah",
+  "arabic": "عبد الله",
+  "category": "person",
+  "meaning": "The second son of Prophet Muhammad ⌨ and Khadijah رنها, also known as al-Tayyib and al-Tahir.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Abdullah ibn Abdul Muttalib",
   "arabic": "عبد الله بن عَبْد الْمُطَّلِب",
   "category": "person",
@@ -99,7 +126,8 @@
   "category": "person",
   "meaning": "Prominent Companion of the Prophet ﷺ who pledged to fight for Hilf al-Fudul.",
   "episodes": [
-   12
+   12,
+   13
   ]
  },
  {
@@ -120,7 +148,8 @@
    4,
    5,
    6,
-   9
+   9,
+   13
   ]
  },
  {
@@ -130,6 +159,15 @@
   "meaning": "Abrahah 'the one with the cut nose', a title he gained after a duel with Aryat.",
   "episodes": [
    5
+  ]
+ },
+ {
+  "translit": "Abu al-Qasim",
+  "arabic": "أبو القاسم",
+  "category": "term",
+  "meaning": "The kunyah (honorific title) of Prophet Muhammad ⌨, meaning 'father of al-Qasim'.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -179,6 +217,15 @@
    10,
    11,
    12
+  ]
+ },
+ {
+  "translit": "Abu Umayyah ibn al-Mughirah",
+  "arabic": "أبو أمية بن المغيرة",
+  "category": "person",
+  "meaning": "An elder leader of Quraysh who proposed letting the next person entering the Haram arbitrate the Black Stone dispute.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -308,7 +355,17 @@
   "category": "term",
   "meaning": "The Black Stone set in the corner of the Ka'bah.",
   "episodes": [
-   1
+   1,
+   13
+  ]
+ },
+ {
+  "translit": "al-Hajjaj ibn Yusuf",
+  "arabic": "الحجاج بن يوسف",
+  "category": "person",
+  "meaning": "An Umayyad general who besieged Makkah and restored the Ka'bah structure back to the Qurayshi dimensions.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -388,6 +445,15 @@
   ]
  },
  {
+  "translit": "al-Qasim",
+  "arabic": "القاسم",
+  "category": "person",
+  "meaning": "The firstborn son of Prophet Muhammad ⌨ and Khadijah رنها, from whom the Prophet took his kunyah.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "al-Qulays",
   "arabic": "قليس",
   "category": "place",
@@ -397,12 +463,22 @@
   ]
  },
  {
+  "translit": "al-Rukn al-Yamani",
+  "arabic": "الركن اليماني",
+  "category": "place",
+  "meaning": "The southern corner of the Ka'bah facing Yemen.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "al-Sadiq al-Amin",
   "arabic": "الصَّادِق الأَمِين",
   "category": "term",
   "meaning": "Title given to Muhammad ﷺ meaning 'The Truthful, The Trustworthy'.",
   "episodes": [
-   12
+   12,
+   13
   ]
  },
  {
@@ -433,6 +509,24 @@
   ]
  },
  {
+  "translit": "al-Tahir",
+  "arabic": "الطَّاهِر",
+  "category": "term",
+  "meaning": "'The Pure One', an honorific nickname given to the Prophet's son Abdullah.",
+  "episodes": [
+   13
+  ]
+ },
+ {
+  "translit": "al-Tayyib",
+  "arabic": "الطَّيِّب",
+  "category": "term",
+  "meaning": "'The Good One', an honorific nickname given to the Prophet's son Abdullah.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "al-Uzza",
   "arabic": "العزى",
   "category": "other",
@@ -451,6 +545,15 @@
   ]
  },
  {
+  "translit": "Al-Walid ibn al-Mughirah",
+  "arabic": "الوليد بن المغيرة",
+  "category": "person",
+  "meaning": "A prominent chief of Quraysh, father of Khalid ibn al-Walid, who struck the first axe blow in demolishing the old Ka'bah.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "alayhis-salam",
   "arabic": "عليه السلام",
   "category": "phrase",
@@ -460,7 +563,8 @@
    3,
    4,
    7,
-   8
+   8,
+   13
   ]
  },
  {
@@ -581,6 +685,15 @@
   ]
  },
  {
+  "translit": "Asiyah",
+  "arabic": "آسِيَة",
+  "category": "person",
+  "meaning": "The righteous wife of Pharaoh (Fir'awn), named as one of the four women who attained spiritual perfection.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "ayat",
   "arabic": "آيَات",
   "category": "term",
@@ -588,6 +701,15 @@
   "episodes": [
    1,
    2
+  ]
+ },
+ {
+  "translit": "Bab Bani Shaybah",
+  "arabic": "باب بني شيبة",
+  "category": "place",
+  "meaning": "One of the major historical gates of the Sacred Mosque in Makkah.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -616,6 +738,33 @@
   "episodes": [
    11,
    12
+  ]
+ },
+ {
+  "translit": "Bani Shaybah",
+  "arabic": "بني شيبة",
+  "category": "tribe",
+  "meaning": "The Qurayshi clan traditionally entrusted with the keys and custody of the Ka'bah.",
+  "episodes": [
+   13
+  ]
+ },
+ {
+  "translit": "Banu Abd al-Dar",
+  "arabic": "بنو عبد الدَّار",
+  "category": "tribe",
+  "meaning": "A major sub-tribe of Quraysh involved in the dispute over placing the Black Stone.",
+  "episodes": [
+   13
+  ]
+ },
+ {
+  "translit": "Banu Makhzum",
+  "arabic": "بنو مخزوم",
+  "category": "tribe",
+  "meaning": "A powerful sub-tribe of Quraysh involved in the dispute over placing the Black Stone.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -676,6 +825,15 @@
   "episodes": [
    11,
    12
+  ]
+ },
+ {
+  "translit": "bukhor",
+  "arabic": "بخور",
+  "category": "term",
+  "meaning": "Incense burned on hot coals used to fragrance sacred spaces.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -828,6 +986,15 @@
   ]
  },
  {
+  "translit": "Fatimah",
+  "arabic": "فاطمة",
+  "category": "person",
+  "meaning": "The youngest daughter of Prophet Muhammad ⌨ and Khadijah رنها, listed among the four perfect women.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Faymiyun",
   "arabic": "فَيْمِيُون",
   "category": "person",
@@ -856,6 +1023,15 @@
   ]
  },
  {
+  "translit": "Fir'awn",
+  "arabic": "فرعون",
+  "category": "person",
+  "meaning": "Pharaoh, the tyrannical ruler of Egypt in the time of Prophet Musa عليه السلام.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Firaun",
   "arabic": "فرعون",
   "category": "term",
@@ -870,7 +1046,8 @@
   "category": "term",
   "meaning": "Trial, tribulation, or temptation.",
   "episodes": [
-   9
+   9,
+   13
   ]
  },
  {
@@ -939,7 +1116,8 @@
    7,
    9,
    10,
-   12
+   12,
+   13
   ]
  },
  {
@@ -949,6 +1127,15 @@
   "meaning": "A companion of the Prophet ﷺ who bought and later sold Dar al-Nadwah",
   "episodes": [
    7
+  ]
+ },
+ {
+  "translit": "Halah bint Khuwaylid",
+  "arabic": "هالة بنت خويلد",
+  "category": "person",
+  "meaning": "The sister of Khadijah bint Khuwaylid whose voice reminded the Prophet ⌨ of Khadijah.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -969,6 +1156,15 @@
   "meaning": "A brave uncle of the Prophet ﷺ who accepted Islam.",
   "episodes": [
    8
+  ]
+ },
+ {
+  "translit": "Haram",
+  "arabic": "حرم",
+  "category": "place",
+  "meaning": "The sacred sanctuary surrounding the Ka'bah in Makkah.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1036,6 +1232,15 @@
   ]
  },
  {
+  "translit": "Hijr Ismail",
+  "arabic": "حجر إسماعيل",
+  "category": "place",
+  "meaning": "The semi-circular wall adjacent to the Ka'bah enclosing the original fourth wall.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Hijrah",
   "arabic": "هِجْرَة",
   "category": "event",
@@ -1060,7 +1265,8 @@
   "category": "term",
   "meaning": "Wisdom.",
   "episodes": [
-   10
+   10,
+   13
   ]
  },
  {
@@ -1148,7 +1354,8 @@
    2,
    7,
    8,
-   12
+   12,
+   13
   ]
  },
  {
@@ -1161,13 +1368,23 @@
   ]
  },
  {
+  "translit": "Imam Malik",
+  "arabic": "إمام مالك",
+  "category": "person",
+  "meaning": "Imam Malik ibn Anas, the great scholar of Madinah and founder of the Maliki school of law.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Iman",
   "arabic": "إيمان",
   "category": "term",
   "meaning": "Faith or belief in the heart.",
   "episodes": [
    1,
-   4
+   4,
+   13
   ]
  },
  {
@@ -1209,7 +1426,8 @@
    8,
    9,
    10,
-   11
+   11,
+   13
   ]
  },
  {
@@ -1221,6 +1439,15 @@
    3,
    4,
    5
+  ]
+ },
+ {
+  "translit": "Isa ibn Maryam",
+  "arabic": "عيسى بن مريم",
+  "category": "person",
+  "meaning": "Prophet Jesus, the son of Maryam عليهما السلام.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1243,7 +1470,8 @@
    7,
    8,
    9,
-   12
+   12,
+   13
   ]
  },
  {
@@ -1263,7 +1491,17 @@
   "episodes": [
    1,
    8,
-   12
+   12,
+   13
+  ]
+ },
+ {
+  "translit": "jazakallahu khayran",
+  "arabic": "جَزَاكَ اللَّهَ خَيْرًا",
+  "category": "phrase",
+  "meaning": "'May Allah reward you with goodness', an expression of gratitude.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1275,6 +1513,15 @@
    6,
    7,
    9
+  ]
+ },
+ {
+  "translit": "Jiddah",
+  "arabic": "جدة",
+  "category": "place",
+  "meaning": "The port city on the Red Sea near Makkah.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1311,7 +1558,8 @@
    7,
    9,
    10,
-   11
+   11,
+   13
   ]
  },
  {
@@ -1324,12 +1572,40 @@
   ]
  },
  {
+  "translit": "kamal",
+  "arabic": "كمال",
+  "category": "term",
+  "meaning": "Perfection, complete spiritual refinement.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Khadijah bint Khuwaylid",
   "arabic": "خَدِيجَة بنت خُوَيْلِد",
   "category": "person",
   "meaning": "Wealthy noblewoman of Quraysh who became the first wife of Prophet Muhammad ﷺ.",
   "episodes": [
-   12
+   12,
+   13
+  ]
+ },
+ {
+  "translit": "Khalid ibn Al-Walid",
+  "arabic": "خالد بن الوليد",
+  "category": "person",
+  "meaning": "The renowned Muslim general, son of Al-Walid ibn al-Mughirah.",
+  "episodes": [
+   13
+  ]
+ },
+ {
+  "translit": "khalifah",
+  "arabic": "خليفة",
+  "category": "term",
+  "meaning": "Caliph, the supreme political ruler of the Muslim Ummah.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1419,7 +1695,8 @@
   "episodes": [
    2,
    4,
-   7
+   7,
+   13
   ]
  },
  {
@@ -1438,6 +1715,15 @@
   "meaning": "Disbelief.",
   "episodes": [
    8
+  ]
+ },
+ {
+  "translit": "kunyah",
+  "arabic": "كُنية",
+  "category": "term",
+  "meaning": "An Arabic honorific teknonym, typically formed using Abu (father of) or Umm (mother of).",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1477,7 +1763,8 @@
    3,
    7,
    9,
-   12
+   12,
+   13
   ]
  },
  {
@@ -1522,7 +1809,8 @@
    9,
    10,
    11,
-   12
+   12,
+   13
   ]
  },
  {
@@ -1544,12 +1832,30 @@
   ]
  },
  {
+  "translit": "Mariyah al-Qibtiyyah",
+  "arabic": "مارية القبطية",
+  "category": "person",
+  "meaning": "The Coptic mother of the Prophet's son Ibrahim.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Marwah",
   "arabic": "المروة",
   "category": "place",
   "meaning": "One of the two hills in Makkah associated with the Sa'i ritual.",
   "episodes": [
    1
+  ]
+ },
+ {
+  "translit": "Maryam bint 'Imran",
+  "arabic": "مريم بنت عمران",
+  "category": "person",
+  "meaning": "Mary, mother of Prophet Isa عليه السلام, named among the four perfect women.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1580,6 +1886,15 @@
   ]
  },
  {
+  "translit": "mataf",
+  "arabic": "مطاف",
+  "category": "place",
+  "meaning": "The open white marble area surrounding the Ka'bah designated for tawaf.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Maysarah",
   "arabic": "مَيْسَرَة",
   "category": "person",
@@ -1606,7 +1921,8 @@
    9,
    10,
    11,
-   12
+   12,
+   13
   ]
  },
  {
@@ -1770,7 +2086,8 @@
    9,
    10,
    11,
-   12
+   12,
+   13
   ]
  },
  {
@@ -1808,12 +2125,22 @@
   ]
  },
  {
+  "translit": "radina",
+  "arabic": "رضينا",
+  "category": "phrase",
+  "meaning": "'We are pleased / content'.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "radiyallahu 'anha",
   "arabic": "رَضِيَ اللهُ عَنْهَا",
   "category": "phrase",
   "meaning": "May Allah be pleased with her (honorific for female companion).",
   "episodes": [
-   10
+   10,
+   13
   ]
  },
  {
@@ -1827,12 +2154,30 @@
   ]
  },
  {
+  "translit": "radiyallahu 'anhunna",
+  "arabic": "رَضِيَ اللهُ عَنْهَنَّ",
+  "category": "phrase",
+  "meaning": "'May Allah be pleased with them (plural female)'.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "rahbaniyyah",
   "arabic": "رَهْبَانِيَّة",
   "category": "term",
   "meaning": "Monasticism or strict ascetic detachment from worldly life.",
   "episodes": [
    11
+  ]
+ },
+ {
+  "translit": "rahimahullah",
+  "arabic": "رَحِمَهُ اللهُ",
+  "category": "phrase",
+  "meaning": "'May Allah have mercy upon him'.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -1864,7 +2209,17 @@
    7,
    9,
    10,
-   11
+   11,
+   13
+  ]
+ },
+ {
+  "translit": "Ruqayyah",
+  "arabic": "رقية",
+  "category": "person",
+  "meaning": "A daughter of Prophet Muhammad ⌨ and Khadijah رنها who married Uthman ibn Affan.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -2047,7 +2402,8 @@
    8,
    9,
    10,
-   11
+   11,
+   13
   ]
  },
  {
@@ -2130,7 +2486,8 @@
   "meaning": "The ritual of circumambulating the Ka'bah.",
   "episodes": [
    2,
-   11
+   11,
+   13
   ]
  },
  {
@@ -2211,6 +2568,15 @@
   ]
  },
  {
+  "translit": "Umm Kulthum",
+  "arabic": "أم كلثوم",
+  "category": "person",
+  "meaning": "A daughter of Prophet Muhammad ⌨ and Khadijah رنها who married Uthman ibn Affan after Ruqayyah's passing.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Ummah",
   "arabic": "أمة",
   "category": "term",
@@ -2218,6 +2584,24 @@
   "episodes": [
    1,
    10
+  ]
+ },
+ {
+  "translit": "Ummahat al-Mu'minin",
+  "arabic": "أمهات المؤمنين",
+  "category": "term",
+  "meaning": "'Mothers of the Believers', title bestowed upon the wives of Prophet Muhammad ⌨.",
+  "episodes": [
+   13
+  ]
+ },
+ {
+  "translit": "Umrah",
+  "arabic": "عمرة",
+  "category": "term",
+  "meaning": "The minor pilgrimage to Makkah performed at any time of the year.",
+  "episodes": [
+   13
   ]
  },
  {
@@ -2244,7 +2628,8 @@
   "category": "phrase",
   "meaning": "And seek refuge with Allah (an expression of seeking protection from something evil).",
   "episodes": [
-   6
+   6,
+   13
   ]
  },
  {
@@ -2271,7 +2656,8 @@
   "category": "term",
   "meaning": "Divine revelation.",
   "episodes": [
-   6
+   6,
+   13
   ]
  },
  {
@@ -2288,6 +2674,15 @@
   ]
  },
  {
+  "translit": "Wallahi ma abdalanillahu khayran minha",
+  "arabic": "والله ما أبدلني الله خيرا منها",
+  "category": "phrase",
+  "meaning": "'I swear by Allah that Allah did not replace her with someone better than her'.",
+  "episodes": [
+   13
+  ]
+ },
+ {
   "translit": "Wallahu a'lam",
   "arabic": "وَاللهُ أَعْلَم",
   "category": "phrase",
@@ -2295,7 +2690,8 @@
   "episodes": [
    10,
    11,
-   12
+   12,
+   13
   ]
  },
  {
@@ -2304,7 +2700,8 @@
   "category": "term",
   "meaning": "Vocative prefix meaning 'O'.",
   "episodes": [
-   12
+   12,
+   13
   ]
  },
  {
@@ -2390,6 +2787,15 @@
    7,
    8,
    10
+  ]
+ },
+ {
+  "translit": "Zaynab",
+  "arabic": "زينب",
+  "category": "person",
+  "meaning": "The eldest daughter of Prophet Muhammad ⌨ and Khadijah رنها.",
+  "episodes": [
+   13
   ]
  }
 ]
