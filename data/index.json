@@ -193,11 +193,19 @@
  {
   "n": 12,
   "id": "VxVNGgNg16U",
-  "title": "Harb Al-Fijar / Hilf Al-Fudool / Marriage to Khadijah",
-  "duration": 2436,
-  "overview": "",
-  "chapters": [],
-  "ready": false
+  "title": "Young Adulthood: Harb al-Fijar, Hilf al-Fudul, and Marriage to Khadijah",
+  "duration": 2435,
+  "overview": "This episode covers key events in the young adult life of Prophet Muhammad ﷺ prior to revelation, including his participation in Harb al-Fijar and his endorsement of Hilf al-Fudul to protect the oppressed. It further details his trade expedition to Sham on behalf of Khadijah bint Khuwaylid, where his exceptional character, honesty, and business skill were witnessed by Maysarah. The episode concludes with the proposal and marriage of Muhammad ﷺ to Khadijah at age twenty-five.",
+  "chapters": [
+   "Return to Makkah and Early Upbringing",
+   "Harb al-Fijar (The Sacrilegious War)",
+   "Hilf al-Fudul: The Cause and the Oath",
+   "Enforcing the Oath and Its Islamic Legacy",
+   "Trade Journey to Sham for Khadijah",
+   "Unprecedented Business Success and Marriage Proposal"
+  ],
+  "ready": true,
+  "synced": true
  },
  {
   "n": 13,
