@@ -2332,5 +2332,42 @@
   }
  ],
  "timing": "gemini-retime",
- "timing_source": "youtube-captions (96% of lines)"
+ "timing_source": "youtube-captions (96% of lines)",
+ "review": [
+  {
+   "q": "What was the significance of the event known as [[Harb al-Fijar|حَرْبُ الْفِجَار]]?",
+   "a": "It was a conflict between the [[Hawazin|هَوَازِن]] and [[Quraysh|قُرَيْش]] that took place during the [[al-Ashhur al-Hurum|الأَشْهُرُ الْحُرُم]], which provided the Prophet ﷺ with early training for military leadership.",
+   "chapter": 1
+  },
+  {
+   "q": "What specific event triggered the formation of [[Hilf al-Fudul|حِلْف الْفُضُول]]?",
+   "a": "The alliance was formed after [[al-As ibn Wa'il|العَاص بن وَائِل]] cheated a poor Yemeni merchant, causing the merchant to threaten the reputation of [[Quraysh|قُرَيْش]] at [[Dar al-Nadwah|دَار الندوة]].",
+   "chapter": 2
+  },
+  {
+   "q": "What was the primary goal of the pact known as [[Hilf al-Fudul|حِلْف الْفُضُول]]?",
+   "a": "Members of the pact swore an oath to defend any person in [[Makkah|مَكَّة]] who was wronged or oppressed, regardless of their social status or wealth.",
+   "chapter": 2
+  },
+  {
+   "q": "How did the principles of [[Hilf al-Fudul|حِلْف الْفُضُول]] persist after the arrival of Islam?",
+   "a": "The alliance was so aligned with Islamic justice that it remained honored through the eras of the [[Sahabah|صَحَابَة]] and the [[Khulafa al-Rashidin|الخُلَفَاء الرَّاشِدِين]], and was later invoked by figures like [[al-Husayn|الحُسَيْن]] and [[Abdullah ibn Zubayr|عَبْد الله بن الزُّبَيْر]].",
+   "chapter": 3
+  },
+  {
+   "q": "Why was [[Muhammad|مُحَمَّد]] ﷺ hired by [[Khadijah bint Khuwaylid|خَدِيجَة بنت خُوَيْلِد]] to manage her trade caravan?",
+   "a": "He was hired because of his well-known reputation as [[al-Sadiq al-Amin|الصَّادِق الأَمِين]], meaning the truthful and the trustworthy.",
+   "chapter": 4
+  },
+  {
+   "q": "What lesson did the speaker draw regarding the importance of the Prophet's ﷺ early life experiences?",
+   "a": "The speaker noted that Allah uses life experiences as [[tarbiyah|تربية]] to prepare His chosen servants, building empathy for the downtrodden, poor, and orphans.",
+   "chapter": 0
+  },
+  {
+   "q": "How did the Prophet ﷺ reach his decision to marry [[Khadijah bint Khuwaylid|خَدِيجَة بنت خُوَيْلِد]]?",
+   "a": "After she sent her friend [[Nafisah|نَفِيسَة]] to inquire about his interest, he accepted the proposal because of her noble character and their compatibility.",
+   "chapter": 5
+  }
+ ]
 }
