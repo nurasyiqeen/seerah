@@ -27,6 +27,15 @@
   ]
  },
  {
+  "translit": "Abd al-Uzza ibn Qusayy ibn Kilab",
+  "arabic": "عبد العزى بن قصي بن كلاب",
+  "category": "person",
+  "meaning": "Ancestor of Khadijah bint Khuwaylid.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "Abd Manaf",
   "arabic": "عَبْد مَنَاف",
   "category": "person",
@@ -35,6 +44,15 @@
    7,
    8,
    9
+  ]
+ },
+ {
+  "translit": "Abd Manaf ibn Qusayy ibn Kilab",
+  "arabic": "عبد مناف بن قصي بن كلاب",
+  "category": "person",
+  "meaning": "Great-great-grandfather of Prophet Muhammad ﷺ.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -73,6 +91,15 @@
    9,
    10,
    11
+  ]
+ },
+ {
+  "translit": "Abdullah ibn Zubayr",
+  "arabic": "عَبْد الله بن الزُّبَيْر",
+  "category": "person",
+  "meaning": "Prominent Companion of the Prophet ﷺ who pledged to fight for Hilf al-Fudul.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -150,7 +177,8 @@
    1,
    8,
    10,
-   11
+   11,
+   12
   ]
  },
  {
@@ -196,7 +224,8 @@
   "category": "term",
   "meaning": "Manners, character, and moral virtues.",
   "episodes": [
-   11
+   11,
+   12
   ]
  },
  {
@@ -210,12 +239,22 @@
   ]
  },
  {
+  "translit": "al-As ibn Wa'il",
+  "arabic": "العَاص بن وَائِل",
+  "category": "person",
+  "meaning": "Wealthy Makkan chief who withheld payment from a Yemeni trader, triggering Hilf al-Fudul.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "al-Ashhur al-Hurum",
   "arabic": "الأشهر الحرم",
   "category": "term",
   "meaning": "The four sacred months in the Islamic/Arab calendar.",
   "episodes": [
-   5
+   5,
+   12
   ]
  },
  {
@@ -225,6 +264,33 @@
   "meaning": "A false prophet in Yemen who rebelled against Islamic rule.",
   "episodes": [
    6
+  ]
+ },
+ {
+  "translit": "al-Dawlah al-Umawiyyah",
+  "arabic": "الدَّوْلَة الأُمَوِيَّة",
+  "category": "event",
+  "meaning": "The Umayyad Caliphate.",
+  "episodes": [
+   12
+  ]
+ },
+ {
+  "translit": "al-Fadl",
+  "arabic": "الفَضْل",
+  "category": "person",
+  "meaning": "First name shared by the threeMakkan founders of Hilf al-Fudul.",
+  "episodes": [
+   12
+  ]
+ },
+ {
+  "translit": "al-Fijar",
+  "arabic": "الْفُجُور",
+  "category": "term",
+  "meaning": "Wickedness, wrongdoing, or sacrilege; root word for Harb al-Fijar.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -254,6 +320,24 @@
    8,
    9,
    10
+  ]
+ },
+ {
+  "translit": "al-Hassan",
+  "arabic": "الحَسَن",
+  "category": "person",
+  "meaning": "Grandson of Prophet Muhammad ﷺ, son of Ali and Fatimah.",
+  "episodes": [
+   12
+  ]
+ },
+ {
+  "translit": "al-Husayn",
+  "arabic": "الحُسَيْن",
+  "category": "person",
+  "meaning": "Grandson of Prophet Muhammad ﷺ, son of Ali and Fatimah.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -313,6 +397,15 @@
   ]
  },
  {
+  "translit": "al-Sadiq al-Amin",
+  "arabic": "الصَّادِق الأَمِين",
+  "category": "term",
+  "meaning": "Title given to Muhammad ﷺ meaning 'The Truthful, The Trustworthy'.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "al-Sharifayn",
   "arabic": "الشريفين",
   "category": "term",
@@ -346,6 +439,15 @@
   "meaning": "Major idol worshipped by pagan Arabs in pre-Islamic Arabia.",
   "episodes": [
    11
+  ]
+ },
+ {
+  "translit": "Al-Walid",
+  "arabic": "الوَلِيد",
+  "category": "person",
+  "meaning": "Umayyad governor of Madinah during the time of al-Husayn.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -437,7 +539,8 @@
    1,
    2,
    7,
-   8
+   8,
+   12
   ]
  },
  {
@@ -497,12 +600,22 @@
   ]
  },
  {
+  "translit": "Bani Ismail",
+  "arabic": "بَنِي إِسْمَاعِيل",
+  "category": "tribe",
+  "meaning": "The descendants of Prophet Ishmael.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "Bani Isra'il",
   "arabic": "بني إسرائيل",
   "category": "tribe",
   "meaning": "The Children of Israel.",
   "episodes": [
-   11
+   11,
+   12
   ]
  },
  {
@@ -522,7 +635,8 @@
   "meaning": "Divine blessing, increase, and spiritual abundance.",
   "episodes": [
    9,
-   10
+   10,
+   12
   ]
  },
  {
@@ -560,7 +674,8 @@
   "category": "person",
   "meaning": "The Christian monk who recognized the signs of prophethood in young Muhammad ﷺ.",
   "episodes": [
-   11
+   11,
+   12
   ]
  },
  {
@@ -587,7 +702,8 @@
   "category": "place",
   "meaning": "The assembly hall established by Qusayy in Makkah",
   "episodes": [
-   7
+   7,
+   12
   ]
  },
  {
@@ -618,7 +734,8 @@
   "category": "term",
   "meaning": "One of the four sacred months and the month of Hajj.",
   "episodes": [
-   5
+   5,
+   12
   ]
  },
  {
@@ -627,7 +744,8 @@
   "category": "term",
   "meaning": "One of the four sacred months.",
   "episodes": [
-   5
+   5,
+   12
   ]
  },
  {
@@ -658,6 +776,15 @@
   "meaning": "The only minister who opposed the assassination of King Hassan and saved himself through a letter of poetry.",
   "episodes": [
    3
+  ]
+ },
+ {
+  "translit": "dhulm",
+  "arabic": "ظُلْم",
+  "category": "term",
+  "meaning": "Oppression, wrongdoing, or injustice.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -747,6 +874,15 @@
   ]
  },
  {
+  "translit": "Fudul",
+  "arabic": "فُضُول",
+  "category": "term",
+  "meaning": "Plural of al-Fadl; refers to virtue or the pact of virtue.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "fuqara",
   "arabic": "فُقَرَاء",
   "category": "term",
@@ -802,7 +938,8 @@
    1,
    7,
    9,
-   10
+   10,
+   12
   ]
  },
  {
@@ -844,6 +981,15 @@
   ]
  },
  {
+  "translit": "Harb al-Fijar",
+  "arabic": "حَرْبُ الْفِجَار",
+  "category": "event",
+  "meaning": "The Sacrilegious War fought between Hawazin and Quraysh during sacred months.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "Hashim",
   "arabic": "هَاشِم",
   "category": "person",
@@ -869,6 +1015,15 @@
   "meaning": "An Ansar companion and famed poet of the Prophet ﷺ who witnessed the Jewish monk's declaration in Madinah as a child.",
   "episodes": [
    9
+  ]
+ },
+ {
+  "translit": "Hawazin",
+  "arabic": "هَوَازِن",
+  "category": "tribe",
+  "meaning": "A large Arab tribe located outside Makkah that fought Quraysh in Harb al-Fijar.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -906,6 +1061,24 @@
   "meaning": "Wisdom.",
   "episodes": [
    10
+  ]
+ },
+ {
+  "translit": "Hilf",
+  "arabic": "حِلْف",
+  "category": "term",
+  "meaning": "An oath, pact, or alliance.",
+  "episodes": [
+   12
+  ]
+ },
+ {
+  "translit": "Hilf al-Fudul",
+  "arabic": "حِلْف الْفُضُول",
+  "category": "event",
+  "meaning": "The Alliance of the Virtuous formed in Makkah to uphold justice for victims of oppression.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -974,7 +1147,8 @@
    1,
    2,
    7,
-   8
+   8,
+   12
   ]
  },
  {
@@ -1068,7 +1242,8 @@
    1,
    7,
    8,
-   9
+   9,
+   12
   ]
  },
  {
@@ -1087,7 +1262,8 @@
   "meaning": "The pre-Islamic period of ignorance in Arabia.",
   "episodes": [
    1,
-   8
+   8,
+   12
   ]
  },
  {
@@ -1148,6 +1324,15 @@
   ]
  },
  {
+  "translit": "Khadijah bint Khuwaylid",
+  "arabic": "خَدِيجَة بنت خُوَيْلِد",
+  "category": "person",
+  "meaning": "Wealthy noblewoman of Quraysh who became the first wife of Prophet Muhammad ﷺ.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "Khatam al-Nubuwwah",
   "arabic": "خاتم النبوة",
   "category": "term",
@@ -1174,6 +1359,15 @@
   "meaning": "Good things, riches, or natural resources.",
   "episodes": [
    6
+  ]
+ },
+ {
+  "translit": "Khulafa al-Rashidin",
+  "arabic": "الخُلَفَاء الرَّاشِدِين",
+  "category": "term",
+  "meaning": "The Rightly Guided Caliphs of Islam.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -1282,7 +1476,8 @@
    2,
    3,
    7,
-   9
+   9,
+   12
   ]
  },
  {
@@ -1326,7 +1521,8 @@
    8,
    9,
    10,
-   11
+   11,
+   12
   ]
  },
  {
@@ -1384,6 +1580,15 @@
   ]
  },
  {
+  "translit": "Maysarah",
+  "arabic": "مَيْسَرَة",
+  "category": "person",
+  "meaning": "Servant of Khadijah who accompanied Muhammad ﷺ on his trade journey to Sham.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "Mu'awiyah",
   "arabic": "مُعَاوِيَة",
   "category": "person",
@@ -1400,7 +1605,8 @@
   "episodes": [
    9,
    10,
-   11
+   11,
+   12
   ]
  },
  {
@@ -1409,7 +1615,8 @@
   "category": "term",
   "meaning": "The first month of the calendar and one of the sacred months.",
   "episodes": [
-   5
+   5,
+   12
   ]
  },
  {
@@ -1468,6 +1675,15 @@
   "meaning": "A Prophet of God.",
   "episodes": [
    9
+  ]
+ },
+ {
+  "translit": "Nafisah",
+  "arabic": "نَفِيسَة",
+  "category": "person",
+  "meaning": "Friend of Khadijah who conveyed her marriage proposal to Muhammad ﷺ.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -1553,7 +1769,8 @@
    8,
    9,
    10,
-   11
+   11,
+   12
   ]
  },
  {
@@ -1564,7 +1781,8 @@
   "episodes": [
    7,
    8,
-   9
+   9,
+   12
   ]
  },
  {
@@ -1573,7 +1791,8 @@
   "category": "term",
   "meaning": "The third month of the Islamic lunar calendar, during which the Prophet ﷺ was born.",
   "episodes": [
-   9
+   9,
+   12
   ]
  },
  {
@@ -1631,7 +1850,8 @@
   "category": "term",
   "meaning": "One of the four sacred months.",
   "episodes": [
-   5
+   5,
+   12
   ]
  },
  {
@@ -1690,7 +1910,8 @@
   "meaning": "The companions of the Prophet Muhammad ﷺ.",
   "episodes": [
    1,
-   10
+   10,
+   12
   ]
  },
  {
@@ -1760,7 +1981,8 @@
    3,
    4,
    9,
-   11
+   11,
+   12
   ]
  },
  {
@@ -1893,6 +2115,15 @@
   ]
  },
  {
+  "translit": "tarbiyah",
+  "arabic": "تربية",
+  "category": "term",
+  "meaning": "Nurturing, education, and moral/spiritual development.",
+  "episodes": [
+   12
+  ]
+ },
+ {
   "translit": "tawaf",
   "arabic": "طواف",
   "category": "term",
@@ -1912,7 +2143,8 @@
    2,
    4,
    7,
-   8
+   8,
+   12
   ]
  },
  {
@@ -2051,7 +2283,8 @@
    2,
    9,
    10,
-   11
+   11,
+   12
   ]
  },
  {
@@ -2061,7 +2294,17 @@
   "meaning": "And Allah knows best.",
   "episodes": [
    10,
-   11
+   11,
+   12
+  ]
+ },
+ {
+  "translit": "Ya",
+  "arabic": "يَا",
+  "category": "term",
+  "meaning": "Vocative prefix meaning 'O'.",
+  "episodes": [
+   12
   ]
  },
  {
@@ -2079,7 +2322,8 @@
   "category": "person",
   "meaning": "Prophet Jacob, ancestor of the Israelites.",
   "episodes": [
-   11
+   11,
+   12
   ]
  },
  {
@@ -2132,7 +2376,8 @@
    5,
    7,
    9,
-   11
+   11,
+   12
   ]
  },
  {
